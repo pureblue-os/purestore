@@ -418,19 +418,6 @@ bz_application_flatseal_action (GSimpleAction *action,
 }
 
 static void
-bz_application_donate_action (GSimpleAction *action,
-                              GVariant      *parameter,
-                              gpointer       user_data)
-{
-  BzApplication *self = user_data;
-
-  g_assert (BZ_IS_APPLICATION (self));
-
-  g_app_info_launch_default_for_uri (
-      DONATE_LINK, NULL, NULL);
-}
-
-static void
 bz_application_toggle_transactions_action (GSimpleAction *action,
                                            GVariant      *parameter,
                                            gpointer       user_data)
@@ -564,7 +551,6 @@ static const GActionEntry app_actions[] = {
   {               "about",               bz_application_about_action, NULL },
   {              "search",              bz_application_search_action,  "s" },
   { "toggle-transactions", bz_application_toggle_transactions_action, NULL },
-  {              "donate",              bz_application_donate_action, NULL },
   {            "flatseal",            bz_application_flatseal_action, NULL },
   {    "bazaar-inspector",    bz_application_bazaar_inspector_action, NULL },
   {   "toggle-debug-mode",   bz_application_toggle_debug_mode_action, NULL },
