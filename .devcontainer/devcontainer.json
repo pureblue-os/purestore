@@ -5,18 +5,9 @@
 		"dockerfile": "Dockerfile"
 	},
 
-	"features": {
-		"ghcr.io/devcontainers/features/common-utils:2": {
-			"installZsh": "false",
-			"username": "vscode",
-			"userUid": "1000",
-			"userGid": "1000",
-			"upgradePackages": "true"
-		},
-		"ghcr.io/devcontainers/features/github-cli:1": {}
-	},
+	"features": {},
 
-	"remoteUser": "vscode",
+	"remoteUser": "devuser",
 
 	"customizations": {
 		"vscode": {
@@ -35,5 +26,7 @@
 
 	"mounts": [
 		"source=${localEnv:XDG_RUNTIME_DIR},target=${localEnv:XDG_RUNTIME_DIR},type=bind,consistency=cached"
-	]
+	],
+
+	"postCreateCommand": "git submodule update --init --recursive"
 }

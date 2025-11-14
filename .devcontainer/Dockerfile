@@ -1,24 +1,49 @@
-FROM ubuntu:25.04
+FROM registry.fedoraproject.org/fedora:43
 
-RUN userdel -f -r ubuntu
-
-RUN apt-get update && apt-get install -y \
+# Install development dependencies
+RUN dnf install -y \
     appstream \
     bash-completion \
-    build-essential \
     cmake \
-    gettext \
+    desktop-file-utils \
+    gcc \
+    gcc-c++ \
     git \
-    libadwaita-1-dev \
-    libdex-dev \
-    libflatpak-dev \
-    libglycin-1-dev \
-    libglycin-gtk4-1-dev \
-    libgtk-4-dev \
-    liblcms2-dev \
-    libxmlb-dev \
-    libyaml-dev \
-    libsoup-3.0-dev \
-    libjson-glib-dev \
+    gettext \
+    libadwaita-devel \
+    libdex-devel \
+    flatpak-devel \
+    glycin-devel \
+    glycin-gtk4-devel \
+    gtk4-devel \
+    lcms2-devel \
+    libxmlb-devel \
+    libyaml-devel \
+    libsoup3-devel \
+    json-glib-devel \
+    md4c-devel \
     meson \
-    ninja-build
+    ninja-build \
+    python3-gobject \
+    sudo \
+    mesa-libGL \
+    mesa-libEGL \
+    mesa-dri-drivers \
+    mesa-libgbm \
+    mesa-vulkan-drivers \
+    libglvnd-glx \
+    libglvnd-egl \
+    libglvnd-gles \
+    && dnf clean all
+
+# Create a non-root user
+ARG USERNAME=devuser
+ARG USER_UID=1000
+ARG USER_GID=$USER_UID
+
+RUN groupadd --gid $USER_GID $USERNAME \
+    && useradd --uid $USER_UID --gid $USER_GID -m $USERNAME \
+    && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
+    && chmod 0440 /etc/sudoers.d/$USERNAME
+
+USER $USERNAME
