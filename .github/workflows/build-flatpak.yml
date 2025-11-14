@@ -63,6 +63,7 @@ jobs:
         git push "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" "v$VERSION"
 
     - name: Create GitHub release
+      id: create_release
       uses: actions/create-release@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -72,3 +73,13 @@ jobs:
         body: Automated release from CI
         draft: false
         prerelease: false
+
+    - name: Upload Flatpak bundle to release
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./Bazaar.flatpak
+        asset_name: Bazaar.flatpak
+        asset_content_type: application/octet-stream
