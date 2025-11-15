@@ -7,6 +7,14 @@ template $BzPreferencesDialog: Adw.PreferencesDialog {
   width-request: 350;
   height-request: 500;
 
+  Adw.Breakpoint {
+    condition ("max-width: 625sp")
+
+    setters {
+      flag_buttons_box.max-children-per-line: 6;
+    }
+  }
+
   Adw.PreferencesPage {
     title: _("Preferences");
     use-underline: true;
@@ -56,6 +64,33 @@ template $BzPreferencesDialog: Adw.PreferencesDialog {
             valign: center;
           }
         }
+      }
+    }
+
+    Adw.PreferencesGroup {
+      title: _("Progress Bar");
+      description: _("Choose a theme for the progress bar!");
+
+      Adw.ActionRow {
+        child: Box {
+          margin-top: 6;
+          margin-bottom: 6;
+          halign: center;
+
+          FlowBox flag_buttons_box {
+            styles [
+              "accent-button-box",
+            ]
+
+            orientation: horizontal;
+            column-spacing: 4;
+            row-spacing: 4;
+            halign: center;
+            homogeneous: true;
+            max-children-per-line: 12;
+            selection-mode: none;
+          }
+        };
       }
     }
 
