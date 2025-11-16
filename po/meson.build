@@ -1,1 +1,1 @@
-i18n.gettext('bazaar', preset: 'glib')
+i18n.gettext('purestore', preset: 'glib')

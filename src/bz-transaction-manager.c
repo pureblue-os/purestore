@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#define G_LOG_DOMAIN "BAZAAR::TRANSACTIONS"
+#define G_LOG_DOMAIN "PURESTORE::TRANSACTIONS"
 
 #include <glib/gi18n.h>
 
@@ -942,19 +942,19 @@ execute_hook (BzTransactionManager *self,
       launcher = g_subprocess_launcher_new (G_SUBPROCESS_FLAGS_STDOUT_PIPE);
       g_subprocess_launcher_set_cwd (launcher, g_get_home_dir ());
 
-      g_subprocess_launcher_setenv (launcher, "BAZAAR_HOOK_INITIATED_UNIX_STAMP", timestamp_sec, TRUE);
-      g_subprocess_launcher_setenv (launcher, "BAZAAR_HOOK_INITIATED_UNIX_STAMP_USEC", timestamp_usec, TRUE);
+      g_subprocess_launcher_setenv (launcher, "PURESTORE_HOOK_INITIATED_UNIX_STAMP", timestamp_sec, TRUE);
+      g_subprocess_launcher_setenv (launcher, "PURESTORE_HOOK_INITIATED_UNIX_STAMP_USEC", timestamp_usec, TRUE);
 
       stage_str = g_strdup_printf ("%d", stage);
-      g_subprocess_launcher_setenv (launcher, "BAZAAR_HOOK_STAGE_IDX", stage_str, TRUE);
+      g_subprocess_launcher_setenv (launcher, "PURESTORE_HOOK_STAGE_IDX", stage_str, TRUE);
 
-      g_subprocess_launcher_setenv (launcher, "BAZAAR_HOOK_ID", id, TRUE);
-      g_subprocess_launcher_setenv (launcher, "BAZAAR_HOOK_TYPE", type, TRUE);
+      g_subprocess_launcher_setenv (launcher, "PURESTORE_HOOK_ID", id, TRUE);
+      g_subprocess_launcher_setenv (launcher, "PURESTORE_HOOK_TYPE", type, TRUE);
 
-      g_subprocess_launcher_setenv (launcher, "BAZAAR_HOOK_WAS_ABORTED", hook_aborted ? "true" : "false", TRUE);
+      g_subprocess_launcher_setenv (launcher, "PURESTORE_HOOK_WAS_ABORTED", hook_aborted ? "true" : "false", TRUE);
 
-      g_subprocess_launcher_setenv (launcher, "BAZAAR_TS_APPID", ts_appid, TRUE);
-      g_subprocess_launcher_setenv (launcher, "BAZAAR_TS_TYPE", ts_type, TRUE);
+      g_subprocess_launcher_setenv (launcher, "PURESTORE_TS_APPID", ts_appid, TRUE);
+      g_subprocess_launcher_setenv (launcher, "PURESTORE_TS_TYPE", ts_type, TRUE);
 
       if (finish)
         hook_stage = "teardown";
@@ -995,10 +995,10 @@ execute_hook (BzTransactionManager *self,
                        adw_alert_dialog_get_default_response (
                            ADW_ALERT_DIALOG (current_dialog->dialog)));
 
-          g_subprocess_launcher_setenv (launcher, "BAZAAR_HOOK_DIALOG_ID", current_dialog->id, TRUE);
+          g_subprocess_launcher_setenv (launcher, "PURESTORE_HOOK_DIALOG_ID", current_dialog->id, TRUE);
           g_subprocess_launcher_setenv (
               launcher,
-              "BAZAAR_HOOK_DIALOG_RESPONSE_ID",
+              "PURESTORE_HOOK_DIALOG_RESPONSE_ID",
               response != NULL
                   ? response
                   : adw_alert_dialog_get_default_response (
@@ -1011,11 +1011,11 @@ execute_hook (BzTransactionManager *self,
           hook_stage = "setup-dialog";
 
           current_dialog = g_ptr_array_steal_index (dialogs, 0);
-          g_subprocess_launcher_setenv (launcher, "BAZAAR_HOOK_DIALOG_ID", current_dialog->id, TRUE);
+          g_subprocess_launcher_setenv (launcher, "PURESTORE_HOOK_DIALOG_ID", current_dialog->id, TRUE);
         }
       else
         hook_stage = "action";
-      g_subprocess_launcher_setenv (launcher, "BAZAAR_HOOK_STAGE", hook_stage, TRUE);
+      g_subprocess_launcher_setenv (launcher, "PURESTORE_HOOK_STAGE", hook_stage, TRUE);
 
       subprocess = g_subprocess_launcher_spawn (
           launcher,

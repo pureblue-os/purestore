@@ -1,4 +1,4 @@
-application_id = 'io.github.pureblueos.purebazaar'
+application_id = 'io.github.pureblueos.purestore'
 
 scalable_dir = 'hicolor' / 'scalable' / 'apps'
 install_data(

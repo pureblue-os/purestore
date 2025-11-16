@@ -313,7 +313,7 @@ bz_installed_tile_class_init (BzInstalledTileClass *klass)
 
   g_type_ensure (BZ_TYPE_ENTRY_GROUP);
 
-  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblueos/purebazaar/bz-installed-tile.ui");
+  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblueos/purestore/bz-installed-tile.ui");
   gtk_widget_class_bind_template_child (widget_class, BzInstalledTile, icon_picture);
   gtk_widget_class_bind_template_child (widget_class, BzInstalledTile, fallback_icon);
   gtk_widget_class_bind_template_child (widget_class, BzInstalledTile, title_label);

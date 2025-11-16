@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#define G_LOG_DOMAIN "BAZAAR::MAIN"
+#define G_LOG_DOMAIN "PURESTORE::MAIN"
 
 #include "config.h"
 
@@ -51,9 +51,9 @@ main (int   argc,
   g_debug ("Constructing main application object...");
   app = g_object_new (
       BZ_TYPE_APPLICATION,
-      "application-id", "io.github.pureblueos.purebazaar",
+      "application-id", "io.github.pureblueos.purestore",
       "flags", G_APPLICATION_HANDLES_COMMAND_LINE,
-      "resource-base-path", "/io/github/pureblueos/purebazaar",
+      "resource-base-path", "/io/github/pureblueos/purestore",
       NULL);
 
   g_debug ("Running!");

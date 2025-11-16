@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
-  <gresource prefix="/io/github/pureblueos/purebazaar/">
+  <gresource prefix="/io/github/pureblueos/purestore/">
 
     <file alias="style.css">gtk/style.css</file>
 
@@ -109,21 +109,21 @@
 
     <file preprocess="xml-stripblanks">icons/scalable/actions/on-the-go-symbolic.svg</file>
 
-    <file preprocess="xml-stripblanks">icons/io.github.kolumni.Bazaar.Create.svg</file>
-    <file preprocess="xml-stripblanks">icons/io.github.kolumni.Bazaar.Develop.svg</file>
-    <file preprocess="xml-stripblanks">icons/io.github.kolumni.Bazaar.Learn.svg</file>
-    <file preprocess="xml-stripblanks">icons/io.github.kolumni.Bazaar.Play.svg</file>
-    <file preprocess="xml-stripblanks">icons/io.github.kolumni.Bazaar.Network.svg</file>
-    <file preprocess="xml-stripblanks">icons/io.github.kolumni.Bazaar.Work.svg</file>
-    <file preprocess="xml-stripblanks">icons/io.github.kolumni.Bazaar.Audiovideo.svg</file>
-    <file preprocess="xml-stripblanks">icons/io.github.kolumni.Bazaar.Science.svg</file>
-    <file preprocess="xml-stripblanks">icons/io.github.kolumni.Bazaar.System.svg</file>
-    <file preprocess="xml-stripblanks">icons/io.github.kolumni.Bazaar.Utilities.svg</file>
-    <file preprocess="xml-stripblanks">icons/io.github.kolumni.Bazaar.Mobile.svg</file>
-    <file preprocess="xml-stripblanks">icons/io.github.kolumni.Bazaar.Trending.svg</file>
-    <file preprocess="xml-stripblanks">icons/io.github.kolumni.Bazaar.Popular.svg</file>
-    <file preprocess="xml-stripblanks">icons/io.github.kolumni.Bazaar.New.svg</file>
-    <file preprocess="xml-stripblanks">icons/io.github.kolumni.Bazaar.Updated.svg</file>
+    <file preprocess="xml-stripblanks">icons/io.github.pureblueos.purestore.Create.svg</file>
+    <file preprocess="xml-stripblanks">icons/io.github.pureblueos.purestore.Develop.svg</file>
+    <file preprocess="xml-stripblanks">icons/io.github.pureblueos.purestore.Learn.svg</file>
+    <file preprocess="xml-stripblanks">icons/io.github.pureblueos.purestore.Play.svg</file>
+    <file preprocess="xml-stripblanks">icons/io.github.pureblueos.purestore.Network.svg</file>
+    <file preprocess="xml-stripblanks">icons/io.github.pureblueos.purestore.Work.svg</file>
+    <file preprocess="xml-stripblanks">icons/io.github.pureblueos.purestore.Audiovideo.svg</file>
+    <file preprocess="xml-stripblanks">icons/io.github.pureblueos.purestore.Science.svg</file>
+    <file preprocess="xml-stripblanks">icons/io.github.pureblueos.purestore.System.svg</file>
+    <file preprocess="xml-stripblanks">icons/io.github.pureblueos.purestore.Utilities.svg</file>
+    <file preprocess="xml-stripblanks">icons/io.github.pureblueos.purestore.Mobile.svg</file>
+    <file preprocess="xml-stripblanks">icons/io.github.pureblueos.purestore.Trending.svg</file>
+    <file preprocess="xml-stripblanks">icons/io.github.pureblueos.purestore.Popular.svg</file>
+    <file preprocess="xml-stripblanks">icons/io.github.pureblueos.purestore.New.svg</file>
+    <file preprocess="xml-stripblanks">icons/io.github.pureblueos.purestore.Updated.svg</file>
 
   </gresource>
 </gresources>

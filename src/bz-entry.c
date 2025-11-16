@@ -20,8 +20,8 @@
 
 /* TODO: clean this mess up */
 
-#define G_LOG_DOMAIN  "BAZAAR::ENTRY"
-#define BAZAAR_MODULE "entry"
+#define G_LOG_DOMAIN  "PURESTORE::ENTRY"
+#define PURESTORE_MODULE "entry"
 
 #include <json-glib/json-glib.h>
 

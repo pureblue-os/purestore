@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#define G_LOG_DOMAIN "BAZAAR::APPSTREAM-DESCRIPTION-RENDER"
+#define G_LOG_DOMAIN "PURESTORE::APPSTREAM-DESCRIPTION-RENDER"
 
 #include <xmlb.h>
 
@@ -163,7 +163,7 @@ bz_appstream_description_render_class_init (BzAppstreamDescriptionRenderClass *k
 
   g_object_class_install_properties (object_class, LAST_PROP, props);
 
-  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblueos/purebazaar/bz-appstream-description-render.ui");
+  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblueos/purestore/bz-appstream-description-render.ui");
   gtk_widget_class_bind_template_child (widget_class, BzAppstreamDescriptionRender, box);
 }
 

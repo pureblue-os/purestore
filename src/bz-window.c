@@ -502,7 +502,7 @@ bz_window_class_init (BzWindowClass *klass)
   g_type_ensure (BZ_TYPE_INSTALLED_PAGE);
   g_type_ensure (BZ_TYPE_FLATHUB_PAGE);
 
-  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblueos/purebazaar/bz-window.ui");
+  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblueos/purestore/bz-window.ui");
   gtk_widget_class_bind_template_child (widget_class, BzWindow, comet_overlay);
   gtk_widget_class_bind_template_child (widget_class, BzWindow, split_view);
   gtk_widget_class_bind_template_child (widget_class, BzWindow, transactions_stack);

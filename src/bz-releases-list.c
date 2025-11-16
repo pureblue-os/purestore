@@ -169,7 +169,7 @@ bz_releases_dialog_class_init (BzReleasesDialogClass *klass)
   GtkWidgetClass *widget_class = GTK_WIDGET_CLASS (klass);
 
   gtk_widget_class_set_template_from_resource (widget_class,
-                                               "/io/github/pureblueos/purebazaar/bz-releases-dialog.ui");
+                                               "/io/github/pureblueos/purestore/bz-releases-dialog.ui");
   gtk_widget_class_bind_template_child (widget_class, BzReleasesDialog, releases_box);
 }
 
@@ -372,7 +372,7 @@ bz_releases_list_class_init (BzReleasesListClass *klass)
   g_type_ensure (BZ_TYPE_APPSTREAM_DESCRIPTION_RENDER);
 
   gtk_widget_class_set_template_from_resource (widget_class,
-                                               "/io/github/pureblueos/purebazaar/bz-releases-list.ui");
+                                               "/io/github/pureblueos/purestore/bz-releases-list.ui");
   gtk_widget_class_bind_template_child (widget_class, BzReleasesList, preview_box);
   gtk_widget_class_bind_template_child (widget_class, BzReleasesList, show_all_box);
   gtk_widget_class_bind_template_callback (widget_class, show_all_releases_cb);

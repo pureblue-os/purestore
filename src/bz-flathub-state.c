@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#define G_LOG_DOMAIN                 "BAZAAR::FLATHUB"
+#define G_LOG_DOMAIN                 "PURESTORE::FLATHUB"
 #define COLLECTION_FETCH_SIZE        192
 #define CATEGORY_FETCH_SIZE          96
 #define QUALITY_MODERATION_PAGE_SIZE 300

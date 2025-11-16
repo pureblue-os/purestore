@@ -241,12 +241,12 @@ blueprints = custom_target('blueprints',
 )
 
 bz_sources += gnome.compile_resources('bz-resources',
-  'bazaar.gresource.xml',
+  'purestore.gresource.xml',
   c_name: 'bz',
   dependencies: blueprints
 )
 
-executable('bazaar', bz_sources, gdbus_src, marshalers,
+executable('purestore', bz_sources, gdbus_src, marshalers,
            dependencies: bz_deps,
            install: true,
 )

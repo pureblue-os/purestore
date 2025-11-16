@@ -53,47 +53,47 @@
         <mapping key="shell">
           <!-- Run with `/bin/sh -c` with the following envvars:
 
-               `BAZAAR_HOOK_INITIATED_UNIX_STAMP`: the unix timestamp
+               `PURESTORE_HOOK_INITIATED_UNIX_STAMP`: the unix timestamp
                in seconds at which this hook was first invoked (the
                number of seconds that have elapsed since 1970-01-01
                00:00:00 UTC)
                
-               `BAZAAR_HOOK_INITIATED_UNIX_STAMP_USEC`: the unix
+               `PURESTORE_HOOK_INITIATED_UNIX_STAMP_USEC`: the unix
                timestamp in microseconds at which this hook was first
                invoked (the number of microseconds that have elapsed
                since 1970-01-01 00:00:00 UTC)
 
-               `BAZAAR_HOOK_STAGE_IDX`: the number of stages this hook
+               `PURESTORE_HOOK_STAGE_IDX`: the number of stages this hook
                has run so far
                
-               `BAZAAR_HOOK_ID`: the value of the "id" mapping
+               `PURESTORE_HOOK_ID`: the value of the "id" mapping
 
-               `BAZAAR_HOOK_TYPE`: the value of the "when" mapping
+               `PURESTORE_HOOK_TYPE`: the value of the "when" mapping
 
-               `BAZAAR_HOOK_WAS_ABORTED`: "true" if a dialog aborted
+               `PURESTORE_HOOK_WAS_ABORTED`: "true" if a dialog aborted
                the hook
 
-               `BAZAAR_HOOK_DIALOG_ID`: if applicable, the id of the
+               `PURESTORE_HOOK_DIALOG_ID`: if applicable, the id of the
                current dialog
 
-               `BAZAAR_HOOK_DIALOG_RESPONSE_ID`: if applicable, the
+               `PURESTORE_HOOK_DIALOG_RESPONSE_ID`: if applicable, the
                user response given through the current dialog
                
-               `BAZAAR_TS_APPID`: if applicable, the appid of the
-               entry Bazaar is currently dealing with
+               `PURESTORE_TS_APPID`: if applicable, the appid of the
+               entry PureStore is currently dealing with
 
-               `BAZAAR_TS_TYPE`: if applicable, the type of
+               `PURESTORE_TS_TYPE`: if applicable, the type of
                transaction being run. Can be "install", "update", or
                "removal".
                
-               `BAZAAR_HOOK_STAGE`: the stage at which the hook is
+               `PURESTORE_HOOK_STAGE`: the stage at which the hook is
                running. This will indicate what the shell body is
                instructed to do at this time. The shell body must
                respond by outputting to stdout with a valid answer;
                the structure of a valid answer will depend on the
                stage, and if the structure is not valid the hook will
                be abandoned. The shell body might be run multiple
-               times by Bazaar over the course of a hook with this
+               times by PureStore over the course of a hook with this
                variable set to differing values in order know how to
                orchestrate events in the UI, so the shell body must be
                able to branch depending on the value. The value may be
@@ -103,17 +103,17 @@
                continue the execution of this hook, or "pass" to skip
                it and move on to the next registered hook
 
-               * `setup-dialog` Bazaar is ready to ask the user a
+               * `setup-dialog` PureStore is ready to ask the user a
                question with one of the dialogs you've defined inside
-               the "dialogs" mapping. `BAZAAR_HOOK_DIALOG_ID` will
+               the "dialogs" mapping. `PURESTORE_HOOK_DIALOG_ID` will
                tell you which one. Respond with "ok" to spawn the
                dialog, or "pass" to skip the dialog.
 
-               * `teardown-dialog` Bazaar has received input from the
+               * `teardown-dialog` PureStore has received input from the
                user after asking them a question with one of the
                dialogs you've defined inside the "dialogs" mapping.
-               `BAZAAR_HOOK_DIALOG_ID` will tell you which
-               one. `BAZAAR_HOOK_DIALOG_RESPONSE_ID` will tell you the
+               `PURESTORE_HOOK_DIALOG_ID` will tell you which
+               one. `PURESTORE_HOOK_DIALOG_RESPONSE_ID` will tell you the
                response the user chose. Respond with "ok" to continue,
                or "abort" to stop the execution of this hook.
 
@@ -124,14 +124,14 @@
                
                * `action` Everything so far has gone according to
                plan, so it is time to take whatever external action
-               this hook exists for. Bazaar requires no response at
+               this hook exists for. PureStore requires no response at
                this time.
 
                * `teardown` The hook is cleaning up. Respond with
                "continue" to propagate the signal emission to lower
                priority hooks, or "stop" to indicate the emission
                should stop. Alternatively, if this hook type should
-               hint to Bazaar an action to take (such as the
+               hint to PureStore an action to take (such as the
                "before-transaction" hook), respond with "confirm" to
                hint that the action should be taken, or "deny" to
                prevent the action from being taken. Both "confirm" and

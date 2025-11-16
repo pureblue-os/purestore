@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schemalist gettext-domain="bazaar">
-  <schema id="io.github.pureblueos.purebazaar" path="/io/github/pureblueos/purebazaar/">
+<schemalist gettext-domain="purestore">
+  <schema id="io.github.pureblueos.purestore" path="/io/github/pureblueos/purestore/">
     <key name="hide-eol" type="b">
       <default>false</default>
       <summary>Hide EOL Entries</summary>
@@ -29,7 +29,7 @@
     <key name="window-dimensions" type="(ii)">
       <default>(1220, 900)</default>
       <summary>Saved Window Dimensions</summary>
-      <description>The window dimensions to be used by the next Bazaar window</description>
+      <description>The window dimensions to be used by the next Store window</description>
     </key>
   </schema>
 </schemalist>

@@ -1,11 +1,11 @@
 {
-  "id": "io.github.pureblueos.purebazaar",
+  "id": "io.github.pureblueos.purestore",
   "runtime": "org.gnome.Platform",
   "runtime-version": "49",
   "sdk": "org.gnome.Sdk",
-  "command": "bazaar",
-  "tags": [ "nightly" ],
-  "desktop-file-name-suffix": " (Nightly)",
+  "command": "purestore",
+  "tags": [],
+  "desktop-file-name-suffix": "",
   "sdk-extensions": [
     "org.freedesktop.Sdk.Extension.llvm20"
   ],
@@ -37,19 +37,18 @@
   },
   "modules": [
     {
-      "name": "bazaar",
+      "name": "purestore",
       "buildsystem": "meson",
       "config-opts": [
         "-Dsandboxed_libflatpak=true",
-        "-Dhardcoded_content_config_path=/run/host/etc/bazaar/config.yaml",
-        "-Dhardcoded_blacklist_path=/run/host/etc/bazaar/blacklist.txt"
+        "-Dhardcoded_content_config_path=/run/host/etc/purestore/config.yaml"
       ],
       "sources": [
         {
           "type": "dir",
           "path": "../.."
         },
-        "bazaar-cargo-sources.json",
+        "purestore-cargo-sources.json",
         {
           "type": "shell",
           "commands": [

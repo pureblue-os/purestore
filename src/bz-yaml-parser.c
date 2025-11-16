@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#define G_LOG_DOMAIN "BAZAAR::YAML"
+#define G_LOG_DOMAIN "PURESTORE::YAML"
 
 #include "config.h"
 

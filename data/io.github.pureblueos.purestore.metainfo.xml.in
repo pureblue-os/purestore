@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
-  <id>io.github.pureblueos.purebazaar</id>
+  <id>io.github.pureblueos.purestore</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
 
-  <name>Bazaar</name>
+  <name>Store</name>
   <summary>Discover and install applications</summary>
   <description>
     <p>
@@ -13,7 +13,7 @@
     </p>
     <p>
       It emphasizes supporting the developers who make the Linux desktop
-      possible. Bazaar features a "curated" tab that can be configured by
+      possible. Store features a "curated" tab that can be configured by
       distributors to allow for a more localized experience.
     </p>
   </description>
@@ -25,10 +25,10 @@
     <display_length compare="ge">360</display_length>
   </supports>
 
-  <url type="homepage">https://github.com/pureblue-os/purebazaar</url>
+  <url type="homepage">https://github.com/pureblue-os/purestore</url>
 
-  <translation type="gettext">bazaar</translation>
-  <launchable type="desktop-id">io.github.pureblueos.purebazaar.desktop</launchable>
+  <translation type="gettext">purestore</translation>
+  <launchable type="desktop-id">io.github.pureblueos.purestore.desktop</launchable>
   <content_rating type="oars-1.1" />
 
   <branding>
@@ -38,19 +38,19 @@
 
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/pureblue-os/purebazaar/refs/heads/master/screenshots/flathub.png</image>
+      <image>https://raw.githubusercontent.com/pureblue-os/purestore/refs/heads/master/screenshots/flathub.png</image>
       <caption>The home page displaying Flathub apps</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/pureblue-os/purebazaar/refs/heads/master/screenshots/fullview.png</image>
+      <image>https://raw.githubusercontent.com/pureblue-os/purestore/refs/heads/master/screenshots/fullview.png</image>
       <caption>Nucleus app page</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/pureblue-os/purebazaar/refs/heads/master/screenshots/search.png</image>
+      <image>https://raw.githubusercontent.com/pureblue-os/purestore/refs/heads/master/screenshots/search.png</image>
       <caption>Search page</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/pureblue-os/purebazaar/refs/heads/master/screenshots/categories.png</image>
+      <image>https://raw.githubusercontent.com/pureblue-os/purestore/refs/heads/master/screenshots/categories.png</image>
       <caption>Category page</caption>
     </screenshot>
   </screenshots>

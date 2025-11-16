@@ -18,8 +18,8 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#define G_LOG_DOMAIN  "BAZAAR::ENTRY-CACHE"
-#define BAZAAR_MODULE "entry-cache"
+#define G_LOG_DOMAIN  "PURESTORE::ENTRY-CACHE"
+#define PURESTORE_MODULE "entry-cache"
 
 #define MAX_CONCURRENT_WRITES             4
 #define WATCH_CLEANUP_INTERVAL_MSEC       5000

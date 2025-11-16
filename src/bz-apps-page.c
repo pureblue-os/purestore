@@ -226,7 +226,7 @@ bz_apps_page_class_init (BzAppsPageClass *klass)
 
   g_type_ensure (BZ_TYPE_APP_TILE);
 
-  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblueos/purebazaar/bz-apps-page.ui");
+  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblueos/purestore/bz-apps-page.ui");
   gtk_widget_class_bind_template_callback (widget_class, is_not_null);
   gtk_widget_class_bind_template_callback (widget_class, is_not_empty_string);
   gtk_widget_class_bind_template_callback (widget_class, bind_widget_cb);

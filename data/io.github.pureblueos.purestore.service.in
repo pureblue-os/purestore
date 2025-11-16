@@ -1,0 +1,8 @@
+[Unit]
+Description=Store Service
+PartOf=graphical-session.target
+
+[Service]
+Type=dbus
+BusName=io.github.pureblueos.purestore
+ExecStart=@bindir@/purestore --no-window

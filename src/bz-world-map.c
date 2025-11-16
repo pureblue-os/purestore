@@ -630,7 +630,7 @@ bz_world_map_init (BzWorldMap *self)
                     G_CALLBACK (on_style_changed), self);
 
   if (bz_world_map_parser_load_from_resource (self->parser,
-                                              "/io/github/pureblueos/purebazaar/countries.json",
+                                              "/io/github/pureblueos/purestore/countries.json",
                                               &error))
     {
       self->countries = g_object_ref (bz_world_map_parser_get_countries (self->parser));

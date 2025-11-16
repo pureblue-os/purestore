@@ -150,7 +150,7 @@ bz_entry_inspector_class_init (BzEntryInspectorClass *klass)
 
   g_object_class_install_properties (object_class, LAST_PROP, props);
 
-  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblueos/purebazaar/bz-entry-inspector.ui");
+  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblueos/purestore/bz-entry-inspector.ui");
   gtk_widget_class_bind_template_child (widget_class, BzEntryInspector, text_buffer);
   gtk_widget_class_bind_template_child (widget_class, BzEntryInspector, convert_to_json);
   gtk_widget_class_bind_template_callback (widget_class, gen_serialized);

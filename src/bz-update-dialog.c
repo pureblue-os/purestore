@@ -81,7 +81,7 @@ bz_update_dialog_class_init (BzUpdateDialogClass *klass)
 
   object_class->dispose = bz_update_dialog_dispose;
 
-  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblueos/purebazaar/bz-update-dialog.ui");
+  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblueos/purestore/bz-update-dialog.ui");
   gtk_widget_class_bind_template_child (widget_class, BzUpdateDialog, selection_model);
   gtk_widget_class_bind_template_child (widget_class, BzUpdateDialog, runtime_label);
   gtk_widget_class_bind_template_callback (widget_class, invert_boolean);

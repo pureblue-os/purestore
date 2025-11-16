@@ -1,6 +1,6 @@
 desktop_file = i18n.merge_file(
-        input: 'io.github.pureblueos.purebazaar.desktop.in',
-       output: 'io.github.pureblueos.purebazaar.desktop',
+        input: 'io.github.pureblueos.purestore.desktop.in',
+       output: 'io.github.pureblueos.purestore.desktop',
          type: 'desktop',
        po_dir: '../po',
       install: true,
@@ -13,8 +13,8 @@ if desktop_utils.found()
 endif
 
 appstream_file = i18n.merge_file(
-        input: 'io.github.pureblueos.purebazaar.metainfo.xml.in',
-       output: 'io.github.pureblueos.purebazaar.metainfo.xml',
+        input: 'io.github.pureblueos.purestore.metainfo.xml.in',
+       output: 'io.github.pureblueos.purestore.metainfo.xml',
        po_dir: '../po',
       install: true,
   install_dir: get_option('datadir') / 'metainfo'
@@ -24,7 +24,7 @@ appstreamcli = find_program('appstreamcli', required: false, disabler: true)
 test('Validate appstream file', appstreamcli,
      args: ['validate', '--no-net', '--explain', appstream_file])
 
-install_data('io.github.pureblueos.purebazaar.gschema.xml',
+install_data('io.github.pureblueos.purestore.gschema.xml',
   install_dir: get_option('datadir') / 'glib-2.0' / 'schemas'
 )
 
@@ -37,16 +37,16 @@ test('Validate schema file',
 service_conf = configuration_data()
 service_conf.set('bindir', get_option('prefix') / get_option('bindir'))
 configure_file(
-  input: 'io.github.pureblueos.purebazaar.service.in',
-  output: 'io.github.pureblueos.purebazaar.service',
+  input: 'io.github.pureblueos.purestore.service.in',
+  output: 'io.github.pureblueos.purestore.service',
   configuration: service_conf,
   install_dir: get_option('prefix') / 'lib' / 'systemd' / 'user'
 )
 
 service_conf = configuration_data()
 configure_file(
-  input: 'io.github.pureblueos.purebazaar.search-provider.ini.in',
-  output: 'io.github.pureblueos.purebazaar.search-provider.ini',
+  input: 'io.github.pureblueos.purestore.search-provider.ini.in',
+  output: 'io.github.pureblueos.purestore.search-provider.ini',
   configuration: service_conf,
   install_dir: get_option('datadir') / 'gnome-shell' / 'search-providers'
 )

@@ -415,7 +415,7 @@ bz_featured_carousel_class_init (BzFeaturedCarouselClass *klass)
                     0, NULL, NULL, NULL,
                     G_TYPE_NONE, 1, BZ_TYPE_ENTRY_GROUP);
 
-  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblueos/purebazaar/bz-featured-carousel.ui");
+  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblueos/purestore/bz-featured-carousel.ui");
   gtk_widget_class_set_accessible_role (widget_class, GTK_ACCESSIBLE_ROLE_GROUP);
 
   gtk_widget_class_bind_template_child (widget_class, BzFeaturedCarousel, carousel);

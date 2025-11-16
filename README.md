@@ -1,10 +1,10 @@
-# Bazaar
+# Store
 
 A modern app store for GNOME that lets you discover and install applications from Flatpak remotes, particularly [Flathub](https://flathub.org/).
 
-![Screenshot showing Bazaar's Flathub page](screenshots/flathub.png)
+![Screenshot showing Store's Flathub page](screenshots/flathub.png)
 
-Bazaar is fast and highly multi-threaded, providing a smooth browsing experience. You can queue multiple downloads and run them simultaneously while exploring apps. It runs as a service, maintaining state even when windows are closed, and integrates with GNOME Shell search.
+Store is fast and highly multi-threaded, providing a smooth browsing experience. You can queue multiple downloads and run them simultaneously while exploring apps. It runs as a service, maintaining state even when windows are closed, and integrates with GNOME Shell search.
 
 ## Features
 
@@ -20,7 +20,7 @@ Bazaar is fast and highly multi-threaded, providing a smooth browsing experience
 meson setup build --prefix=/usr/local
 ninja -C build
 sudo ninja -C build install
-bazaar
+purestore
 ```
 
 ---

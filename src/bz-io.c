@@ -119,7 +119,7 @@ bz_dup_cache_dir (const char *submodule)
 
   id = g_application_get_application_id (g_application_get_default ());
   if (id == NULL)
-    id = "Bazaar";
+    id = "Store";
 
   return g_build_filename (user_cache, id, submodule, NULL);
 }

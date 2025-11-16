@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#define G_LOG_DOMAIN "BAZAAR::ASYNC-TEXTURE"
+#define G_LOG_DOMAIN "PURESTORE::ASYNC-TEXTURE"
 
 #define MAX_CONCURRENT_GLYCIN  32
 #define CACHE_INVALID_AGE      (G_TIME_SPAN_DAY * 1)

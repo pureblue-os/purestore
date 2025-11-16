@@ -1,6 +1,6 @@
-# SPDX-FileCopyrightText: 2025 Spanish translations for bazaar package
-# Copyright (C) 2025 THE bazaar'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the bazaar package.
+# SPDX-FileCopyrightText: 2025 Spanish translations for purestore package
+# Copyright (C) 2025 THE PURESTORE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the purestore package.
 # Automatically generated, 2025.
 #
 # SPDX-FileCopyrightText: 2025 robotta <chriserizodos@gmail.com>
@@ -8,7 +8,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: bazaar\n"
+"Project-Id-Version: purestore\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-10-30 01:38+0100\n"
 "PO-Revision-Date: 2025-10-30 12:15+0100\n"
@@ -21,25 +21,25 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Gtranslator 49.0\n"
 
-#: data/io.github.pureblueos.purebazaar.desktop.in:2
-#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:7 src/bz-window.blp:5
+#: data/io.github.pureblueos.purestore.desktop.in:2
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:7 src/bz-window.blp:5
 #: src/bz-window.blp:56
-msgid "Bazaar"
-msgstr "Bazaar"
+msgid "Store"
+msgstr "Store"
 
-#: data/io.github.pureblueos.purebazaar.desktop.in:3
+#: data/io.github.pureblueos.purestore.desktop.in:3
 msgid "Add, remove or update flatpak software on this computer"
 msgstr "Añade, elimine o actualice programas flatpak en este ordenador"
 
-#: data/io.github.pureblueos.purebazaar.desktop.in:9
+#: data/io.github.pureblueos.purestore.desktop.in:9
 msgid "GTK;System;PackageManager;Discover;Flatpak;Software;Store;"
 msgstr "GTK;Sistema;GestorDePaquetes;Discover;Flatpak;Software;Store;"
 
-#: data/io.github.pureblueos.purebazaar.gschema.xml:6
+#: data/io.github.pureblueos.purestore.gschema.xml:6
 msgid "Show Git Forge Star Counts"
 msgstr "Mostrar las estadísticas de los forks de Git"
 
-#: data/io.github.pureblueos.purebazaar.gschema.xml:7
+#: data/io.github.pureblueos.purestore.gschema.xml:7
 msgid ""
 "Whether to attempt to detect and show \"star counts\" for projects in the "
 "full view"
@@ -47,55 +47,55 @@ msgstr ""
 "Decidir si intentar detectar y mostrar la cantidad de estrellas de los "
 "proyectos en vista completa"
 
-#: data/io.github.pureblueos.purebazaar.gschema.xml:11
+#: data/io.github.pureblueos.purestore.gschema.xml:11
 #: src/bz-preferences-dialog.blp:35
 msgid "Only Show Free Software"
 msgstr "Solo mostrar software gratuito"
 
-#: data/io.github.pureblueos.purebazaar.gschema.xml:12
+#: data/io.github.pureblueos.purestore.gschema.xml:12
 msgid "Hide proprietary software when searching"
 msgstr "Ocultar software propietario al buscar"
 
-#: data/io.github.pureblueos.purebazaar.gschema.xml:16
+#: data/io.github.pureblueos.purestore.gschema.xml:16
 msgid "Show Only Flathub Content"
 msgstr "Mostrar solo contenido de Flathub"
 
-#: data/io.github.pureblueos.purebazaar.gschema.xml:17
+#: data/io.github.pureblueos.purestore.gschema.xml:17
 msgid "Filter search results to only show applications available on Flathub"
 msgstr ""
 "Filtrar los resultados de búsqueda para que solo aparezcan aplicaciones que "
 "están en Flathub"
 
-#: data/io.github.pureblueos.purebazaar.gschema.xml:21
+#: data/io.github.pureblueos.purestore.gschema.xml:21
 msgid "Debounce Search Inputs"
 msgstr "Rebotar los inputs de búsqueda"
 
-#: data/io.github.pureblueos.purebazaar.gschema.xml:22
+#: data/io.github.pureblueos.purestore.gschema.xml:22
 msgid "Add a delay before searching to prevent instant replies while typing"
 msgstr ""
 "Aplicar un pequeño retardo al escribir para evitar resultados instantáneos"
 
-#: data/io.github.pureblueos.purebazaar.gschema.xml:40
+#: data/io.github.pureblueos.purestore.gschema.xml:40
 msgid "Global Progress Bar Theme"
 msgstr "Tema de la barra de progreso global"
 
-#: data/io.github.pureblueos.purebazaar.gschema.xml:41
+#: data/io.github.pureblueos.purestore.gschema.xml:41
 msgid "Describes the look of the global progress bar"
 msgstr "Describe como se ve la barra de progreso global"
 
-#: data/io.github.pureblueos.purebazaar.gschema.xml:45
+#: data/io.github.pureblueos.purestore.gschema.xml:45
 msgid "Saved Window Dimensions"
 msgstr "Dimensiones de ventana guardadas"
 
-#: data/io.github.pureblueos.purebazaar.gschema.xml:46
-msgid "The window dimensions to be used by the next Bazaar window"
-msgstr "Las dimensiones de la venta que usará la siguiente ventana de Bazaar"
+#: data/io.github.pureblueos.purestore.gschema.xml:46
+msgid "The window dimensions to be used by the next Store window"
+msgstr "Las dimensiones de la venta que usará la siguiente ventana de Store"
 
-#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:8
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:8
 msgid "Discover and install applications"
 msgstr "Descubrir e instalar aplicaciones"
 
-#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:10
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:10
 msgid ""
 "A new app store for GNOME with a focus on discovering and installing "
 "applications and addons from Flatpak remotes, particularly Flathub."
@@ -104,30 +104,30 @@ msgstr ""
 "aplicaciones y complementos de repositorios flatpaks, particularmente de "
 "Flathub."
 
-#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:14
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:14
 msgid ""
 "It emphasizes supporting the developers who make the Linux desktop possible. "
-"Bazaar features a \"curated\" tab that can be configured by distributors to "
+"Store features a \"curated\" tab that can be configured by distributors to "
 "allow for a more localized experience."
 msgstr ""
 "Enfatiza el apoyar a los desarrolladores que hacen que Linux en el "
-"escritorio sea posible. Bazaar contiene una lista de aplicaciones "
+"escritorio sea posible. Store contiene una lista de aplicaciones "
 "\"Elegidas\" que puede ser configurada por distribuidores para ofrecer una "
 "experiencia más centrada a sus usuarios."
 
-#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:29 src/bz-application.c:505
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:29 src/bz-application.c:505
 msgid "Adam Masciola"
 msgstr "Adam Masciola"
 
-#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:54
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:54
 msgid "The home view displaying Flathub apps"
 msgstr "La vista principal mostrando aplicaciones de Flathub y sus categorías."
 
-#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:58
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:58
 msgid "Nucleus app page"
 msgstr "Página de Nucleus"
 
-#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:62
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:62
 msgid "Searching for Blender"
 msgstr "Buscando Blender"
 
@@ -395,10 +395,10 @@ msgstr "Aplicaciones no seleccionadas "
 
 #: src/bz-browse-widget.blp:16
 msgid ""
-"Bazaar was not provided a curated content configuration. Contact your "
+"Store was not provided a curated content configuration. Contact your "
 "operating system's support channels for assistance."
 msgstr ""
-"Bazaar no ha recibido una configuración dedicada para contenido "
+"Store no ha recibido una configuración dedicada para contenido "
 "seleccionado. Contacta con los canales de soporte de tu sistema operativo "
 "para soliticar asistencia."
 
@@ -836,8 +836,8 @@ msgid "Hardware Support"
 msgstr "Soporte de hardware"
 
 #: src/bz-inspector.blp:5
-msgid "Bazaar Inspector"
-msgstr "Inspector de Bazaar"
+msgid "Store Inspector"
+msgstr "Inspector de Store"
 
 #: src/bz-inspector.blp:22
 msgid "Active Blacklists"
@@ -1212,8 +1212,8 @@ msgid "Main Menu"
 msgstr "Menú Principal"
 
 #: src/bz-window.blp:486
-msgid "_Donate to Bazaar ❤️"
-msgstr "_Hacer un donativo a Bazaar ❤️"
+msgid "_Donate to Store ❤️"
+msgstr "_Hacer un donativo a Store ❤️"
 
 #: src/bz-window.blp:491
 msgid "_Refresh Content"
@@ -1228,12 +1228,12 @@ msgid "_Keyboard Shortcuts"
 msgstr "_Atajos de Teclado"
 
 #: src/bz-window.blp:508
-msgid "_About Bazaar"
-msgstr "_Sobre Bazaar"
+msgid "_About Store"
+msgstr "_Sobre Store"
 
 #: src/bz-window.blp:515
-msgid "_Quit Bazaar"
-msgstr "_Salir de Bazaar"
+msgid "_Quit Store"
+msgstr "_Salir de Store"
 
 #: src/bz-window.c:827
 msgid ""
@@ -1436,8 +1436,8 @@ msgstr "Salir"
 #~ msgid "No description"
 #~ msgstr "Sin descripción"
 
-#~ msgid "Main Bazaar window showing Blender"
-#~ msgstr "La ventana principal de Bazaar mostrando Blender"
+#~ msgid "Main Store window showing Blender"
+#~ msgstr "La ventana principal de Store mostrando Blender"
 
 #~ msgid "Apps Of The Week"
 #~ msgstr "Aplicaciones de la semana"

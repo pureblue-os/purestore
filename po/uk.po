@@ -1,12 +1,12 @@
-# Ukrainian translations for bazaar package.
-# Copyright (C) 2025 THE bazaar'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the bazaar package.
+# Ukrainian translations for purestore package.
+# Copyright (C) 2025 THE PURESTORE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the purestore package.
 # Automatically generated, 2025.
 #
 # SPDX-FileCopyrightText: 2025 faoquad <faoquad@noreply.codeberg.org>
 msgid ""
 msgstr ""
-"Project-Id-Version: bazaar\n"
+"Project-Id-Version: purestore\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-11 20:04+0200\n"
 "PO-Revision-Date: 2025-11-12 02:13+0200\n"
@@ -20,35 +20,35 @@ msgstr ""
 "4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Lokalize 25.08.2\n"
 
-#: data/io.github.pureblueos.purebazaar.desktop.in:3
-#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:7 src/bz-window.blp:5
+#: data/io.github.pureblueos.purestore.desktop.in:3
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:7 src/bz-window.blp:5
 #: src/bz-window.blp:225
-msgid "Bazaar"
+msgid "Store"
 msgstr "Базар"
 
-#: data/io.github.pureblueos.purebazaar.desktop.in:4
+#: data/io.github.pureblueos.purestore.desktop.in:4
 msgid "Add, remove or update flatpak software on this computer"
 msgstr "Встановлюйте, видаляйте та оновлюйте пакунки Flatpak на Ваш компʼютер"
 
-#: data/io.github.pureblueos.purebazaar.desktop.in:10
+#: data/io.github.pureblueos.purestore.desktop.in:10
 msgid "GTK;System;PackageManager;Discover;Flatpak;Software;Store;"
 msgstr ""
 "GTK;System;PackageManager;Discover;Flatpak;Software;Store;Магазин;Крамниця;"
 "Флатпак;Пакунки;Програми;"
 
-#: data/io.github.pureblueos.purebazaar.gschema.xml:6
+#: data/io.github.pureblueos.purestore.gschema.xml:6
 msgid "Hide EOL Entries"
 msgstr "Сховати осиротілі надходження"
 
-#: data/io.github.pureblueos.purebazaar.gschema.xml:7
+#: data/io.github.pureblueos.purestore.gschema.xml:7
 msgid "Hide EOL entries and entries depending on them"
 msgstr "Сховати осиротілі надходження та надходження, котрі залежать від них"
 
-#: data/io.github.pureblueos.purebazaar.gschema.xml:11
+#: data/io.github.pureblueos.purestore.gschema.xml:11
 msgid "Show Git Forge Star Counts"
 msgstr "Показувати вподобання зі сторінки розробки"
 
-#: data/io.github.pureblueos.purebazaar.gschema.xml:12
+#: data/io.github.pureblueos.purestore.gschema.xml:12
 msgid ""
 "Whether to attempt to detect and show \"star counts\" for projects in the "
 "full view"
@@ -56,51 +56,51 @@ msgstr ""
 "Намагатися віднаходити та показувати кількість уподобань на сторінках "
 "застосунків"
 
-#: data/io.github.pureblueos.purebazaar.gschema.xml:16
+#: data/io.github.pureblueos.purestore.gschema.xml:16
 msgid "Only Show Free Software"
 msgstr "Показувати лише вільні застосунки"
 
-#: data/io.github.pureblueos.purebazaar.gschema.xml:17
+#: data/io.github.pureblueos.purestore.gschema.xml:17
 msgid "Hide proprietary software when searching"
 msgstr "Ховати власницькі (пропрієтарні) застосунки з пошуку"
 
-#: data/io.github.pureblueos.purebazaar.gschema.xml:21
+#: data/io.github.pureblueos.purestore.gschema.xml:21
 msgid "Show Only Flathub Content"
 msgstr "Показувати лише вміст з Flathub"
 
-#: data/io.github.pureblueos.purebazaar.gschema.xml:22
+#: data/io.github.pureblueos.purestore.gschema.xml:22
 msgid "Filter search results to only show applications available on Flathub"
 msgstr "Відсіювати надходження, що не походять з Flathub"
 
-#: data/io.github.pureblueos.purebazaar.gschema.xml:26
+#: data/io.github.pureblueos.purestore.gschema.xml:26
 msgid "Debounce Search Inputs"
 msgstr "Чекати вводу"
 
-#: data/io.github.pureblueos.purebazaar.gschema.xml:27
+#: data/io.github.pureblueos.purestore.gschema.xml:27
 msgid "Add a delay before searching to prevent instant replies while typing"
 msgstr "Чекати на закінчення вводу, аби попередити миттєві надходження."
 
-#: data/io.github.pureblueos.purebazaar.gschema.xml:45
+#: data/io.github.pureblueos.purestore.gschema.xml:45
 msgid "Global Progress Bar Theme"
 msgstr "Загальний вигляд смужки поступу"
 
-#: data/io.github.pureblueos.purebazaar.gschema.xml:46
+#: data/io.github.pureblueos.purestore.gschema.xml:46
 msgid "Describes the look of the global progress bar"
 msgstr "Описує вигляд загальної смужки поступу"
 
-#: data/io.github.pureblueos.purebazaar.gschema.xml:50
+#: data/io.github.pureblueos.purestore.gschema.xml:50
 msgid "Saved Window Dimensions"
 msgstr "Збережені розміри вікна"
 
-#: data/io.github.pureblueos.purebazaar.gschema.xml:51
-msgid "The window dimensions to be used by the next Bazaar window"
+#: data/io.github.pureblueos.purestore.gschema.xml:51
+msgid "The window dimensions to be used by the next Store window"
 msgstr "Розміри, що їх користуватиме наступне вікно Базару"
 
-#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:8
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:8
 msgid "Discover and install applications"
 msgstr "Знаходьте та встановлюйте застосунки"
 
-#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:10
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:10
 msgid ""
 "A new app store for GNOME with a focus on discovering and installing "
 "applications and addons from Flatpak remotes, particularly Flathub."
@@ -109,29 +109,29 @@ msgstr ""
 "встановленні застосунків і розширень з віддалених сховищ Flatpak, зокрема "
 "Flathub"
 
-#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:14
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:14
 msgid ""
 "It emphasizes supporting the developers who make the Linux desktop possible. "
-"Bazaar features a \"curated\" tab that can be configured by distributors to "
+"Store features a \"curated\" tab that can be configured by distributors to "
 "allow for a more localized experience."
 msgstr ""
 "Базар наголошує на підтримці розробників, що роблять можливим Linux на "
 "стільничних компʼютерах. Він має вкладку \"підібраних\" застосунків, котра "
 "може бути налаштована дистрибутивами, аби створити цілісніший досвід."
 
-#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:54
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:54
 msgid "The home page displaying Flathub apps"
 msgstr "Домашня сторінка із застосунками з Flathub"
 
-#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:58
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:58
 msgid "Nucleus app page"
 msgstr "Сторінка застосунку Nucleus"
 
-#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:62
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:62
 msgid "Search page"
 msgstr "Сторінка пошуку"
 
-#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:66
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:66
 msgid "Category page"
 msgstr "Сторінка пошуку з категоріями"
 
@@ -873,7 +873,7 @@ msgid "Hardware Support"
 msgstr "Підтримати"
 
 #: src/bz-inspector.blp:5
-msgid "Bazaar Inspector"
+msgid "Store Inspector"
 msgstr "Зневаджувач"
 
 #: src/bz-inspector.blp:22
@@ -1031,7 +1031,7 @@ msgstr ""
 
 #: src/bz-preferences-dialog.blp:116
 msgid ""
-"Bazaar can fetch and display the star count from an application's source "
+"Store can fetch and display the star count from an application's source "
 "code repository on a remote Git forge. \n"
 " For projects on GitHub, rate limits may cause them not to appear."
 msgstr ""
@@ -1243,7 +1243,7 @@ msgid "Flathub"
 msgstr "Flathub"
 
 #: src/bz-window.blp:481
-msgid "_Donate to Bazaar ❤️"
+msgid "_Donate to Store ❤️"
 msgstr "_Пожертувати Базару ❤️"
 
 #: src/bz-window.blp:486
@@ -1259,15 +1259,15 @@ msgid "_Keyboard Shortcuts"
 msgstr "_Клавіатурні скорочення"
 
 #: src/bz-window.blp:503
-msgid "_About Bazaar"
+msgid "_About Store"
 msgstr "_Про Базар"
 
 #: src/bz-window.blp:510
-msgid "_Quit Bazaar"
+msgid "_Quit Store"
 msgstr "_Про Базар"
 
 #: src/bz-window.blp:519
-msgid "Open Bazaar Inspector"
+msgid "Open Store Inspector"
 msgstr "Відкрити зневаджувач"
 
 #: src/bz-window.c:819

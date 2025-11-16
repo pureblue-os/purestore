@@ -1,5 +1,5 @@
 {
-	"name": "Bazaar devcontainer",
+	"name": "PureStore devcontainer",
 
 	"build": {
 		"dockerfile": "Dockerfile"

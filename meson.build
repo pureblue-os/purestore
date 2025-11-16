@@ -1,4 +1,4 @@
-project('bazaar', 'c',
+project('purestore', 'c',
           version: run_command('version.sh', 'get-vcs').stdout().strip(),
     meson_version: '>= 1.0.0',
   default_options: [
@@ -18,10 +18,10 @@ else
   config_h = configuration_data()
 
   config_h.set_quoted('PACKAGE_VERSION', meson.project_version())
-  config_h.set_quoted('GETTEXT_PACKAGE', 'bazaar')
+  config_h.set_quoted('GETTEXT_PACKAGE', 'purestore')
   config_h.set_quoted('LOCALEDIR', get_option('prefix') / get_option('localedir'))
 
-  dl_worker_bin_name = 'bazaar-dl-worker'
+  dl_worker_bin_name = 'purestore-dl-worker'
   config_h.set_quoted('DL_WORKER_BIN_NAME', dl_worker_bin_name)
 
   if get_option('hardcoded_main_config_path') != ''

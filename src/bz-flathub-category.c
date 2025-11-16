@@ -63,21 +63,21 @@ typedef struct
 } CategoryInfo;
 
 static const CategoryInfo category_info[] = {
-  {       "audiovideo",          N_ ("Audio & Video"),    N_ ("Media"),          N_ ("More Audio & Video"), "io.github.kolumni.Bazaar.Audiovideo" },
-  {      "development",        N_ ("Developer Tools"),  N_ ("Develop"),        N_ ("More Developer Tools"),    "io.github.kolumni.Bazaar.Develop" },
-  {        "education",              N_ ("Education"),    N_ ("Learn"),              N_ ("More Education"),      "io.github.kolumni.Bazaar.Learn" },
-  {             "game",                 N_ ("Gaming"),     N_ ("Play"),                 N_ ("More Gaming"),       "io.github.kolumni.Bazaar.Play" },
-  {         "graphics", N_ ("Graphics & Photography"),   N_ ("Create"), N_ ("More Graphics & Photography"),     "io.github.kolumni.Bazaar.Create" },
-  {          "network",             N_ ("Networking"), N_ ("Internet"),             N_ ("More Networking"),    "io.github.kolumni.Bazaar.Network" },
-  {           "office",           N_ ("Productivity"),     N_ ("Work"),           N_ ("More Productivity"),       "io.github.kolumni.Bazaar.Work" },
-  {          "science",                N_ ("Science"),  N_ ("Science"),                N_ ("More Science"),    "io.github.kolumni.Bazaar.Science" },
-  {           "system",                 N_ ("System"),   N_ ("System"),                 N_ ("More System"),     "io.github.kolumni.Bazaar.System" },
-  {          "utility",              N_ ("Utilities"),    N_ ("Tools"),              N_ ("More Utilities"),  "io.github.kolumni.Bazaar.Utilities" },
-  {         "trending",               N_ ("Trending"), N_ ("Trending"),               N_ ("More Trending"),   "io.github.kolumni.Bazaar.Trending" },
-  {          "popular",                N_ ("Popular"),  N_ ("Popular"),                N_ ("More Popular"),    "io.github.kolumni.Bazaar.Popular" },
-  {   "recently-added",         N_ ("Recently Added"),      N_ ("New"),                    N_ ("More New"),        "io.github.kolumni.Bazaar.New" },
-  { "recently-updated",       N_ ("Recently Updated"),  N_ ("Updated"),                N_ ("More Updated"),    "io.github.kolumni.Bazaar.Updated" },
-  {           "mobile",                 N_ ("Mobile"),   N_ ("Mobile"),                 N_ ("More Mobile"),     "io.github.kolumni.Bazaar.Mobile" },
+  {       "audiovideo",          N_ ("Audio & Video"),    N_ ("Media"),          N_ ("More Audio & Video"), "io.github.pureblueos.purestore.Audiovideo" },
+  {      "development",        N_ ("Developer Tools"),  N_ ("Develop"),        N_ ("More Developer Tools"),    "io.github.pureblueos.purestore.Develop" },
+  {        "education",              N_ ("Education"),    N_ ("Learn"),              N_ ("More Education"),      "io.github.pureblueos.purestore.Learn" },
+  {             "game",                 N_ ("Gaming"),     N_ ("Play"),                 N_ ("More Gaming"),       "io.github.pureblueos.purestore.Play" },
+  {         "graphics", N_ ("Graphics & Photography"),   N_ ("Create"), N_ ("More Graphics & Photography"),     "io.github.pureblueos.purestore.Create" },
+  {          "network",             N_ ("Networking"), N_ ("Internet"),             N_ ("More Networking"),    "io.github.pureblueos.purestore.Network" },
+  {           "office",           N_ ("Productivity"),     N_ ("Work"),           N_ ("More Productivity"),       "io.github.pureblueos.purestore.Work" },
+  {          "science",                N_ ("Science"),  N_ ("Science"),                N_ ("More Science"),    "io.github.pureblueos.purestore.Science" },
+  {           "system",                 N_ ("System"),   N_ ("System"),                 N_ ("More System"),     "io.github.pureblueos.purestore.System" },
+  {          "utility",              N_ ("Utilities"),    N_ ("Tools"),              N_ ("More Utilities"),  "io.github.pureblueos.purestore.Utilities" },
+  {         "trending",               N_ ("Trending"), N_ ("Trending"),               N_ ("More Trending"),   "io.github.pureblueos.purestore.Trending" },
+  {          "popular",                N_ ("Popular"),  N_ ("Popular"),                N_ ("More Popular"),    "io.github.pureblueos.purestore.Popular" },
+  {   "recently-added",         N_ ("Recently Added"),      N_ ("New"),                    N_ ("More New"),        "io.github.pureblueos.purestore.New" },
+  { "recently-updated",       N_ ("Recently Updated"),  N_ ("Updated"),                N_ ("More Updated"),    "io.github.pureblueos.purestore.Updated" },
+  {           "mobile",                 N_ ("Mobile"),   N_ ("Mobile"),                 N_ ("More Mobile"),     "io.github.pureblueos.purestore.Mobile" },
   {               NULL,                          NULL,            NULL,                              NULL,                                  NULL }
 };
 

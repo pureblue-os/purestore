@@ -289,7 +289,7 @@ bz_flathub_category_section_class_init (BzFlathubCategorySectionClass *klass)
       G_TYPE_FROM_CLASS (klass),
       g_cclosure_marshal_VOID__OBJECTv);
 
-  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblueos/purebazaar/bz-flathub-category-section.ui");
+  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblueos/purestore/bz-flathub-category-section.ui");
 
   gtk_widget_class_bind_template_child (widget_class, BzFlathubCategorySection, section_title);
   gtk_widget_class_bind_template_child (widget_class, BzFlathubCategorySection, section_list);

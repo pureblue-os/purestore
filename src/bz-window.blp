@@ -2,7 +2,7 @@ using Gtk 4.0;
 using Adw 1;
 
 template $BzWindow: Adw.ApplicationWindow {
-  title: _("Bazaar");
+  title: _("Store");
   default-width: 1220;
   default-height: 900;
   width-request: 360;
@@ -221,7 +221,7 @@ template $BzWindow: Adw.ApplicationWindow {
 
               Adw.NavigationPage {
                 tag: "main";
-                title: _("Bazaar");
+                title: _("Store");
 
                 child: Adw.ToolbarView toolbar_view {
                   top-bar-style: flat;
@@ -239,7 +239,7 @@ template $BzWindow: Adw.ApplicationWindow {
                         spacing: 6;
 
                         Image {
-                          icon-name: "io.github.pureblueos.purebazaar";
+                          icon-name: "io.github.pureblueos.purestore";
                           pixel-size: 128;
                           margin-bottom: 24;
 
@@ -494,14 +494,14 @@ menu primary_menu {
     }
 
     item {
-      label: _("_About Bazaar");
+      label: _("_About Store");
       action: "app.about";
     }
   }
 
   section {
     item {
-      label: _("_Quit Bazaar");
+      label: _("_Quit Store");
       action: "app.quit";
     }
   }
@@ -510,8 +510,8 @@ menu primary_menu {
 menu debug_menu {
   section {
     item {
-      label: _("Open Bazaar Inspector");
-      action: "app.bazaar-inspector";
+      label: _("Open Store Inspector");
+      action: "app.store-inspector";
     }
   }
 }

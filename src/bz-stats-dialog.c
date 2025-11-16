@@ -133,7 +133,7 @@ bz_stats_dialog_class_init (BzStatsDialogClass *klass)
   g_type_ensure (BZ_TYPE_DATA_GRAPH);
   g_type_ensure (BZ_TYPE_WORLD_MAP);
 
-  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblueos/purebazaar/bz-stats-dialog.ui");
+  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblueos/purestore/bz-stats-dialog.ui");
   gtk_widget_class_bind_template_child (widget_class, BzStatsDialog, graph);
   gtk_widget_class_bind_template_child (widget_class, BzStatsDialog, world_map);
 }

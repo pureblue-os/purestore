@@ -1,6 +1,6 @@
-# Indonesian translations for bazaar package.
-# Copyright (C) 2025 THE bazaar'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the bazaar package.
+# Indonesian translations for purestore package.
+# Copyright (C) 2025 THE PURESTORE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the purestore package.
 # Automatically generated, 2025.
 #
 # SPDX-FileCopyrightText: 2025 asen23 <andersenlim23@gmail.com>
@@ -8,7 +8,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: bazaar\n"
+"Project-Id-Version: purestore\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-07-12 05:36+0700\n"
 "PO-Revision-Date: 2025-07-12 06:09+0700\n"
@@ -21,43 +21,43 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Gtranslator 48.0\n"
 
-#: data/io.github.pureblueos.purebazaar.desktop.in:3
-#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:7 src/bz-window.blp:5
-msgid "Bazaar"
-msgstr "Bazaar"
+#: data/io.github.pureblueos.purestore.desktop.in:3
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:7 src/bz-window.blp:5
+msgid "Store"
+msgstr "Store"
 
-#: data/io.github.pureblueos.purebazaar.desktop.in:4
+#: data/io.github.pureblueos.purestore.desktop.in:4
 msgid "Add, remove or update flatpak software on this computer"
 msgstr ""
 "Tambah, hapus atau mutakhirkan perangkat lunak Flatpak pada komputer ini"
 
 # Added "Aplikasi" and "Pusat Aplikasi" (App Center) to search queries
-#: data/io.github.pureblueos.purebazaar.desktop.in:10
+#: data/io.github.pureblueos.purestore.desktop.in:10
 msgid "GTK;System;PackageManager;Discover;Flatpak;Software;Store;"
 msgstr ""
 "GTK;Sistem;Manajer Paket;Discover;Flatpak;Perangkat Lunak;Toko;Aplikasi;"
 "Pusat Aplikasi;"
 
-#: data/io.github.pureblueos.purebazaar.gschema.xml:6
+#: data/io.github.pureblueos.purestore.gschema.xml:6
 msgid "Show Animated Background"
 msgstr "Tampilkan Animasi Latar Belakang"
 
-#: data/io.github.pureblueos.purebazaar.gschema.xml:7
+#: data/io.github.pureblueos.purestore.gschema.xml:7
 msgid "Whether to show the animated icon background on the home page"
 msgstr "Tampilkan animasi ikon latar belakang pada halaman utama"
 
 #. FIXME: add descriptions and summary
-#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:9
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:9
 msgid "Keep the summary shorter, between 10 and 35 characters"
 msgstr "Buat ringkasan pendek berkisar antara 10-35 karakter"
 
-#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:11
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:11
 msgid "No description"
 msgstr "Tidak ada deskripsi"
 
-#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:41
-msgid "Main Bazaar window showing Blender"
-msgstr "Jendela utama Bazaar yang menampilkan Blender"
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:41
+msgid "Main Store window showing Blender"
+msgstr "Jendela utama Store yang menampilkan Blender"
 
 #: src/bz-addons-dialog.blp:13 src/bz-installed-page.blp:162
 #: src/bz-installed-page.blp:174
@@ -138,10 +138,10 @@ msgstr "Aplikasi Pilihan Belum Tersedia"
 
 #: src/bz-browse-widget.blp:16
 msgid ""
-"Bazaar was not provided a curated content configuration. Contact your "
+"Store was not provided a curated content configuration. Contact your "
 "operating system's support channels for assistance."
 msgstr ""
-"Konfigurasi kurasi konten Bazaar saat ini belum tersedia. Hubungi sistem "
+"Konfigurasi kurasi konten Store saat ini belum tersedia. Hubungi sistem "
 "operasi anda untuk mendukung fitur ini."
 
 #: src/bz-browse-widget.blp:22 src/bz-flathub-page.blp:11
@@ -491,12 +491,12 @@ msgid "_Keyboard Shortcuts"
 msgstr "_Pintasan Papan Tik"
 
 #: src/bz-window.blp:430
-msgid "_About Bazaar"
-msgstr "_Tentang Bazaar"
+msgid "_About Store"
+msgstr "_Tentang Store"
 
 #: src/bz-window.blp:435
-msgid "_Donate to Bazaar ❤️"
-msgstr "_Donasi ke Bazaar ❤️"
+msgid "_Donate to Store ❤️"
+msgstr "_Donasi ke Store ❤️"
 
 #: src/bz-window.c:856
 msgid ""
@@ -516,7 +516,7 @@ msgstr ""
 
 #: src/bz-window.c:927
 msgid "Can't do that right now!"
-msgstr "Tunggu hingga Bazaar selesai memuat"
+msgstr "Tunggu hingga Store selesai memuat"
 
 #: src/bz-window.c:940
 msgid "Confirm Action"

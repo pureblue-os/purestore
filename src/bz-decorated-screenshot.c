@@ -109,7 +109,7 @@ bz_decorated_screenshot_class_init (BzDecoratedScreenshotClass *klass)
 
   g_object_class_install_properties (object_class, LAST_PROP, props);
 
-  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblueos/purebazaar/bz-decorated-screenshot.ui");
+  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblueos/purestore/bz-decorated-screenshot.ui");
 }
 
 static void

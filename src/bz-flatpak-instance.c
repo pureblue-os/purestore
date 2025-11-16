@@ -18,8 +18,8 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#define G_LOG_DOMAIN  "BAZAAR::FLATPAK"
-#define BAZAAR_MODULE "flatpak"
+#define G_LOG_DOMAIN  "PURESTORE::FLATPAK"
+#define PURESTORE_MODULE "flatpak"
 
 #include <malloc.h>
 #include <xmlb.h>

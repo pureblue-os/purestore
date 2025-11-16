@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#define G_LOG_DOMAIN "BAZAAR::GLOBAL-NET"
+#define G_LOG_DOMAIN "PURESTORE::GLOBAL-NET"
 
 #include <json-glib/json-glib.h>
 
@@ -83,7 +83,7 @@ bz_https_query_json (const char *uri)
   message = soup_message_new (SOUP_METHOD_GET, uri);
   headers = soup_message_get_request_headers (message);
   /* Needed for github for some reason */
-  soup_message_headers_append (headers, "User-Agent", "Bazaar");
+  soup_message_headers_append (headers, "User-Agent", "Store");
 
   output = g_memory_output_stream_new_resizable ();
 

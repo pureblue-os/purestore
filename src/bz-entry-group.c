@@ -18,8 +18,8 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#define G_LOG_DOMAIN  "BAZAAR::ENTRY-GROUP"
-#define BAZAAR_MODULE "entry-group"
+#define G_LOG_DOMAIN  "PURESTORE::ENTRY-GROUP"
+#define PURESTORE_MODULE "entry-group"
 
 #include "bz-entry-group.h"
 #include "bz-async-texture.h"

@@ -37,7 +37,7 @@ bz_reap_path (const char *path);
 char *
 bz_dup_cache_dir (const char *submodule);
 
-#define bz_dup_module_dir() bz_dup_cache_dir (BAZAAR_MODULE)
+#define bz_dup_module_dir() bz_dup_cache_dir (PURESTORE_MODULE)
 
 #define bz_discard_path(_path)                          \
   G_STMT_START                                          \

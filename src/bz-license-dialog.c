@@ -197,7 +197,7 @@ bz_license_dialog_class_init (BzLicenseDialogClass *klass)
 
   gtk_widget_class_set_template_from_resource (
       widget_class,
-      "/io/github/pureblueos/purebazaar/bz-license-dialog.ui");
+      "/io/github/pureblueos/purestore/bz-license-dialog.ui");
 
   gtk_widget_class_bind_template_callback (widget_class, invert_boolean);
   gtk_widget_class_bind_template_callback (widget_class, get_license_info);

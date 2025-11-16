@@ -226,7 +226,7 @@ bz_browse_widget_class_init (BzBrowseWidgetClass *klass)
   g_type_ensure (BZ_TYPE_DYNAMIC_LIST_VIEW);
   g_type_ensure (BZ_TYPE_INHIBITED_SCROLLABLE);
 
-  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblueos/purebazaar/bz-browse-widget.ui");
+  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblueos/purestore/bz-browse-widget.ui");
   gtk_widget_class_bind_template_child (widget_class, BzBrowseWidget, stack);
   gtk_widget_class_bind_template_callback (widget_class, bind_section_view_cb);
   gtk_widget_class_bind_template_callback (widget_class, unbind_section_view_cb);

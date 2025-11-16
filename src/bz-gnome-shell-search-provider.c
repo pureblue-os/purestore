@@ -347,7 +347,7 @@ bz_gnome_shell_search_provider_set_connection (BzGnomeShellSearchProvider *self,
       success = g_dbus_interface_skeleton_export (
           G_DBUS_INTERFACE_SKELETON (self->skeleton),
           connection,
-          "/io/github/pureblueos/purebazaar/SearchProvider",
+          "/io/github/pureblueos/purestore/SearchProvider",
           &local_error);
       if (!success)
         {

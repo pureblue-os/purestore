@@ -1,8 +1,0 @@
-[Unit]
-Description=Bazaar Service
-PartOf=graphical-session.target
-
-[Service]
-Type=dbus
-BusName=io.github.pureblueos.purebazaar
-ExecStart=@bindir@/bazaar --no-window

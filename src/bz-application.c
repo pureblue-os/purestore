@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#define G_LOG_DOMAIN "BAZAAR::CORE"
+#define G_LOG_DOMAIN "PURESTORE::CORE"
 
 #include "config.h"
 
@@ -255,9 +255,9 @@ bz_application_command_line (GApplication            *app,
           g_autofree char *help_text = NULL;
 
           if (self->running)
-            g_application_command_line_printerr (cmdline, "The Bazaar service is running.\n\n");
+            g_application_command_line_printerr (cmdline, "The PureStore service is running.\n\n");
           else
-            g_application_command_line_printerr (cmdline, "The Bazaar service is not running.\n\n");
+            g_application_command_line_printerr (cmdline, "The PureStore service is not running.\n\n");
 
           help_text = g_option_context_get_help (context, TRUE, NULL);
           g_application_command_line_printerr (cmdline, "%s\n", help_text);
@@ -275,7 +275,7 @@ bz_application_command_line (GApplication            *app,
 
       content_configs = gtk_string_list_new (NULL);
 #ifdef HARDCODED_CONTENT_CONFIG
-      g_debug ("Bazaar was configured with a hardcoded curated content config at %s, adding that now...",
+      g_debug ("PureStore was configured with a hardcoded curated content config at %s, adding that now...",
                HARDCODED_CONTENT_CONFIG);
       gtk_string_list_append (content_configs, HARDCODED_CONTENT_CONFIG);
 #endif
@@ -362,7 +362,7 @@ bz_application_toggle_debug_mode_action (GSimpleAction *action,
 }
 
 static void
-bz_application_bazaar_inspector_action (GSimpleAction *action,
+bz_application_store_inspector_action (GSimpleAction *action,
                                         GVariant      *parameter,
                                         gpointer       user_data)
 {
@@ -448,14 +448,14 @@ bz_application_about_action (GSimpleAction *action,
 
   g_object_set (
       dialog,
-      "application-name", "Bazaar",
-      "application-icon", "io.github.pureblueos.purebazaar",
+      "application-name", "Store",
+      "application-icon", "io.github.pureblueos.purestore",
       // Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
       "translator-credits", _ ("translator-credits"),
       "version", PACKAGE_VERSION,
       "copyright", "© 2025 Pureblue OS",
       "license-type", GTK_LICENSE_GPL_3_0,
-      "website", "https://github.com/pureblue-os/purebazaar",
+      "website", "https://github.com/pureblue-os/purestore",
       "support-url", "https://github.com/kolunmi/bazaar",
       NULL);
 
@@ -511,7 +511,7 @@ static const GActionEntry app_actions[] = {
   {              "search",              bz_application_search_action,  "s" },
   { "toggle-transactions", bz_application_toggle_transactions_action, NULL },
   {            "flatseal",            bz_application_flatseal_action, NULL },
-  {    "bazaar-inspector",    bz_application_bazaar_inspector_action, NULL },
+  {     "store-inspector",    bz_application_store_inspector_action, NULL },
   {   "toggle-debug-mode",   bz_application_toggle_debug_mode_action, NULL },
 };
 
@@ -635,7 +635,7 @@ bz_application_init (BzApplication *self)
       (const char *[]) { "<primary>d", NULL });
   gtk_application_set_accels_for_action (
       GTK_APPLICATION (self),
-      "app.bazaar-inspector",
+      "app.store-inspector",
       (const char *[]) { "<primary><alt><shift>i", NULL });
   gtk_application_set_accels_for_action (
       GTK_APPLICATION (self),
@@ -675,7 +675,7 @@ init_service_struct (BzApplication *self)
       g_autoptr (GHashTable) parse_results = NULL;
 
       parser = bz_yaml_parser_new_for_resource_schema (
-          "/io/github/pureblueos/purebazaar/main-config-schema.xml");
+          "/io/github/pureblueos/purestore/main-config-schema.xml");
 
       parse_results = bz_yaml_parser_process_bytes (
           parser, config_bytes, &local_error);
@@ -1605,7 +1605,7 @@ refresh (BzApplication *self)
 
   if (self->refresh_task != NULL)
     {
-      g_warning ("Bazaar is currently refreshing, so it cannot refresh right now");
+      g_warning ("PureStore is currently refreshing, so it cannot refresh right now");
       return;
     }
 
@@ -1708,7 +1708,7 @@ open_appstream_take (BzApplication *self,
 
   if (bz_state_info_get_busy (self->state))
     {
-      g_debug ("Bazaar is currently refreshing, so we will load "
+      g_debug ("PureStore is currently refreshing, so we will load "
                "the appstream link %s when that is done",
                appstream);
 
@@ -1735,7 +1735,7 @@ open_flatpakref_take (BzApplication *self,
 
   if (bz_state_info_get_busy (self->state))
     {
-      g_debug ("Bazaar is currently refreshing, so we will load "
+      g_debug ("PureStore is currently refreshing, so we will load "
                "the local flatpakref at %s when that is done",
                path);
 

@@ -27,8 +27,8 @@ jobs:
         fetch-depth: 0
     - uses: flatpak/flatpak-github-actions/flatpak-builder@v6
       with:
-        bundle: Bazaar.flatpak
-        manifest-path: build-aux/flatpak/io.github.pureblueos.purebazaar.json
+        bundle: Store.flatpak
+        manifest-path: build-aux/flatpak/io.github.pureblueos.purestore.json
         cache-key: flatpak-builder-${{ github.sha }}
     - name: Get project version
       id: get_version
@@ -38,7 +38,7 @@ jobs:
         echo "version=$VERSION" >> $GITHUB_OUTPUT
 
     - name: Configure git safe directory
-      run: git config --global --add safe.directory /__w/purebazaar/purebazaar
+      run: git config --global --add safe.directory /__w/purestore/purestore
 
     - name: Check for existing tag
       id: tag_check
@@ -80,6 +80,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./Bazaar.flatpak
-        asset_name: Bazaar.flatpak
+        asset_path: ./Store.flatpak
+        asset_name: Store.flatpak
         asset_content_type: application/octet-stream

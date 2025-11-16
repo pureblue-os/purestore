@@ -1,12 +1,12 @@
-# Hungarian translations for bazaar package.
-# Copyright (C) 2025 THE bazaar'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the bazaar package.
+# Hungarian translations for purestore package.
+# Copyright (C) 2025 THE PURESTORE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the purestore package.
 # Automatically generated, 2025.
 # Benedek Dévényi <rdbende@proton.me>, 2025.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: bazaar\n"
+"Project-Id-Version: purestore\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-10-31 23:45+0100\n"
 "PO-Revision-Date: 2025-11-02 20:12+0100\n"
@@ -19,75 +19,75 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Gtranslator 49.0\n"
 
-#: data/io.github.pureblueos.purebazaar.desktop.in:2
-#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:7 src/bz-window.blp:5
+#: data/io.github.pureblueos.purestore.desktop.in:2
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:7 src/bz-window.blp:5
 #: src/bz-window.blp:56
-msgid "Bazaar"
+msgid "Store"
 msgstr "Bazár"
 
-#: data/io.github.pureblueos.purebazaar.desktop.in:3
+#: data/io.github.pureblueos.purestore.desktop.in:3
 msgid "Add, remove or update flatpak software on this computer"
 msgstr "Flatpak alkalmazások telepítése, eltávolítása és frissítése"
 
-#: data/io.github.pureblueos.purebazaar.desktop.in:9
+#: data/io.github.pureblueos.purestore.desktop.in:9
 msgid "GTK;System;PackageManager;Discover;Flatpak;Software;Store;"
 msgstr "GTK;System;PackageManager;Discover;Flatpak;Software;Store;rendszer;csomagkezelő;felfedezés;szoftver;áruház;bolt;"
 
-#: data/io.github.pureblueos.purebazaar.gschema.xml:6
+#: data/io.github.pureblueos.purestore.gschema.xml:6
 msgid "Show Git Forge Star Counts"
 msgstr ""
 
-#: data/io.github.pureblueos.purebazaar.gschema.xml:7
+#: data/io.github.pureblueos.purestore.gschema.xml:7
 msgid ""
 "Whether to attempt to detect and show \"star counts\" for projects in the "
 "full view"
 msgstr ""
 
-#: data/io.github.pureblueos.purebazaar.gschema.xml:11
+#: data/io.github.pureblueos.purestore.gschema.xml:11
 msgid "Only Show Free Software"
 msgstr ""
 
-#: data/io.github.pureblueos.purebazaar.gschema.xml:12
+#: data/io.github.pureblueos.purestore.gschema.xml:12
 msgid "Hide proprietary software when searching"
 msgstr ""
 
-#: data/io.github.pureblueos.purebazaar.gschema.xml:16
+#: data/io.github.pureblueos.purestore.gschema.xml:16
 msgid "Show Only Flathub Content"
 msgstr ""
 
-#: data/io.github.pureblueos.purebazaar.gschema.xml:17
+#: data/io.github.pureblueos.purestore.gschema.xml:17
 msgid "Filter search results to only show applications available on Flathub"
 msgstr ""
 
-#: data/io.github.pureblueos.purebazaar.gschema.xml:21
+#: data/io.github.pureblueos.purestore.gschema.xml:21
 msgid "Debounce Search Inputs"
 msgstr ""
 
-#: data/io.github.pureblueos.purebazaar.gschema.xml:22
+#: data/io.github.pureblueos.purestore.gschema.xml:22
 msgid "Add a delay before searching to prevent instant replies while typing"
 msgstr ""
 
-#: data/io.github.pureblueos.purebazaar.gschema.xml:40
+#: data/io.github.pureblueos.purestore.gschema.xml:40
 msgid "Global Progress Bar Theme"
 msgstr ""
 
-#: data/io.github.pureblueos.purebazaar.gschema.xml:41
+#: data/io.github.pureblueos.purestore.gschema.xml:41
 msgid "Describes the look of the global progress bar"
 msgstr ""
 
-#: data/io.github.pureblueos.purebazaar.gschema.xml:45
+#: data/io.github.pureblueos.purestore.gschema.xml:45
 msgid "Saved Window Dimensions"
 msgstr ""
 
-#: data/io.github.pureblueos.purebazaar.gschema.xml:46
-msgid "The window dimensions to be used by the next Bazaar window"
+#: data/io.github.pureblueos.purestore.gschema.xml:46
+msgid "The window dimensions to be used by the next Store window"
 msgstr ""
 
-#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:8
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:8
 msgid "Discover and install applications"
 msgstr "Alkalmazások felfedezése és telepítése"
 
-#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:10
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:10
 msgid ""
 "A new app store for GNOME with a focus on discovering and installing "
 "applications and addons from Flatpak remotes, particularly Flathub."
@@ -96,29 +96,29 @@ msgstr ""
 "kifejezetten a Flathubról származó alkalmazások és kiegészítők felfedezése "
 "és telepítése áll."
 
-#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:14
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:14
 msgid ""
 "It emphasizes supporting the developers who make the Linux desktop possible. "
-"Bazaar features a \"curated\" tab that can be configured by distributors to "
+"Store features a \"curated\" tab that can be configured by distributors to "
 "allow for a more localized experience."
 msgstr ""
 "Hangsúlyozza a Linuxos asztali rendszereket létrehozó fejlesztők "
 "támogatását. A Bazár egy „válogatott” füllel is rendelkezik, amelyet a "
 "disztrók konfigurálhatnak, hogy lokalizáltabb élményt nyújtsanak."
 
-#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:29 src/bz-application.c:506
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:29 src/bz-application.c:506
 msgid "Adam Masciola"
 msgstr "Adam Masciola"
 
-#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:54
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:54
 msgid "The home view displaying Flathub apps"
 msgstr "A kezdőképernyő Flathub alkalmazásokkal"
 
-#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:58
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:58
 msgid "Nucleus app page"
 msgstr "Alkalmazásoldal a Nucleus alkalmazással"
 
-#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:62
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:62
 msgid "Searching for Blender"
 msgstr "Keresés a Blenderre"
 
@@ -385,10 +385,10 @@ msgstr "Nincsenek válogatott alkalmazások"
 
 #: src/bz-browse-widget.blp:16
 msgid ""
-"Bazaar was not provided a curated content configuration. Contact your "
+"Store was not provided a curated content configuration. Contact your "
 "operating system's support channels for assistance."
 msgstr ""
-"A Bazaar nem talál válogatott tartalomkonfigurációt. Segítségért fordulj az "
+"A Store nem talál válogatott tartalomkonfigurációt. Segítségért fordulj az "
 "operációs rendszer támogatási csatornáihoz."
 
 #: src/bz-browse-widget.blp:22 src/bz-flathub-page.blp:30
@@ -847,7 +847,7 @@ msgid "Hardware Support"
 msgstr "Hardver támogatás"
 
 #: src/bz-inspector.blp:5
-msgid "Bazaar Inspector"
+msgid "Store Inspector"
 msgstr ""
 
 #: src/bz-inspector.blp:22
@@ -1006,7 +1006,7 @@ msgstr "Válassz témát a folyamatjelző sávoknak"
 
 #: src/bz-preferences-dialog.blp:107
 msgid ""
-"Bazaar can fetch and display the star count from an application's source "
+"Store can fetch and display the star count from an application's source "
 "code repository on a remote Git forge. \n"
 " For projects on GitHub, rate limits may cause them not to appear."
 msgstr ""
@@ -1232,7 +1232,7 @@ msgid "Main Menu"
 msgstr "Főmenü"
 
 #: src/bz-window.blp:486
-msgid "_Donate to Bazaar ❤️"
+msgid "_Donate to Store ❤️"
 msgstr "A Bazár _támogatása ❤️"
 
 #: src/bz-window.blp:491
@@ -1248,11 +1248,11 @@ msgid "_Keyboard Shortcuts"
 msgstr "_Gyorsbillentyűk"
 
 #: src/bz-window.blp:508
-msgid "_About Bazaar"
+msgid "_About Store"
 msgstr "A Bazár _névjegye"
 
 #: src/bz-window.blp:515
-msgid "_Quit Bazaar"
+msgid "_Quit Store"
 msgstr "_Kilépés"
 
 #: src/bz-window.c:827

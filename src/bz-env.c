@@ -40,7 +40,7 @@ bz_get_dex_stack_size (void)
          2025-10-21 22:47:02 eva */
       value = MAX (8388608, dex_get_min_stack_size ());
 
-      envvar = g_getenv ("BAZAAR_DEX_STACK_SIZE");
+      envvar = g_getenv ("PURESTORE_DEX_STACK_SIZE");
       if (envvar != NULL)
         {
           g_autoptr (GError) local_error = NULL;
@@ -55,13 +55,13 @@ bz_get_dex_stack_size (void)
 
               parse_result = g_variant_get_uint64 (variant);
               if (parse_result < dex_get_min_stack_size ())
-                g_warning ("BAZAAR_DEX_STACK_SIZE must be greater than %zu on this system",
+                g_warning ("PURESTORE_DEX_STACK_SIZE must be greater than %zu on this system",
                            dex_get_min_stack_size ());
               else
                 value = parse_result;
             }
           else
-            g_warning ("BAZAAR_DEX_STACK_SIZE is invalid: %s", local_error->message);
+            g_warning ("PURESTORE_DEX_STACK_SIZE is invalid: %s", local_error->message);
         }
 
       g_once_init_leave (&stack_size, value);

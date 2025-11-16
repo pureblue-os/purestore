@@ -111,7 +111,7 @@ bz_progress_bar_class_init (BzProgressBarClass *klass)
 
   g_object_class_install_properties (object_class, LAST_PROP, props);
 
-  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblueos/purebazaar/bz-progress-bar.ui");
+  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblueos/purestore/bz-progress-bar.ui");
   gtk_widget_class_bind_template_child (widget_class, BzProgressBar, bar);
 }
 

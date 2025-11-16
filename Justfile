@@ -1,14 +1,14 @@
 # These are just convenience scripts, NOT a build system!
 
-appid := env("BAZAAR_APPID", "io.github.pureblueos.purebazaar")
+appid := env("PURESTORE_APPID", "io.github.pureblueos.purestore")
 manifest := "./build-aux/flatpak/" + appid + ".json"
-branch := env("BAZAAR_BRANCH", "master")
+branch := env("PURESTORE_BRANCH", "master")
 just := just_executable()
 
 alias run := run-base
 
 run-base: build-base
-    ./build/src/bazaar
+    ./build/src/purestore
 
 build-base:
     meson setup build --wipe
@@ -49,9 +49,9 @@ build-rpm:
     mkdir -p $HOME/rpmbuild/SOURCES
     RPMDIR="/build/build-aux/rpm"
     cp "${RPMDIR}"/* $HOME/rpmbuild/SOURCES
-    spectool -agR "${RPMDIR}"/bazaar.spec
-    dnf builddep -y "${RPMDIR}"/bazaar.spec
-    rpmbuild -bb "${RPMDIR}"/bazaar.spec
+    spectool -agR "${RPMDIR}"/purestore.spec
+    dnf builddep -y "${RPMDIR}"/purestore.spec
+    rpmbuild -bb "${RPMDIR}"/purestore.spec
     EOF
 
 [private]

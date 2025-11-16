@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=io.github.pureblueos.purestore
+SystemdService=io.github.pureblueos.purestore.service
+Exec=@bindir@/purestore service
