@@ -85,7 +85,7 @@ bz_preferences_dialog_class_init (BzPreferencesDialogClass *klass)
 
   object_class->dispose = bz_preferences_dialog_dispose;
 
-  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblue_os/purebazaar/bz-preferences-dialog.ui");
+  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblueos/purebazaar/bz-preferences-dialog.ui");
 
   gtk_widget_class_bind_template_child (widget_class, BzPreferencesDialog, git_forge_star_counts_switch);
   gtk_widget_class_bind_template_child (widget_class, BzPreferencesDialog, search_only_foss_switch);

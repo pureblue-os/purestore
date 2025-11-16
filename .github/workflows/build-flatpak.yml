@@ -28,7 +28,7 @@ jobs:
     - uses: flatpak/flatpak-github-actions/flatpak-builder@v6
       with:
         bundle: Bazaar.flatpak
-        manifest-path: build-aux/flatpak/io.github.pureblue_os.purebazaar.json
+        manifest-path: build-aux/flatpak/io.github.pureblueos.purebazaar.json
         cache-key: flatpak-builder-${{ github.sha }}
     - name: Get project version
       id: get_version

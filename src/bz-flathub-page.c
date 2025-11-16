@@ -305,7 +305,7 @@ bz_flathub_page_class_init (BzFlathubPageClass *klass)
   g_type_ensure (BZ_TYPE_APP_TILE);
   g_type_ensure (BZ_TYPE_FEATURED_CAROUSEL);
 
-  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblue_os/purebazaar/bz-flathub-page.ui");
+  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblueos/purebazaar/bz-flathub-page.ui");
   gtk_widget_class_bind_template_child (widget_class, BzFlathubPage, stack);
   gtk_widget_class_bind_template_callback (widget_class, invert_boolean);
   gtk_widget_class_bind_template_callback (widget_class, is_null);

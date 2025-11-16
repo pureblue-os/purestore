@@ -17,37 +17,37 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.6\n"
 
-#: data/io.github.pureblue_os.purebazaar.desktop.in:2
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:7 src/bz-window.blp:5
+#: data/io.github.pureblueos.purebazaar.desktop.in:2
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:7 src/bz-window.blp:5
 msgid "Bazaar"
 msgstr "Bazaar"
 
-#: data/io.github.pureblue_os.purebazaar.desktop.in:3
+#: data/io.github.pureblueos.purebazaar.desktop.in:3
 msgid "Add, remove or update flatpak software on this computer"
 msgstr "添加、删除和更新此电脑上的 Flatpak 软件"
 
-#: data/io.github.pureblue_os.purebazaar.desktop.in:9
+#: data/io.github.pureblueos.purebazaar.desktop.in:9
 msgid "GTK;System;PackageManager;Discover;Flatpak;Software;Store;"
 msgstr "GTK;System;PackageManager;Discover;Flatpak;软件;商店;"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:6
+#: data/io.github.pureblueos.purebazaar.gschema.xml:6
 msgid "Show Animated Background"
 msgstr "展示动画背景"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:7
+#: data/io.github.pureblueos.purebazaar.gschema.xml:7
 msgid "Whether to show the animated icon background on the home page"
 msgstr "是否在首页展示动画图标背景"
 
 #. FIXME: add descriptions and summary
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:9
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:9
 msgid "Keep the summary shorter, between 10 and 35 characters"
 msgstr "保持摘要简短，在 10 至 35 字之间"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:11
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:11
 msgid "No description"
 msgstr "无描述"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:41
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:41
 msgid "Main Bazaar window showing Blender"
 msgstr "Bazaar 主窗口正在展示 Blender"
 

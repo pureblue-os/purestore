@@ -20,35 +20,35 @@ msgstr ""
 "4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Lokalize 25.08.2\n"
 
-#: data/io.github.pureblue_os.purebazaar.desktop.in:3
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:7 src/bz-window.blp:5
+#: data/io.github.pureblueos.purebazaar.desktop.in:3
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:7 src/bz-window.blp:5
 #: src/bz-window.blp:225
 msgid "Bazaar"
 msgstr "Базар"
 
-#: data/io.github.pureblue_os.purebazaar.desktop.in:4
+#: data/io.github.pureblueos.purebazaar.desktop.in:4
 msgid "Add, remove or update flatpak software on this computer"
 msgstr "Встановлюйте, видаляйте та оновлюйте пакунки Flatpak на Ваш компʼютер"
 
-#: data/io.github.pureblue_os.purebazaar.desktop.in:10
+#: data/io.github.pureblueos.purebazaar.desktop.in:10
 msgid "GTK;System;PackageManager;Discover;Flatpak;Software;Store;"
 msgstr ""
 "GTK;System;PackageManager;Discover;Flatpak;Software;Store;Магазин;Крамниця;"
 "Флатпак;Пакунки;Програми;"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:6
+#: data/io.github.pureblueos.purebazaar.gschema.xml:6
 msgid "Hide EOL Entries"
 msgstr "Сховати осиротілі надходження"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:7
+#: data/io.github.pureblueos.purebazaar.gschema.xml:7
 msgid "Hide EOL entries and entries depending on them"
 msgstr "Сховати осиротілі надходження та надходження, котрі залежать від них"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:11
+#: data/io.github.pureblueos.purebazaar.gschema.xml:11
 msgid "Show Git Forge Star Counts"
 msgstr "Показувати вподобання зі сторінки розробки"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:12
+#: data/io.github.pureblueos.purebazaar.gschema.xml:12
 msgid ""
 "Whether to attempt to detect and show \"star counts\" for projects in the "
 "full view"
@@ -56,51 +56,51 @@ msgstr ""
 "Намагатися віднаходити та показувати кількість уподобань на сторінках "
 "застосунків"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:16
+#: data/io.github.pureblueos.purebazaar.gschema.xml:16
 msgid "Only Show Free Software"
 msgstr "Показувати лише вільні застосунки"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:17
+#: data/io.github.pureblueos.purebazaar.gschema.xml:17
 msgid "Hide proprietary software when searching"
 msgstr "Ховати власницькі (пропрієтарні) застосунки з пошуку"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:21
+#: data/io.github.pureblueos.purebazaar.gschema.xml:21
 msgid "Show Only Flathub Content"
 msgstr "Показувати лише вміст з Flathub"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:22
+#: data/io.github.pureblueos.purebazaar.gschema.xml:22
 msgid "Filter search results to only show applications available on Flathub"
 msgstr "Відсіювати надходження, що не походять з Flathub"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:26
+#: data/io.github.pureblueos.purebazaar.gschema.xml:26
 msgid "Debounce Search Inputs"
 msgstr "Чекати вводу"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:27
+#: data/io.github.pureblueos.purebazaar.gschema.xml:27
 msgid "Add a delay before searching to prevent instant replies while typing"
 msgstr "Чекати на закінчення вводу, аби попередити миттєві надходження."
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:45
+#: data/io.github.pureblueos.purebazaar.gschema.xml:45
 msgid "Global Progress Bar Theme"
 msgstr "Загальний вигляд смужки поступу"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:46
+#: data/io.github.pureblueos.purebazaar.gschema.xml:46
 msgid "Describes the look of the global progress bar"
 msgstr "Описує вигляд загальної смужки поступу"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:50
+#: data/io.github.pureblueos.purebazaar.gschema.xml:50
 msgid "Saved Window Dimensions"
 msgstr "Збережені розміри вікна"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:51
+#: data/io.github.pureblueos.purebazaar.gschema.xml:51
 msgid "The window dimensions to be used by the next Bazaar window"
 msgstr "Розміри, що їх користуватиме наступне вікно Базару"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:8
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:8
 msgid "Discover and install applications"
 msgstr "Знаходьте та встановлюйте застосунки"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:10
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:10
 msgid ""
 "A new app store for GNOME with a focus on discovering and installing "
 "applications and addons from Flatpak remotes, particularly Flathub."
@@ -109,7 +109,7 @@ msgstr ""
 "встановленні застосунків і розширень з віддалених сховищ Flatpak, зокрема "
 "Flathub"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:14
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:14
 msgid ""
 "It emphasizes supporting the developers who make the Linux desktop possible. "
 "Bazaar features a \"curated\" tab that can be configured by distributors to "
@@ -119,19 +119,19 @@ msgstr ""
 "стільничних компʼютерах. Він має вкладку \"підібраних\" застосунків, котра "
 "може бути налаштована дистрибутивами, аби створити цілісніший досвід."
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:54
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:54
 msgid "The home page displaying Flathub apps"
 msgstr "Домашня сторінка із застосунками з Flathub"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:58
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:58
 msgid "Nucleus app page"
 msgstr "Сторінка застосунку Nucleus"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:62
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:62
 msgid "Search page"
 msgstr "Сторінка пошуку"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:66
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:66
 msgid "Category page"
 msgstr "Сторінка пошуку з категоріями"
 
@@ -881,7 +881,7 @@ msgid "Enable Global Debug Mode"
 msgstr "Увімкнути режим зневадження"
 
 #: src/bz-inspector.blp:29
-msgid "Active Blocklists"
+msgid "Active Blacklists"
 msgstr "Задіяні чорні списки"
 
 #: src/bz-inspector.blp:46

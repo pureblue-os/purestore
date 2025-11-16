@@ -18,46 +18,46 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.6\n"
 
-#: data/io.github.pureblue_os.purebazaar.desktop.in:2
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:7 src/bz-window.blp:5
+#: data/io.github.pureblueos.purebazaar.desktop.in:2
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:7 src/bz-window.blp:5
 msgid "Bazaar"
 msgstr "بازار"
 
-#: data/io.github.pureblue_os.purebazaar.desktop.in:3
+#: data/io.github.pureblueos.purebazaar.desktop.in:3
 msgid "Add, remove or update flatpak software on this computer"
 msgstr "افزودن، حذف یا به‌روزرسانی نرم‌افزارهای Flatpak در این رایانه"
 
-#: data/io.github.pureblue_os.purebazaar.desktop.in:9
+#: data/io.github.pureblueos.purebazaar.desktop.in:9
 msgid "GTK;System;PackageManager;Discover;Flatpak;Software;Store;"
 msgstr "GTK;سیستم;مدیر بسته‌ها;کشف ;کردن;Flatpak;نرم‌افزار;فروشگاه;"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:6
+#: data/io.github.pureblueos.purebazaar.gschema.xml:6
 msgid "Show Animated Background"
 msgstr "نمایش پس‌زمینه متحرک"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:7
+#: data/io.github.pureblueos.purebazaar.gschema.xml:7
 msgid "Whether to show the animated icon background on the home page"
 msgstr "آیا پس‌زمینه‌ی نماد متحرک در صفحه‌ی اصلی نمایش داده شود"
 
 #. FIXME: add descriptions and summary
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:9
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:9
 msgid "Keep the summary shorter, between 10 and 35 characters"
 msgstr "خلاصه را کوتاه نگه دارید، بین ۱۰ تا ۳۵ نویسه"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:11
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:11
 msgid "No description"
 msgstr "بدون توضیح"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:41
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:41
 msgid "Main Bazaar window showing Blender"
 msgstr "پنجره‌ی اصلی بازار که Blender را نمایش می‌دهد"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:50
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:50
 msgid "Release description"
 msgstr "توضیح‌های نگارش"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:52
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:53
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:52
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:53
 msgid "List of changes"
 msgstr "فهرست تغییرات"
 

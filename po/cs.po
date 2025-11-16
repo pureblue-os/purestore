@@ -17,25 +17,25 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
-#: data/io.github.pureblue_os.purebazaar.desktop.in:2
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:7 src/bz-window.blp:5
+#: data/io.github.pureblueos.purebazaar.desktop.in:2
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:7 src/bz-window.blp:5
 #: src/bz-window.blp:51
 msgid "Bazaar"
 msgstr "Bazaar"
 
-#: data/io.github.pureblue_os.purebazaar.desktop.in:3
+#: data/io.github.pureblueos.purebazaar.desktop.in:3
 msgid "Add, remove or update flatpak software on this computer"
 msgstr "Přidejte, odstraňte nebo aktualizujte flatpaky na tomto počítači."
 
-#: data/io.github.pureblue_os.purebazaar.desktop.in:9
+#: data/io.github.pureblueos.purebazaar.desktop.in:9
 msgid "GTK;System;PackageManager;Discover;Flatpak;Software;Store;"
 msgstr "GTK;Systém;SprávceBalíčků;Discover;Flatpak;Software;Obchod;"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:6
+#: data/io.github.pureblueos.purebazaar.gschema.xml:6
 msgid "Show Git Forge Star Counts"
 msgstr "Počet Hvězd Git Forge"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:7
+#: data/io.github.pureblueos.purebazaar.gschema.xml:7
 msgid ""
 "Whether to attempt to detect and show \"star counts\" for projects in the "
 "full view"
@@ -43,53 +43,53 @@ msgstr ""
 "Pokusit se detekovat a zobrazit  \"počet hvězd\" pro projekt v plném "
 "zobrazení"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:11
+#: data/io.github.pureblueos.purebazaar.gschema.xml:11
 #: src/bz-preferences-dialog.blp:25
 msgid "Only Show Free Software"
 msgstr "Zobrazi pouze svobodný software"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:12
+#: data/io.github.pureblueos.purebazaar.gschema.xml:12
 msgid "Hide proprietary software when searching"
 msgstr "Skrýt propertiární software při vyhledávání"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:16
+#: data/io.github.pureblueos.purebazaar.gschema.xml:16
 msgid "Show Only Flathub Content"
 msgstr "Zobrazit pouze obsah z Flathubu"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:17
+#: data/io.github.pureblueos.purebazaar.gschema.xml:17
 msgid "Filter search results to only show applications available on Flathub"
 msgstr "Filtrovat výsledky vyhledávání pro zobrazení pouze aplikacích dostupných na Flathubu"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:21
+#: data/io.github.pureblueos.purebazaar.gschema.xml:21
 msgid "Debounce Search Inputs"
 msgstr "Debouncing Vstupů Vyhledávání"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:22
+#: data/io.github.pureblueos.purebazaar.gschema.xml:22
 #, fuzzy
 msgid "Add a delay before searching to prevent instant replies while typing"
 msgstr "Omezit frekvenci reakce"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:40
+#: data/io.github.pureblueos.purebazaar.gschema.xml:40
 msgid "Global Progress Bar Theme"
 msgstr "Téma Globálního Ukazatele Postupu"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:41
+#: data/io.github.pureblueos.purebazaar.gschema.xml:41
 msgid "Describes the look of the global progress bar"
 msgstr "Popisuje vzhled globáního ukazatele postupu"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:45
+#: data/io.github.pureblueos.purebazaar.gschema.xml:45
 msgid "Saved Window Dimensions"
 msgstr "Uložené rozměry okna"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:46
+#: data/io.github.pureblueos.purebazaar.gschema.xml:46
 msgid "The window dimensions to be used by the next Bazaar window"
 msgstr "Rozměry okna použitá dalšími okny Bazaaru"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:8
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:8
 msgid "Discover and install applications"
 msgstr "Objevit a nainstalovat aplikace"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:10
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:10
 #, fuzzy
 msgid ""
 "A new app store for GNOME with a focus on discovering and installing "
@@ -98,7 +98,7 @@ msgstr ""
 "Nový obchod s aplikacemi pro GNOME se zaměřením na objevování a instalování "
 "aplikací a doplňků z Flatpak remotů, hlavně Flathubu"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:14
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:14
 #, fuzzy
 msgid ""
 "It emphasizes supporting the developers who make the Linux desktop possible. "
@@ -109,20 +109,20 @@ msgstr ""
 "Bazaar má kartu \"vybrané\" která může být nastavena distribucemi pro více "
 "přizpůsobený zážitek"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:22 src/bz-application.c:505
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:22 src/bz-application.c:505
 msgid "Adam Masciola"
 msgstr "Adam Masciola"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:47
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:47
 #, fuzzy
 msgid "The home view displaying Flathub apps"
 msgstr "Domovské zobrazení ukazující Flathub aplikace a kategorie"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:51
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:51
 msgid "Nucleus app page"
 msgstr "Stránka aplikace Nucleus"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:55
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:55
 msgid "Searching for Blender"
 msgstr "Vyhledávání Blenderu"
 
@@ -336,7 +336,7 @@ msgstr "Identifikuji instalované položky..."
 
 #: src/bz-application.c:1127
 #, c-format
-msgid "Beginning remote entry retrieval while referencing %d blocklist(s)..."
+msgid "Beginning remote entry retrieval while referencing %d blacklist(s)..."
 msgstr "Probíhá stahování vzdálených položek s odkazem na %d blokovací seznam(y)..."
 
 #: src/bz-application.c:1275
@@ -711,7 +711,7 @@ msgid "Bazaar Inspector"
 msgstr "Bazaar Inspertor"
 
 #: src/bz-inspector.blp:22
-msgid "Active Blocklists"
+msgid "Active Blacklists"
 msgstr "Aktivní Blokovací Seznamy"
 
 #: src/bz-inspector.blp:44

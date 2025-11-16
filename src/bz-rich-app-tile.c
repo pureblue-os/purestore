@@ -254,7 +254,7 @@ bz_rich_app_tile_class_init (BzRichAppTileClass *klass)
   g_type_ensure (BZ_TYPE_ROUNDED_PICTURE);
   g_type_ensure (BZ_TYPE_THEMED_ENTRY_GROUP_RECT);
 
-  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblue_os/purebazaar/bz-rich-app-tile.ui");
+  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblueos/purebazaar/bz-rich-app-tile.ui");
   gtk_widget_class_bind_template_callback (widget_class, invert_boolean);
   gtk_widget_class_bind_template_callback (widget_class, is_null);
   gtk_widget_class_bind_template_callback (widget_class, is_zero);

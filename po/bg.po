@@ -18,77 +18,77 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.8\n"
 
-#: data/io.github.pureblue_os.purebazaar.desktop.in:2 data/io.github.pureblue_os.purebazaar.metainfo.xml.in:7 src/bz-window.blp:5 src/bz-window.blp:51
+#: data/io.github.pureblueos.purebazaar.desktop.in:2 data/io.github.pureblueos.purebazaar.metainfo.xml.in:7 src/bz-window.blp:5 src/bz-window.blp:51
 msgid "Bazaar"
 msgstr "Базар"
 
-#: data/io.github.pureblue_os.purebazaar.desktop.in:3
+#: data/io.github.pureblueos.purebazaar.desktop.in:3
 msgid "Add, remove or update flatpak software on this computer"
 msgstr "Добавяйте, премахвайте или обновете flatpak софтуер на този компютър"
 
-#: data/io.github.pureblue_os.purebazaar.desktop.in:9
+#: data/io.github.pureblueos.purebazaar.desktop.in:9
 msgid "GTK;System;PackageManager;Discover;Flatpak;Software;Store;"
 msgstr "GTK;System;PackageManager;Discover;Flatpak;Software;Store;система;мениджър на пакети;откриване;софтуер;програми;"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:6
+#: data/io.github.pureblueos.purebazaar.gschema.xml:6
 msgid "Show Git Forge Star Counts"
 msgstr "Показване на броя на звездите в Git Forge"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:7
+#: data/io.github.pureblueos.purebazaar.gschema.xml:7
 msgid "Whether to attempt to detect and show \"star counts\" for projects in the full view"
 msgstr "Дали да се опита да се засече и покаже „броя на звездите“ за проектите в пълния изглед"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:11 src/bz-preferences-dialog.blp:25
+#: data/io.github.pureblueos.purebazaar.gschema.xml:11 src/bz-preferences-dialog.blp:25
 msgid "Only Show Free Software"
 msgstr "Показване само на свободен софтуер"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:12
+#: data/io.github.pureblueos.purebazaar.gschema.xml:12
 msgid "Hide proprietary software when searching"
 msgstr "Скриване на собственически софтуер при търсене"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:16
+#: data/io.github.pureblueos.purebazaar.gschema.xml:16
 msgid "Show Only Flathub Content"
 msgstr "Показване само на Flathub съдържание"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:17
+#: data/io.github.pureblueos.purebazaar.gschema.xml:17
 msgid "Filter search results to only show applications available on Flathub"
 msgstr "Филтриране на резултатите от търсенето, за да се показват само програмите, налични в Flathub"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:21
+#: data/io.github.pureblueos.purebazaar.gschema.xml:21
 msgid "Debounce Search Inputs"
 msgstr "Забавяне на входа за търсене"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:22
+#: data/io.github.pureblueos.purebazaar.gschema.xml:22
 msgid "Add a delay before searching to prevent instant replies while typing"
 msgstr "Добавяне на закъснение преди търсенето, за да се предотвратят незабавни резултати по време на писане"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:40
+#: data/io.github.pureblueos.purebazaar.gschema.xml:40
 msgid "Global Progress Bar Theme"
 msgstr "Тема за глобалната лента за напредък"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:41
+#: data/io.github.pureblueos.purebazaar.gschema.xml:41
 msgid "Describes the look of the global progress bar"
 msgstr "Описва вида на глобалната лента за напредък"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:45
+#: data/io.github.pureblueos.purebazaar.gschema.xml:45
 msgid "Saved Window Dimensions"
 msgstr "Запазени размери на прозореца"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:46
+#: data/io.github.pureblueos.purebazaar.gschema.xml:46
 msgid "The window dimensions to be used by the next Bazaar window"
 msgstr "Размерите на прозореца, които ще се използват от следващия прозорец на Базар"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:8
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:8
 msgid "Discover and install applications"
 msgstr "Открийте и инсталирайте програми"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:10
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:10
 msgid "A new app store for GNOME with a focus on discovering and installing applications and addons from Flatpak remotes, particularly Flathub."
 msgstr ""
 "Нов магазин за програми за GNOME, предназначен за откриването и инсталирането на програми и добавки от Flatpak отдалечени хранилища, по-"
 "специфично Flathub."
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:14
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:14
 msgid ""
 "It emphasizes supporting the developers who make the Linux desktop possible. Bazaar features a \"curated\" tab that can be configured by "
 "distributors to allow for a more localized experience."
@@ -96,19 +96,19 @@ msgstr ""
 "Той взема под внимание подкрепата на разработчиците, които правят Луникс за настолни компютри възможен. Bazaar разполага с раздел „подбрани“, "
 "който може да бъде настроен от дистрибуторите, за да позволи по-специализирано потребителско изживяване."
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:22 src/bz-application.c:496
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:22 src/bz-application.c:496
 msgid "Adam Masciola"
 msgstr "Adam Masciola"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:47
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:47
 msgid "The home view displaying Flathub apps"
 msgstr "Началната страница, показваща програми на Flathub"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:51
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:51
 msgid "Nucleus app page"
 msgstr "Страницата на Nucleus"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:55
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:55
 msgid "Searching for Blender"
 msgstr "Търсене за Blender"
 
@@ -311,7 +311,7 @@ msgstr "Идентифициране на инсталираните запис�
 
 #: src/bz-application.c:1114
 #, c-format
-msgid "Beginning remote entry retrieval while referencing %d blocklist(s)..."
+msgid "Beginning remote entry retrieval while referencing %d blacklist(s)..."
 msgstr "Получаване на отдалечените записи и четене от %d списък(а) за блокиране..."
 
 #: src/bz-application.c:1262
@@ -662,7 +662,7 @@ msgid "Bazaar Inspector"
 msgstr "Базар инспектор"
 
 #: src/bz-inspector.blp:22
-msgid "Active Blocklists"
+msgid "Active Blacklists"
 msgstr "Активни списъци за блокиране"
 
 #: src/bz-inspector.blp:44

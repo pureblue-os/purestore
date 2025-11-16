@@ -472,7 +472,7 @@ bz_screenshot_page_class_init (BzScreenshotPageClass *klass)
 
   g_type_ensure (BZ_TYPE_ZOOM);
 
-  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblue_os/purebazaar/bz-screenshot-page.ui");
+  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblueos/purebazaar/bz-screenshot-page.ui");
   gtk_widget_class_bind_template_child (widget_class, BzScreenshotPage, carousel);
   gtk_widget_class_bind_template_child (widget_class, BzScreenshotPage, toast_overlay);
   gtk_widget_class_bind_template_callback (widget_class, zoom_in_clicked);

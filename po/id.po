@@ -21,41 +21,41 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Gtranslator 48.0\n"
 
-#: data/io.github.pureblue_os.purebazaar.desktop.in:3
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:7 src/bz-window.blp:5
+#: data/io.github.pureblueos.purebazaar.desktop.in:3
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:7 src/bz-window.blp:5
 msgid "Bazaar"
 msgstr "Bazaar"
 
-#: data/io.github.pureblue_os.purebazaar.desktop.in:4
+#: data/io.github.pureblueos.purebazaar.desktop.in:4
 msgid "Add, remove or update flatpak software on this computer"
 msgstr ""
 "Tambah, hapus atau mutakhirkan perangkat lunak Flatpak pada komputer ini"
 
 # Added "Aplikasi" and "Pusat Aplikasi" (App Center) to search queries
-#: data/io.github.pureblue_os.purebazaar.desktop.in:10
+#: data/io.github.pureblueos.purebazaar.desktop.in:10
 msgid "GTK;System;PackageManager;Discover;Flatpak;Software;Store;"
 msgstr ""
 "GTK;Sistem;Manajer Paket;Discover;Flatpak;Perangkat Lunak;Toko;Aplikasi;"
 "Pusat Aplikasi;"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:6
+#: data/io.github.pureblueos.purebazaar.gschema.xml:6
 msgid "Show Animated Background"
 msgstr "Tampilkan Animasi Latar Belakang"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:7
+#: data/io.github.pureblueos.purebazaar.gschema.xml:7
 msgid "Whether to show the animated icon background on the home page"
 msgstr "Tampilkan animasi ikon latar belakang pada halaman utama"
 
 #. FIXME: add descriptions and summary
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:9
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:9
 msgid "Keep the summary shorter, between 10 and 35 characters"
 msgstr "Buat ringkasan pendek berkisar antara 10-35 karakter"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:11
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:11
 msgid "No description"
 msgstr "Tidak ada deskripsi"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:41
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:41
 msgid "Main Bazaar window showing Blender"
 msgstr "Jendela utama Bazaar yang menampilkan Blender"
 

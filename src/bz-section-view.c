@@ -224,7 +224,7 @@ bz_section_view_class_init (BzSectionViewClass *klass)
   g_type_ensure (BZ_TYPE_MARKDOWN_RENDER);
   g_type_ensure (BZ_TYPE_ASYNC_TEXTURE);
 
-  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblue_os/purebazaar/bz-section-view.ui");
+  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblueos/purebazaar/bz-section-view.ui");
   gtk_widget_class_bind_template_child (widget_class, BzSectionView, banner_text_overlay);
   gtk_widget_class_bind_template_child (widget_class, BzSectionView, banner_text_bg);
   gtk_widget_class_bind_template_child (widget_class, BzSectionView, banner_text);

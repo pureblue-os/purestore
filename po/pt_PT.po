@@ -18,76 +18,76 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: data/io.github.pureblue_os.purebazaar.desktop.in:2
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:7 src/bz-window.blp:5
+#: data/io.github.pureblueos.purebazaar.desktop.in:2
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:7 src/bz-window.blp:5
 #: src/bz-window.blp:174
 msgid "Bazaar"
 msgstr "Bazaar"
 
-#: data/io.github.pureblue_os.purebazaar.desktop.in:3
+#: data/io.github.pureblueos.purebazaar.desktop.in:3
 msgid "Add, remove or update flatpak software on this computer"
 msgstr "Adicionar, remover ou atualizar software flatpak neste computador"
 
-#: data/io.github.pureblue_os.purebazaar.desktop.in:9
+#: data/io.github.pureblueos.purebazaar.desktop.in:9
 msgid "GTK;System;PackageManager;Discover;Flatpak;Software;Store;"
 msgstr "GTK;Sistema;GestorDePacotes;Discover;Flatpak;Aplicações;Loja;"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:6
+#: data/io.github.pureblueos.purebazaar.gschema.xml:6
 msgid "Show Git Forge Star Counts"
 msgstr "Ver o total de estrelas do Git Forge"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:7
+#: data/io.github.pureblueos.purebazaar.gschema.xml:7
 msgid ""
 "Whether to attempt to detect and show \"star counts\" for projects in the "
 "full view"
 msgstr "Tentar detectar e mostrar a contagem de estrelas para projetos na vista completa"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:11
+#: data/io.github.pureblueos.purebazaar.gschema.xml:11
 msgid "Only Show Free Software"
 msgstr "Mostrar apenas software livre"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:12
+#: data/io.github.pureblueos.purebazaar.gschema.xml:12
 msgid "Hide proprietary software when searching"
 msgstr "Ocultar software proprietário ao pesquisar"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:16
+#: data/io.github.pureblueos.purebazaar.gschema.xml:16
 msgid "Show Only Flathub Content"
 msgstr "Mostrar apenas conteúdo do Flathub"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:17
+#: data/io.github.pureblueos.purebazaar.gschema.xml:17
 msgid "Filter search results to only show applications available on Flathub"
 msgstr "Mostrar apenas resultados de pesquisa para aplicações disponíveis no Flathub"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:21
+#: data/io.github.pureblueos.purebazaar.gschema.xml:21
 msgid "Debounce Search Inputs"
 msgstr "Suavizar a entrar de texto na pesquisa"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:22
+#: data/io.github.pureblueos.purebazaar.gschema.xml:22
 #, fuzzy
 msgid "Add a delay before searching to prevent instant replies while typing"
 msgstr "Atrasar a entrada de texto para evitar resultados instantâneos"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:40
+#: data/io.github.pureblueos.purebazaar.gschema.xml:40
 msgid "Global Progress Bar Theme"
 msgstr "Tema da barra de progresso global"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:41
+#: data/io.github.pureblueos.purebazaar.gschema.xml:41
 msgid "Describes the look of the global progress bar"
 msgstr "Descreve o aspeto da barra de progresso global"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:45
+#: data/io.github.pureblueos.purebazaar.gschema.xml:45
 msgid "Saved Window Dimensions"
 msgstr "Guardar dimensões da janela"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:46
+#: data/io.github.pureblueos.purebazaar.gschema.xml:46
 msgid "The window dimensions to be used by the next Bazaar window"
 msgstr "As dimensões a serem usadas por novas janelas do Bazaar"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:8
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:8
 msgid "Discover and install applications"
 msgstr "Descobrir e instalar aplicações"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:10
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:10
 #, fuzzy
 msgid ""
 "A new app store for GNOME with a focus on discovering and installing "
@@ -97,7 +97,7 @@ msgstr ""
 "aplicações e extensões (add-ons) a partir de repositórios Flatpak, "
 "principalmente do Flathub."
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:14
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:14
 #, fuzzy
 msgid ""
 "It emphasizes supporting the developers who make the Linux desktop possible. "
@@ -109,19 +109,19 @@ msgstr ""
 "ser configurada pelos distribuidores para permitir uma experiência mais "
 "personalizada."
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:29 src/bz-application.c:505
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:29 src/bz-application.c:505
 msgid "Adam Masciola"
 msgstr "Adam Masciola"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:54
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:54
 msgid "The home view displaying Flathub apps"
 msgstr "A vista inicial a demonstrar apps do Flathub"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:58
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:58
 msgid "Nucleus app page"
 msgstr "Página da app Nucleus"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:62
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:62
 msgid "Searching for Blender"
 msgstr "A procurar por Blender"
 
@@ -344,7 +344,7 @@ msgstr "A identificar conteúdo instalado..."
 
 #: src/bz-application.c:1125
 #, c-format
-msgid "Beginning remote entry retrieval while referencing %d blocklist(s)..."
+msgid "Beginning remote entry retrieval while referencing %d blacklist(s)..."
 msgstr ""
 "A iniciar a obtenção de dados dos repositórios enquanto se referencia %d "
 "lista(s) de bloqueio..."
@@ -976,7 +976,7 @@ msgid "Bazaar Inspector"
 msgstr "Inspector do Bazaar"
 
 #: src/bz-inspector.blp:22
-msgid "Active Blocklists"
+msgid "Active Blacklists"
 msgstr "Listas de bloqueio ativas"
 
 #: src/bz-inspector.blp:44

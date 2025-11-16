@@ -1,4 +1,0 @@
-[D-BUS Service]
-Name=io.github.pureblue_os.purebazaar
-SystemdService=io.github.pureblue_os.purebazaar.service
-Exec=@bindir@/bazaar service

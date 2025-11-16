@@ -29,22 +29,22 @@
 G_DEFINE_INTERFACE (BzBackend, bz_backend, G_TYPE_OBJECT)
 
 BZ_DEFINE_DATA (
-    retrieve_with_blocklists,
-    RetrieveWithBlocklists,
+    retrieve_with_blacklists,
+    RetrieveWithBlacklists,
     {
       BzBackend     *backend;
       DexChannel    *channel;
-      GPtrArray     *blocklists;
+      GPtrArray     *blacklists;
       GCancellable  *cancellable;
       gpointer       user_data;
       GDestroyNotify destroy_user_data;
     },
     BZ_RELEASE_DATA (channel, dex_unref);
-    BZ_RELEASE_DATA (blocklists, g_ptr_array_unref);
+    BZ_RELEASE_DATA (blacklists, g_ptr_array_unref);
     BZ_RELEASE_DATA (cancellable, g_object_unref);
     BZ_RELEASE_DATA (user_data, self->destroy_user_data))
 static DexFuture *
-retrieve_with_blocklists_fiber (RetrieveWithBlocklistsData *data);
+retrieve_with_blacklists_fiber (RetrieveWithBlacklistsData *data);
 
 static DexChannel *
 bz_backend_real_create_notification_channel (BzBackend *self)
@@ -151,46 +151,46 @@ bz_backend_retrieve_remote_entries (BzBackend     *self,
 }
 
 DexFuture *
-bz_backend_retrieve_remote_entries_with_blocklists (BzBackend     *self,
+bz_backend_retrieve_remote_entries_with_blacklists (BzBackend     *self,
                                                     DexChannel    *channel,
-                                                    GListModel    *blocklists,
+                                                    GListModel    *blacklists,
                                                     GCancellable  *cancellable,
                                                     gpointer       user_data,
                                                     GDestroyNotify destroy_user_data)
 {
-  g_autoptr (RetrieveWithBlocklistsData) data = NULL;
-  guint n_blocklists                          = 0;
+  g_autoptr (RetrieveWithBlacklistsData) data = NULL;
+  guint n_blacklists                          = 0;
 
   dex_return_error_if_fail (BZ_IS_BACKEND (self));
   dex_return_error_if_fail (DEX_IS_CHANNEL (channel));
-  dex_return_error_if_fail (G_LIST_MODEL (blocklists));
+  dex_return_error_if_fail (G_LIST_MODEL (blacklists));
 
-  data                    = retrieve_with_blocklists_data_new ();
+  data                    = retrieve_with_blacklists_data_new ();
   data->backend           = self;
   data->channel           = dex_ref (channel);
-  data->blocklists        = g_ptr_array_new_with_free_func (g_free);
+  data->blacklists        = g_ptr_array_new_with_free_func (g_free);
   data->cancellable       = cancellable != NULL ? g_object_ref (cancellable) : NULL;
   data->user_data         = user_data;
   data->destroy_user_data = destroy_user_data;
 
-  n_blocklists = g_list_model_get_n_items (blocklists);
-  for (guint i = 0; i < n_blocklists; i++)
+  n_blacklists = g_list_model_get_n_items (blacklists);
+  for (guint i = 0; i < n_blacklists; i++)
     {
       g_autoptr (GtkStringObject) string = NULL;
       const char *path                   = NULL;
 
-      string = g_list_model_get_item (blocklists, i);
+      string = g_list_model_get_item (blacklists, i);
       path   = gtk_string_object_get_string (string);
 
-      g_ptr_array_add (data->blocklists, g_strdup (path));
+      g_ptr_array_add (data->blacklists, g_strdup (path));
     }
 
   return dex_scheduler_spawn (
       bz_get_io_scheduler (),
       bz_get_dex_stack_size (),
-      (DexFiberFunc) retrieve_with_blocklists_fiber,
-      retrieve_with_blocklists_data_ref (data),
-      retrieve_with_blocklists_data_unref);
+      (DexFiberFunc) retrieve_with_blacklists_fiber,
+      retrieve_with_blacklists_data_ref (data),
+      retrieve_with_blacklists_data_unref);
 }
 
 DexFuture *
@@ -315,20 +315,20 @@ bz_backend_merge_and_schedule_transactions (BzBackend    *self,
 }
 
 static DexFuture *
-retrieve_with_blocklists_fiber (RetrieveWithBlocklistsData *data)
+retrieve_with_blacklists_fiber (RetrieveWithBlacklistsData *data)
 {
-  GPtrArray *blocklists               = data->blocklists;
+  GPtrArray *blacklists               = data->blacklists;
   g_autoptr (GError) local_error      = NULL;
   g_autoptr (GPtrArray) blocked_names = NULL;
 
   blocked_names = g_ptr_array_new_with_free_func (g_free);
 
-  for (guint i = 0; i < blocklists->len; i++)
+  for (guint i = 0; i < blacklists->len; i++)
     {
       const char *path       = NULL;
       g_autoptr (GFile) file = NULL;
 
-      path = g_ptr_array_index (blocklists, i);
+      path = g_ptr_array_index (blacklists, i);
       file = g_file_new_for_path (path);
 
       if (file != NULL)
@@ -340,7 +340,7 @@ retrieve_with_blocklists_fiber (RetrieveWithBlocklistsData *data)
           bytes = dex_await_boxed (dex_file_load_contents_bytes (file), &local_error);
           if (bytes == NULL)
             {
-              g_warning ("Failed to load blocklist from path '%s': %s",
+              g_warning ("Failed to load blacklist from path '%s': %s",
                          path, local_error->message);
               g_clear_pointer (&local_error, g_error_free);
               continue;

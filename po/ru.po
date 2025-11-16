@@ -22,26 +22,26 @@ msgstr ""
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Gtranslator 49.0\n"
 
-#: data/io.github.pureblue_os.purebazaar.desktop.in:2
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:7 src/bz-window.blp:5
+#: data/io.github.pureblueos.purebazaar.desktop.in:2
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:7 src/bz-window.blp:5
 #: src/bz-window.blp:174
 msgid "Bazaar"
 msgstr "Bazaar"
 
-#: data/io.github.pureblue_os.purebazaar.desktop.in:3
+#: data/io.github.pureblueos.purebazaar.desktop.in:3
 msgid "Add, remove or update flatpak software on this computer"
 msgstr ""
 "Установка, удаление или обновление Flatpak приложений на этом компьютере"
 
-#: data/io.github.pureblue_os.purebazaar.desktop.in:9
+#: data/io.github.pureblueos.purebazaar.desktop.in:9
 msgid "GTK;System;PackageManager;Discover;Flatpak;Software;Store;"
 msgstr "GTK;Система;УправлениеПакетами;Discover;Flatpak;Приложения;Магазин;"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:6
+#: data/io.github.pureblueos.purebazaar.gschema.xml:6
 msgid "Show Git Forge Star Counts"
 msgstr "Показать количество звёзд на странице репозитория"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:7
+#: data/io.github.pureblueos.purebazaar.gschema.xml:7
 msgid ""
 "Whether to attempt to detect and show \"star counts\" for projects in the "
 "full view"
@@ -49,53 +49,53 @@ msgstr ""
 "Пытаться ли получить количество звёзд на странице репозитория проектов в "
 "экране обзора приложения"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:11
+#: data/io.github.pureblueos.purebazaar.gschema.xml:11
 msgid "Only Show Free Software"
 msgstr "Показывать только свободные приложения"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:12
+#: data/io.github.pureblueos.purebazaar.gschema.xml:12
 msgid "Hide proprietary software when searching"
 msgstr "Скрыть проприетарные приложения в поиске"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:16
+#: data/io.github.pureblueos.purebazaar.gschema.xml:16
 msgid "Show Only Flathub Content"
 msgstr "Показывать только приложения из Flathub"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:17
+#: data/io.github.pureblueos.purebazaar.gschema.xml:17
 msgid "Filter search results to only show applications available on Flathub"
 msgstr "Фильтровать приложения из Flathub в результатах поиска "
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:21
+#: data/io.github.pureblueos.purebazaar.gschema.xml:21
 msgid "Debounce Search Inputs"
 msgstr "Увеличить время отклика ввода при поиске"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:22
+#: data/io.github.pureblueos.purebazaar.gschema.xml:22
 msgid "Add a delay before searching to prevent instant replies while typing"
 msgstr ""
 "Добавить время отклика перед выполнением фильтрации быстрых ответов при вводе"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:40
+#: data/io.github.pureblueos.purebazaar.gschema.xml:40
 msgid "Global Progress Bar Theme"
 msgstr "Тема оформления глобальной полосы прогресса"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:41
+#: data/io.github.pureblueos.purebazaar.gschema.xml:41
 msgid "Describes the look of the global progress bar"
 msgstr "Описывает внешний вид глобальной полосы прогресса"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:45
+#: data/io.github.pureblueos.purebazaar.gschema.xml:45
 msgid "Saved Window Dimensions"
 msgstr "Сохранить размер окна"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:46
+#: data/io.github.pureblueos.purebazaar.gschema.xml:46
 msgid "The window dimensions to be used by the next Bazaar window"
 msgstr ""
 "Сохранённый размер окна будет использован при повторном открытии Bazaar"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:8
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:8
 msgid "Discover and install applications"
 msgstr "Поиск и установка приложений"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:10
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:10
 msgid ""
 "A new app store for GNOME with a focus on discovering and installing "
 "applications and addons from Flatpak remotes, particularly Flathub."
@@ -103,7 +103,7 @@ msgstr ""
 "Новый магазин приложений для GNOME с фокусом на поиске, установке приложений "
 "и дополнений из Flatpak репозиторий, в частности с Flathub."
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:14
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:14
 msgid ""
 "It emphasizes supporting the developers who make the Linux desktop possible. "
 "Bazaar features a \"curated\" tab that can be configured by distributors to "
@@ -113,19 +113,19 @@ msgstr ""
 "возможным. Bazaar внедряет вкладку \"Избранное\", которая настраивается "
 "дистрибьюторами для обеспечения более ориентированного опыта."
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:29 src/bz-application.c:478
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:29 src/bz-application.c:478
 msgid "Adam Masciola"
 msgstr "Адам Масциола"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:54
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:54
 msgid "The home view displaying Flathub apps"
 msgstr "Главный экран, отображающий приложения Flathub"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:58
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:58
 msgid "Nucleus app page"
 msgstr "Страница приложения Nucleus"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:62
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:62
 msgid "Searching for Blender"
 msgstr "Поиск Blender"
 
@@ -250,7 +250,7 @@ msgstr "Определение установленных приложений..
 
 #: src/bz-application.c:1099
 #, c-format
-msgid "Beginning remote entry retrieval while referencing %d blocklist(s)..."
+msgid "Beginning remote entry retrieval while referencing %d blacklist(s)..."
 msgstr ""
 "Получение элементов из репозиториев при обращении к %d чёрным спискам..."
 
@@ -860,7 +860,7 @@ msgid "Bazaar Inspector"
 msgstr "Bazaar Инспектор"
 
 #: src/bz-inspector.blp:24
-msgid "Active Blocklists"
+msgid "Active Blacklists"
 msgstr "Активные чёрные списки"
 
 #: src/bz-inspector.blp:41

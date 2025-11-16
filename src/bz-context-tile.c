@@ -139,7 +139,7 @@ bz_context_tile_class_init (BzContextTileClass *klass)
 
   g_object_class_install_properties (object_class, LAST_PROP, props);
 
-  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblue_os/purebazaar/bz-context-tile.ui");
+  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblueos/purebazaar/bz-context-tile.ui");
   gtk_widget_class_bind_template_child (widget_class, BzContextTile, lozenge);
   gtk_widget_class_bind_template_child (widget_class, BzContextTile, label);
 }

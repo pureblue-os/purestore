@@ -19,75 +19,75 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Gtranslator 49.0\n"
 
-#: data/io.github.pureblue_os.purebazaar.desktop.in:2
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:7 src/bz-window.blp:5
+#: data/io.github.pureblueos.purebazaar.desktop.in:2
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:7 src/bz-window.blp:5
 #: src/bz-window.blp:56
 msgid "Bazaar"
 msgstr "Bazár"
 
-#: data/io.github.pureblue_os.purebazaar.desktop.in:3
+#: data/io.github.pureblueos.purebazaar.desktop.in:3
 msgid "Add, remove or update flatpak software on this computer"
 msgstr "Flatpak alkalmazások telepítése, eltávolítása és frissítése"
 
-#: data/io.github.pureblue_os.purebazaar.desktop.in:9
+#: data/io.github.pureblueos.purebazaar.desktop.in:9
 msgid "GTK;System;PackageManager;Discover;Flatpak;Software;Store;"
 msgstr "GTK;System;PackageManager;Discover;Flatpak;Software;Store;rendszer;csomagkezelő;felfedezés;szoftver;áruház;bolt;"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:6
+#: data/io.github.pureblueos.purebazaar.gschema.xml:6
 msgid "Show Git Forge Star Counts"
 msgstr ""
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:7
+#: data/io.github.pureblueos.purebazaar.gschema.xml:7
 msgid ""
 "Whether to attempt to detect and show \"star counts\" for projects in the "
 "full view"
 msgstr ""
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:11
+#: data/io.github.pureblueos.purebazaar.gschema.xml:11
 msgid "Only Show Free Software"
 msgstr ""
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:12
+#: data/io.github.pureblueos.purebazaar.gschema.xml:12
 msgid "Hide proprietary software when searching"
 msgstr ""
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:16
+#: data/io.github.pureblueos.purebazaar.gschema.xml:16
 msgid "Show Only Flathub Content"
 msgstr ""
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:17
+#: data/io.github.pureblueos.purebazaar.gschema.xml:17
 msgid "Filter search results to only show applications available on Flathub"
 msgstr ""
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:21
+#: data/io.github.pureblueos.purebazaar.gschema.xml:21
 msgid "Debounce Search Inputs"
 msgstr ""
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:22
+#: data/io.github.pureblueos.purebazaar.gschema.xml:22
 msgid "Add a delay before searching to prevent instant replies while typing"
 msgstr ""
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:40
+#: data/io.github.pureblueos.purebazaar.gschema.xml:40
 msgid "Global Progress Bar Theme"
 msgstr ""
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:41
+#: data/io.github.pureblueos.purebazaar.gschema.xml:41
 msgid "Describes the look of the global progress bar"
 msgstr ""
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:45
+#: data/io.github.pureblueos.purebazaar.gschema.xml:45
 msgid "Saved Window Dimensions"
 msgstr ""
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:46
+#: data/io.github.pureblueos.purebazaar.gschema.xml:46
 msgid "The window dimensions to be used by the next Bazaar window"
 msgstr ""
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:8
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:8
 msgid "Discover and install applications"
 msgstr "Alkalmazások felfedezése és telepítése"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:10
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:10
 msgid ""
 "A new app store for GNOME with a focus on discovering and installing "
 "applications and addons from Flatpak remotes, particularly Flathub."
@@ -96,7 +96,7 @@ msgstr ""
 "kifejezetten a Flathubról származó alkalmazások és kiegészítők felfedezése "
 "és telepítése áll."
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:14
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:14
 msgid ""
 "It emphasizes supporting the developers who make the Linux desktop possible. "
 "Bazaar features a \"curated\" tab that can be configured by distributors to "
@@ -106,19 +106,19 @@ msgstr ""
 "támogatását. A Bazár egy „válogatott” füllel is rendelkezik, amelyet a "
 "disztrók konfigurálhatnak, hogy lokalizáltabb élményt nyújtsanak."
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:29 src/bz-application.c:506
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:29 src/bz-application.c:506
 msgid "Adam Masciola"
 msgstr "Adam Masciola"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:54
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:54
 msgid "The home view displaying Flathub apps"
 msgstr "A kezdőképernyő Flathub alkalmazásokkal"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:58
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:58
 msgid "Nucleus app page"
 msgstr "Alkalmazásoldal a Nucleus alkalmazással"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:62
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:62
 msgid "Searching for Blender"
 msgstr "Keresés a Blenderre"
 
@@ -343,7 +343,7 @@ msgstr "Telepített tételek beazonosítása…"
 
 #: src/bz-application.c:1128
 #, c-format
-msgid "Beginning remote entry retrieval while referencing %d blocklist(s)..."
+msgid "Beginning remote entry retrieval while referencing %d blacklist(s)..."
 msgstr "Távoli tételek lekérésének megkezdése, %d tiltólista hivatkozásával…"
 
 #: src/bz-application.c:1276
@@ -851,7 +851,7 @@ msgid "Bazaar Inspector"
 msgstr ""
 
 #: src/bz-inspector.blp:22
-msgid "Active Blocklists"
+msgid "Active Blacklists"
 msgstr ""
 
 #: src/bz-inspector.blp:44

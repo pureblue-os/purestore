@@ -185,7 +185,7 @@ bz_markdown_render_class_init (BzMarkdownRenderClass *klass)
 
   g_object_class_install_properties (object_class, LAST_PROP, props);
 
-  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblue_os/purebazaar/bz-markdown-render.ui");
+  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblueos/purebazaar/bz-markdown-render.ui");
   gtk_widget_class_bind_template_child (widget_class, BzMarkdownRender, box);
 }
 

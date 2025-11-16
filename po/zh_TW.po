@@ -18,34 +18,34 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.6\n"
 
-#: data/io.github.pureblue_os.purebazaar.desktop.in:3
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:7 src/bz-window.blp:5
+#: data/io.github.pureblueos.purebazaar.desktop.in:3
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:7 src/bz-window.blp:5
 msgid "Bazaar"
 msgstr "Bazaar"
 
-#: data/io.github.pureblue_os.purebazaar.desktop.in:4
+#: data/io.github.pureblueos.purebazaar.desktop.in:4
 msgid "Add, remove or update flatpak software on this computer"
 msgstr "新增、移除或更新此電腦上的 Flatpak 軟體"
 
-#: data/io.github.pureblue_os.purebazaar.desktop.in:10
+#: data/io.github.pureblueos.purebazaar.desktop.in:10
 msgid "GTK;System;PackageManager;Discover;Flatpak;Software;Store;"
 msgstr ""
 "GTK;System;PackageManager;Discover;Flatpak;Software;Store;套件管理;探索;軟體;"
 "商店;"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:6
+#: data/io.github.pureblueos.purebazaar.gschema.xml:6
 msgid "Show Animated Background"
 msgstr "顯示動畫背景"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:7
+#: data/io.github.pureblueos.purebazaar.gschema.xml:7
 msgid "Whether to show the animated icon background on the home page"
 msgstr "是否在首頁顯示動態圖示背景"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:8
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:8
 msgid "Discover and install applications"
 msgstr "探索與安裝應用程式"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:10
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:10
 msgid ""
 "A new app store for GNOME with a focus on discovering and installing "
 "applications and add-ons from Flatpak remotes, particularly Flathub"
@@ -53,7 +53,7 @@ msgstr ""
 "為 GNOME 打造的新應用程式商店，著重探索與安裝來自 Flatpak 遠端（特別是 "
 "Flathub）的應用程式與附加元件"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:15
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:15
 msgid ""
 "It emphasizes supporting the developers who make the Linux desktop possible. "
 "Bazaar features a \"curated\" tab that can be configured by distributors to "
@@ -62,19 +62,19 @@ msgstr ""
 "著重支援讓 Linux 桌面成真的開發者。Bazaar 提供「精選」分頁，發行商可設定以提"
 "供更在地化的體驗。"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:24 src/bz-application.c:798
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:24 src/bz-application.c:798
 msgid "Adam Masciola"
 msgstr "Adam Masciola"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:49
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:49
 msgid "Calligraphy application page"
 msgstr "書法應用程式頁面"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:53
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:53
 msgid "Searching for Blender"
 msgstr "正在搜尋 Blender"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:57
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:57
 msgid "Download graph for Blender"
 msgstr "Blender 的下載圖表"
 
@@ -224,7 +224,7 @@ msgstr "正在辨識已安裝的項目..."
 
 #: src/bz-application.c:1298
 #, c-format
-msgid "Beginning remote entry retrieval while referencing %d blocklist(s)..."
+msgid "Beginning remote entry retrieval while referencing %d blacklist(s)..."
 msgstr "開始擷取遠端項目，並參考 %d 份封鎖清單..."
 
 #: src/bz-application.c:1442

@@ -1,0 +1,5 @@
+[Shell Search Provider]
+DesktopId=io.github.pureblueos.purebazaar.desktop
+BusName=io.github.pureblueos.purebazaar
+ObjectPath=/io/github/pureblueos/purebazaar/SearchProvider
+Version=2

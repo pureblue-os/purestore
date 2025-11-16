@@ -249,7 +249,7 @@ bz_content_provider_init (BzContentProvider *self)
   g_type_ensure (BZ_TYPE_CURATED_ROW);
   g_type_ensure (BZ_TYPE_CONTENT_SECTION);
   self->yaml_parser = bz_yaml_parser_new_for_resource_schema (
-      "/io/github/pureblue_os/purebazaar/bz-content-provider-config-schema.xml");
+      "/io/github/pureblueos/purebazaar/bz-content-provider-config-schema.xml");
 
   self->input_mirror   = g_list_store_new (G_TYPE_FILE);
   self->input_tracking = g_hash_table_new_full (

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist gettext-domain="bazaar">
-  <schema id="io.github.pureblue_os.purebazaar" path="/io/github/pureblue_os/purebazaar/">
+  <schema id="io.github.pureblueos.purebazaar" path="/io/github/pureblueos/purebazaar/">
     <key name="hide-eol" type="b">
       <default>false</default>
       <summary>Hide EOL Entries</summary>

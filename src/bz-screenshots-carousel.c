@@ -350,7 +350,7 @@ bz_screenshots_carousel_class_init (BzScreenshotsCarouselClass *klass)
                     1,
                     G_TYPE_UINT);
 
-  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblue_os/purebazaar/bz-screenshots-carousel.ui");
+  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblueos/purebazaar/bz-screenshots-carousel.ui");
   gtk_widget_class_bind_template_child (widget_class, BzScreenshotsCarousel, carousel);
   gtk_widget_class_bind_template_child (widget_class, BzScreenshotsCarousel, carousel_indicator);
   gtk_widget_class_bind_template_child (widget_class, BzScreenshotsCarousel, prev_button);

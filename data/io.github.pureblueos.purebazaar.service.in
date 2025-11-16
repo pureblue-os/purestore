@@ -4,5 +4,5 @@ PartOf=graphical-session.target
 
 [Service]
 Type=dbus
-BusName=io.github.pureblue_os.purebazaar
+BusName=io.github.pureblueos.purebazaar
 ExecStart=@bindir@/bazaar --no-window

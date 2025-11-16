@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
-  <id>io.github.pureblue_os.purebazaar</id>
+  <id>io.github.pureblueos.purebazaar</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
 
@@ -28,7 +28,7 @@
   <url type="homepage">https://github.com/pureblue-os/purebazaar</url>
 
   <translation type="gettext">bazaar</translation>
-  <launchable type="desktop-id">io.github.pureblue_os.purebazaar.desktop</launchable>
+  <launchable type="desktop-id">io.github.pureblueos.purebazaar.desktop</launchable>
   <content_rating type="oars-1.1" />
 
   <branding>

@@ -452,7 +452,7 @@ bz_featured_tile_class_init (BzFeaturedTileClass *klass)
 
   g_type_ensure (BZ_TYPE_SCREENSHOT);
 
-  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblue_os/purebazaar/bz-featured-tile.ui");
+  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblueos/purebazaar/bz-featured-tile.ui");
   gtk_widget_class_bind_template_callback (widget_class, invert_boolean);
   gtk_widget_class_bind_template_callback (widget_class, get_start_margin);
 

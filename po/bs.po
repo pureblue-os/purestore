@@ -18,41 +18,41 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Poedit 3.6\n"
 
-#: data/io.github.pureblue_os.purebazaar.desktop.in:2
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:7 src/bz-window.blp:5
+#: data/io.github.pureblueos.purebazaar.desktop.in:2
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:7 src/bz-window.blp:5
 msgid "Bazaar"
 msgstr "Bazaar"
 
-#: data/io.github.pureblue_os.purebazaar.desktop.in:3
+#: data/io.github.pureblueos.purebazaar.desktop.in:3
 msgid "Add, remove or update flatpak software on this computer"
 msgstr "Dodajte, uklonite ili ažurirajte flatpak softver na ovom računaru"
 
-#: data/io.github.pureblue_os.purebazaar.desktop.in:9
+#: data/io.github.pureblueos.purebazaar.desktop.in:9
 msgid "GTK;System;PackageManager;Discover;Flatpak;Software;Store;"
 msgstr "GTK;Sistem;UpraviteljPaketa;Otkrijte;Flatpak;Softver;Prodavnica;"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:6
+#: data/io.github.pureblueos.purebazaar.gschema.xml:6
 msgid "Show Animated Background"
 msgstr "Prikaži animiranu pozadinu"
 
-#: data/io.github.pureblue_os.purebazaar.gschema.xml:7
+#: data/io.github.pureblueos.purebazaar.gschema.xml:7
 msgid "Whether to show the animated icon background on the home page"
 msgstr "Da li već prikazati animiranu pozadinu ikone na početnoj stranici"
 
 #. FIXME: add descriptions and summary
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:9
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:9
 msgid "Keep the summary shorter, between 10 and 35 characters"
 msgstr "Sažetak neka bude kraći, između 10 i 35 znakova"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:11
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:11
 msgid "No description"
 msgstr "Nema opisa"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:15 src/bz-application.c:1215
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:15 src/bz-application.c:1215
 msgid "Adam Masciola"
 msgstr "Adam Masciola"
 
-#: data/io.github.pureblue_os.purebazaar.metainfo.xml.in:41
+#: data/io.github.pureblueos.purebazaar.metainfo.xml.in:41
 msgid "Main Bazaar window showing Blender"
 msgstr "Glavni prozor Bazaara koji prikazuje Blender"
 

@@ -136,7 +136,7 @@ bz_curated_app_tile_class_init (BzCuratedAppTileClass *klass)
       g_cclosure_marshal_VOID__VOIDv);
 
   gtk_widget_class_set_css_name (widget_class, "app-tile");
-  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblue_os/purebazaar/bz-curated-app-tile.ui");
+  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblueos/purebazaar/bz-curated-app-tile.ui");
   gtk_widget_class_bind_template_callback (widget_class, clicked_cb);
 }
 

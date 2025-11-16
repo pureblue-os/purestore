@@ -221,7 +221,7 @@ bz_app_size_dialog_class_init (BzAppSizeDialogClass *klass)
 
   g_object_class_install_properties (object_class, LAST_PROP, props);
 
-  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblue_os/purebazaar/bz-app-size-dialog.ui");
+  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/pureblueos/purebazaar/bz-app-size-dialog.ui");
   gtk_widget_class_bind_template_child (widget_class, BzAppSizeDialog, size_label);
   gtk_widget_class_bind_template_child (widget_class, BzAppSizeDialog, comparisons_group);
 }
