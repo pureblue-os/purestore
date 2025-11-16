@@ -459,10 +459,6 @@ bz_application_about_action (GSimpleAction *action,
       "support-url", "https://github.com/kolunmi/bazaar",
       NULL);
 
-  adw_about_dialog_add_link (ADW_ABOUT_DIALOG (dialog),
-                              "Support Original Developer",
-                              "https://github.com/kolunmi/bazaar");
-
   adw_dialog_present (dialog, GTK_WIDGET (window));
 }
 
@@ -1131,7 +1127,7 @@ refresh_fiber (BzApplication *self)
   sync_future = bz_backend_retrieve_remote_entries (
       BZ_BACKEND (self->flatpak),
       channel,
-      NULL, self, NULL);
+      NULL, NULL, self, NULL);
 
   bz_state_info_set_busy_step_label (self->state, _ ("Receiving Entries"));
   for (;;)
