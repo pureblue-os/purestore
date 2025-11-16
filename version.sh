@@ -3,7 +3,20 @@
 INSTR="$1"
 
 VERSION=0.5.11
-PURE_SUFFIX=".pure.$(date +%Y%m%d)"
+DATE_PART="$(date +%Y-%m-%d)"
+INCREMENT=1
+
+# Try to find existing tags for today and increment
+if command -v git >/dev/null 2>&1 && [ -d "$MESON_SOURCE_ROOT/.git" ]; then
+    LATEST_TAG="$(git -C "$MESON_SOURCE_ROOT" tag -l "${VERSION}.pure.${DATE_PART}.*" | sort -V | tail -n1)"
+    if [ -n "$LATEST_TAG" ]; then
+        # Extract the increment number from the last tag
+        LAST_INCREMENT="$(echo "$LATEST_TAG" | sed -E "s/.*\.([0-9]+)$/\1/")"
+        INCREMENT=$((LAST_INCREMENT + 1))
+    fi
+fi
+
+PURE_SUFFIX=".pure.${DATE_PART}.${INCREMENT}"
 
 case "$INSTR" in
     get-vcs)
