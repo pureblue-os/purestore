@@ -26,23 +26,6 @@ template $BzInspector: Adw.Window {
         styles [
           "heading"
         ]
-        label: _("Active Blacklists");
-        xalign: 0.0;
-      }
-      ScrolledWindow {
-        propagate-natural-height: true;
-        child: ListView {
-          model: NoSelection {
-            model: bind template.state as <$BzStateInfo>.blacklists;
-          };
-          factory: string_list_factory;
-        };
-      }
-
-      Label {
-        styles [
-          "heading"
-        ]
         label: _("Active Curated-Configs");
         xalign: 0.0;
       }

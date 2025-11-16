@@ -41,8 +41,7 @@
       "buildsystem": "meson",
       "config-opts": [
         "-Dsandboxed_libflatpak=true",
-        "-Dhardcoded_content_config_path=/run/host/etc/bazaar/config.yaml",
-        "-Dhardcoded_blacklist_path=/run/host/etc/bazaar/blacklist.txt"
+        "-Dhardcoded_content_config_path=/run/host/etc/bazaar/config.yaml"
       ],
       "sources": [
         {

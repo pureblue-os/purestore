@@ -27,9 +27,6 @@ else
   if get_option('hardcoded_main_config_path') != ''
     config_h.set_quoted('HARDCODED_MAIN_CONFIG', get_option('hardcoded_main_config_path'))
   endif
-  if get_option('hardcoded_blacklist_path') != ''
-    config_h.set_quoted('HARDCODED_BLACKLIST', get_option('hardcoded_blacklist_path'))
-  endif
   if get_option('hardcoded_content_config_path') != ''
     config_h.set_quoted('HARDCODED_CONTENT_CONFIG', get_option('hardcoded_content_config_path'))
   endif

@@ -85,14 +85,6 @@ bz_backend_retrieve_remote_entries (BzBackend     *self,
                                     GDestroyNotify destroy_user_data);
 
 DexFuture *
-bz_backend_retrieve_remote_entries_with_blacklists (BzBackend     *self,
-                                                    DexChannel    *channel,
-                                                    GListModel    *blacklists,
-                                                    GCancellable  *cancellable,
-                                                    gpointer       user_data,
-                                                    GDestroyNotify destroy_user_data);
-
-DexFuture *
 bz_backend_retrieve_install_ids (BzBackend    *self,
                                  GCancellable *cancellable);
 

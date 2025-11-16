@@ -53,7 +53,6 @@ struct _BzApplication
 
   GSettings       *settings;
   GHashTable      *config;
-  GListModel      *blacklists;
   GListModel      *content_configs;
   GtkCssProvider  *css;
   GtkMapListModel *content_configs_to_files;
@@ -168,7 +167,6 @@ bz_application_dispose (GObject *object)
   dex_clear (&self->periodic_sync);
   g_clear_handle_id (&self->periodic_timeout, g_source_remove);
   g_clear_object (&self->settings);
-  g_clear_object (&self->blacklists);
   g_clear_object (&self->content_configs);
   g_clear_object (&self->transactions);
   g_clear_object (&self->content_provider);
@@ -215,8 +213,6 @@ bz_application_command_line (GApplication            *app,
   g_auto (GStrv) argv                       = NULL;
   gboolean help                             = FALSE;
   gboolean no_window                        = FALSE;
-  g_auto (GStrv) blacklists_strv            = NULL;
-  g_autoptr (GtkStringList) blacklists      = NULL;
   g_auto (GStrv) content_configs_strv       = NULL;
   g_autoptr (GtkStringList) content_configs = NULL;
   g_auto (GStrv) locations                  = NULL;
@@ -224,7 +220,6 @@ bz_application_command_line (GApplication            *app,
   GOptionEntry main_entries[] = {
     { "help", 0, 0, G_OPTION_ARG_NONE, &help, "Print help" },
     { "no-window", 0, 0, G_OPTION_ARG_NONE, &no_window, "Ensure the service is running without creating a new window" },
-    { "extra-blacklist", 0, 0, G_OPTION_ARG_FILENAME_ARRAY, &blacklists_strv, "Add an extra blacklist to read from" },
     { "extra-curated-config", 0, 0, G_OPTION_ARG_FILENAME_ARRAY, &content_configs_strv, "Add an extra yaml file with which to configure the app browser" },
     /* Here for backwards compat */
     { "extra-content-config", 0, 0, G_OPTION_ARG_FILENAME_ARRAY, &content_configs_strv, "Add an extra yaml file with which to configure the app browser (backwards compat)" },
@@ -278,19 +273,6 @@ bz_application_command_line (GApplication            *app,
 
       init_service_struct (self);
 
-      blacklists = gtk_string_list_new (NULL);
-#ifdef HARDCODED_BLACKLIST
-      g_debug ("Bazaar was configured with a hardcoded blacklist at %s, adding that now...",
-               HARDCODED_BLACKLIST);
-      gtk_string_list_append (blacklists, HARDCODED_BLACKLIST);
-#endif
-      if (blacklists_strv != NULL)
-        gtk_string_list_splice (
-            blacklists,
-            g_list_model_get_n_items (G_LIST_MODEL (blacklists)),
-            0,
-            (const char *const *) blacklists_strv);
-
       content_configs = gtk_string_list_new (NULL);
 #ifdef HARDCODED_CONTENT_CONFIG
       g_debug ("Bazaar was configured with a hardcoded curated content config at %s, adding that now...",
@@ -304,16 +286,13 @@ bz_application_command_line (GApplication            *app,
             0,
             (const char *const *) content_configs_strv);
 
-      g_clear_object (&self->blacklists);
       g_clear_object (&self->content_configs);
-      self->blacklists      = G_LIST_MODEL (g_steal_pointer (&blacklists));
       self->content_configs = G_LIST_MODEL (g_steal_pointer (&content_configs));
 
       refresh (self);
 
       gtk_map_list_model_set_model (
           self->content_configs_to_files, self->content_configs);
-      bz_state_info_set_blacklists (self->state, self->blacklists);
       bz_state_info_set_curated_configs (self->state, self->content_configs);
     }
 
@@ -778,7 +757,6 @@ init_service_struct (BzApplication *self)
                             G_CALLBACK (transaction_success), self);
 
   bz_state_info_set_application_factory (self->state, self->application_factory);
-  bz_state_info_set_blacklists (self->state, self->blacklists);
   bz_state_info_set_curated_provider (self->state, self->content_provider);
   bz_state_info_set_entry_factory (self->state, self->entry_factory);
   bz_state_info_set_flathub (self->state, self->flathub);
@@ -1150,10 +1128,9 @@ refresh_fiber (BzApplication *self)
       g_str_hash, g_str_equal, g_free, (GDestroyNotify) g_ptr_array_unref);
   cache_futures = g_ptr_array_new_with_free_func (dex_unref);
 
-  sync_future = bz_backend_retrieve_remote_entries_with_blacklists (
+  sync_future = bz_backend_retrieve_remote_entries (
       BZ_BACKEND (self->flatpak),
       channel,
-      self->blacklists,
       NULL, self, NULL);
 
   bz_state_info_set_busy_step_label (self->state, _ ("Receiving Entries"));

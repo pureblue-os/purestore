@@ -28,24 +28,6 @@
 
 G_DEFINE_INTERFACE (BzBackend, bz_backend, G_TYPE_OBJECT)
 
-BZ_DEFINE_DATA (
-    retrieve_with_blacklists,
-    RetrieveWithBlacklists,
-    {
-      BzBackend     *backend;
-      DexChannel    *channel;
-      GPtrArray     *blacklists;
-      GCancellable  *cancellable;
-      gpointer       user_data;
-      GDestroyNotify destroy_user_data;
-    },
-    BZ_RELEASE_DATA (channel, dex_unref);
-    BZ_RELEASE_DATA (blacklists, g_ptr_array_unref);
-    BZ_RELEASE_DATA (cancellable, g_object_unref);
-    BZ_RELEASE_DATA (user_data, self->destroy_user_data))
-static DexFuture *
-retrieve_with_blacklists_fiber (RetrieveWithBlacklistsData *data);
-
 static DexChannel *
 bz_backend_real_create_notification_channel (BzBackend *self)
 {
@@ -148,49 +130,6 @@ bz_backend_retrieve_remote_entries (BzBackend     *self,
       cancellable,
       user_data,
       destroy_user_data);
-}
-
-DexFuture *
-bz_backend_retrieve_remote_entries_with_blacklists (BzBackend     *self,
-                                                    DexChannel    *channel,
-                                                    GListModel    *blacklists,
-                                                    GCancellable  *cancellable,
-                                                    gpointer       user_data,
-                                                    GDestroyNotify destroy_user_data)
-{
-  g_autoptr (RetrieveWithBlacklistsData) data = NULL;
-  guint n_blacklists                          = 0;
-
-  dex_return_error_if_fail (BZ_IS_BACKEND (self));
-  dex_return_error_if_fail (DEX_IS_CHANNEL (channel));
-  dex_return_error_if_fail (G_LIST_MODEL (blacklists));
-
-  data                    = retrieve_with_blacklists_data_new ();
-  data->backend           = self;
-  data->channel           = dex_ref (channel);
-  data->blacklists        = g_ptr_array_new_with_free_func (g_free);
-  data->cancellable       = cancellable != NULL ? g_object_ref (cancellable) : NULL;
-  data->user_data         = user_data;
-  data->destroy_user_data = destroy_user_data;
-
-  n_blacklists = g_list_model_get_n_items (blacklists);
-  for (guint i = 0; i < n_blacklists; i++)
-    {
-      g_autoptr (GtkStringObject) string = NULL;
-      const char *path                   = NULL;
-
-      string = g_list_model_get_item (blacklists, i);
-      path   = gtk_string_object_get_string (string);
-
-      g_ptr_array_add (data->blacklists, g_strdup (path));
-    }
-
-  return dex_scheduler_spawn (
-      bz_get_io_scheduler (),
-      bz_get_dex_stack_size (),
-      (DexFiberFunc) retrieve_with_blacklists_fiber,
-      retrieve_with_blacklists_data_ref (data),
-      retrieve_with_blacklists_data_unref);
 }
 
 DexFuture *
@@ -312,59 +251,4 @@ bz_backend_merge_and_schedule_transactions (BzBackend    *self,
       removals_pa->len,
       channel,
       cancellable);
-}
-
-static DexFuture *
-retrieve_with_blacklists_fiber (RetrieveWithBlacklistsData *data)
-{
-  GPtrArray *blacklists               = data->blacklists;
-  g_autoptr (GError) local_error      = NULL;
-  g_autoptr (GPtrArray) blocked_names = NULL;
-
-  blocked_names = g_ptr_array_new_with_free_func (g_free);
-
-  for (guint i = 0; i < blacklists->len; i++)
-    {
-      const char *path       = NULL;
-      g_autoptr (GFile) file = NULL;
-
-      path = g_ptr_array_index (blacklists, i);
-      file = g_file_new_for_path (path);
-
-      if (file != NULL)
-        {
-          g_autoptr (GBytes) bytes     = NULL;
-          const char       *bytes_data = NULL;
-          g_autofree char **lines      = NULL;
-
-          bytes = dex_await_boxed (dex_file_load_contents_bytes (file), &local_error);
-          if (bytes == NULL)
-            {
-              g_warning ("Failed to load blacklist from path '%s': %s",
-                         path, local_error->message);
-              g_clear_pointer (&local_error, g_error_free);
-              continue;
-            }
-
-          bytes_data = g_bytes_get_data (bytes, NULL);
-          lines      = g_strsplit (bytes_data, "\n", -1);
-
-          for (char **line = lines; *line != NULL; line++)
-            {
-              if (**line != '\0')
-                g_ptr_array_add (blocked_names, *line);
-              else
-                g_free (*line);
-            }
-        }
-    }
-
-  return BZ_BACKEND_GET_IFACE (data->backend)
-      ->retrieve_remote_entries (
-          data->backend,
-          data->channel,
-          blocked_names,
-          data->cancellable,
-          g_steal_pointer (&data->user_data),
-          data->destroy_user_data);
 }
