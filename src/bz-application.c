@@ -477,7 +477,12 @@ bz_application_about_action (GSimpleAction *action,
       "copyright", "© 2025 Pureblue OS",
       "license-type", GTK_LICENSE_GPL_3_0,
       "website", "https://github.com/pureblue-os/purebazaar",
+      "support-url", "https://github.com/kolunmi/bazaar",
       NULL);
+
+  adw_about_dialog_add_link (ADW_ABOUT_DIALOG (dialog),
+                              "Support Original Developer",
+                              "https://github.com/kolunmi/bazaar");
 
   adw_dialog_present (dialog, GTK_WIDGET (window));
 }
