@@ -13,10 +13,10 @@ name: CI Build Flatpak
 jobs:
 
   flatpak:
-    name: "Flatpak Build Test"
+    name: "Flatpak"
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
     container:
       image: ghcr.io/flathub-infra/flatpak-github-actions:gnome-49
       options: --privileged
@@ -30,3 +30,56 @@ jobs:
         bundle: Store.flatpak
         manifest-path: build-aux/flatpak/io.github.pureblueos.purestore.json
         cache-key: flatpak-builder-${{ github.sha }}
+    - name: Get project version
+      id: get_version
+      run: |
+        # get clean version with suffix (e.g. 0.5.11.pure.20251114)
+        VERSION=$(./version.sh get-version)
+        echo "version=$VERSION" >> $GITHUB_OUTPUT
+
+    - name: Configure git safe directory
+      run: git config --global --add safe.directory /__w/purestore/purestore
+
+    - name: Check for existing tag
+      id: tag_check
+      run: |
+        # ensure tags are fetched for existence check
+        git fetch --tags
+        if git rev-parse "v${{ steps.get_version.outputs.version }}" >/dev/null 2>&1; then
+          echo "exists=true" >> $GITHUB_OUTPUT
+        else
+          echo "exists=false" >> $GITHUB_OUTPUT
+        fi
+
+    - name: Create and push tag (if missing)
+      if: steps.tag_check.outputs.exists == 'false'
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        VERSION="${{ steps.get_version.outputs.version }}"
+        git tag -a "v$VERSION" -m "Release v$VERSION"
+        git push "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" "v$VERSION"
+
+    - name: Create GitHub release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: v${{ steps.get_version.outputs.version }}
+        release_name: Release v${{ steps.get_version.outputs.version }}
+        body: Automated release from CI
+        draft: false
+        prerelease: false
+
+    - name: Upload Flatpak bundle to release
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./Store.flatpak
+        asset_name: Store.flatpak
+        asset_content_type: application/octet-stream
