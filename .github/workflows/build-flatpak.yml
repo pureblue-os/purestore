@@ -25,20 +25,21 @@ jobs:
       with:
         submodules: recursive
         fetch-depth: 0
+    - name: Configure git safe directory
+      run: git config --global --add safe.directory /__w/purestore/purestore
+      
     - uses: flatpak/flatpak-github-actions/flatpak-builder@v6
       with:
         bundle: Store.flatpak
         manifest-path: build-aux/flatpak/io.github.pureblueos.purestore.json
         cache-key: flatpak-builder-${{ github.sha }}
+        
     - name: Get project version
       id: get_version
       run: |
         # get version with date and commit hash (e.g. 0.5.11.pure.20251114.abc1234)
         VERSION=$(./version.sh)
         echo "version=$VERSION" >> $GITHUB_OUTPUT
-
-    - name: Configure git safe directory
-      run: git config --global --add safe.directory /__w/purestore/purestore
 
     - name: Check for existing tag
       id: tag_check
