@@ -31,6 +31,7 @@
 #include "bz-full-view.h"
 #include "bz-global-progress.h"
 #include "bz-installed-page.h"
+#include "bz-io.h"
 #include "bz-progress-bar.h"
 #include "bz-search-widget.h"
 #include "bz-transaction-manager.h"
@@ -655,18 +656,75 @@ install_confirmation_response (AdwAlertDialog *alert,
 {
   gboolean should_install               = FALSE;
   gboolean should_remove                = FALSE;
+  gboolean delete_data                  = FALSE;
+  gboolean delete_data_only             = FALSE;
   g_autoptr (GtkWidget) cb_source       = NULL;
   g_autoptr (BzEntry) cb_entry          = NULL;
   g_autoptr (BzEntryGroup) cb_group     = NULL;
   g_autoptr (GListModel) cb_group_model = NULL;
 
-  should_install = g_strcmp0 (response, "install") == 0;
-  should_remove  = g_strcmp0 (response, "remove") == 0;
+  should_install   = g_strcmp0 (response, "install") == 0;
+  should_remove    = g_strcmp0 (response, "remove") == 0 || g_strcmp0 (response, "remove-and-data") == 0;
+  delete_data      = g_strcmp0 (response, "remove-and-data") == 0;
+  delete_data_only = g_strcmp0 (response, "remove-data-only") == 0;
 
   cb_source      = g_object_steal_data (G_OBJECT (alert), "source");
   cb_entry       = g_object_steal_data (G_OBJECT (alert), "entry");
   cb_group       = g_object_steal_data (G_OBJECT (alert), "group");
   cb_group_model = g_object_steal_data (G_OBJECT (alert), "model");
+
+  /* Handle delete data only - no uninstall */
+  if (delete_data_only)
+    {
+      BzEntry *target_entry = NULL;
+
+      /* Get the entry - either directly or from group selection */
+      if (cb_entry != NULL)
+        {
+          target_entry = cb_entry;
+        }
+      else if (cb_group != NULL)
+        {
+          GPtrArray *checks = g_object_get_data (G_OBJECT (alert), "checks");
+          if (checks != NULL)
+            {
+              guint n_entries = g_list_model_get_n_items (cb_group_model);
+              for (guint i = 0; i < n_entries; i++)
+                {
+                  GtkCheckButton *check = g_ptr_array_index (checks, i);
+                  if (check != NULL && gtk_check_button_get_active (check))
+                    {
+                      target_entry = g_list_model_get_item (cb_group_model, i);
+                      break;
+                    }
+                }
+            }
+        }
+
+      if (target_entry != NULL)
+        {
+          const char *app_id = bz_entry_get_id (target_entry);
+          if (app_id != NULL)
+            {
+              g_autofree char *app_data_path = g_build_filename (g_get_home_dir (), ".var", "app", app_id, NULL);
+
+              /* Kill the app first if running */
+              g_autofree char *kill_cmd = g_strdup_printf ("flatpak kill %s", app_id);
+              g_spawn_command_line_sync (kill_cmd, NULL, NULL, NULL, NULL);
+
+              if (g_file_test (app_data_path, G_FILE_TEST_IS_DIR))
+                {
+                  g_autoptr (GFile) app_data_file = g_file_new_for_path (app_data_path);
+                  bz_reap_path (app_data_path);
+                  g_file_delete (app_data_file, NULL, NULL);
+                  g_debug ("Deleted app data at: %s", app_data_path);
+                }
+            }
+          if (target_entry != cb_entry)
+            g_object_unref (target_entry);
+        }
+      return;
+    }
 
   if (should_install || should_remove)
     {
@@ -694,11 +752,39 @@ install_confirmation_response (AdwAlertDialog *alert,
                 }
 
               if (entry != NULL)
-                transact (self, entry, should_remove, cb_source);
+                {
+                  if (should_remove)
+                    {
+                      /* Kill the app before uninstalling */
+                      const char *app_id = bz_entry_get_id (entry);
+                      if (app_id != NULL)
+                        {
+                          g_autofree char *kill_cmd = g_strdup_printf ("flatpak kill %s", app_id);
+                          g_spawn_command_line_sync (kill_cmd, NULL, NULL, NULL, NULL);
+                        }
+                      if (delete_data)
+                        g_object_set_data (G_OBJECT (entry), "delete-app-data", GINT_TO_POINTER (TRUE));
+                    }
+                  transact (self, entry, should_remove, cb_source);
+                }
             }
         }
       else if (cb_entry != NULL)
-        transact (self, cb_entry, should_remove, cb_source);
+        {
+          if (should_remove)
+            {
+              /* Kill the app before uninstalling */
+              const char *app_id = bz_entry_get_id (cb_entry);
+              if (app_id != NULL)
+                {
+                  g_autofree char *kill_cmd = g_strdup_printf ("flatpak kill %s", app_id);
+                  g_spawn_command_line_sync (kill_cmd, NULL, NULL, NULL, NULL);
+                }
+              if (delete_data)
+                g_object_set_data (G_OBJECT (cb_entry), "delete-app-data", GINT_TO_POINTER (TRUE));
+            }
+          transact (self, cb_entry, should_remove, cb_source);
+        }
     }
 }
 
@@ -1089,19 +1175,23 @@ configure_remove_dialog (AdwAlertDialog *alert,
 {
   g_autofree char *heading = NULL;
 
-  heading = g_strdup_printf (_ ("Remove %s?"), title);
+  heading = g_strdup_printf (_ ("Uninstall %s?"), title);
 
   adw_alert_dialog_set_heading (alert, heading);
   adw_alert_dialog_set_body (
-    alert,g_strdup_printf (_("It will not be possible to use %s after it is uninstalled.\n\nSettings and user data will be kept."),title)
+    alert, _ ("It will not be possible to use this app after it is uninstalled.")
   );
 
   adw_alert_dialog_add_responses (alert,
                                   "cancel", _ ("Cancel"),
-                                  "remove", _ ("Remove"),
+                                  "remove-data-only", _ ("Clear Data"),
+                                  "remove-and-data", _ ("Uninstall & Clear Data"),
+                                  "remove", _ ("Uninstall"),
                                   NULL);
 
   adw_alert_dialog_set_response_appearance (alert, "remove", ADW_RESPONSE_DESTRUCTIVE);
+  adw_alert_dialog_set_response_appearance (alert, "remove-and-data", ADW_RESPONSE_DESTRUCTIVE);
+  adw_alert_dialog_set_response_appearance (alert, "remove-data-only", ADW_RESPONSE_DESTRUCTIVE);
   adw_alert_dialog_set_default_response (alert, "remove");
   adw_alert_dialog_set_close_response (alert, "cancel");
 }

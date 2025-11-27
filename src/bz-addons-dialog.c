@@ -88,11 +88,15 @@ update_button_for_entry (GtkButton *button,
     {
       icon_name    = "user-trash-symbolic";
       tooltip_text = _ ("Remove");
+      gtk_widget_add_css_class (GTK_WIDGET (button), "destructive-action");
+      gtk_widget_remove_css_class (GTK_WIDGET (button), "suggested-action");
     }
   else
     {
       icon_name    = "folder-download-symbolic";
       tooltip_text = _ ("Install");
+      gtk_widget_add_css_class (GTK_WIDGET (button), "suggested-action");
+      gtk_widget_remove_css_class (GTK_WIDGET (button), "destructive-action");
     }
 
   gtk_button_set_icon_name (button, icon_name);
@@ -152,6 +156,7 @@ update_action_row_from_result (AdwActionRow   *action_row,
 
   action_button = GTK_BUTTON (gtk_button_new ());
   gtk_widget_set_valign (GTK_WIDGET (action_button), GTK_ALIGN_CENTER);
+  gtk_widget_add_css_class (GTK_WIDGET (action_button), "circular");
   g_object_set_data_full (G_OBJECT (action_button), "entry", g_object_ref (entry), g_object_unref);
   g_signal_connect_swapped (action_button, "clicked",
                             G_CALLBACK (transact_cb), self);

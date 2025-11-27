@@ -7,7 +7,7 @@
 
 	"features": {},
 
-	"remoteUser": "devuser",
+	"runArgs": ["--privileged"],
 
 	"customizations": {
 		"vscode": {
@@ -28,5 +28,5 @@
 		"source=${localEnv:XDG_RUNTIME_DIR},target=${localEnv:XDG_RUNTIME_DIR},type=bind,consistency=cached"
 	],
 
-	"postCreateCommand": "git submodule update --init --recursive"
+	"postCreateCommand": "git submodule update --init --recursive && flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo"
 }

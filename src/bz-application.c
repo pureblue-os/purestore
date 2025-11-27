@@ -34,6 +34,7 @@
 #include "bz-entry-group.h"
 #include "bz-env.h"
 #include "bz-error.h"
+#include "bz-io.h"
 #include "bz-flathub-state.h"
 #include "bz-flatpak-entry.h"
 #include "bz-flatpak-instance.h"
@@ -972,6 +973,34 @@ transaction_success (BzApplication        *self,
       unique_id = bz_entry_get_unique_id (entry);
       /* TODO this doesn't account for related refs */
       g_hash_table_remove (self->last_installed_set, unique_id);
+
+      /* Delete app data if user requested it */
+      if (g_object_get_data (G_OBJECT (entry), "delete-app-data"))
+        {
+          const char *app_id              = NULL;
+          g_autofree char *app_data_path  = NULL;
+
+          app_id = bz_entry_get_id (entry);
+          if (app_id != NULL)
+            {
+              /* Kill the app first if still running */
+              g_autofree char *kill_cmd = g_strdup_printf ("flatpak kill %s", app_id);
+              g_spawn_command_line_sync (kill_cmd, NULL, NULL, NULL, NULL);
+
+              app_data_path = g_build_filename (g_get_home_dir (), ".var", "app", app_id, NULL);
+              if (g_file_test (app_data_path, G_FILE_TEST_IS_DIR))
+                {
+                  g_autoptr (GFile) app_data_file = NULL;
+
+                  g_debug ("Deleting app data at: %s", app_data_path);
+                  bz_reap_path (app_data_path);
+
+                  /* Also delete the directory itself */
+                  app_data_file = g_file_new_for_path (app_data_path);
+                  g_file_delete (app_data_file, NULL, NULL);
+                }
+            }
+        }
 
       if (bz_entry_is_of_kinds (entry, BZ_ENTRY_KIND_APPLICATION))
         {
