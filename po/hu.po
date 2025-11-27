@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: purestore\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-31 23:45+0100\n"
+"POT-Creation-Date: 2025-11-27 14:40+0000\n"
 "PO-Revision-Date: 2025-11-02 20:12+0100\n"
 "Last-Translator: Benedek Dévényi <rdbende@proton.me>\n"
 "Language-Team: Hungarian\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: data/io.github.pureblueos.purestore.desktop.in:2
 #: data/io.github.pureblueos.purestore.metainfo.xml.in:7 src/bz-window.blp:5
-#: src/bz-window.blp:56
+#: src/bz-window.blp:224
 msgid "Store"
 msgstr "Bazár"
 
@@ -34,54 +34,54 @@ msgid "GTK;System;PackageManager;Discover;Flatpak;Software;Store;"
 msgstr "GTK;System;PackageManager;Discover;Flatpak;Software;Store;rendszer;csomagkezelő;felfedezés;szoftver;áruház;bolt;"
 
 #: data/io.github.pureblueos.purestore.gschema.xml:6
-msgid "Show Git Forge Star Counts"
-msgstr ""
+msgid "Hide EOL Entries"
+msgstr "Megszűnt alkalmazások elrejtése"
 
 #: data/io.github.pureblueos.purestore.gschema.xml:7
+msgid "Hide EOL entries and entries depending on them"
+msgstr "Megszűnt alkalmazások és a tőlük függők elrejtése"
+
+#: data/io.github.pureblueos.purestore.gschema.xml:11
+msgid "Show Git Forge Star Counts"
+msgstr "Git Forge csillagszám mutatása"
+
+#: data/io.github.pureblueos.purestore.gschema.xml:12
 msgid ""
 "Whether to attempt to detect and show \"star counts\" for projects in the "
 "full view"
-msgstr ""
-
-#: data/io.github.pureblueos.purestore.gschema.xml:11
-msgid "Only Show Free Software"
-msgstr ""
-
-#: data/io.github.pureblueos.purestore.gschema.xml:12
-msgid "Hide proprietary software when searching"
-msgstr ""
+msgstr "Kísérlet a projektek \"csillagszámának\" felismerésére és megjelenítésére a teljes nézetben"
 
 #: data/io.github.pureblueos.purestore.gschema.xml:16
-msgid "Show Only Flathub Content"
-msgstr ""
+msgid "Only Show Free Software"
+msgstr "Csak szabad szoftver mutatása"
 
 #: data/io.github.pureblueos.purestore.gschema.xml:17
-msgid "Filter search results to only show applications available on Flathub"
-msgstr ""
+msgid "Hide proprietary software when searching"
+msgstr "Zárt forráskódú szoftverek elrejtése kereséskor"
 
 #: data/io.github.pureblueos.purestore.gschema.xml:21
-msgid "Debounce Search Inputs"
-msgstr ""
+msgid "Show Only Flathub Content"
+msgstr "Csak Flathub tartalom mutatása"
 
 #: data/io.github.pureblueos.purestore.gschema.xml:22
+msgid "Filter search results to only show applications available on Flathub"
+msgstr "Keresési eredmények szűrése, hogy csak a Flathubon elérhető alkalmazásokat mutassa"
+
+#: data/io.github.pureblueos.purestore.gschema.xml:26
+msgid "Debounce Search Inputs"
+msgstr "Keresési bevitel késleltetése"
+
+#: data/io.github.pureblueos.purestore.gschema.xml:27
 msgid "Add a delay before searching to prevent instant replies while typing"
-msgstr ""
+msgstr "Késleltetés hozzáadása a keresés előtt az azonnali válaszok elkerülésére gépelés közben"
 
-#: data/io.github.pureblueos.purestore.gschema.xml:40
-msgid "Global Progress Bar Theme"
-msgstr ""
-
-#: data/io.github.pureblueos.purestore.gschema.xml:41
-msgid "Describes the look of the global progress bar"
-msgstr ""
-
-#: data/io.github.pureblueos.purestore.gschema.xml:45
+#: data/io.github.pureblueos.purestore.gschema.xml:31
 msgid "Saved Window Dimensions"
-msgstr ""
+msgstr "Mentett ablakméretek"
 
-#: data/io.github.pureblueos.purestore.gschema.xml:46
+#: data/io.github.pureblueos.purestore.gschema.xml:32
 msgid "The window dimensions to be used by the next Store window"
-msgstr ""
+msgstr "A következő Bazár ablak által használandó ablakméretek"
 
 #: data/io.github.pureblueos.purestore.metainfo.xml.in:8
 msgid "Discover and install applications"
@@ -106,34 +106,32 @@ msgstr ""
 "támogatását. A Bazár egy „válogatott” füllel is rendelkezik, amelyet a "
 "disztrók konfigurálhatnak, hogy lokalizáltabb élményt nyújtsanak."
 
-#: data/io.github.pureblueos.purestore.metainfo.xml.in:29 src/bz-application.c:506
-msgid "Adam Masciola"
-msgstr "Adam Masciola"
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:42
+msgid "The home page displaying Flathub apps"
+msgstr "A kezdőlap Flathub alkalmazásokkal"
 
-#: data/io.github.pureblueos.purestore.metainfo.xml.in:54
-msgid "The home view displaying Flathub apps"
-msgstr "A kezdőképernyő Flathub alkalmazásokkal"
-
-#: data/io.github.pureblueos.purestore.metainfo.xml.in:58
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:46
 msgid "Nucleus app page"
 msgstr "Alkalmazásoldal a Nucleus alkalmazással"
 
-#: data/io.github.pureblueos.purestore.metainfo.xml.in:62
-msgid "Searching for Blender"
-msgstr "Keresés a Blenderre"
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:50
+msgid "Search page"
+msgstr "Keresési oldal"
 
-#: src/bz-addons-dialog.blp:14 src/bz-full-view.blp:527
-#: src/bz-installed-page.blp:132
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:54
+msgid "Category page"
+msgstr "Kategória oldal"
+
+#: src/bz-addons-dialog.blp:14 src/bz-full-view.blp:624
 msgid "Manage Add-ons"
 msgstr "Kiegészítők kezelése"
 
-#: src/bz-addons-dialog.c:88 src/bz-installed-page.blp:158
-#: src/bz-transaction-view.blp:212 src/bz-window.c:1125
+#: src/bz-addons-dialog.c:90 src/bz-transaction-view.blp:212
 msgid "Remove"
 msgstr "Eltávolítás"
 
-#: src/bz-addons-dialog.c:95 src/bz-full-view.blp:244
-#: src/bz-transaction-view.blp:186 src/bz-window.c:1103
+#: src/bz-addons-dialog.c:97 src/bz-full-view.blp:301
+#: src/bz-transaction-view.blp:186 src/bz-window.c:1163
 msgid "Install"
 msgstr "Telepítés"
 
@@ -185,7 +183,15 @@ msgstr "--- MB"
 msgid "Download Size"
 msgstr "Letöltési méret"
 
-#: src/bz-application.c:401
+#: src/bz-application.c:424
+msgid "Flatpak Files"
+msgstr "Flatpak fájlok"
+
+#: src/bz-application.c:433
+msgid "Flatpak File"
+msgstr "Flatpak fájl"
+
+#: src/bz-application.c:455
 msgid ""
 "This functionality is currently disabled. It is recommended you download and "
 "install Flatseal to manage app permissions."
@@ -193,134 +199,24 @@ msgstr ""
 "Ez a funkció jelenleg nem elérhető. Javasoljuk, hogy telepítsd a Flatseal "
 "alkalmazást az alkalmazások engedélyeinek kezeléséhez."
 
-#: src/bz-application.c:465
-msgctxt "About Dialog Developer Credit"
-msgid "Adam Masciola <kolunmi@posteo.net>"
-msgstr "Adam Masciola <kolunmi@posteo.net>"
-
-#: src/bz-application.c:466
-msgctxt "About Dialog Developer Credit"
-msgid "Alexander Vanhee"
-msgstr "Alexander Vanhee"
-
 #. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
-#: src/bz-application.c:481
+#: src/bz-application.c:514
 msgid "translator-credits"
 msgstr "Benedek Dévényi <rdbende@proton.me>, 2025"
 
-#: src/bz-application.c:471
-msgctxt "About Dialog Translator Credit"
-msgid "Ahmed Najmawi"
-msgstr "Ahmed Najmawi"
-
-#: src/bz-application.c:472
-msgctxt "About Dialog Translator Credit"
-msgid "AtomHare"
-msgstr "AtomHare"
-
-#: src/bz-application.c:473
-msgctxt "About Dialog Translator Credit"
-msgid "Azenyr"
-msgstr "Azenyr"
-
-#: src/bz-application.c:474
-msgctxt "About Dialog Translator Credit"
-msgid "Goudarz Jafari"
-msgstr "Goudarz Jafari"
-
-#: src/bz-application.c:475
-msgctxt "About Dialog Translator Credit"
-msgid "Jill Fiore (Lumaeris)"
-msgstr "Jill Fiore (Lumaeris)"
-
-#: src/bz-application.c:476
-msgctxt "About Dialog Translator Credit"
-msgid "João Victor (Leal)"
-msgstr "João Victor (Leal)"
-
-#: src/bz-application.c:477
-msgctxt "About Dialog Translator Credit"
-msgid "KiKaraage"
-msgstr "KiKaraage"
-
-#: src/bz-application.c:478
-msgctxt "About Dialog Translator Credit"
-msgid "Lucosec"
-msgstr "Lucosec"
-
-#: src/bz-application.c:479
-msgctxt "About Dialog Translator Credit"
-msgid "Léane GRASSER"
-msgstr "Léane GRASSER"
-
-#: src/bz-application.c:480
-msgctxt "About Dialog Translator Credit"
-msgid "Marcel Mrówka (Microwave)"
-msgstr "Marcel Mrówka (Microwave)"
-
-#: src/bz-application.c:481
-msgctxt "About Dialog Translator Credit"
-msgid "Peter Dave Hello"
-msgstr "Peter Dave Hello"
-
-#: src/bz-application.c:482
-msgctxt "About Dialog Translator Credit"
-msgid "Pietro F."
-msgstr "Pietro F."
-
-#: src/bz-application.c:483
-msgctxt "About Dialog Translator Credit"
-msgid "Sabri Ünal"
-msgstr "Sabri Ünal"
-
-#: src/bz-application.c:484
-msgctxt "About Dialog Translator Credit"
-msgid "Shihfu Juan"
-msgstr "Shihfu Juan"
-
-#: src/bz-application.c:485
-msgctxt "About Dialog Translator Credit"
-msgid "Shinsei"
-msgstr "Shinsei"
-
-#: src/bz-application.c:486
-msgctxt "About Dialog Translator Credit"
-msgid "Vlastimil Dědek"
-msgstr "Vlastimil Dědek"
-
-#: src/bz-application.c:487
-msgctxt "About Dialog Translator Credit"
-msgid "asen23"
-msgstr "asen23"
-
-#: src/bz-application.c:488
-msgctxt "About Dialog Translator Credit"
-msgid "camegone"
-msgstr "camegone"
-
-#: src/bz-application.c:489
-msgctxt "About Dialog Translator Credit"
-msgid "renner"
-msgstr "renner"
-
-#: src/bz-application.c:490
-msgctxt "About Dialog Translator Credit"
-msgid "robotta"
-msgstr "robotta"
-
-#: src/bz-application.c:1033
+#: src/bz-application.c:1115
 msgid "Constructing Flatpak instance..."
 msgstr "Flatpak példány létrehozása…"
 
-#: src/bz-application.c:1050
+#: src/bz-application.c:1132
 msgid "Reusing last Flatpak instance..."
 msgstr "Legutóbbi Flatpak példány újrafelhasználása…"
 
-#: src/bz-application.c:1075
+#: src/bz-application.c:1157
 msgid "Flathub is not registered on this system"
 msgstr "A Flathub nincs beállítva ezen a rendszeren"
 
-#: src/bz-application.c:1078
+#: src/bz-application.c:1160
 msgid ""
 "Would you like to add Flathub as a remote? If you decline, the Flathub page "
 "will not be available. You can change this later."
@@ -328,84 +224,84 @@ msgstr ""
 "Szeretnéd engedélyezni a Flathub távoli adattárat? Ha ezt nem teszed meg, a "
 "Flathub fül nem lesz elérhető. Később ezt bármikor megváltoztathatod."
 
-#: src/bz-application.c:1083 src/bz-update-dialog.blp:6
+#: src/bz-application.c:1165 src/bz-update-dialog.blp:6
 msgid "Later"
 msgstr "Később"
 
-#: src/bz-application.c:1084
+#: src/bz-application.c:1166
 msgid "Add Flathub"
 msgstr "Flathub engedélyezése"
 
-#: src/bz-application.c:1116
-#, c-format
+#: src/bz-application.c:1198
 msgid "Identifying installed entries..."
 msgstr "Telepített tételek beazonosítása…"
 
-#: src/bz-application.c:1128
-#, c-format
-msgid "Beginning remote entry retrieval while referencing %d blacklist(s)..."
-msgstr "Távoli tételek lekérésének megkezdése, %d tiltólista hivatkozásával…"
-
-#: src/bz-application.c:1276
-#, c-format
+#: src/bz-application.c:1221
 msgid "Receiving Entries"
 msgstr "Tételek fogadása"
 
-#: src/bz-application.c:1277
+#: src/bz-application.c:1378
 #, c-format
 msgid "%'d of %'d"
 msgstr "%'d/%'d"
 
-#: src/bz-application.c:1288
+#: src/bz-application.c:1391
 #, c-format
 msgid "Waiting for background indexing tasks to catch up..."
 msgstr "Várakozás a háttérben futó indexelési feladatok befejezésére…"
 
-#: src/bz-application.c:1329
+#: src/bz-application.c:1433
 #, c-format
 msgid "Completed initialization in %0.2f seconds"
 msgstr "Az indítás %0.2f másodperc alatt befejeződött"
 
-#: src/bz-application.c:1334 src/bz-application.c:1489
+#: src/bz-application.c:1438 src/bz-application.c:1593
 msgid "Checking for updates..."
 msgstr "Frissítések keresése…"
 
-#: src/bz-application.c:1373
+#: src/bz-application.c:1477
 msgid "Synchronizing..."
 msgstr "Szinkronizálás…"
 
 #: src/bz-browse-widget.blp:11 src/bz-flathub-page.blp:19
-#: src/bz-full-view.blp:10 src/bz-installed-page.blp:15 src/bz-window.blp:161
+#: src/bz-full-view.blp:52 src/bz-installed-page.blp:15 src/bz-window.blp:173
 msgid "Empty"
 msgstr "Üres"
 
 #: src/bz-browse-widget.blp:15
-msgid "No Curated Applications"
-msgstr "Nincsenek válogatott alkalmazások"
+msgid "No Curation"
+msgstr "Nincs válogatott tartalom"
 
 #: src/bz-browse-widget.blp:16
 msgid ""
-"Store was not provided a curated content configuration. Contact your "
-"operating system's support channels for assistance."
-msgstr ""
-"A Store nem talál válogatott tartalomkonfigurációt. Segítségért fordulj az "
-"operációs rendszer támogatási csatornáihoz."
+"There is no curation information provided on this system. You can still "
+"browse applications on Flathub"
+msgstr "Ezen a rendszeren nem áll rendelkezésre válogatott tartalom. Még mindig böngészheted az alkalmazásokat a Flathubon"
 
-#: src/bz-browse-widget.blp:22 src/bz-flathub-page.blp:30
+#: src/bz-browse-widget.blp:18
+msgid "Browse Flathub"
+msgstr "Flathub böngészése"
+
+#: src/bz-browse-widget.blp:29 src/bz-browse-widget.blp:33
+#: src/bz-flathub-page.blp:30 src/bz-flathub-page.blp:34
+msgid "Offline"
+msgstr "Offline"
+
+#: src/bz-browse-widget.blp:39 src/bz-flathub-page.blp:40
 msgid "Browser"
 msgstr "Böngésző"
 
 #: src/bz-entry-inspector.blp:5
 msgid "Entry Inspector"
-msgstr ""
+msgstr "Tétel vizsgáló"
 
 #: src/bz-entry-inspector.blp:76
 msgid "Serialize"
-msgstr ""
+msgstr "Szerializálás"
 
 #: src/bz-entry-inspector.blp:80
 msgid "Convert to JSON"
-msgstr ""
+msgstr "JSON-ba konvertálás"
 
 #: src/bz-error.c:68
 msgid "An Error Occurred"
@@ -419,59 +315,176 @@ msgstr "Bezárás"
 msgid "Copy and Close"
 msgstr "Másolás és bezárás"
 
-#: src/bz-featured-tile.blp:89
+#: src/bz-featured-tile.blp:88
 msgid "App of the Day"
 msgstr "A nap alkalmazása"
 
-#: src/bz-flathub-category.c:325
+#: src/bz-flathub-category.c:66
 msgid "Audio & Video"
 msgstr "Hang és videó"
 
-#: src/bz-flathub-category.c:327
+#: src/bz-flathub-category.c:66
+msgid "Media"
+msgstr "Média"
+
+#: src/bz-flathub-category.c:66
+msgid "More Audio & Video"
+msgstr "Több Hang és videó"
+
+#: src/bz-flathub-category.c:67
 msgid "Developer Tools"
 msgstr "Fejlesztői eszközök"
 
-#: src/bz-flathub-category.c:329
+#: src/bz-flathub-category.c:67
+msgid "Develop"
+msgstr "Fejlesztés"
+
+#: src/bz-flathub-category.c:67
+msgid "More Developer Tools"
+msgstr "Több Fejlesztői eszköz"
+
+#: src/bz-flathub-category.c:68
 msgid "Education"
 msgstr "Oktatás"
 
-#: src/bz-flathub-category.c:331
+#: src/bz-flathub-category.c:68
+msgid "Learn"
+msgstr "Tanulás"
+
+#: src/bz-flathub-category.c:68
+msgid "More Education"
+msgstr "Több oktatási"
+
+#: src/bz-flathub-category.c:69
 msgid "Gaming"
 msgstr "Játék"
 
-#: src/bz-flathub-category.c:333
+#: src/bz-flathub-category.c:69
+msgid "Play"
+msgstr "Játék"
+
+#: src/bz-flathub-category.c:69
+msgid "More Gaming"
+msgstr "Több játék"
+
+#: src/bz-flathub-category.c:70
 msgid "Graphics & Photography"
 msgstr "Grafika és fényképezés"
 
-#: src/bz-flathub-category.c:335
+#: src/bz-flathub-category.c:70
+msgid "Create"
+msgstr "Alkotás"
+
+#: src/bz-flathub-category.c:70
+msgid "More Graphics & Photography"
+msgstr "Több grafika és fényképezés"
+
+#: src/bz-flathub-category.c:71
 msgid "Networking"
 msgstr "Hálózat"
 
-#: src/bz-flathub-category.c:337
+#: src/bz-flathub-category.c:71
+msgid "Internet"
+msgstr "Internet"
+
+#: src/bz-flathub-category.c:71
+msgid "More Networking"
+msgstr "Több hálózat"
+
+#: src/bz-flathub-category.c:72
 msgid "Productivity"
 msgstr "Produktivitás"
 
-#: src/bz-flathub-category.c:339
+#: src/bz-flathub-category.c:72
+msgid "Work"
+msgstr "Munka"
+
+#: src/bz-flathub-category.c:72
+msgid "More Productivity"
+msgstr "Több produktivitás"
+
+#: src/bz-flathub-category.c:73
 msgid "Science"
 msgstr "Tudomány"
 
-#: src/bz-flathub-category.c:341
+#: src/bz-flathub-category.c:73
+msgid "More Science"
+msgstr "Több tudomány"
+
+#: src/bz-flathub-category.c:74
 msgid "System"
 msgstr "Rendszer"
 
-#: src/bz-flathub-category.c:343
+#: src/bz-flathub-category.c:74
+msgid "More System"
+msgstr "Több rendszer"
+
+#: src/bz-flathub-category.c:75
 msgid "Utilities"
 msgstr "Segédprogramok"
 
-#: src/bz-flathub-category-section.c:137
+#: src/bz-flathub-category.c:75
+msgid "Tools"
+msgstr "Eszközök"
+
+#: src/bz-flathub-category.c:75
+msgid "More Utilities"
+msgstr "Több segédprogram"
+
+#: src/bz-flathub-category.c:76 src/bz-flathub-page.blp:109
+#: src/bz-flathub-page.blp:142
+msgid "Trending"
+msgstr "Felkapott"
+
+#: src/bz-flathub-category.c:76
+msgid "More Trending"
+msgstr "Még több felkapott"
+
+#: src/bz-flathub-category.c:77 src/bz-flathub-page.blp:115
+#: src/bz-flathub-page.blp:175
+msgid "Popular"
+msgstr "Népszerű"
+
+#: src/bz-flathub-category.c:77
+msgid "More Popular"
+msgstr "Még több népszerű"
+
+#: src/bz-flathub-category.c:78 src/bz-flathub-page.blp:164
+msgid "Recently Added"
+msgstr "Nemrég hozzáadott"
+
+#: src/bz-flathub-category.c:78 src/bz-flathub-page.blp:121
+msgid "New"
+msgstr "Új"
+
+#: src/bz-flathub-category.c:78
+msgid "More New"
+msgstr "Még több új"
+
+#: src/bz-flathub-category.c:79 src/bz-flathub-page.blp:153
+msgid "Recently Updated"
+msgstr "Nemrég frissített"
+
+#: src/bz-flathub-category.c:79 src/bz-flathub-page.blp:127
+msgid "Updated"
+msgstr "Frissített"
+
+#: src/bz-flathub-category.c:79
+msgid "More Updated"
+msgstr "Még több frissített"
+
+#: src/bz-flathub-category.c:80
+msgid "Mobile"
+msgstr "Mobil"
+
+#: src/bz-flathub-category.c:80
+msgid "More Mobile"
+msgstr "Több Mobil"
+
+#: src/bz-flathub-category-section.c:132 src/bz-search-widget.c:314
 #, c-format
 msgid "%d applications"
 msgstr "%d alkalmazás"
-
-#: src/bz-flathub-category-section.c:336
-#, c-format
-msgid "More %s"
-msgstr "Még több %s"
 
 #: src/bz-flathub-page.blp:23
 msgid "Flathub Not Added"
@@ -481,253 +494,243 @@ msgstr "A Flathub nincs engedélyezve"
 msgid "The Flathub remote was not found on any of your Flatpak installations"
 msgstr "A Flathub adattár nem található egyik Flatpak telepítéseden sem"
 
-#: src/bz-flathub-page.blp:80 src/bz-flathub-page.blp:109
-#: src/bz-flathub-page.c:168
-msgid "Trending"
-msgstr "Felkapott"
+#: src/bz-flathub-page.blp:48
+msgid "Flathub Unavailable"
+msgstr "Flathub nem elérhető"
 
-#: src/bz-flathub-page.blp:85 src/bz-flathub-page.blp:235
-#: src/bz-flathub-page.c:198
-msgid "Popular"
-msgstr "Népszerű"
+#: src/bz-flathub-page.blp:49
+msgid ""
+"We could not connect to Flathub. You can still manage and search for "
+"applications."
+msgstr "Nem sikerült csatlakozni a Flathubhoz. Még mindig kezelhetod és keresheted az alkalmazásokat."
 
-#: src/bz-flathub-page.blp:90
-msgid "New"
-msgstr "Új"
+#: src/bz-flathub-page.blp:52
+msgid "Search Apps"
+msgstr "Alkalmazások keresése"
 
-#: src/bz-flathub-page.blp:95
-msgid "Updated"
-msgstr "Frissített"
-
-#: src/bz-flathub-page.blp:141
-msgid "More Trending"
-msgstr "Még több felkapott"
-
-#: src/bz-flathub-page.blp:151 src/bz-flathub-page.c:178
-msgid "Recently Updated"
-msgstr "Nemrég frissített"
-
-#: src/bz-flathub-page.blp:183
-msgid "More Updated"
-msgstr "Még több frissített"
-
-#: src/bz-flathub-page.blp:193 src/bz-flathub-page.c:188
-msgid "Recently Added"
-msgstr "Nemrég hozzáadott"
-
-#: src/bz-flathub-page.blp:225
-msgid "More New"
-msgstr "Még több új"
-
-#: src/bz-flathub-page.blp:267
-msgid "More Popular"
-msgstr "Még több népszerű"
-
-#: src/bz-flathub-page.blp:356
+#: src/bz-flathub-page.blp:266
 msgid "On the go"
 msgstr "Útközben"
 
-#: src/bz-flathub-page.blp:368
+#: src/bz-flathub-page.blp:278
 msgid "Apps for your Linux phones and tablets"
 msgstr "Alkalmazások Linux telefonokra és táblagépekre"
 
-#: src/bz-flathub-page.blp:379 src/bz-flathub-page.blp:414
+#: src/bz-flathub-page.blp:289 src/bz-flathub-page.blp:324
 msgid "More Mobile apps"
 msgstr "Még több mobilapp"
 
-#: src/bz-flathub-page.c:208
+#: src/bz-flathub-page.c:204
 msgid "Mobile Apps"
 msgstr "Mobilappok"
 
-#: src/bz-flatpak-entry.c:552
+#: src/bz-flatpak-entry.c:571
 msgctxt "Project URL Type"
 msgid "Flathub Page"
 msgstr "Flathub oldal"
 
-#: src/bz-flatpak-entry.c:573
+#: src/bz-flatpak-entry.c:592
 msgctxt "Project URL Type"
 msgid "Project Website"
 msgstr "Projekt honlapja"
 
-#: src/bz-flatpak-entry.c:577
+#: src/bz-flatpak-entry.c:596
 msgctxt "Project URL Type"
 msgid "Issue Tracker"
 msgstr "Hiba bejelentése"
 
-#: src/bz-flatpak-entry.c:581
+#: src/bz-flatpak-entry.c:600
 msgctxt "Project URL Type"
 msgid "FAQ"
 msgstr "GYIK"
 
-#: src/bz-flatpak-entry.c:585
+#: src/bz-flatpak-entry.c:604
 msgctxt "Project URL Type"
 msgid "Help"
 msgstr "Segítség"
 
-#: src/bz-flatpak-entry.c:589
+#: src/bz-flatpak-entry.c:608
 msgctxt "Project URL Type"
 msgid "Donate"
 msgstr "Adományozás"
 
-#: src/bz-flatpak-entry.c:595
+#: src/bz-flatpak-entry.c:614
 msgctxt "Project URL Type"
 msgid "Translate"
 msgstr "Segítség a fordításban"
 
-#: src/bz-flatpak-entry.c:599
+#: src/bz-flatpak-entry.c:618
 msgctxt "Project URL Type"
 msgid "Contact"
 msgstr "Kapcsolat"
 
-#: src/bz-flatpak-entry.c:603
+#: src/bz-flatpak-entry.c:622
 msgctxt "Project URL Type"
 msgid "Source Code"
 msgstr "Forráskód"
 
-#: src/bz-flatpak-entry.c:609
+#: src/bz-flatpak-entry.c:628
 msgctxt "Project URL Type"
 msgid "Contribute"
 msgstr "Hozzájárulás"
 
-#: src/bz-full-view.blp:14
+#: src/bz-full-view.blp:20 src/bz-window.blp:117 src/bz-window.blp:394
+msgid "Toggle transaction sidebar"
+msgstr "Tranzakciók megjelenítése/elrejtése"
+
+#: src/bz-full-view.blp:42 src/bz-window.blp:416
+msgid "Main Menu"
+msgstr "Főmenü"
+
+#: src/bz-full-view.blp:56
 msgid "No Results"
 msgstr "Nincs találat"
 
-#: src/bz-full-view.blp:15
+#: src/bz-full-view.blp:57
 msgid "Try a different search query"
 msgstr "Próbálkozz más keresőkifejezéssel"
 
-#: src/bz-full-view.blp:21 src/bz-window.blp:171
+#: src/bz-full-view.blp:63 src/bz-window.blp:183
 msgid "Content"
 msgstr "Tartalom"
 
-#: src/bz-full-view.blp:151
+#: src/bz-full-view.blp:208
 msgid "Verified by the original developers"
 msgstr "Az eredeti fejlesztők által hitelesítve"
 
-#: src/bz-full-view.blp:178
+#: src/bz-full-view.blp:235
 msgid "Support"
 msgstr "Támogatás"
 
-#: src/bz-full-view.blp:198
+#: src/bz-full-view.blp:255
 msgid "Repository Star Count"
 msgstr "Adattár csillagszámlálója"
 
-#: src/bz-full-view.blp:228
+#: src/bz-full-view.blp:285
 msgid "Open"
 msgstr "Megnyitás"
 
-#: src/bz-full-view.blp:241
+#: src/bz-full-view.blp:298
 msgid "Download & Install Application"
 msgstr "Alkalmazás letöltése és telepítése"
 
-#: src/bz-full-view.blp:256
+#: src/bz-full-view.blp:313
 msgid "Uninstall Application"
 msgstr "Alkalmazás eltávolítása"
 
-#: src/bz-full-view.blp:271
+#: src/bz-full-view.blp:328
 msgid "Install Other Version"
 msgstr "Másik verzió telepítése"
 
-#: src/bz-full-view.blp:295
-msgid "Download"
-msgstr "Letöltés"
+#: src/bz-full-view.blp:352
+msgid "Size"
+msgstr "Méret"
 
-#: src/bz-full-view.blp:411
-msgid "Downloads/mo"
+#: src/bz-full-view.blp:469
+msgid "Downloads /mo"
 msgstr "Letöltés/hó"
 
-#: src/bz-full-view.c:261
+#: src/bz-full-view.blp:510
+msgid "Stopped Receiving Core Updates"
+msgstr "Nem kap több alapfrissítést"
+
+#: src/bz-full-view.blp:522
+msgid ""
+"This app uses a runtime that no longer recieves updates or security fixes. "
+"It may become unsafe to use."
+msgstr "Ez az alkalmazás olyan futtatókörnyezetet használ, amely már nem kap frissítéseket vagy biztonsági javításokat. Használata veszélyessé válhat."
+
+#: src/bz-full-view.c:284
 msgid "---"
 msgstr "---"
 
-#. Translators: M is the suffix for millions, \xC2\xA0 is a non-breaking space
-#: src/bz-full-view.c:265
-#, c-format
-msgid "%.2f M"
+#. Translators: M is the suffix for millions
+#: src/bz-full-view.c:288
+#, fuzzy, c-format
+msgid "%.2fM"
 msgstr "%.2f m"
 
-#. Translators: K is the suffix for thousands, \xC2\xA0 is a non-breaking space
-#: src/bz-full-view.c:268
-#, c-format
-msgid "%.2f K"
+#. Translators: K is the suffix for thousands
+#: src/bz-full-view.c:291
+#, fuzzy, c-format
+msgid "%.2fK"
 msgstr "%.2f e"
 
-#: src/bz-full-view.c:277
+#: src/bz-full-view.c:300
 #, c-format
 msgid "%d downloads in the last 30 days"
 msgstr "%d letöltés az elmúlt 30 napban"
 
-#: src/bz-full-view.c:298
+#: src/bz-full-view.c:321
 #, c-format
 msgid "Download size of %s"
 msgstr "Letöltés mérete: %s"
 
 #. Translators: Age rating format, e.g. "12+" for ages 12 and up
-#: src/bz-full-view.c:308
+#: src/bz-full-view.c:331
 #, c-format
 msgid "%d+"
 msgstr "%d+"
 
-#: src/bz-full-view.c:316
+#: src/bz-full-view.c:339
 msgid "All Ages"
 msgstr "Minden életkor"
 
-#: src/bz-full-view.c:318
+#: src/bz-full-view.c:341
 msgid "Age Rating"
 msgstr "Korhatár"
 
-#: src/bz-full-view.c:326
+#: src/bz-full-view.c:349
 msgid "Suitable for all ages"
 msgstr "Minden korosztály számára alkalmas"
 
-#: src/bz-full-view.c:328
+#: src/bz-full-view.c:351
 #, c-format
 msgid "Suitable for ages %d and up"
 msgstr "%d éves kortól ajánlott"
 
-#: src/bz-full-view.c:348
+#: src/bz-full-view.c:375
 msgid "Unknown"
 msgstr "Ismeretlen"
 
-#: src/bz-full-view.c:351
+#: src/bz-full-view.c:378
 msgid "Proprietary Software"
 msgstr "Zárt forráskódú szoftver"
 
-#: src/bz-full-view.c:355
+#: src/bz-full-view.c:382
 #, c-format
 msgid "Free software licensed under %s"
 msgstr "Szabad szoftver a(z) %s licenc alatt"
 
-#: src/bz-full-view.c:363
+#: src/bz-full-view.c:390
 msgid "Free"
 msgstr "Szabad"
 
-#: src/bz-full-view.c:363
+#: src/bz-full-view.c:390
 msgid "Proprietary"
 msgstr "Védett"
 
-#: src/bz-full-view.c:383
+#: src/bz-full-view.c:410
 msgid "Adaptive"
 msgstr "Alkalmazkodó"
 
-#: src/bz-full-view.c:383
+#: src/bz-full-view.c:410
 msgid "Desktop Only"
 msgstr "Csak asztali"
 
-#: src/bz-full-view.c:389
+#: src/bz-full-view.c:416
 msgid "Works on desktop, tablets, and phones"
 msgstr "Működik asztali számítógépen, táblagépen és mobiltelefonon"
 
-#: src/bz-full-view.c:390
+#: src/bz-full-view.c:417
 msgid "May not work on mobile devices"
 msgstr "Lehet, hogy nem működik mobileszközökön"
 
-#: src/bz-full-view.c:401
+#: src/bz-full-view.c:428
 msgid "No URL"
 msgstr "Nincs URL"
 
-#: src/bz-full-view.c:419
+#: src/bz-full-view.c:446
 msgid ""
 "This application has a FLOSS license, meaning the source code can be audited "
 "for safety."
@@ -736,7 +739,7 @@ msgstr ""
 "jelenti, hogy által a forráskód biztonsági szempontból bárki által "
 "ellenőrizhető."
 
-#: src/bz-full-view.c:420
+#: src/bz-full-view.c:447
 msgid ""
 "This application has a proprietary license, meaning the source code is "
 "developed privately and cannot be audited by an independent third party."
@@ -744,11 +747,20 @@ msgstr ""
 "Ez az alkalmazás kereskedelmi licenccel rendelkezik, ami azt jelenti, hogy a "
 "forráskód magántulajdonban van, és független harmadik fél nem ellenőrizheti."
 
-#: src/bz-full-view.c:676
+#: src/bz-full-view.c:454
+msgid "Other Apps by this Developer"
+msgstr "A fejlesztő egyéb alkalmazásai"
+
+#: src/bz-full-view.c:456
+#, c-format
+msgid "Other Apps by %s"
+msgstr "%s egyéb alkalmazásai"
+
+#: src/bz-full-view.c:828
 msgid "Show Less"
 msgstr "Kevesebb mutatása"
 
-#: src/bz-full-view.c:676
+#: src/bz-full-view.c:828
 msgid "Show More"
 msgstr "Több mutatása"
 
@@ -848,61 +860,41 @@ msgstr "Hardver támogatás"
 
 #: src/bz-inspector.blp:5
 msgid "Store Inspector"
-msgstr ""
+msgstr "Bazár vizsgáló"
 
 #: src/bz-inspector.blp:22
-msgid "Active Blacklists"
-msgstr ""
+msgid "Enable Global Debug Mode"
+msgstr "Globális hibakeresési mód engedélyezése"
 
-#: src/bz-inspector.blp:44
+#: src/bz-inspector.blp:29
 msgid "Active Curated-Configs"
-msgstr ""
+msgstr "Aktív válogatott konfigurációk"
 
-#: src/bz-inspector.blp:66
+#: src/bz-inspector.blp:47
 msgid "All Entry Groups"
-msgstr ""
+msgstr "Összes tételcsoport"
 
-#: src/bz-inspector.blp:69
+#: src/bz-inspector.blp:55
 msgid "Filter..."
-msgstr ""
+msgstr "Szűrés..."
 
-#: src/bz-inspector.blp:110
+#: src/bz-inspector.blp:96
 msgid "Decache and Inspect"
-msgstr ""
+msgstr "Gyorsítótár törlése és vizsgálat"
 
 #: src/bz-installed-page.blp:19
 msgid "No Flatpaks Installed"
 msgstr "Nincs telepített Flatpak"
 
-#: src/bz-installed-page.blp:25 src/bz-window.blp:305 src/bz-window.blp:399
+#: src/bz-installed-page.blp:25 src/bz-window.blp:319
 msgid "Installed"
 msgstr "Telepítve"
 
-#: src/bz-installed-page.blp:108
-msgid "Support this application"
-msgstr "Alkalmazás támogatása"
-
-#: src/bz-installed-page.blp:185
-msgid "More actions"
-msgstr "További lehetőségek"
-
-#: src/bz-installed-page.blp:204
-msgid "Run this application"
-msgstr "Alkalmazás futtatása"
-
-#: src/bz-installed-page.blp:216
-msgid "Run"
-msgstr "Futtatás"
-
-#: src/bz-installed-page.blp:228 src/bz-installed-page.blp:239
-msgid "View Store Page"
-msgstr "Alkalmazásoldal megnyitása"
-
-#: src/bz-installed-page.c:649
+#: src/bz-installed-page.c:406
 msgid "Choose an Installation"
 msgstr "Telepítés kiválasztása"
 
-#: src/bz-installed-page.c:652
+#: src/bz-installed-page.c:409
 msgid ""
 "You have multiple versions of this app installed. Which one would you like "
 "to proceed with? "
@@ -910,7 +902,7 @@ msgstr ""
 "Ennek az alkalmazásnak több verziója is telepítve van. Melyikkel szeretnéd "
 "folytatni?"
 
-#: src/bz-installed-page.c:656 src/bz-window.c:1102 src/bz-window.c:1124
+#: src/bz-installed-page.c:413 src/bz-window.c:1162 src/bz-window.c:1186
 msgid "Cancel"
 msgstr "Mégse"
 
@@ -951,62 +943,67 @@ msgstr ""
 "\n"
 "Te is csatlakozhatsz és segíthetsz még jobbá tenni."
 
-#: src/bz-preferences-dialog.blp:19
+#: src/bz-preferences-dialog.blp:11
 msgid "Preferences"
 msgstr "Beállítások"
 
-#: src/bz-preferences-dialog.blp:23 src/bz-window.blp:48 src/bz-window.blp:337
+#: src/bz-preferences-dialog.blp:15 src/bz-window.blp:334
 msgid "Search"
 msgstr "Keresés"
 
-#: src/bz-preferences-dialog.blp:26
+#: src/bz-preferences-dialog.blp:18
 msgid "Free Software Only"
 msgstr "Csak szabad szoftver"
 
-#: src/bz-preferences-dialog.blp:27
+#: src/bz-preferences-dialog.blp:19
 msgid "Hide proprietary applications from search results"
 msgstr "Zárt forráskódú alkalmazások elrejtése a keresési eredményekből"
 
-#: src/bz-preferences-dialog.blp:31
+#: src/bz-preferences-dialog.blp:23
 msgid "Flathub Results Only"
 msgstr "Csak Flathub eredmények"
 
-#: src/bz-preferences-dialog.blp:32
+#: src/bz-preferences-dialog.blp:24
 msgid "Limit search results to applications only available on Flathub"
 msgstr "Keresés korlátozása a Flathubon elérhető alkalmazásokra"
 
-#: src/bz-preferences-dialog.blp:36
+#: src/bz-preferences-dialog.blp:28
 msgid "Delay Search Results"
 msgstr "Keresés késleltetése"
 
-#: src/bz-preferences-dialog.blp:37
+#: src/bz-preferences-dialog.blp:29
 msgid "Improve results performance by debouncing search terms"
 msgstr ""
 "Keresés teljesítményének javítása a keresőkifejezések pergésmentesítésével"
 
-#: src/bz-preferences-dialog.blp:42
+#: src/bz-preferences-dialog.blp:34
 msgid "Application Details"
 msgstr "Alkalmazás részletei"
 
-#: src/bz-preferences-dialog.blp:45
+#: src/bz-preferences-dialog.blp:37
 msgid "Display Star Count"
 msgstr "Csillagszámláló mutatása"
 
-#: src/bz-preferences-dialog.blp:46
+#: src/bz-preferences-dialog.blp:38
 msgid "Show the star count of an application's source code repository"
 msgstr "Az alkalmazás forráskód-adattára csillagszámának megjelenítése"
 
-#: src/bz-preferences-dialog.blp:71
-msgid "Progress Bar"
-msgstr "Folyamatjelző"
+#: src/bz-preferences-dialog.blp:63
+msgid "End of Life Apps"
+msgstr "Megszűnt alkalmazások"
 
-#: src/bz-preferences-dialog.blp:72
-msgid "Choose a theme for the progress bar!"
-msgstr "Válassz témát a folyamatjelző sávoknak"
+#: src/bz-preferences-dialog.blp:66
+msgid "Hide EOL Apps"
+msgstr "Megszűnt alkalmazások elrejtése"
 
-#: src/bz-preferences-dialog.blp:107
+#: src/bz-preferences-dialog.blp:67
+msgid "Hide apps which are no longer supported by their developers"
+msgstr "A fejlesztők által már nem támogatott alkalmazások elrejtése"
+
+#: src/bz-preferences-dialog.blp:81
+#, fuzzy
 msgid ""
-"Store can fetch and display the star count from an application's source "
+"PureStore can fetch and display the star count from an application's source "
 "code repository on a remote Git forge. \n"
 " For projects on GitHub, rate limits may cause them not to appear."
 msgstr ""
@@ -1014,54 +1011,6 @@ msgstr ""
 "adattárából a távoli Git forge-on. \n"
 " A GitHubon található projektek esetében a használati korlát miatt "
 "előfordulhat, hogy nem mindig sikerül betölteni."
-
-#: src/bz-preferences-dialog.c:32
-msgid "Accent Color"
-msgstr "Kiemelőszín"
-
-#: src/bz-preferences-dialog.c:33
-msgid "Pride Colors"
-msgstr "Pride színek"
-
-#: src/bz-preferences-dialog.c:34
-msgid "Lesbian Pride Colors"
-msgstr "Lezbikus színek"
-
-#: src/bz-preferences-dialog.c:35
-msgid "Transgender Pride Colors"
-msgstr "Transzgender színek"
-
-#: src/bz-preferences-dialog.c:36
-msgid "Nonbinary Pride Colors"
-msgstr "Nonbináris színek"
-
-#: src/bz-preferences-dialog.c:37
-msgid "Bisexual Pride Colors"
-msgstr "Biszexuális színek"
-
-#: src/bz-preferences-dialog.c:38
-msgid "Asexual Pride Colors"
-msgstr "Aszexuális színek"
-
-#: src/bz-preferences-dialog.c:39
-msgid "Pansexual Pride Colors"
-msgstr "Pánszexuális színek"
-
-#: src/bz-preferences-dialog.c:40
-msgid "Aromantic Pride Colors"
-msgstr "Aromantikus színek"
-
-#: src/bz-preferences-dialog.c:41
-msgid "Genderfluid Pride Colors"
-msgstr "Genderfluid színek"
-
-#: src/bz-preferences-dialog.c:42
-msgid "Polysexual Pride Colors"
-msgstr "Poliszexuális színek"
-
-#: src/bz-preferences-dialog.c:43
-msgid "Omnisexual Pride Colors"
-msgstr "Omniszexuális színek"
 
 #: src/bz-releases-dialog.blp:5 src/bz-releases-list.blp:26
 msgid "Version History"
@@ -1076,9 +1025,34 @@ msgstr "%s verzió"
 msgid "No details for this release"
 msgstr "Nincsenek részletek ehhez a kiadáshoz"
 
-#: src/bz-search-widget.blp:69
-msgid "Search Apps"
-msgstr "Alkalmazások keresése"
+#: src/bz-rich-app-tile.blp:107
+msgid "Stopped Receiving Updates"
+msgstr "Nem kap több frissítést"
+
+#: src/bz-rich-app-tile.blp:123
+msgid "Get"
+msgstr "Letöltés"
+
+#: src/bz-search-widget.blp:105
+msgid "Search Apps, Games, Software"
+msgstr "Alkalmazások, játékok, szoftverek keresése"
+
+#: src/bz-search-widget.blp:149
+msgid "Categories Unavailable"
+msgstr "Kategóriák nem elérhetők"
+
+#: src/bz-search-widget.blp:150
+msgid "Search for apps using the search bar above."
+msgstr "Keresd az alkalmazásokat a fenti keresősáv segítségével."
+
+#: src/bz-search-widget.blp:233
+msgid "No Applications Found"
+msgstr "Nem található alkalmazás"
+
+#: src/bz-search-widget.c:225
+#, c-format
+msgid "No results found for \"%s\" in Flathub"
+msgstr "Nincs találat a(z) \"%s\" keresésre a Flathubon"
 
 #: src/bz-share-list.c:64
 msgid "Copied!"
@@ -1121,7 +1095,7 @@ msgstr "Futtatókörnyezet"
 msgid "Install Size"
 msgstr "Telepített méret"
 
-#: src/bz-transaction-view.blp:199 src/bz-window.blp:350
+#: src/bz-transaction-view.blp:199 src/bz-window.blp:355
 msgid "Update"
 msgstr "Frissítés"
 
@@ -1163,99 +1137,67 @@ msgstr ""
 msgid "Additionally, %d runtimes and/or addons will be updated."
 msgstr "További %d futtatókörnyezet és/vagy kiegészítő frissítve lesz."
 
-#: src/bz-window.blp:63
-msgid "Go Home"
-msgstr "Vissza a kezdőoldalra"
+#: src/bz-window.blp:66
+msgid "Inspect UI Entry"
+msgstr "UI elem vizsgálata"
 
-#: src/bz-window.blp:86
+#: src/bz-window.blp:73
+msgid "All Debug Actions"
+msgstr "Minden hibakeresési művelet"
+
+#: src/bz-window.blp:98
 msgid "Tasks"
 msgstr "Feladatok"
 
-#: src/bz-window.blp:105 src/bz-window.blp:418
-msgid "Toggle transaction sidebar"
-msgstr "Tranzakciók megjelenítése/elrejtése"
-
-#: src/bz-window.blp:141
+#: src/bz-window.blp:153
 msgid "Stop Active Tasks"
 msgstr "Futó feladatok leállítása"
 
-#: src/bz-window.blp:149
+#: src/bz-window.blp:161
 msgid "Clear History"
 msgstr "Előzmények törlése"
 
-#: src/bz-window.blp:165
+#: src/bz-window.blp:177
 msgid "No Tasks Yet"
 msgstr "Nincsenek feladatok"
 
-#: src/bz-window.blp:219 src/bz-window.blp:223
-msgid "Offline"
-msgstr "Offline"
-
-#: src/bz-window.blp:229
-msgid "Loading"
-msgstr "Betöltés"
-
-#: src/bz-window.blp:270
-msgid "Browse"
-msgstr "Böngészés"
-
-#: src/bz-window.blp:280
-msgid "App View"
-msgstr "Alkalmazás nézet"
-
-#: src/bz-window.blp:295 src/bz-window.blp:392
-msgid "Flathub"
-msgstr "Flathub"
-
-#: src/bz-window.blp:325
-msgid "Go Back"
-msgstr "Vissza"
-
-#: src/bz-window.blp:381
-msgid "View curated applications"
-msgstr "Válogatott alkalmazások megtekintése"
-
-#: src/bz-window.blp:385
+#: src/bz-window.blp:292
 msgid "Curated"
 msgstr "Válogatott"
 
-#: src/bz-window.blp:389
-msgid "View the latest on Flathub"
-msgstr "Legújabb Flathub alkalmazások megtekintése"
+#: src/bz-window.blp:306
+msgid "Flathub"
+msgstr "Flathub"
 
-#: src/bz-window.blp:396
-msgid "View installed applications"
-msgstr "Telepített alkalmazások megtekintése"
+#: src/bz-window.blp:480
+msgid "Install from File..."
+msgstr "Telepítés fájlból..."
 
-#: src/bz-window.blp:441
-msgid "Main Menu"
-msgstr "Főmenü"
-
-#: src/bz-window.blp:486
-msgid "_Donate to Store ❤️"
-msgstr "A Bazár _támogatása ❤️"
-
-#: src/bz-window.blp:491
+#: src/bz-window.blp:487
 msgid "_Refresh Content"
 msgstr "Ú_jratöltés"
 
-#: src/bz-window.blp:498
+#: src/bz-window.blp:494
 msgid "_Preferences"
 msgstr "_Beállítások"
 
-#: src/bz-window.blp:503
+#: src/bz-window.blp:499
 msgid "_Keyboard Shortcuts"
 msgstr "_Gyorsbillentyűk"
 
-#: src/bz-window.blp:508
+#: src/bz-window.blp:504
 msgid "_About Store"
 msgstr "A Bazár _névjegye"
 
-#: src/bz-window.blp:515
+#: src/bz-window.blp:511
 msgid "_Quit Store"
 msgstr "_Kilépés"
 
-#: src/bz-window.c:827
+#: src/bz-window.blp:520
+msgid "Open Store Inspector"
+msgstr "Bazár vizsgáló megnyitása"
+
+#: src/bz-window.c:905
 msgid ""
 "The ability to inspect and install local .flatpak bundle files is coming "
 "soon! In the meantime, try running\n"
@@ -1271,33 +1213,45 @@ msgstr ""
 "\n"
 "parancsot a parancssorban."
 
-#: src/bz-window.c:967
+#: src/bz-window.c:1027
 msgid "Can't do that right now!"
 msgstr "Ezt most nem lehetséges!"
 
-#: src/bz-window.c:1096
+#: src/bz-window.c:1156
 #, c-format
 msgid "Install %s?"
 msgstr "%s telepítése"
 
-#: src/bz-window.c:1099
+#: src/bz-window.c:1159
 msgid "May install additional shared components"
 msgstr "További megosztott összetevők telepíthetők"
 
-#: src/bz-window.c:1118
+#: src/bz-window.c:1178
 #, c-format
-msgid "Remove %s?"
-msgstr "Remove %s?"
+msgid "Uninstall %s?"
+msgstr "%s eltávolítása?"
 
-#: src/bz-window.c:1121
-msgid "Settings & user data will be kept"
-msgstr "A beállítások és a felhasználói adatok megmaradnak"
+#: src/bz-window.c:1182
+msgid "It will not be possible to use this app after it is uninstalled."
+msgstr "Az eltávolítás után nem lesz lehetőség az alkalmazás használatára."
 
-#: src/bz-window.c:1289
+#: src/bz-window.c:1187
+msgid "Clear Data"
+msgstr "Adatok törlése"
+
+#: src/bz-window.c:1188
+msgid "Uninstall & Clear Data"
+msgstr "Eltávolítás és adatok törlése"
+
+#: src/bz-window.c:1189
+msgid "Uninstall"
+msgstr "Eltávolítás"
+
+#: src/bz-window.c:1352
 msgid "Resume Current Tasks"
 msgstr "Feladatok folytatása"
 
-#: src/bz-window.c:1295
+#: src/bz-window.c:1358
 msgid "Pause Current Tasks"
 msgstr "Feladatok szüneteltetése"
 
@@ -1340,3 +1294,208 @@ msgstr "Gyorsbillentyűk"
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Kilépés"
+
+#~ msgid "Adam Masciola"
+#~ msgstr "Adam Masciola"
+
+#~ msgid "Searching for Blender"
+#~ msgstr "Keresés a Blenderre"
+
+#~ msgctxt "About Dialog Developer Credit"
+#~ msgid "Adam Masciola <kolunmi@posteo.net>"
+#~ msgstr "Adam Masciola <kolunmi@posteo.net>"
+
+#~ msgctxt "About Dialog Developer Credit"
+#~ msgid "Alexander Vanhee"
+#~ msgstr "Alexander Vanhee"
+
+#~ msgctxt "About Dialog Translator Credit"
+#~ msgid "Ahmed Najmawi"
+#~ msgstr "Ahmed Najmawi"
+
+#~ msgctxt "About Dialog Translator Credit"
+#~ msgid "AtomHare"
+#~ msgstr "AtomHare"
+
+#~ msgctxt "About Dialog Translator Credit"
+#~ msgid "Azenyr"
+#~ msgstr "Azenyr"
+
+#~ msgctxt "About Dialog Translator Credit"
+#~ msgid "Goudarz Jafari"
+#~ msgstr "Goudarz Jafari"
+
+#~ msgctxt "About Dialog Translator Credit"
+#~ msgid "Jill Fiore (Lumaeris)"
+#~ msgstr "Jill Fiore (Lumaeris)"
+
+#~ msgctxt "About Dialog Translator Credit"
+#~ msgid "João Victor (Leal)"
+#~ msgstr "João Victor (Leal)"
+
+#~ msgctxt "About Dialog Translator Credit"
+#~ msgid "KiKaraage"
+#~ msgstr "KiKaraage"
+
+#~ msgctxt "About Dialog Translator Credit"
+#~ msgid "Lucosec"
+#~ msgstr "Lucosec"
+
+#~ msgctxt "About Dialog Translator Credit"
+#~ msgid "Léane GRASSER"
+#~ msgstr "Léane GRASSER"
+
+#~ msgctxt "About Dialog Translator Credit"
+#~ msgid "Marcel Mrówka (Microwave)"
+#~ msgstr "Marcel Mrówka (Microwave)"
+
+#~ msgctxt "About Dialog Translator Credit"
+#~ msgid "Peter Dave Hello"
+#~ msgstr "Peter Dave Hello"
+
+#~ msgctxt "About Dialog Translator Credit"
+#~ msgid "Pietro F."
+#~ msgstr "Pietro F."
+
+#~ msgctxt "About Dialog Translator Credit"
+#~ msgid "Sabri Ünal"
+#~ msgstr "Sabri Ünal"
+
+#~ msgctxt "About Dialog Translator Credit"
+#~ msgid "Shihfu Juan"
+#~ msgstr "Shihfu Juan"
+
+#~ msgctxt "About Dialog Translator Credit"
+#~ msgid "Shinsei"
+#~ msgstr "Shinsei"
+
+#~ msgctxt "About Dialog Translator Credit"
+#~ msgid "Vlastimil Dědek"
+#~ msgstr "Vlastimil Dědek"
+
+#~ msgctxt "About Dialog Translator Credit"
+#~ msgid "asen23"
+#~ msgstr "asen23"
+
+#~ msgctxt "About Dialog Translator Credit"
+#~ msgid "camegone"
+#~ msgstr "camegone"
+
+#~ msgctxt "About Dialog Translator Credit"
+#~ msgid "renner"
+#~ msgstr "renner"
+
+#~ msgctxt "About Dialog Translator Credit"
+#~ msgid "robotta"
+#~ msgstr "robotta"
+
+#, c-format
+#~ msgid ""
+#~ "Beginning remote entry retrieval while referencing %d blacklist(s)..."
+#~ msgstr ""
+#~ "Távoli tételek lekérésének megkezdése, %d tiltólista hivatkozásával…"
+
+#~ msgid ""
+#~ "Store was not provided a curated content configuration. Contact your "
+#~ "operating system's support channels for assistance."
+#~ msgstr ""
+#~ "A Store nem talál válogatott tartalomkonfigurációt. Segítségért fordulj "
+#~ "az operációs rendszer támogatási csatornáihoz."
+
+#, c-format
+#~ msgid "More %s"
+#~ msgstr "Még több %s"
+
+#~ msgid "Download"
+#~ msgstr "Letöltés"
+
+#~ msgid "Support this application"
+#~ msgstr "Alkalmazás támogatása"
+
+#~ msgid "More actions"
+#~ msgstr "További lehetőségek"
+
+#~ msgid "Run this application"
+#~ msgstr "Alkalmazás futtatása"
+
+#~ msgid "Run"
+#~ msgstr "Futtatás"
+
+#~ msgid "View Store Page"
+#~ msgstr "Alkalmazásoldal megnyitása"
+
+#~ msgid "Progress Bar"
+#~ msgstr "Folyamatjelző"
+
+#~ msgid "Choose a theme for the progress bar!"
+#~ msgstr "Válassz témát a folyamatjelző sávoknak"
+
+#~ msgid "Accent Color"
+#~ msgstr "Kiemelőszín"
+
+#~ msgid "Pride Colors"
+#~ msgstr "Pride színek"
+
+#~ msgid "Lesbian Pride Colors"
+#~ msgstr "Lezbikus színek"
+
+#~ msgid "Transgender Pride Colors"
+#~ msgstr "Transzgender színek"
+
+#~ msgid "Nonbinary Pride Colors"
+#~ msgstr "Nonbináris színek"
+
+#~ msgid "Bisexual Pride Colors"
+#~ msgstr "Biszexuális színek"
+
+#~ msgid "Asexual Pride Colors"
+#~ msgstr "Aszexuális színek"
+
+#~ msgid "Pansexual Pride Colors"
+#~ msgstr "Pánszexuális színek"
+
+#~ msgid "Aromantic Pride Colors"
+#~ msgstr "Aromantikus színek"
+
+#~ msgid "Genderfluid Pride Colors"
+#~ msgstr "Genderfluid színek"
+
+#~ msgid "Polysexual Pride Colors"
+#~ msgstr "Poliszexuális színek"
+
+#~ msgid "Omnisexual Pride Colors"
+#~ msgstr "Omniszexuális színek"
+
+#~ msgid "Go Home"
+#~ msgstr "Vissza a kezdőoldalra"
+
+#~ msgid "Loading"
+#~ msgstr "Betöltés"
+
+#~ msgid "Browse"
+#~ msgstr "Böngészés"
+
+#~ msgid "App View"
+#~ msgstr "Alkalmazás nézet"
+
+#~ msgid "Go Back"
+#~ msgstr "Vissza"
+
+#~ msgid "View curated applications"
+#~ msgstr "Válogatott alkalmazások megtekintése"
+
+#~ msgid "View the latest on Flathub"
+#~ msgstr "Legújabb Flathub alkalmazások megtekintése"
+
+#~ msgid "View installed applications"
+#~ msgstr "Telepített alkalmazások megtekintése"
+
+#~ msgid "_Donate to Store ❤️"
+#~ msgstr "A Bazár _támogatása ❤️"
+
+#, c-format
+#~ msgid "Remove %s?"
+#~ msgstr "Remove %s?"
+
+#~ msgid "Settings & user data will be kept"
+#~ msgstr "A beállítások és a felhasználói adatok megmaradnak"

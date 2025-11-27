@@ -16,11 +16,8 @@ src/bz-backend.c
 src/bz-browse-widget.blp
 src/bz-browse-widget.c
 src/bz-comet-overlay.c
-src/bz-comet.c
 src/bz-content-provider.c
-src/bz-content-section.c
 src/bz-data-graph.c
-src/bz-data-point.c
 src/bz-decorated-screenshot.blp
 src/bz-decorated-screenshot.c
 src/bz-detailed-app-tile.blp

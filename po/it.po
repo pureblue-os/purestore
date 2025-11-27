@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: purestore\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-11 10:39+0100\n"
+"POT-Creation-Date: 2025-11-27 14:40+0000\n"
 "PO-Revision-Date: 2025-11-11 11:25+0100\n"
 "Last-Translator: Pietro F. <pfwork@tutamail.com>\n"
 "Language-Team: Italian\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: data/io.github.pureblueos.purestore.desktop.in:2
 #: data/io.github.pureblueos.purestore.metainfo.xml.in:7 src/bz-window.blp:5
-#: src/bz-window.blp:225
+#: src/bz-window.blp:224
 msgid "Store"
 msgstr "Store"
 
@@ -82,19 +82,11 @@ msgstr ""
 "Aggiungere un ritardo nell'elaborazione dei dati per evitare risultati "
 "immediati"
 
-#: data/io.github.pureblueos.purestore.gschema.xml:45
-msgid "Global Progress Bar Theme"
-msgstr "Tema barra di avanzamento globale"
-
-#: data/io.github.pureblueos.purestore.gschema.xml:46
-msgid "Describes the look of the global progress bar"
-msgstr "Descrive l'aspetto della barra di avanzamento globale"
-
-#: data/io.github.pureblueos.purestore.gschema.xml:50
+#: data/io.github.pureblueos.purestore.gschema.xml:31
 msgid "Saved Window Dimensions"
 msgstr "Dimensioni finestra salvate"
 
-#: data/io.github.pureblueos.purestore.gschema.xml:51
+#: data/io.github.pureblueos.purestore.gschema.xml:32
 msgid "The window dimensions to be used by the next Store window"
 msgstr ""
 "Le dimensioni della finestra da utilizzare per la prossima finestra Store"
@@ -122,37 +114,32 @@ msgstr ""
 "il desktop Linux. Store presenta una scheda “Consigliate” che può essere "
 "configurata dai distributori per consentire un'esperienza più personalizzata."
 
-#: data/io.github.pureblueos.purestore.metainfo.xml.in:29 src/bz-application.c:494
-msgid "Adam Masciola"
-msgstr "Adam Masciola"
-
-#: data/io.github.pureblueos.purestore.metainfo.xml.in:54
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:42
 msgid "The home page displaying Flathub apps"
 msgstr "La schermata iniziale che mostra le app di Flathub"
 
-#: data/io.github.pureblueos.purestore.metainfo.xml.in:58
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:46
 msgid "Nucleus app page"
 msgstr "Pagina dell'app Nucleus"
 
-#: data/io.github.pureblueos.purestore.metainfo.xml.in:62
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:50
 msgid "Search page"
 msgstr "Pagina di Ricerca"
 
-#: data/io.github.pureblueos.purestore.metainfo.xml.in:66
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:54
 msgid "Category page"
 msgstr "Pagina delle Categorie"
 
-#: src/bz-addons-dialog.blp:14 src/bz-full-view.blp:582
+#: src/bz-addons-dialog.blp:14 src/bz-full-view.blp:624
 msgid "Manage Add-ons"
 msgstr "Gestisce estensioni"
 
-#: src/bz-addons-dialog.c:88 src/bz-transaction-view.blp:212
-#: src/bz-window.c:1101
+#: src/bz-addons-dialog.c:90 src/bz-transaction-view.blp:212
 msgid "Remove"
 msgstr "Rimuovi"
 
-#: src/bz-addons-dialog.c:93 src/bz-full-view.blp:289
-#: src/bz-transaction-view.blp:186 src/bz-window.c:1077
+#: src/bz-addons-dialog.c:97 src/bz-full-view.blp:301
+#: src/bz-transaction-view.blp:186 src/bz-window.c:1163
 msgid "Install"
 msgstr "Installa"
 
@@ -204,7 +191,15 @@ msgstr "--- MB"
 msgid "Download Size"
 msgstr "Dimensione Download"
 
-#: src/bz-application.c:416
+#: src/bz-application.c:424
+msgid "Flatpak Files"
+msgstr "File Flatpak"
+
+#: src/bz-application.c:433
+msgid "Flatpak File"
+msgstr "File Flatpak"
+
+#: src/bz-application.c:455
 msgid ""
 "This functionality is currently disabled. It is recommended you download and "
 "install Flatseal to manage app permissions."
@@ -212,34 +207,24 @@ msgstr ""
 "Questa funzionalità è attualmente disabilitata. Si consiglia di scaricare e "
 "installare Flatseal per gestire le autorizzazioni delle app."
 
-#: src/bz-application.c:479
-msgctxt "About Dialog Developer Credit"
-msgid "Adam Masciola <kolunmi@posteo.net>"
-msgstr "Adam Masciola <kolunmi@posteo.net>"
-
-#: src/bz-application.c:480
-msgctxt "About Dialog Developer Credit"
-msgid "Alexander Vanhee"
-msgstr "Alexander Vanhee"
-
 #. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
-#: src/bz-application.c:497
+#: src/bz-application.c:514
 msgid "translator-credits"
 msgstr "Pietro F. <pfwork@tutamail.com>, 2025"
 
-#: src/bz-application.c:1069
+#: src/bz-application.c:1115
 msgid "Constructing Flatpak instance..."
 msgstr "Creazione dell'istanza Flatpak..."
 
-#: src/bz-application.c:1086
+#: src/bz-application.c:1132
 msgid "Reusing last Flatpak instance..."
 msgstr "Riutilizzo dell'ultima istanza Flatpak..."
 
-#: src/bz-application.c:1111
+#: src/bz-application.c:1157
 msgid "Flathub is not registered on this system"
 msgstr "Flathub non è registrato su questo sistema"
 
-#: src/bz-application.c:1114
+#: src/bz-application.c:1160
 msgid ""
 "Would you like to add Flathub as a remote? If you decline, the Flathub page "
 "will not be available. You can change this later."
@@ -248,49 +233,49 @@ msgstr ""
 "Flathub non sarà disponibile. Puoi cambiare questa impostazione in un "
 "secondo momento."
 
-#: src/bz-application.c:1119 src/bz-update-dialog.blp:6
+#: src/bz-application.c:1165 src/bz-update-dialog.blp:6
 msgid "Later"
 msgstr "Dopo"
 
-#: src/bz-application.c:1120
+#: src/bz-application.c:1166
 msgid "Add Flathub"
 msgstr "Aggiungi Flathub"
 
-#: src/bz-application.c:1152
+#: src/bz-application.c:1198
 msgid "Identifying installed entries..."
 msgstr "Identificazione delle voci installate..."
 
-#: src/bz-application.c:1176
+#: src/bz-application.c:1221
 msgid "Receiving Entries"
 msgstr "Ricezione delle entrare"
 
-#: src/bz-application.c:1333
+#: src/bz-application.c:1378
 #, c-format
 msgid "%'d of %'d"
 msgstr "%'d di %'d"
 
-#: src/bz-application.c:1346
+#: src/bz-application.c:1391
 #, c-format
 msgid "Waiting for background indexing tasks to catch up..."
 msgstr ""
 "In attesa che le attività di indicizzazione in background vengano "
 "completate..."
 
-#: src/bz-application.c:1388
+#: src/bz-application.c:1433
 #, c-format
 msgid "Completed initialization in %0.2f seconds"
 msgstr "Inizializzazione completata in %0.2f secondi"
 
-#: src/bz-application.c:1393 src/bz-application.c:1548
+#: src/bz-application.c:1438 src/bz-application.c:1593
 msgid "Checking for updates..."
 msgstr "Controllo degli aggiornamenti..."
 
-#: src/bz-application.c:1432
+#: src/bz-application.c:1477
 msgid "Synchronizing..."
 msgstr "Sincronizzazione..."
 
 #: src/bz-browse-widget.blp:11 src/bz-flathub-page.blp:19
-#: src/bz-full-view.blp:53 src/bz-installed-page.blp:15 src/bz-window.blp:174
+#: src/bz-full-view.blp:52 src/bz-installed-page.blp:15 src/bz-window.blp:173
 msgid "Empty"
 msgstr "Vuoto"
 
@@ -556,52 +541,52 @@ msgstr "Più App Mobile"
 msgid "Mobile Apps"
 msgstr "App Mobile"
 
-#: src/bz-flatpak-entry.c:554
+#: src/bz-flatpak-entry.c:571
 msgctxt "Project URL Type"
 msgid "Flathub Page"
 msgstr "Pagina Flathub"
 
-#: src/bz-flatpak-entry.c:575
+#: src/bz-flatpak-entry.c:592
 msgctxt "Project URL Type"
 msgid "Project Website"
 msgstr "Sito del Progetto"
 
-#: src/bz-flatpak-entry.c:579
+#: src/bz-flatpak-entry.c:596
 msgctxt "Project URL Type"
 msgid "Issue Tracker"
 msgstr "Segnala un problema"
 
-#: src/bz-flatpak-entry.c:583
+#: src/bz-flatpak-entry.c:600
 msgctxt "Project URL Type"
 msgid "FAQ"
 msgstr "FAQ"
 
-#: src/bz-flatpak-entry.c:587
+#: src/bz-flatpak-entry.c:604
 msgctxt "Project URL Type"
 msgid "Help"
 msgstr "Aiuto"
 
-#: src/bz-flatpak-entry.c:591
+#: src/bz-flatpak-entry.c:608
 msgctxt "Project URL Type"
 msgid "Donate"
 msgstr "Dona"
 
-#: src/bz-flatpak-entry.c:597
+#: src/bz-flatpak-entry.c:614
 msgctxt "Project URL Type"
 msgid "Translate"
 msgstr "Traduci"
 
-#: src/bz-flatpak-entry.c:601
+#: src/bz-flatpak-entry.c:618
 msgctxt "Project URL Type"
 msgid "Contact"
 msgstr "Contatta"
 
-#: src/bz-flatpak-entry.c:605
+#: src/bz-flatpak-entry.c:622
 msgctxt "Project URL Type"
 msgid "Source Code"
 msgstr "Codice Sorgente"
 
-#: src/bz-flatpak-entry.c:611
+#: src/bz-flatpak-entry.c:628
 msgctxt "Project URL Type"
 msgid "Contribute"
 msgstr "Contribuisci"
@@ -610,57 +595,69 @@ msgstr "Contribuisci"
 msgid "Toggle transaction sidebar"
 msgstr "Mostra o Nasconde il menu delle operazioni"
 
-#: src/bz-full-view.blp:43 src/bz-window.blp:417
+#: src/bz-full-view.blp:42 src/bz-window.blp:416
 msgid "Main Menu"
 msgstr "Menu Principale"
 
-#: src/bz-full-view.blp:57
+#: src/bz-full-view.blp:56
 msgid "No Results"
 msgstr "Nessun risultato"
 
-#: src/bz-full-view.blp:58
+#: src/bz-full-view.blp:57
 msgid "Try a different search query"
 msgstr "Prova con una ricerca diversa"
 
-#: src/bz-full-view.blp:64 src/bz-window.blp:184
+#: src/bz-full-view.blp:63 src/bz-window.blp:183
 msgid "Content"
 msgstr "Contenuto"
 
-#: src/bz-full-view.blp:196
+#: src/bz-full-view.blp:208
 msgid "Verified by the original developers"
 msgstr "Verificato dagli sviluppatori originali"
 
-#: src/bz-full-view.blp:223
+#: src/bz-full-view.blp:235
 msgid "Support"
 msgstr "Supporta"
 
-#: src/bz-full-view.blp:243
+#: src/bz-full-view.blp:255
 msgid "Repository Star Count"
 msgstr "Numero di stelle del repository"
 
-#: src/bz-full-view.blp:273
+#: src/bz-full-view.blp:285
 msgid "Open"
 msgstr "Apri"
 
-#: src/bz-full-view.blp:286
+#: src/bz-full-view.blp:298
 msgid "Download & Install Application"
 msgstr "Installa questa applicazione"
 
-#: src/bz-full-view.blp:301
+#: src/bz-full-view.blp:313
 msgid "Uninstall Application"
 msgstr "Disinstalla questa applicazione"
 
-#: src/bz-full-view.blp:316
+#: src/bz-full-view.blp:328
 msgid "Install Other Version"
 msgstr "Installa altra versione"
 
-#: src/bz-full-view.blp:340
+#: src/bz-full-view.blp:352
 msgid "Size"
 msgstr "Peso"
 
-#: src/bz-full-view.blp:456
+#: src/bz-full-view.blp:469
 msgid "Downloads /mo"
 msgstr "Download /mo"
+
+#: src/bz-full-view.blp:510
+msgid "Stopped Receiving Core Updates"
+msgstr "Non riceve più aggiornamenti core"
+
+#: src/bz-full-view.blp:522
+msgid ""
+"This app uses a runtime that no longer recieves updates or security fixes. "
+"It may become unsafe to use."
+msgstr ""
+"Questa app utilizza un runtime che non riceve più aggiornamenti o correzioni "
+"di sicurezza. Potrebbe diventare non sicura da usare."
 
 #: src/bz-full-view.c:284
 msgid "---"
@@ -889,22 +886,18 @@ msgid "Enable Global Debug Mode"
 msgstr "Abilita Modalità di Debug globale"
 
 #: src/bz-inspector.blp:29
-msgid "Active Blacklists"
-msgstr "Blacklist attive"
-
-#: src/bz-inspector.blp:46
 msgid "Active Curated-Configs"
 msgstr "Configurazioni attive per Consigliate"
 
-#: src/bz-inspector.blp:64
+#: src/bz-inspector.blp:47
 msgid "All Entry Groups"
 msgstr "Tutti i gruppi di ingresso"
 
-#: src/bz-inspector.blp:72
+#: src/bz-inspector.blp:55
 msgid "Filter..."
 msgstr "Filtra..."
 
-#: src/bz-inspector.blp:113
+#: src/bz-inspector.blp:96
 msgid "Decache and Inspect"
 msgstr "Elimina la cache ed Ispeziona"
 
@@ -927,7 +920,7 @@ msgid ""
 msgstr ""
 "Hai installato più versioni di questa app. Con quale desideri procedere? "
 
-#: src/bz-installed-page.c:413 src/bz-window.c:1076 src/bz-window.c:1100
+#: src/bz-installed-page.c:413 src/bz-window.c:1162 src/bz-window.c:1186
 msgid "Cancel"
 msgstr "Annulla"
 
@@ -966,135 +959,77 @@ msgstr ""
 "\n"
 "Puoi partecipare e contribuire a migliorarla."
 
-#: src/bz-preferences-dialog.blp:19
+#: src/bz-preferences-dialog.blp:11
 msgid "Preferences"
 msgstr "Preferenze"
 
-#: src/bz-preferences-dialog.blp:23 src/bz-window.blp:334
+#: src/bz-preferences-dialog.blp:15 src/bz-window.blp:334
 msgid "Search"
 msgstr "Cerca"
 
-#: src/bz-preferences-dialog.blp:26
+#: src/bz-preferences-dialog.blp:18
 msgid "Free Software Only"
 msgstr "Solo Free Software"
 
-#: src/bz-preferences-dialog.blp:27
+#: src/bz-preferences-dialog.blp:19
 msgid "Hide proprietary applications from search results"
 msgstr "Nascondi applicazioni proprietarie dai risultati di ricerca"
 
-#: src/bz-preferences-dialog.blp:31
+#: src/bz-preferences-dialog.blp:23
 msgid "Flathub Results Only"
 msgstr "Solo risultati da Flathub"
 
-#: src/bz-preferences-dialog.blp:32
+#: src/bz-preferences-dialog.blp:24
 msgid "Limit search results to applications only available on Flathub"
 msgstr ""
 "Limita i risultati della ricerca alle applicazioni disponibili su Flathub"
 
-#: src/bz-preferences-dialog.blp:36
+#: src/bz-preferences-dialog.blp:28
 msgid "Delay Search Results"
 msgstr "Mostra Risultati di Ricerca"
 
-#: src/bz-preferences-dialog.blp:37
+#: src/bz-preferences-dialog.blp:29
 msgid "Improve results performance by debouncing search terms"
 msgstr ""
 "Migliorare le prestazioni dei risultati applicando il debouncing ai termini "
 "di ricerca"
 
-#: src/bz-preferences-dialog.blp:42
+#: src/bz-preferences-dialog.blp:34
 msgid "Application Details"
 msgstr "Dettagli dell'app"
 
-#: src/bz-preferences-dialog.blp:45
+#: src/bz-preferences-dialog.blp:37
 msgid "Display Star Count"
 msgstr "Mostra conteggio stelle"
 
-#: src/bz-preferences-dialog.blp:46
+#: src/bz-preferences-dialog.blp:38
 msgid "Show the star count of an application's source code repository"
 msgstr ""
 "Mostra il numero di stelle del repository del codice sorgente di "
 "un'applicazione"
 
-#: src/bz-preferences-dialog.blp:71
-msgid "Progress Bar"
-msgstr "Barra di avanzamento"
-
-#: src/bz-preferences-dialog.blp:72
-msgid "Choose a theme for the progress bar!"
-msgstr "Scegli un tema per la barra di avanzamento!"
-
-#: src/bz-preferences-dialog.blp:98
+#: src/bz-preferences-dialog.blp:63
 msgid "End of Life Apps"
 msgstr "App Obsolete"
 
-#: src/bz-preferences-dialog.blp:101
+#: src/bz-preferences-dialog.blp:66
 msgid "Hide EOL Apps"
 msgstr "Nascondi App obsolete"
 
-#: src/bz-preferences-dialog.blp:102
+#: src/bz-preferences-dialog.blp:67
 msgid "Hide apps which are no longer supported by their developers"
 msgstr "Nascondi le app non più supportate dagli sviluppatori"
 
-#: src/bz-preferences-dialog.blp:116
+#: src/bz-preferences-dialog.blp:81
 msgid ""
-"Store can fetch and display the star count from an application's source "
+"PureStore can fetch and display the star count from an application's source "
 "code repository on a remote Git forge. \n"
 " For projects on GitHub, rate limits may cause them not to appear."
 msgstr ""
-"Store può recuperare e visualizzare il numero di stelle dal repository del "
-"codice sorgente di un'applicazione su una piattaforma Git remota.\n"
+"PureStore può recuperare e visualizzare il numero di stelle dal repository "
+"del codice sorgente di un'applicazione su una piattaforma Git remota.\n"
 "Per i progetti su GitHub, i limiti di richieste potrebbero impedirne la "
 "visualizzazione."
-
-#: src/bz-preferences-dialog.c:32
-msgid "Accent Color"
-msgstr "Colore d'accento"
-
-#: src/bz-preferences-dialog.c:33
-msgid "Pride Colors"
-msgstr "Colori Pride"
-
-#: src/bz-preferences-dialog.c:34
-msgid "Lesbian Pride Colors"
-msgstr "Colori lesbian pride"
-
-#: src/bz-preferences-dialog.c:35
-msgid "Transgender Pride Colors"
-msgstr "Colori transgender pride"
-
-#: src/bz-preferences-dialog.c:36
-msgid "Nonbinary Pride Colors"
-msgstr "Colori nonbinary pride"
-
-#: src/bz-preferences-dialog.c:37
-msgid "Bisexual Pride Colors"
-msgstr "Colori bisexual pride"
-
-#: src/bz-preferences-dialog.c:38
-msgid "Asexual Pride Colors"
-msgstr "Colori asexual pride"
-
-#: src/bz-preferences-dialog.c:39
-msgid "Pansexual Pride Colors"
-msgstr ""
-"Non sono disponibili informazioni sulla curatela per questo sistema. È "
-"comunque possibile sfogliare le applicazioni su Flathub"
-
-#: src/bz-preferences-dialog.c:40
-msgid "Aromantic Pride Colors"
-msgstr "Colori aromantic pride"
-
-#: src/bz-preferences-dialog.c:41
-msgid "Genderfluid Pride Colors"
-msgstr "Colori genderfluid pride"
-
-#: src/bz-preferences-dialog.c:42
-msgid "Polysexual Pride Colors"
-msgstr "Colori polysexual pride"
-
-#: src/bz-preferences-dialog.c:43
-msgid "Omnisexual Pride Colors"
-msgstr "Colori omnisexual pride"
 
 #: src/bz-releases-dialog.blp:5 src/bz-releases-list.blp:26
 msgid "Version History"
@@ -1109,7 +1044,11 @@ msgstr "Versione %s"
 msgid "No details for this release"
 msgstr "Nessun dettaglio per questa versione"
 
-#: src/bz-rich-app-tile.blp:103
+#: src/bz-rich-app-tile.blp:107
+msgid "Stopped Receiving Updates"
+msgstr "Non riceve più aggiornamenti"
+
+#: src/bz-rich-app-tile.blp:123
 msgid "Get"
 msgstr "Ottieni"
 
@@ -1228,19 +1167,19 @@ msgstr "Tutte le Azioni di Debug"
 msgid "Tasks"
 msgstr "Attività"
 
-#: src/bz-window.blp:154
+#: src/bz-window.blp:153
 msgid "Stop Active Tasks"
 msgstr "Interrompi attività attive"
 
-#: src/bz-window.blp:162
+#: src/bz-window.blp:161
 msgid "Clear History"
 msgstr "Cancella cronologia"
 
-#: src/bz-window.blp:178
+#: src/bz-window.blp:177
 msgid "No Tasks Yet"
 msgstr "Nessuna attività ancora"
 
-#: src/bz-window.blp:293
+#: src/bz-window.blp:292
 msgid "Curated"
 msgstr "Consigliate"
 
@@ -1248,35 +1187,35 @@ msgstr "Consigliate"
 msgid "Flathub"
 msgstr "Flathub"
 
-#: src/bz-window.blp:481
-msgid "_Donate to Store ❤️"
-msgstr "_Dona a Store ❤️"
+#: src/bz-window.blp:480
+msgid "Install from File..."
+msgstr "Installa da file..."
 
-#: src/bz-window.blp:486
+#: src/bz-window.blp:487
 msgid "_Refresh Content"
 msgstr "_Ricarica Contenuto"
 
-#: src/bz-window.blp:493
+#: src/bz-window.blp:494
 msgid "_Preferences"
 msgstr "_Preferenze"
 
-#: src/bz-window.blp:498
+#: src/bz-window.blp:499
 msgid "_Keyboard Shortcuts"
 msgstr "_Scorciatoie da tastiera"
 
-#: src/bz-window.blp:503
+#: src/bz-window.blp:504
 msgid "_About Store"
 msgstr "_Info su Store"
 
-#: src/bz-window.blp:510
+#: src/bz-window.blp:511
 msgid "_Quit Store"
 msgstr "_Chiude Store"
 
-#: src/bz-window.blp:519
+#: src/bz-window.blp:520
 msgid "Open Store Inspector"
 msgstr "Apri Ispettore di Store"
 
-#: src/bz-window.c:819
+#: src/bz-window.c:905
 msgid ""
 "The ability to inspect and install local .flatpak bundle files is coming "
 "soon! In the meantime, try running\n"
@@ -1292,40 +1231,45 @@ msgstr ""
 "\n"
 "alla riga di comando."
 
-#: src/bz-window.c:941
+#: src/bz-window.c:1027
 msgid "Can't do that right now!"
 msgstr "Non posso farlo adesso!"
 
-#: src/bz-window.c:1070
+#: src/bz-window.c:1156
 #, c-format
 msgid "Install %s?"
 msgstr "Installare %s?"
 
-#: src/bz-window.c:1073
+#: src/bz-window.c:1159
 msgid "May install additional shared components"
 msgstr "È possibile installare componenti condivisi aggiuntivi"
 
-#: src/bz-window.c:1092
+#: src/bz-window.c:1178
 #, c-format
-msgid "Remove %s?"
-msgstr "Rimuovere %s?"
+msgid "Uninstall %s?"
+msgstr "Disinstallare %s?"
 
-#: src/bz-window.c:1096
-#, c-format
-msgid ""
-"It will not be possible to use %s after it is uninstalled.\n"
-"\n"
-"Settings and user data will be kept."
-msgstr ""
-"Non sarà possibile usare %s dopo la disinstallazione.\n"
-"\n"
-"Le impostazioni e i dati utente verranno conservati."
+#: src/bz-window.c:1182
+msgid "It will not be possible to use this app after it is uninstalled."
+msgstr "Non sarà possibile usare questa app dopo la disinstallazione."
 
-#: src/bz-window.c:1262
+#: src/bz-window.c:1187
+msgid "Clear Data"
+msgstr "Cancella dati"
+
+#: src/bz-window.c:1188
+msgid "Uninstall & Clear Data"
+msgstr "Disinstalla e cancella dati"
+
+#: src/bz-window.c:1189
+msgid "Uninstall"
+msgstr "Disinstalla"
+
+#: src/bz-window.c:1352
 msgid "Resume Current Tasks"
 msgstr "Riprendi attività correnti"
 
-#: src/bz-window.c:1268
+#: src/bz-window.c:1358
 msgid "Pause Current Tasks"
 msgstr "Sospendi attività correnti"
 
@@ -1368,6 +1312,77 @@ msgstr "Mostra scorciatoie da tastiera"
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Esce"
+
+#~ msgid "Global Progress Bar Theme"
+#~ msgstr "Tema barra di avanzamento globale"
+
+#~ msgid "Describes the look of the global progress bar"
+#~ msgstr "Descrive l'aspetto della barra di avanzamento globale"
+
+#~ msgid "Adam Masciola"
+#~ msgstr "Adam Masciola"
+
+#~ msgctxt "About Dialog Developer Credit"
+#~ msgid "Adam Masciola <kolunmi@posteo.net>"
+#~ msgstr "Adam Masciola <kolunmi@posteo.net>"
+
+#~ msgctxt "About Dialog Developer Credit"
+#~ msgid "Alexander Vanhee"
+#~ msgstr "Alexander Vanhee"
+
+#~ msgid "Active Blacklists"
+#~ msgstr "Blacklist attive"
+
+#~ msgid "Progress Bar"
+#~ msgstr "Barra di avanzamento"
+
+#~ msgid "Choose a theme for the progress bar!"
+#~ msgstr "Scegli un tema per la barra di avanzamento!"
+
+#~ msgid "Accent Color"
+#~ msgstr "Colore d'accento"
+
+#~ msgid "Pride Colors"
+#~ msgstr "Colori Pride"
+
+#~ msgid "Lesbian Pride Colors"
+#~ msgstr "Colori lesbian pride"
+
+#~ msgid "Transgender Pride Colors"
+#~ msgstr "Colori transgender pride"
+
+#~ msgid "Nonbinary Pride Colors"
+#~ msgstr "Colori nonbinary pride"
+
+#~ msgid "Bisexual Pride Colors"
+#~ msgstr "Colori bisexual pride"
+
+#~ msgid "Asexual Pride Colors"
+#~ msgstr "Colori asexual pride"
+
+#~ msgid "Pansexual Pride Colors"
+#~ msgstr ""
+#~ "Non sono disponibili informazioni sulla curatela per questo sistema. È "
+#~ "comunque possibile sfogliare le applicazioni su Flathub"
+
+#~ msgid "Aromantic Pride Colors"
+#~ msgstr "Colori aromantic pride"
+
+#~ msgid "Genderfluid Pride Colors"
+#~ msgstr "Colori genderfluid pride"
+
+#~ msgid "Polysexual Pride Colors"
+#~ msgstr "Colori polysexual pride"
+
+#~ msgid "Omnisexual Pride Colors"
+#~ msgstr "Colori omnisexual pride"
+
+#~ msgid "_Donate to Store ❤️"
+#~ msgstr "_Dona a Store ❤️"
+
+#, c-format
+#~ msgid "Remove %s?"
+#~ msgstr "Rimuovere %s?"
 
 #~ msgid "Searching for Blender"
 #~ msgstr "Ricerca di Blender"

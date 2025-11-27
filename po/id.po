@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: purestore\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-12 05:36+0700\n"
+"POT-Creation-Date: 2025-11-27 14:40+0000\n"
 "PO-Revision-Date: 2025-07-12 06:09+0700\n"
 "Last-Translator: KiKaraage <kikaraage@tuta.io>\n"
 "Language-Team: Indonesian\n"
@@ -21,235 +21,730 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Gtranslator 48.0\n"
 
-#: data/io.github.pureblueos.purestore.desktop.in:3
+#: data/io.github.pureblueos.purestore.desktop.in:2
 #: data/io.github.pureblueos.purestore.metainfo.xml.in:7 src/bz-window.blp:5
+#: src/bz-window.blp:224
 msgid "Store"
-msgstr "Store"
+msgstr "Toko"
 
-#: data/io.github.pureblueos.purestore.desktop.in:4
+#: data/io.github.pureblueos.purestore.desktop.in:3
 msgid "Add, remove or update flatpak software on this computer"
 msgstr ""
 "Tambah, hapus atau mutakhirkan perangkat lunak Flatpak pada komputer ini"
 
 # Added "Aplikasi" and "Pusat Aplikasi" (App Center) to search queries
-#: data/io.github.pureblueos.purestore.desktop.in:10
+#: data/io.github.pureblueos.purestore.desktop.in:9
 msgid "GTK;System;PackageManager;Discover;Flatpak;Software;Store;"
 msgstr ""
-"GTK;Sistem;Manajer Paket;Discover;Flatpak;Perangkat Lunak;Toko;Aplikasi;"
-"Pusat Aplikasi;"
+"GTK;Sistem;Manajer Paket;Discover;Flatpak;Perangkat "
+"Lunak;Toko;Aplikasi;Pusat Aplikasi;"
 
 #: data/io.github.pureblueos.purestore.gschema.xml:6
-msgid "Show Animated Background"
-msgstr "Tampilkan Animasi Latar Belakang"
+msgid "Hide EOL Entries"
+msgstr "Sembunyikan Entri EOL"
 
 #: data/io.github.pureblueos.purestore.gschema.xml:7
-msgid "Whether to show the animated icon background on the home page"
-msgstr "Tampilkan animasi ikon latar belakang pada halaman utama"
+msgid "Hide EOL entries and entries depending on them"
+msgstr ""
 
-#. FIXME: add descriptions and summary
-#: data/io.github.pureblueos.purestore.metainfo.xml.in:9
-msgid "Keep the summary shorter, between 10 and 35 characters"
-msgstr "Buat ringkasan pendek berkisar antara 10-35 karakter"
+#: data/io.github.pureblueos.purestore.gschema.xml:11
+msgid "Show Git Forge Star Counts"
+msgstr ""
 
-#: data/io.github.pureblueos.purestore.metainfo.xml.in:11
-msgid "No description"
-msgstr "Tidak ada deskripsi"
+#: data/io.github.pureblueos.purestore.gschema.xml:12
+msgid ""
+"Whether to attempt to detect and show \"star counts\" for projects in the "
+"full view"
+msgstr ""
 
-#: data/io.github.pureblueos.purestore.metainfo.xml.in:41
-msgid "Main Store window showing Blender"
-msgstr "Jendela utama Store yang menampilkan Blender"
+#: data/io.github.pureblueos.purestore.gschema.xml:16
+msgid "Only Show Free Software"
+msgstr "Hanya Tampilkan Perangkat Lunak Bebas"
 
-#: src/bz-addons-dialog.blp:13 src/bz-installed-page.blp:162
-#: src/bz-installed-page.blp:174
-msgid "Manage Addons"
+#: data/io.github.pureblueos.purestore.gschema.xml:17
+msgid "Hide proprietary software when searching"
+msgstr ""
+
+#: data/io.github.pureblueos.purestore.gschema.xml:21
+msgid "Show Only Flathub Content"
+msgstr ""
+
+#: data/io.github.pureblueos.purestore.gschema.xml:22
+msgid "Filter search results to only show applications available on Flathub"
+msgstr ""
+
+#: data/io.github.pureblueos.purestore.gschema.xml:26
+msgid "Debounce Search Inputs"
+msgstr ""
+
+#: data/io.github.pureblueos.purestore.gschema.xml:27
+msgid "Add a delay before searching to prevent instant replies while typing"
+msgstr "Tambahkan jeda sebelum mencari untuk mencegah balasan instan saat mengetik"
+
+#: data/io.github.pureblueos.purestore.gschema.xml:31
+msgid "Saved Window Dimensions"
+msgstr ""
+
+#: data/io.github.pureblueos.purestore.gschema.xml:32
+msgid "The window dimensions to be used by the next Store window"
+msgstr ""
+
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:8
+msgid "Discover and install applications"
+msgstr "Temukan dan pasang aplikasi"
+
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:10
+msgid ""
+"A new app store for GNOME with a focus on discovering and installing "
+"applications and addons from Flatpak remotes, particularly Flathub."
+msgstr ""
+
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:14
+msgid ""
+"It emphasizes supporting the developers who make the Linux desktop possible. "
+"Store features a \"curated\" tab that can be configured by distributors to "
+"allow for a more localized experience."
+msgstr ""
+
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:42
+msgid "The home page displaying Flathub apps"
+msgstr ""
+
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:46
+msgid "Nucleus app page"
+msgstr ""
+
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:50
+msgid "Search page"
+msgstr "Halaman pencarian"
+
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:54
+msgid "Category page"
+msgstr ""
+
+#: src/bz-addons-dialog.blp:14 src/bz-full-view.blp:624
+msgid "Manage Add-ons"
 msgstr "Kelola Modul Tambahan"
 
-#: src/bz-app-tile.blp:65 src/bz-full-view.blp:139
-msgid "This flatpak is verified by the original developers of the software."
-msgstr "Flatpak ini telah diverifikasi oleh pengembang perangkat lunak asli"
+#: src/bz-addons-dialog.c:90 src/bz-transaction-view.blp:212
+msgid "Remove"
+msgstr "Hapus"
 
-#: src/bz-application.c:1178
-msgctxt "About Dialog Developer Credit"
-msgid "Adam Masciola <kolunmi@posteo.net>"
-msgstr "Adam Masciola <kolunmi@posteo.net>"
+#: src/bz-addons-dialog.c:97 src/bz-full-view.blp:301
+#: src/bz-transaction-view.blp:186 src/bz-window.c:1163
+msgid "Install"
+msgstr "Pasang"
+
+#: src/bz-app-size-dialog.c:55
+msgid "Of the size of human DNA"
+msgstr ""
+
+#: src/bz-app-size-dialog.c:55
+msgid "3 billion base pairs"
+msgstr ""
+
+#: src/bz-app-size-dialog.c:56
+msgid "Of the Linux Kernel"
+msgstr ""
+
+#: src/bz-app-size-dialog.c:56
+msgid "linux-6.17.tar.xz"
+msgstr ""
+
+#: src/bz-app-size-dialog.c:57
+msgid "Of the Apollo 11 guidance computer"
+msgstr ""
+
+#: src/bz-app-size-dialog.c:57
+msgid "Total ROM and RAM"
+msgstr ""
+
+#: src/bz-app-size-dialog.c:58
+msgid "Of the original Super Mario Bros"
+msgstr ""
+
+#: src/bz-app-size-dialog.c:58
+msgid "On the NES"
+msgstr ""
+
+#: src/bz-app-size-dialog.c:59
+msgid "Of the size of Wikipedia"
+msgstr ""
+
+#: src/bz-app-size-dialog.c:59
+msgid "Without any media"
+msgstr ""
+
+#: src/bz-app-size-dialog.blp:43
+msgid "--- MB"
+msgstr ""
+
+#: src/bz-app-size-dialog.blp:53
+msgid "Download Size"
+msgstr "Ukuran Unduhan"
+
+#: src/bz-application.c:424
+msgid "Flatpak Files"
+msgstr ""
+
+#: src/bz-application.c:433
+#, fuzzy
+msgid "Flatpak File"
+msgstr "Tidak Ada Flatpak Terpasang"
+
+#: src/bz-application.c:455
+msgid ""
+"This functionality is currently disabled. It is recommended you download and "
+"install Flatseal to manage app permissions."
+msgstr ""
 
 #. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
-#: src/bz-application.c:481
+#: src/bz-application.c:514
 msgid "translator-credits"
 msgstr "KiKaraage <kikaraage@tuta.io>, 2025"
 
-#: src/bz-application.c:1183
-msgctxt "About Dialog Translator Credit"
-msgid "Ahmed Najmawi"
-msgstr "Ahmed Najmawi"
+#: src/bz-application.c:1115
+msgid "Constructing Flatpak instance..."
+msgstr ""
 
-#: src/bz-application.c:1184
-msgctxt "About Dialog Translator Credit"
-msgid "AtomHare"
-msgstr "AtomHare"
+#: src/bz-application.c:1132
+msgid "Reusing last Flatpak instance..."
+msgstr ""
 
-#: src/bz-application.c:1185
-msgctxt "About Dialog Translator Credit"
-msgid "Jill Fiore"
-msgstr "Jill Fiore"
+#: src/bz-application.c:1157
+msgid "Flathub is not registered on this system"
+msgstr ""
 
-#: src/bz-application.c:1186
-msgctxt "About Dialog Translator Credit"
-msgid "Lucosec"
-msgstr "Lucosec"
+#: src/bz-application.c:1160
+msgid ""
+"Would you like to add Flathub as a remote? If you decline, the Flathub page "
+"will not be available. You can change this later."
+msgstr ""
 
-#: src/bz-application.c:1187
-msgctxt "About Dialog Translator Credit"
-msgid "Shihfu Juan"
-msgstr "Shihfu Juan"
+#: src/bz-application.c:1165 src/bz-update-dialog.blp:6
+msgid "Later"
+msgstr "Nanti"
 
-#: src/bz-application.c:1188
-msgctxt "About Dialog Translator Credit"
-msgid "Vlastimil Dědek"
-msgstr "Vlastimil Dědek"
+#: src/bz-application.c:1166
+msgid "Add Flathub"
+msgstr "Tambah Flathub"
 
-#: src/bz-application.c:1189
-msgctxt "About Dialog Translator Credit"
-msgid "asen23"
-msgstr "asen23"
+#: src/bz-application.c:1198
+msgid "Identifying installed entries..."
+msgstr ""
 
-#: src/bz-application.c:1190
-msgctxt "About Dialog Translator Credit"
-msgid "renner"
-msgstr "renner"
+#: src/bz-application.c:1221
+msgid "Receiving Entries"
+msgstr ""
 
-#: src/bz-application.c:1191
-msgctxt "About Dialog Translator Credit"
-msgid "robotta"
-msgstr "robotta"
+#: src/bz-application.c:1378
+#, c-format
+msgid "%'d of %'d"
+msgstr ""
 
-#: src/bz-application.c:1207
-msgid "Adam Masciola"
-msgstr "Adam Masciola"
+#: src/bz-application.c:1391
+#, c-format
+msgid "Waiting for background indexing tasks to catch up..."
+msgstr ""
 
-#: src/bz-browse-widget.blp:11 src/bz-full-view.blp:11
-#: src/bz-installed-page.blp:11 src/bz-window.blp:32
+#: src/bz-application.c:1433
+#, c-format
+msgid "Completed initialization in %0.2f seconds"
+msgstr ""
+
+#: src/bz-application.c:1438 src/bz-application.c:1593
+msgid "Checking for updates..."
+msgstr "Memeriksa pembaruan..."
+
+#: src/bz-application.c:1477
+msgid "Synchronizing..."
+msgstr ""
+
+#: src/bz-browse-widget.blp:11 src/bz-flathub-page.blp:19
+#: src/bz-full-view.blp:52 src/bz-installed-page.blp:15 src/bz-window.blp:173
 msgid "Empty"
 msgstr "Kosong"
 
 #: src/bz-browse-widget.blp:15
-msgid "No Curated Applications"
+#, fuzzy
+msgid "No Curation"
 msgstr "Aplikasi Pilihan Belum Tersedia"
 
 #: src/bz-browse-widget.blp:16
 msgid ""
-"Store was not provided a curated content configuration. Contact your "
-"operating system's support channels for assistance."
+"There is no curation information provided on this system. You can still "
+"browse applications on Flathub"
 msgstr ""
-"Konfigurasi kurasi konten Store saat ini belum tersedia. Hubungi sistem "
-"operasi anda untuk mendukung fitur ini."
 
-#: src/bz-browse-widget.blp:22 src/bz-flathub-page.blp:11
+#: src/bz-browse-widget.blp:18
+msgid "Browse Flathub"
+msgstr "Telusuri Flathub"
+
+#: src/bz-browse-widget.blp:29 src/bz-browse-widget.blp:33
+#: src/bz-flathub-page.blp:30 src/bz-flathub-page.blp:34
+msgid "Offline"
+msgstr "Tidak Ada Jaringan"
+
+#: src/bz-browse-widget.blp:39 src/bz-flathub-page.blp:40
 msgid "Browser"
 msgstr "Peramban"
 
-#: src/bz-error.c:45
+#: src/bz-entry-inspector.blp:5
+msgid "Entry Inspector"
+msgstr ""
+
+#: src/bz-entry-inspector.blp:76
+msgid "Serialize"
+msgstr ""
+
+#: src/bz-entry-inspector.blp:80
+msgid "Convert to JSON"
+msgstr ""
+
+#: src/bz-error.c:68
 msgid "An Error Occurred"
 msgstr "Telah Terjadi Kegagalan"
 
-#: src/bz-error.c:51
+#: src/bz-error.c:89
 msgid "Close"
 msgstr "Tutup"
 
-#: src/bz-error.c:52
+#: src/bz-error.c:90
 msgid "Copy and Close"
 msgstr "Salin dan Tutup"
 
-#: src/bz-flathub-page.blp:41
-msgid "Apps Of The Week"
-msgstr "Aplikasi Minggu Ini"
+#: src/bz-featured-tile.blp:88
+msgid "App of the Day"
+msgstr ""
 
-#: src/bz-flathub-page.blp:85
+#: src/bz-flathub-category.c:66
+msgid "Audio & Video"
+msgstr ""
+
+#: src/bz-flathub-category.c:66
+msgid "Media"
+msgstr ""
+
+#: src/bz-flathub-category.c:66
+msgid "More Audio & Video"
+msgstr ""
+
+#: src/bz-flathub-category.c:67
+msgid "Developer Tools"
+msgstr ""
+
+#: src/bz-flathub-category.c:67
+msgid "Develop"
+msgstr ""
+
+#: src/bz-flathub-category.c:67
+msgid "More Developer Tools"
+msgstr ""
+
+#: src/bz-flathub-category.c:68
+msgid "Education"
+msgstr ""
+
+#: src/bz-flathub-category.c:68
+msgid "Learn"
+msgstr ""
+
+#: src/bz-flathub-category.c:68
+#, fuzzy
+msgid "More Education"
+msgstr "Opsi lainnya"
+
+#: src/bz-flathub-category.c:69
+msgid "Gaming"
+msgstr ""
+
+#: src/bz-flathub-category.c:69
+msgid "Play"
+msgstr ""
+
+#: src/bz-flathub-category.c:69
+#, fuzzy
+msgid "More Gaming"
+msgstr "Opsi lainnya"
+
+#: src/bz-flathub-category.c:70
+msgid "Graphics & Photography"
+msgstr ""
+
+#: src/bz-flathub-category.c:70
+msgid "Create"
+msgstr ""
+
+#: src/bz-flathub-category.c:70
+msgid "More Graphics & Photography"
+msgstr ""
+
+#: src/bz-flathub-category.c:71
+msgid "Networking"
+msgstr ""
+
+#: src/bz-flathub-category.c:71
+msgid "Internet"
+msgstr ""
+
+#: src/bz-flathub-category.c:71
+msgid "More Networking"
+msgstr ""
+
+#: src/bz-flathub-category.c:72
+msgid "Productivity"
+msgstr ""
+
+#: src/bz-flathub-category.c:72
+msgid "Work"
+msgstr ""
+
+#: src/bz-flathub-category.c:72
+msgid "More Productivity"
+msgstr ""
+
+#: src/bz-flathub-category.c:73
+msgid "Science"
+msgstr ""
+
+#: src/bz-flathub-category.c:73
+#, fuzzy
+msgid "More Science"
+msgstr "Opsi lainnya"
+
+#: src/bz-flathub-category.c:74
+msgid "System"
+msgstr ""
+
+#: src/bz-flathub-category.c:74
+msgid "More System"
+msgstr ""
+
+#: src/bz-flathub-category.c:75
+msgid "Utilities"
+msgstr ""
+
+#: src/bz-flathub-category.c:75
+msgid "Tools"
+msgstr ""
+
+#: src/bz-flathub-category.c:75
+#, fuzzy
+msgid "More Utilities"
+msgstr "Lebih detail"
+
+#: src/bz-flathub-category.c:76 src/bz-flathub-page.blp:109
+#: src/bz-flathub-page.blp:142
 msgid "Trending"
 msgstr "Sedang Tren"
 
-#: src/bz-flathub-page.blp:117
-msgid "Recently Updated"
-msgstr "Baru Dimutakhirkan"
+#: src/bz-flathub-category.c:76
+#, fuzzy
+msgid "More Trending"
+msgstr "Sedang Tren"
 
-#: src/bz-flathub-page.blp:149
-msgid "Recently Added"
-msgstr "Baru Saja Rilis"
-
-#: src/bz-flathub-page.blp:181
+#: src/bz-flathub-category.c:77 src/bz-flathub-page.blp:115
+#: src/bz-flathub-page.blp:175
 msgid "Popular"
 msgstr "Populer"
 
-#: src/bz-full-view.blp:15
+#: src/bz-flathub-category.c:77
+#, fuzzy
+msgid "More Popular"
+msgstr "Populer"
+
+#: src/bz-flathub-category.c:78 src/bz-flathub-page.blp:164
+msgid "Recently Added"
+msgstr "Baru Saja Rilis"
+
+#: src/bz-flathub-category.c:78 src/bz-flathub-page.blp:121
+msgid "New"
+msgstr ""
+
+#: src/bz-flathub-category.c:78
+#, fuzzy
+msgid "More New"
+msgstr "Lebih detail"
+
+#: src/bz-flathub-category.c:79 src/bz-flathub-page.blp:153
+msgid "Recently Updated"
+msgstr "Baru Dimutakhirkan"
+
+#: src/bz-flathub-category.c:79 src/bz-flathub-page.blp:127
+#, fuzzy
+msgid "Updated"
+msgstr "Pemutakhiran"
+
+#: src/bz-flathub-category.c:79
+#, fuzzy
+msgid "More Updated"
+msgstr "Pemutakhiran"
+
+#: src/bz-flathub-category.c:80
+msgid "Mobile"
+msgstr ""
+
+#: src/bz-flathub-category.c:80
+#, fuzzy
+msgid "More Mobile"
+msgstr "Lebih detail"
+
+#: src/bz-flathub-category-section.c:132 src/bz-search-widget.c:314
+#, fuzzy, c-format
+msgid "%d applications"
+msgstr "Lihat aplikasi pilihan"
+
+#: src/bz-flathub-page.blp:23
+msgid "Flathub Not Added"
+msgstr ""
+
+#: src/bz-flathub-page.blp:24
+msgid "The Flathub remote was not found on any of your Flatpak installations"
+msgstr ""
+
+#: src/bz-flathub-page.blp:48
+msgid "Flathub Unavailable"
+msgstr ""
+
+#: src/bz-flathub-page.blp:49
+msgid ""
+"We could not connect to Flathub. You can still manage and search for "
+"applications."
+msgstr ""
+
+#: src/bz-flathub-page.blp:52
+msgid "Search Apps"
+msgstr "Cari Aplikasi"
+
+#: src/bz-flathub-page.blp:266
+msgid "On the go"
+msgstr ""
+
+#: src/bz-flathub-page.blp:278
+msgid "Apps for your Linux phones and tablets"
+msgstr ""
+
+#: src/bz-flathub-page.blp:289 src/bz-flathub-page.blp:324
+msgid "More Mobile apps"
+msgstr ""
+
+#: src/bz-flathub-page.c:204
+msgid "Mobile Apps"
+msgstr ""
+
+#: src/bz-flatpak-entry.c:571
+#, fuzzy
+msgctxt "Project URL Type"
+msgid "Flathub Page"
+msgstr "Flathub"
+
+#: src/bz-flatpak-entry.c:592
+#, fuzzy
+msgctxt "Project URL Type"
+msgid "Project Website"
+msgstr "URL Proyek"
+
+#: src/bz-flatpak-entry.c:596
+msgctxt "Project URL Type"
+msgid "Issue Tracker"
+msgstr ""
+
+#: src/bz-flatpak-entry.c:600
+msgctxt "Project URL Type"
+msgid "FAQ"
+msgstr ""
+
+#: src/bz-flatpak-entry.c:604
+msgctxt "Project URL Type"
+msgid "Help"
+msgstr ""
+
+#: src/bz-flatpak-entry.c:608
+msgctxt "Project URL Type"
+msgid "Donate"
+msgstr ""
+
+#: src/bz-flatpak-entry.c:614
+msgctxt "Project URL Type"
+msgid "Translate"
+msgstr ""
+
+#: src/bz-flatpak-entry.c:618
+#, fuzzy
+msgctxt "Project URL Type"
+msgid "Contact"
+msgstr "Konten"
+
+#: src/bz-flatpak-entry.c:622
+msgctxt "Project URL Type"
+msgid "Source Code"
+msgstr ""
+
+#: src/bz-flatpak-entry.c:628
+msgctxt "Project URL Type"
+msgid "Contribute"
+msgstr ""
+
+#: src/bz-full-view.blp:20 src/bz-window.blp:117 src/bz-window.blp:394
+msgid "Toggle transaction sidebar"
+msgstr "Munculkan/hilangkan sidebar transaksi"
+
+#: src/bz-full-view.blp:42 src/bz-window.blp:416
+msgid "Main Menu"
+msgstr "Menu Utama"
+
+#: src/bz-full-view.blp:56
 msgid "No Results"
 msgstr "Tidak Ada Hasil"
 
-#: src/bz-full-view.blp:16
+#: src/bz-full-view.blp:57
 msgid "Try a different search query"
 msgstr "Coba gunakan kata kunci lainnya"
 
-#: src/bz-full-view.blp:22 src/bz-window.blp:42
+#: src/bz-full-view.blp:63 src/bz-window.blp:183
 msgid "Content"
 msgstr "Konten"
 
-#: src/bz-full-view.blp:180
-msgid "Run this application"
-msgstr "Jalankan aplikasi ini"
+#: src/bz-full-view.blp:208
+#, fuzzy
+msgid "Verified by the original developers"
+msgstr "Flatpak ini telah diverifikasi oleh pengembang perangkat lunak asli"
 
-#: src/bz-full-view.blp:204
-msgid "Download and install this application"
-msgstr "Unduh dan pasang aplikasi ini"
-
-#: src/bz-full-view.blp:222 src/bz-window.c:987
-msgid "Install"
-msgstr "Pasang"
-
-#: src/bz-full-view.blp:236
-msgid "Uninstall this application"
-msgstr "Hapus pemasangan aplikasi ini"
-
-#: src/bz-full-view.blp:262
-msgid "Share this application"
-msgstr "Bagikan aplikasi ini"
-
-#: src/bz-full-view.blp:274
-msgid ""
-"The number of downloads in the last 30 days. Click to view this "
-"application's download statistics."
-msgstr ""
-"Jumlah unduhan pada 30 hari terakhir. Klik untuk melihat statistik unduhan "
-"aplikasi ini."
-
-#: src/bz-full-view.blp:316
-msgid "Support this developer"
-msgstr "Dukung pengembang ini"
-
-#: src/bz-full-view.blp:329
+#: src/bz-full-view.blp:235
 msgid "Support"
 msgstr "Dukung"
 
-#: src/bz-full-view.blp:387
-msgid "Remote repo name"
-msgstr "Nama repo remote"
+#: src/bz-full-view.blp:255
+msgid "Repository Star Count"
+msgstr ""
 
-#: src/bz-full-view.blp:400
-msgid "Project URL"
-msgstr "URL Proyek"
+#: src/bz-full-view.blp:285
+msgid "Open"
+msgstr "Buka"
 
-#: src/bz-full-view.blp:412
-msgid "Download size"
+#: src/bz-full-view.blp:298
+msgid "Download & Install Application"
+msgstr "Unduh & Pasang Aplikasi"
+
+#: src/bz-full-view.blp:313
+msgid "Uninstall Application"
+msgstr "Hapus Aplikasi"
+
+#: src/bz-full-view.blp:328
+msgid "Install Other Version"
+msgstr ""
+
+#: src/bz-full-view.blp:352
+msgid "Size"
+msgstr ""
+
+#: src/bz-full-view.blp:469
+#, fuzzy
+msgid "Downloads /mo"
 msgstr "Ukuran unduhan"
 
-#: src/bz-full-view.c:213
-#, c-format
-msgid "Released %x"
-msgstr "Dirilis pada %x"
+#: src/bz-full-view.blp:510
+#, fuzzy
+msgid "Stopped Receiving Core Updates"
+msgstr "Memuat info terkini"
 
-#: src/bz-full-view.c:224
+#: src/bz-full-view.blp:522
+msgid ""
+"This app uses a runtime that no longer recieves updates or security fixes. "
+"It may become unsafe to use."
+msgstr ""
+
+#: src/bz-full-view.c:284
+msgid "---"
+msgstr ""
+
+#. Translators: M is the suffix for millions
+#: src/bz-full-view.c:288
+#, c-format
+msgid "%.2fM"
+msgstr ""
+
+#. Translators: K is the suffix for thousands
+#: src/bz-full-view.c:291
+#, c-format
+msgid "%.2fK"
+msgstr ""
+
+#: src/bz-full-view.c:300
+#, c-format
+msgid "%d downloads in the last 30 days"
+msgstr ""
+
+#: src/bz-full-view.c:321
+#, fuzzy, c-format
+msgid "Download size of %s"
+msgstr "Ukuran unduhan"
+
+#. Translators: Age rating format, e.g. "12+" for ages 12 and up
+#: src/bz-full-view.c:331
+#, c-format
+msgid "%d+"
+msgstr ""
+
+#: src/bz-full-view.c:339
+msgid "All Ages"
+msgstr ""
+
+#: src/bz-full-view.c:341
+msgid "Age Rating"
+msgstr "Peringkat Usia"
+
+#: src/bz-full-view.c:349
+msgid "Suitable for all ages"
+msgstr ""
+
+#: src/bz-full-view.c:351
+#, c-format
+msgid "Suitable for ages %d and up"
+msgstr ""
+
+#: src/bz-full-view.c:375
+msgid "Unknown"
+msgstr ""
+
+#: src/bz-full-view.c:378
+msgid "Proprietary Software"
+msgstr ""
+
+#: src/bz-full-view.c:382
+#, c-format
+msgid "Free software licensed under %s"
+msgstr ""
+
+#: src/bz-full-view.c:390
+msgid "Free"
+msgstr ""
+
+#: src/bz-full-view.c:390
+msgid "Proprietary"
+msgstr ""
+
+#: src/bz-full-view.c:410
+msgid "Adaptive"
+msgstr ""
+
+#: src/bz-full-view.c:410
+msgid "Desktop Only"
+msgstr ""
+
+#: src/bz-full-view.c:416
+msgid "Works on desktop, tablets, and phones"
+msgstr ""
+
+#: src/bz-full-view.c:417
+msgid "May not work on mobile devices"
+msgstr ""
+
+#: src/bz-full-view.c:428
 msgid "No URL"
 msgstr "Tidak ada URL"
 
-#: src/bz-full-view.c:232
+#: src/bz-full-view.c:446
 msgid ""
 "This application has a FLOSS license, meaning the source code can be audited "
 "for safety."
@@ -257,7 +752,7 @@ msgstr ""
 "Aplikasi ini memiliki lisensi FLOSS, sehingga kode sumbernya dapat diaudit "
 "secara bebas dan terbuka."
 
-#: src/bz-full-view.c:233
+#: src/bz-full-view.c:447
 msgid ""
 "This application has a proprietary license, meaning the source code is "
 "developed privately and cannot be audited by an independent third party."
@@ -265,118 +760,356 @@ msgstr ""
 "Aplikasi ini memiliki lisensi proprietari, dikembangkan secara tertutup "
 "dengan kode sumber aplikasi yang tidak bisa diaudit secara independen."
 
-#: src/bz-installed-page.blp:15
+#: src/bz-full-view.c:454
+#, fuzzy
+msgid "Other Apps by this Developer"
+msgstr "Dukung pengembang ini"
+
+#: src/bz-full-view.c:456
+#, c-format
+msgid "Other Apps by %s"
+msgstr ""
+
+#: src/bz-full-view.c:828
+msgid "Show Less"
+msgstr ""
+
+#: src/bz-full-view.c:828
+#, fuzzy
+msgid "Show More"
+msgstr "Tampilkan Pintasan"
+
+#: src/bz-hardware-support-dialog.c:69
+#, fuzzy
+msgid "Keyboard support"
+msgstr "_Pintasan Papan Tik"
+
+#: src/bz-hardware-support-dialog.c:71
+msgid "Requires keyboards"
+msgstr ""
+
+#: src/bz-hardware-support-dialog.c:72
+msgid "Recommends keyboards"
+msgstr ""
+
+#: src/bz-hardware-support-dialog.c:73
+#, fuzzy
+msgid "Supports keyboards"
+msgstr "Dukung pengembang ini"
+
+#: src/bz-hardware-support-dialog.c:74
+msgid "Unknown support for keyboards"
+msgstr ""
+
+#: src/bz-hardware-support-dialog.c:76
+#, fuzzy
+msgid "Mouse support"
+msgstr "Dukung"
+
+#: src/bz-hardware-support-dialog.c:78
+msgid "Requires mice or pointing devices"
+msgstr ""
+
+#: src/bz-hardware-support-dialog.c:79
+msgid "Recommends mice or pointing devices"
+msgstr ""
+
+#: src/bz-hardware-support-dialog.c:80
+msgid "Supports mice or pointing devices"
+msgstr ""
+
+#: src/bz-hardware-support-dialog.c:81
+msgid "Unknown support for mice or pointing devices"
+msgstr ""
+
+#: src/bz-hardware-support-dialog.c:83
+msgid "Touchscreen support"
+msgstr ""
+
+#: src/bz-hardware-support-dialog.c:85
+msgid "Requires touchscreens"
+msgstr ""
+
+#: src/bz-hardware-support-dialog.c:86
+msgid "Recommends touchscreens"
+msgstr ""
+
+#: src/bz-hardware-support-dialog.c:87
+#, fuzzy
+msgid "Supports touchscreens"
+msgstr "Dukung pengembang ini"
+
+#: src/bz-hardware-support-dialog.c:88
+msgid "Unknown support for touchscreens"
+msgstr ""
+
+#: src/bz-hardware-support-dialog.c:192
+msgid "Mobile support"
+msgstr ""
+
+#: src/bz-hardware-support-dialog.c:193
+msgid "Works on mobile devices"
+msgstr ""
+
+#: src/bz-hardware-support-dialog.c:193
+msgid "May not work well on mobile devices"
+msgstr ""
+
+#: src/bz-hardware-support-dialog.c:198
+msgid "Desktop support"
+msgstr ""
+
+#: src/bz-hardware-support-dialog.c:199
+msgid "Works well on large screens"
+msgstr ""
+
+#: src/bz-hardware-support-dialog.c:233
+#, c-format
+msgid "%s works best on specific hardware"
+msgstr ""
+
+#: src/bz-hardware-support-dialog.c:240
+#, c-format
+msgid "%s works on most devices"
+msgstr ""
+
+#: src/bz-hardware-support-dialog.blp:6 src/bz-hardware-support-dialog.blp:47
+msgid "Hardware Support"
+msgstr "Dukungan Perangkat Keras"
+
+#: src/bz-inspector.blp:5
+msgid "Store Inspector"
+msgstr ""
+
+#: src/bz-inspector.blp:22
+msgid "Enable Global Debug Mode"
+msgstr ""
+
+#: src/bz-inspector.blp:29
+msgid "Active Curated-Configs"
+msgstr ""
+
+#: src/bz-inspector.blp:47
+msgid "All Entry Groups"
+msgstr ""
+
+#: src/bz-inspector.blp:55
+msgid "Filter..."
+msgstr ""
+
+#: src/bz-inspector.blp:96
+msgid "Decache and Inspect"
+msgstr ""
+
+#: src/bz-installed-page.blp:19
 msgid "No Flatpaks Installed"
 msgstr "Tidak Ada Flatpak Terpasang"
 
-#: src/bz-installed-page.blp:21 src/bz-window.blp:201 src/bz-window.blp:336
+#: src/bz-installed-page.blp:25 src/bz-window.blp:319
 msgid "Installed"
 msgstr "Terpasang"
 
-#: src/bz-installed-page.blp:143
-msgid "More actions"
-msgstr "Opsi lainnya"
+#: src/bz-installed-page.c:406
+msgid "Choose an Installation"
+msgstr ""
 
-#: src/bz-installed-page.blp:187 src/bz-installed-page.blp:198
-msgid "Edit Permissions"
-msgstr "Sunting izin"
+#: src/bz-installed-page.c:409
+msgid ""
+"You have multiple versions of this app installed. Which one would you like "
+"to proceed with? "
+msgstr ""
 
-#: src/bz-preferences-dialog.blp:9
+#: src/bz-installed-page.c:413 src/bz-window.c:1162 src/bz-window.c:1186
+msgid "Cancel"
+msgstr "Batal"
+
+#: src/bz-license-dialog.c:115
+msgid ""
+"This app is not developed in the open, so only its developers know how it "
+"works. It may be insecure in ways that are hard to detect, and it may change "
+"without oversight.\n"
+"\n"
+"You may not be able to contribute to this app."
+msgstr ""
+
+#: src/bz-license-dialog.c:124
+msgid ""
+"This app is developed in the open by an international community.\n"
+"\n"
+"You can participate and help make it even better."
+msgstr ""
+
+#: src/bz-license-dialog.c:135
+#, c-format
+msgid ""
+"This app is developed in the open by an international community, and "
+"released under the <a href=\"%s\">%s</a> license.\n"
+"\n"
+"You can participate and help make it even better."
+msgstr ""
+
+#: src/bz-preferences-dialog.blp:11
 msgid "Preferences"
 msgstr "Preferensi"
 
-#: src/bz-preferences-dialog.blp:13
-msgid "How the application looks"
-msgstr "Tampilan aplikasi"
+#: src/bz-preferences-dialog.blp:15 src/bz-window.blp:334
+msgid "Search"
+msgstr "Pencarian"
 
-#: src/bz-preferences-dialog.blp:14
-msgid "Appearance"
-msgstr "Tampilan"
+#: src/bz-preferences-dialog.blp:18
+msgid "Free Software Only"
+msgstr "Perangkat Lunak Bebas Saja"
 
-#: src/bz-preferences-dialog.blp:17
-msgid "Show animated background"
-msgstr "Tampilkan animasi latar belakang"
+#: src/bz-preferences-dialog.blp:19
+msgid "Hide proprietary applications from search results"
+msgstr ""
 
-#: src/bz-search-widget.blp:69
-msgid "Type to filter"
-msgstr "Ketik untuk mencari"
+#: src/bz-preferences-dialog.blp:23
+msgid "Flathub Results Only"
+msgstr ""
 
-#: src/bz-search-widget.blp:98 src/bz-search-widget.blp:115
-msgid "Search Options"
-msgstr "Opsi Pencarian"
+#: src/bz-preferences-dialog.blp:24
+msgid "Limit search results to applications only available on Flathub"
+msgstr ""
 
-#: src/bz-search-widget.blp:119
-msgid "Exclude results with proprietary licenses"
-msgstr "Sembunyikan aplikasi berlisensi proprietari"
+#: src/bz-preferences-dialog.blp:28
+msgid "Delay Search Results"
+msgstr ""
 
-#: src/bz-search-widget.blp:124
-msgid "Exclude results not originating from Flathub"
-msgstr "Sembunyikan aplikasi selain dari Flathub"
+#: src/bz-preferences-dialog.blp:29
+msgid "Improve results performance by debouncing search terms"
+msgstr ""
 
-#: src/bz-search-widget.blp:139
-msgid "Advanced"
-msgstr "Opsi Lanjutan"
+#: src/bz-preferences-dialog.blp:34
+msgid "Application Details"
+msgstr ""
 
-#: src/bz-search-widget.blp:143
-msgid "Match using regular expressions"
-msgstr "Cocokkan dengan ekspresi reguler (regex)"
+#: src/bz-preferences-dialog.blp:37
+msgid "Display Star Count"
+msgstr ""
 
-#: src/bz-search-widget.blp:148
-msgid "Hide filtering and sorting behind a crossfade effect"
-msgstr "Sembunyikan hasil pencarian dan sortir di balik transisi pemuatan"
+#: src/bz-preferences-dialog.blp:38
+msgid "Show the star count of an application's source code repository"
+msgstr ""
 
-#: src/bz-search-widget.blp:153
-msgid "Debounce input to prevent instant replies"
-msgstr "Tunda masukan untuk mencegah pencarian instan"
+#: src/bz-preferences-dialog.blp:63
+msgid "End of Life Apps"
+msgstr ""
 
-#: src/bz-share-dialog.blp:13
-msgid "Share"
-msgstr "Bagikan"
+#: src/bz-preferences-dialog.blp:66
+msgid "Hide EOL Apps"
+msgstr ""
 
-#: src/bz-share-dialog.blp:64
-msgid "Copy this link"
-msgstr "Salin tautan ini"
+#: src/bz-preferences-dialog.blp:67
+msgid "Hide apps which are no longer supported by their developers"
+msgstr ""
 
-#: src/bz-share-dialog.blp:71
-msgid "Open this link externally"
-msgstr "Buka tautan ini secara eksternal"
+#: src/bz-preferences-dialog.blp:81
+msgid ""
+"PureStore can fetch and display the star count from an application's source "
+"code repository on a remote Git forge. \n"
+" For projects on GitHub, rate limits may cause them not to appear."
+msgstr ""
 
-#: src/bz-stats-dialog.blp:15
-msgid "Downloads Over Time"
-msgstr "Unduhan seiring waktu"
+#: src/bz-releases-dialog.blp:5 src/bz-releases-list.blp:26
+msgid "Version History"
+msgstr ""
+
+#: src/bz-releases-list.c:128
+#, c-format
+msgid "Version %s"
+msgstr ""
+
+#: src/bz-releases-list.c:153
+msgid "No details for this release"
+msgstr ""
+
+#: src/bz-rich-app-tile.blp:107
+msgid "Stopped Receiving Updates"
+msgstr ""
+
+#: src/bz-rich-app-tile.blp:123
+msgid "Get"
+msgstr ""
+
+#: src/bz-search-widget.blp:105
+msgid "Search Apps, Games, Software"
+msgstr ""
+
+#: src/bz-search-widget.blp:149
+#, fuzzy
+msgid "Categories Unavailable"
+msgstr "Terdapat Pemutakhiran"
+
+#: src/bz-search-widget.blp:150
+msgid "Search for apps using the search bar above."
+msgstr ""
+
+#: src/bz-search-widget.blp:233
+#, fuzzy
+msgid "No Applications Found"
+msgstr "Aplikasi Pilihan Belum Tersedia"
+
+#: src/bz-search-widget.c:225
+#, c-format
+msgid "No results found for \"%s\" in Flathub"
+msgstr ""
+
+#: src/bz-share-list.c:64
+msgid "Copied!"
+msgstr ""
+
+#: src/bz-share-list.c:116
+msgid "Copy Link"
+msgstr "Salin Tautan"
+
+#: src/bz-share-list.c:127
+msgid "Open Link"
+msgstr ""
+
+#: src/bz-stats-dialog.blp:26
+msgid "Timeline"
+msgstr ""
 
 #: src/bz-stats-dialog.blp:31
-msgid "Minimize Lower Bound"
-msgstr "Perkecil batas bawah"
+#, fuzzy
+msgid "Installs:"
+msgstr "Pasang"
 
-#: src/bz-stats-dialog.blp:36
-msgid "Maximize Upper Bound"
-msgstr "Perbesar batas atas"
+#: src/bz-stats-dialog.blp:37
+msgid "World"
+msgstr ""
 
-#: src/bz-transaction-manager.c:451
+#: src/bz-transaction-manager.c:1140
 #, c-format
 msgid "Finished in %.02f seconds"
 msgstr "Selesai dalam %.02f detik"
 
-#: src/bz-transaction-view.blp:34
-msgid "Installing"
-msgstr "Sedang dipasang"
+#: src/bz-transaction-view.blp:94
+msgid "App Add-on"
+msgstr ""
 
-#: src/bz-transaction-view.blp:63
-msgid "Updating"
-msgstr "Sedang dimutakhirkan"
+#: src/bz-transaction-view.blp:119
+msgid "Runtime"
+msgstr ""
 
-#: src/bz-transaction-view.blp:92
-msgid "Removing"
-msgstr "Sedang dihapus"
+#: src/bz-transaction-view.blp:145 src/bz-transaction-view.blp:171
+#, fuzzy
+msgid "Install Size"
+msgstr "Terpasang"
 
-#: src/bz-transaction.c:268
+#: src/bz-transaction-view.blp:199 src/bz-window.blp:355
+msgid "Update"
+msgstr "Pemutakhiran"
+
+#: src/bz-transaction-view.c:139
+#, c-format
+msgid "Transferred %s so far"
+msgstr ""
+
+#: src/bz-transaction.c:336
 msgid "Pending"
 msgstr "Ditunda"
-
-#: src/bz-update-dialog.blp:6
-msgid "Later"
-msgstr "Nanti"
 
 #: src/bz-update-dialog.blp:7
 msgid "Install Now"
@@ -392,7 +1125,7 @@ msgid ""
 "install them?"
 msgstr "Aplikasi berikut memiliki pemutakhiran. Apakah anda ingin memasangnya?"
 
-#: src/bz-update-dialog.c:135
+#: src/bz-update-dialog.c:134
 #, c-format
 msgid ""
 "%d runtimes and/or addons are eligible for updates. Would you like to "
@@ -401,104 +1134,75 @@ msgstr ""
 "%d runtimes dan/atau modul tambahan memiliki pemutakhiran. Apakah Anda ingin "
 "memasangnya?"
 
-#: src/bz-update-dialog.c:143
+#: src/bz-update-dialog.c:142
 #, c-format
 msgid "Additionally, %d runtimes and/or addons will be updated."
 msgstr "Selain itu, %d runtimes dan/atau modul tambahan akan dimutakhirkan."
 
-#: src/bz-window.blp:36
-msgid "Transactions Will Appear Here"
-msgstr "Transaksi akan muncul di sini"
+#: src/bz-window.blp:66
+msgid "Inspect UI Entry"
+msgstr ""
 
-#: src/bz-window.blp:97
-msgid "Halt the execution of transactions"
-msgstr "Hentikan proses transaksi"
+#: src/bz-window.blp:73
+msgid "All Debug Actions"
+msgstr ""
 
-#: src/bz-window.blp:105
-msgid "Clear all finished transactions"
-msgstr "Bersihkan semua transaksi yang sudah selesai"
+#: src/bz-window.blp:98
+msgid "Tasks"
+msgstr ""
 
-#: src/bz-window.blp:136 src/bz-window.blp:140
-msgid "Offline"
-msgstr "Tidak Ada Jaringan"
+#: src/bz-window.blp:153
+msgid "Stop Active Tasks"
+msgstr ""
 
-#: src/bz-window.blp:146
-msgid "Loading"
-msgstr "Memuat"
+#: src/bz-window.blp:161
+msgid "Clear History"
+msgstr ""
 
-#: src/bz-window.blp:170
-msgid "Browse"
-msgstr "Telusuri"
+#: src/bz-window.blp:177
+msgid "No Tasks Yet"
+msgstr ""
 
-#: src/bz-window.blp:180
-msgid "App View"
-msgstr "Tampilan Aplikasi"
-
-#: src/bz-window.blp:191 src/bz-window.blp:315
-msgid "Flathub"
-msgstr "Flathub"
-
-#: src/bz-window.blp:220
-msgid "Go Back"
-msgstr "Kembali"
-
-#: src/bz-window.blp:228
-msgid "Refresh"
-msgstr "Muat ulang"
-
-#: src/bz-window.blp:237
-msgid "Search"
-msgstr "Pencarian"
-
-#: src/bz-window.blp:249
-msgid "Update"
-msgstr "Pemutakhiran"
-
-#: src/bz-window.blp:263
-msgid "Checking for updates"
-msgstr "Memuat info terkini"
-
-#: src/bz-window.blp:279
-msgid "View curated applications"
-msgstr "Lihat aplikasi pilihan"
-
-#: src/bz-window.blp:294
+#: src/bz-window.blp:292
 msgid "Curated"
 msgstr "Pilihan"
 
-#: src/bz-window.blp:300
-msgid "View the latest on Flathub"
-msgstr "Lihat yang terbaru dari Flathub"
+#: src/bz-window.blp:306
+msgid "Flathub"
+msgstr "Flathub"
 
-#: src/bz-window.blp:321
-msgid "View installed applications"
-msgstr "Lihat aplikasi terpasang"
+#: src/bz-window.blp:480
+msgid "Install from File..."
+msgstr ""
 
-#: src/bz-window.blp:350
-msgid "Main Menu"
-msgstr "Menu Utama"
+#: src/bz-window.blp:487
+#, fuzzy
+msgid "_Refresh Content"
+msgstr "Konten"
 
-#: src/bz-window.blp:361
-msgid "Toggle transaction sidebar"
-msgstr "Munculkan/hilangkan sidebar transaksi"
+#: src/bz-window.blp:494
+#, fuzzy
+msgid "_Preferences"
+msgstr "Preferensi"
 
-#: src/bz-window.blp:400
-msgid "Up to date!"
-msgstr "Versi terkini sudah dimuat!"
-
-#: src/bz-window.blp:425
+#: src/bz-window.blp:499
 msgid "_Keyboard Shortcuts"
 msgstr "_Pintasan Papan Tik"
 
-#: src/bz-window.blp:430
+#: src/bz-window.blp:504
 msgid "_About Store"
 msgstr "_Tentang Store"
 
-#: src/bz-window.blp:435
-msgid "_Donate to Store ❤️"
-msgstr "_Donasi ke Store ❤️"
+#: src/bz-window.blp:511
+#, fuzzy
+msgid "_Quit Store"
+msgstr "_Tentang Store"
 
-#: src/bz-window.c:856
+#: src/bz-window.blp:520
+msgid "Open Store Inspector"
+msgstr ""
+
+#: src/bz-window.c:905
 msgid ""
 "The ability to inspect and install local .flatpak bundle files is coming "
 "soon! In the meantime, try running\n"
@@ -514,94 +1218,301 @@ msgstr ""
 "\n"
 "pada baris perintah."
 
-#: src/bz-window.c:927
+#: src/bz-window.c:1027
 msgid "Can't do that right now!"
 msgstr "Tunggu hingga Store selesai memuat"
 
-#: src/bz-window.c:940
-msgid "Confirm Action"
-msgstr "Konfirmasi Aksi"
-
-#: src/bz-window.c:958
+#: src/bz-window.c:1156
 #, c-format
-msgid ""
-"You are about to remove the following Flatpak:\n"
-"\n"
-"<b>%s</b>\n"
-"<tt>%s</tt>\n"
-"\n"
-"Are you sure?"
+msgid "Install %s?"
+msgstr "Pasang %s?"
+
+#: src/bz-window.c:1159
+msgid "May install additional shared components"
 msgstr ""
-"Anda akan menghapus Flatpak berikut:\n"
-"\n"
-"<b>%s</b>\n"
-"<tt>%s</tt>\n"
-"\n"
-"Apakah Anda yakin?"
 
-#: src/bz-window.c:966 src/bz-window.c:986
-msgid "Cancel"
-msgstr "Batal"
+#: src/bz-window.c:1178
+#, c-format
+msgid "Uninstall %s?"
+msgstr "Hapus %s?"
 
-#: src/bz-window.c:967
-msgid "Remove"
+#: src/bz-window.c:1182
+msgid "It will not be possible to use this app after it is uninstalled."
+msgstr ""
+
+#: src/bz-window.c:1187
+msgid "Clear Data"
+msgstr "Hapus Data"
+
+#: src/bz-window.c:1188
+msgid "Uninstall & Clear Data"
+msgstr "Hapus dan Bersihkan Data"
+
+#: src/bz-window.c:1189
+msgid "Uninstall"
 msgstr "Hapus"
 
-#: src/bz-window.c:978
-#, c-format
-msgid ""
-"You are about to install the following Flatpak:\n"
-"\n"
-"<b>%s</b>\n"
-"<tt>%s</tt>\n"
-"\n"
-"Are you sure?"
+#: src/bz-window.c:1352
+msgid "Resume Current Tasks"
 msgstr ""
-"Anda akan memasang Flatpak berikut:\n"
-"\n"
-"<b>%s</b>\n"
-"<tt>%s</tt>\n"
-"\n"
-"Apakah Anda yakin?"
 
-#: src/bz-window.c:1012
-msgid "More details"
-msgstr "Lebih detail"
+#: src/bz-window.c:1358
+msgid "Pause Current Tasks"
+msgstr ""
 
-#: src/bz-window.c:1138
-msgid "Resume the execution of transactions"
-msgstr "Lanjutkan proses transaksi"
+#: src/bz-world-map.c:523
+#, c-format
+msgid "%s: %'u downloads"
+msgstr ""
 
-#: src/bz-window.c:1144
-msgid "Pause the execution of transactions"
-msgstr "Hentikan sementara proses transaksi"
-
-#: src/gtk/help-overlay.blp:11
+#: src/gtk/shortcuts-dialog.blp:6
 msgctxt "shortcut window"
 msgid "General"
 msgstr "Umum"
 
-#: src/gtk/help-overlay.blp:14
+#: src/gtk/shortcuts-dialog.blp:9
 msgctxt "shortcut window"
 msgid "Open Search Dialog"
 msgstr "Buka Dialog Pencarian"
 
-#: src/gtk/help-overlay.blp:19
+#: src/gtk/shortcuts-dialog.blp:14
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Open Preferences"
+msgstr "Preferensi"
+
+#: src/gtk/shortcuts-dialog.blp:19
 msgctxt "shortcut window"
 msgid "Refresh"
 msgstr "Muat ulang"
 
-#: src/gtk/help-overlay.blp:24
+#: src/gtk/shortcuts-dialog.blp:24
 msgctxt "shortcut window"
 msgid "Toggle Transaction Manager"
 msgstr "Tampilkan/sembunyikan Manajer Transaksi"
 
-#: src/gtk/help-overlay.blp:29
+#: src/gtk/shortcuts-dialog.blp:29
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
 msgstr "Tampilkan Pintasan"
 
-#: src/gtk/help-overlay.blp:34
+#: src/gtk/shortcuts-dialog.blp:34
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Keluar"
+
+#~ msgid "Show Animated Background"
+#~ msgstr "Tampilkan Animasi Latar Belakang"
+
+#~ msgid "Whether to show the animated icon background on the home page"
+#~ msgstr "Tampilkan animasi ikon latar belakang pada halaman utama"
+
+#~ msgid "Keep the summary shorter, between 10 and 35 characters"
+#~ msgstr "Buat ringkasan pendek berkisar antara 10-35 karakter"
+
+#~ msgid "No description"
+#~ msgstr "Tidak ada deskripsi"
+
+#~ msgid "Main Store window showing Blender"
+#~ msgstr "Jendela utama Store yang menampilkan Blender"
+
+#~ msgctxt "About Dialog Developer Credit"
+#~ msgid "Adam Masciola <kolunmi@posteo.net>"
+#~ msgstr "Adam Masciola <kolunmi@posteo.net>"
+
+#~ msgctxt "About Dialog Translator Credit"
+#~ msgid "Ahmed Najmawi"
+#~ msgstr "Ahmed Najmawi"
+
+#~ msgctxt "About Dialog Translator Credit"
+#~ msgid "AtomHare"
+#~ msgstr "AtomHare"
+
+#~ msgctxt "About Dialog Translator Credit"
+#~ msgid "Jill Fiore"
+#~ msgstr "Jill Fiore"
+
+#~ msgctxt "About Dialog Translator Credit"
+#~ msgid "Lucosec"
+#~ msgstr "Lucosec"
+
+#~ msgctxt "About Dialog Translator Credit"
+#~ msgid "Shihfu Juan"
+#~ msgstr "Shihfu Juan"
+
+#~ msgctxt "About Dialog Translator Credit"
+#~ msgid "Vlastimil Dědek"
+#~ msgstr "Vlastimil Dědek"
+
+#~ msgctxt "About Dialog Translator Credit"
+#~ msgid "asen23"
+#~ msgstr "asen23"
+
+#~ msgctxt "About Dialog Translator Credit"
+#~ msgid "renner"
+#~ msgstr "renner"
+
+#~ msgctxt "About Dialog Translator Credit"
+#~ msgid "robotta"
+#~ msgstr "robotta"
+
+#~ msgid "Adam Masciola"
+#~ msgstr "Adam Masciola"
+
+#~ msgid ""
+#~ "Store was not provided a curated content configuration. Contact your "
+#~ "operating system's support channels for assistance."
+#~ msgstr ""
+#~ "Konfigurasi kurasi konten Store saat ini belum tersedia. Hubungi sistem "
+#~ "operasi anda untuk mendukung fitur ini."
+
+#~ msgid "Apps Of The Week"
+#~ msgstr "Aplikasi Minggu Ini"
+
+#~ msgid "Run this application"
+#~ msgstr "Jalankan aplikasi ini"
+
+#~ msgid "Share this application"
+#~ msgstr "Bagikan aplikasi ini"
+
+#~ msgid ""
+#~ "The number of downloads in the last 30 days. Click to view this "
+#~ "application's download statistics."
+#~ msgstr ""
+#~ "Jumlah unduhan pada 30 hari terakhir. Klik untuk melihat statistik "
+#~ "unduhan aplikasi ini."
+
+#~ msgid "Remote repo name"
+#~ msgstr "Nama repo remote"
+
+#, c-format
+#~ msgid "Released %x"
+#~ msgstr "Dirilis pada %x"
+
+#~ msgid "Edit Permissions"
+#~ msgstr "Sunting izin"
+
+#~ msgid "How the application looks"
+#~ msgstr "Tampilan aplikasi"
+
+#~ msgid "Appearance"
+#~ msgstr "Tampilan"
+
+#~ msgid "Show animated background"
+#~ msgstr "Tampilkan animasi latar belakang"
+
+#~ msgid "Type to filter"
+#~ msgstr "Ketik untuk mencari"
+
+#~ msgid "Exclude results with proprietary licenses"
+#~ msgstr "Sembunyikan aplikasi berlisensi proprietari"
+
+#~ msgid "Exclude results not originating from Flathub"
+#~ msgstr "Sembunyikan aplikasi selain dari Flathub"
+
+#~ msgid "Advanced"
+#~ msgstr "Opsi Lanjutan"
+
+#~ msgid "Match using regular expressions"
+#~ msgstr "Cocokkan dengan ekspresi reguler (regex)"
+
+#~ msgid "Hide filtering and sorting behind a crossfade effect"
+#~ msgstr "Sembunyikan hasil pencarian dan sortir di balik transisi pemuatan"
+
+#~ msgid "Share"
+#~ msgstr "Bagikan"
+
+#~ msgid "Open this link externally"
+#~ msgstr "Buka tautan ini secara eksternal"
+
+#~ msgid "Downloads Over Time"
+#~ msgstr "Unduhan seiring waktu"
+
+#~ msgid "Minimize Lower Bound"
+#~ msgstr "Perkecil batas bawah"
+
+#~ msgid "Maximize Upper Bound"
+#~ msgstr "Perbesar batas atas"
+
+#~ msgid "Installing"
+#~ msgstr "Sedang dipasang"
+
+#~ msgid "Updating"
+#~ msgstr "Sedang dimutakhirkan"
+
+#~ msgid "Removing"
+#~ msgstr "Sedang dihapus"
+
+#~ msgid "Transactions Will Appear Here"
+#~ msgstr "Transaksi akan muncul di sini"
+
+#~ msgid "Halt the execution of transactions"
+#~ msgstr "Hentikan proses transaksi"
+
+#~ msgid "Clear all finished transactions"
+#~ msgstr "Bersihkan semua transaksi yang sudah selesai"
+
+#~ msgid "Loading"
+#~ msgstr "Memuat"
+
+#~ msgid "Browse"
+#~ msgstr "Telusuri"
+
+#~ msgid "App View"
+#~ msgstr "Tampilan Aplikasi"
+
+#~ msgid "Go Back"
+#~ msgstr "Kembali"
+
+#~ msgid "Refresh"
+#~ msgstr "Muat ulang"
+
+#~ msgid "View the latest on Flathub"
+#~ msgstr "Lihat yang terbaru dari Flathub"
+
+#~ msgid "Up to date!"
+#~ msgstr "Versi terkini sudah dimuat!"
+
+#~ msgid "_Donate to Store ❤️"
+#~ msgstr "_Donasi ke Store ❤️"
+
+#~ msgid "Confirm Action"
+#~ msgstr "Konfirmasi Aksi"
+
+#, c-format
+#~ msgid ""
+#~ "You are about to remove the following Flatpak:\n"
+#~ "\n"
+#~ "<b>%s</b>\n"
+#~ "<tt>%s</tt>\n"
+#~ "\n"
+#~ "Are you sure?"
+#~ msgstr ""
+#~ "Anda akan menghapus Flatpak berikut:\n"
+#~ "\n"
+#~ "<b>%s</b>\n"
+#~ "<tt>%s</tt>\n"
+#~ "\n"
+#~ "Apakah Anda yakin?"
+
+#, c-format
+#~ msgid ""
+#~ "You are about to install the following Flatpak:\n"
+#~ "\n"
+#~ "<b>%s</b>\n"
+#~ "<tt>%s</tt>\n"
+#~ "\n"
+#~ "Are you sure?"
+#~ msgstr ""
+#~ "Anda akan memasang Flatpak berikut:\n"
+#~ "\n"
+#~ "<b>%s</b>\n"
+#~ "<tt>%s</tt>\n"
+#~ "\n"
+#~ "Apakah Anda yakin?"
+
+#~ msgid "Resume the execution of transactions"
+#~ msgstr "Lanjutkan proses transaksi"
+
+#~ msgid "Pause the execution of transactions"
+#~ msgstr "Hentikan sementara proses transaksi"

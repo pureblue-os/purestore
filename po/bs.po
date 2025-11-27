@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: purestore\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-02 08:40+0200\n"
+"POT-Creation-Date: 2025-11-27 14:40+0000\n"
 "PO-Revision-Date: 2025-09-02 09:06+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -15,11 +15,13 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Poedit 3.6\n"
 
 #: data/io.github.pureblueos.purestore.desktop.in:2
 #: data/io.github.pureblueos.purestore.metainfo.xml.in:7 src/bz-window.blp:5
+#: src/bz-window.blp:224
 msgid "Store"
 msgstr "Store"
 
@@ -32,328 +34,1052 @@ msgid "GTK;System;PackageManager;Discover;Flatpak;Software;Store;"
 msgstr "GTK;Sistem;UpraviteljPaketa;Otkrijte;Flatpak;Softver;Prodavnica;"
 
 #: data/io.github.pureblueos.purestore.gschema.xml:6
-msgid "Show Animated Background"
-msgstr "Prikaži animiranu pozadinu"
+msgid "Hide EOL Entries"
+msgstr "Sakrij EOL unose"
 
 #: data/io.github.pureblueos.purestore.gschema.xml:7
-msgid "Whether to show the animated icon background on the home page"
-msgstr "Da li već prikazati animiranu pozadinu ikone na početnoj stranici"
+msgid "Hide EOL entries and entries depending on them"
+msgstr "Sakrij EOL unose i unose koji ovise o njima"
 
-#. FIXME: add descriptions and summary
-#: data/io.github.pureblueos.purestore.metainfo.xml.in:9
-msgid "Keep the summary shorter, between 10 and 35 characters"
-msgstr "Sažetak neka bude kraći, između 10 i 35 znakova"
+#: data/io.github.pureblueos.purestore.gschema.xml:11
+msgid "Show Git Forge Star Counts"
+msgstr "Prikaži broj zvjezdica Git Forge"
 
-#: data/io.github.pureblueos.purestore.metainfo.xml.in:11
-msgid "No description"
-msgstr "Nema opisa"
+#: data/io.github.pureblueos.purestore.gschema.xml:12
+msgid ""
+"Whether to attempt to detect and show \"star counts\" for projects in the "
+"full view"
+msgstr ""
+"Da li pokušati detektirati i prikazati \"broj zvjezdica\" za projekte u "
+"punom prikazu"
 
-#: data/io.github.pureblueos.purestore.metainfo.xml.in:15 src/bz-application.c:1215
-msgid "Adam Masciola"
-msgstr "Adam Masciola"
+#: data/io.github.pureblueos.purestore.gschema.xml:16
+msgid "Only Show Free Software"
+msgstr "Prikaži samo slobodan softver"
 
-#: data/io.github.pureblueos.purestore.metainfo.xml.in:41
-msgid "Main Store window showing Blender"
-msgstr "Glavni prozor Storea koji prikazuje Blender"
+#: data/io.github.pureblueos.purestore.gschema.xml:17
+msgid "Hide proprietary software when searching"
+msgstr "Sakrij vlasnicki softver pri pretrazi"
 
-#: src/bz-addons-dialog.blp:13 src/bz-installed-page.blp:162
-#: src/bz-installed-page.blp:174
-msgid "Manage Addons"
+#: data/io.github.pureblueos.purestore.gschema.xml:21
+msgid "Show Only Flathub Content"
+msgstr "Prikaži samo Flathub sadržaj"
+
+#: data/io.github.pureblueos.purestore.gschema.xml:22
+msgid "Filter search results to only show applications available on Flathub"
+msgstr "Filtriraj rezultate pretrage da prikaže samo aplikacije dostupne na Flathubu"
+
+#: data/io.github.pureblueos.purestore.gschema.xml:26
+msgid "Debounce Search Inputs"
+msgstr "Odgodi unos pretrage"
+
+#: data/io.github.pureblueos.purestore.gschema.xml:27
+msgid "Add a delay before searching to prevent instant replies while typing"
+msgstr "Dodaj odgodu prije pretrage da spriječiš instant odgovore tokom pisanja"
+
+#: data/io.github.pureblueos.purestore.gschema.xml:31
+msgid "Saved Window Dimensions"
+msgstr "Sačuvane dimenzije prozora"
+
+#: data/io.github.pureblueos.purestore.gschema.xml:32
+msgid "The window dimensions to be used by the next Store window"
+msgstr "Dimenzije prozora koje će koristiti sljedeći Store prozor"
+
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:8
+msgid "Discover and install applications"
+msgstr "Otkrijte i instalirajte aplikacije"
+
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:10
+msgid ""
+"A new app store for GNOME with a focus on discovering and installing "
+"applications and addons from Flatpak remotes, particularly Flathub."
+msgstr ""
+
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:14
+msgid ""
+"It emphasizes supporting the developers who make the Linux desktop possible. "
+"Store features a \"curated\" tab that can be configured by distributors to "
+"allow for a more localized experience."
+msgstr ""
+
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:42
+msgid "The home page displaying Flathub apps"
+msgstr ""
+
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:46
+msgid "Nucleus app page"
+msgstr ""
+
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:50
+msgid "Search page"
+msgstr "Stranica za pretragu"
+
+#: data/io.github.pureblueos.purestore.metainfo.xml.in:54
+msgid "Category page"
+msgstr ""
+
+#: src/bz-addons-dialog.blp:14 src/bz-full-view.blp:624
+msgid "Manage Add-ons"
 msgstr "Upravljanje dodacima"
 
-#: src/bz-app-tile.blp:65 src/bz-full-view.blp:139
-msgid "This flatpak is verified by the original developers of the software."
-msgstr "Ovaj flatpak je verifikovan od strane originalnih programera softvera."
+#: src/bz-addons-dialog.c:90 src/bz-transaction-view.blp:212
+msgid "Remove"
+msgstr "Ukloni"
 
-#: src/bz-application.c:1186
-msgctxt "About Dialog Developer Credit"
-msgid "Adam Masciola <kolunmi@posteo.net>"
-msgstr "Adam Masciola <kolunmi@posteo.net>"
+#: src/bz-addons-dialog.c:97 src/bz-full-view.blp:301
+#: src/bz-transaction-view.blp:186 src/bz-window.c:1163
+msgid "Install"
+msgstr "Instaliraj"
+
+#: src/bz-app-size-dialog.c:55
+msgid "Of the size of human DNA"
+msgstr ""
+
+#: src/bz-app-size-dialog.c:55
+msgid "3 billion base pairs"
+msgstr ""
+
+#: src/bz-app-size-dialog.c:56
+msgid "Of the Linux Kernel"
+msgstr ""
+
+#: src/bz-app-size-dialog.c:56
+msgid "linux-6.17.tar.xz"
+msgstr ""
+
+#: src/bz-app-size-dialog.c:57
+msgid "Of the Apollo 11 guidance computer"
+msgstr ""
+
+#: src/bz-app-size-dialog.c:57
+msgid "Total ROM and RAM"
+msgstr ""
+
+#: src/bz-app-size-dialog.c:58
+msgid "Of the original Super Mario Bros"
+msgstr ""
+
+#: src/bz-app-size-dialog.c:58
+msgid "On the NES"
+msgstr ""
+
+#: src/bz-app-size-dialog.c:59
+msgid "Of the size of Wikipedia"
+msgstr ""
+
+#: src/bz-app-size-dialog.c:59
+msgid "Without any media"
+msgstr ""
+
+#: src/bz-app-size-dialog.blp:43
+msgid "--- MB"
+msgstr ""
+
+#: src/bz-app-size-dialog.blp:53
+msgid "Download Size"
+msgstr "Veličina preuzimanja"
+
+#: src/bz-application.c:424
+msgid "Flatpak Files"
+msgstr "Flatpak datoteke"
+
+#: src/bz-application.c:433
+msgid "Flatpak File"
+msgstr "Flatpak datoteka"
+
+#: src/bz-application.c:455
+msgid ""
+"This functionality is currently disabled. It is recommended you download and "
+"install Flatseal to manage app permissions."
+msgstr ""
 
 #. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
-#: src/bz-application.c:481
+#: src/bz-application.c:514
 msgid "translator-credits"
 msgstr "SecularSteve"
 
-#: src/bz-application.c:1191
-msgctxt "About Dialog Translator Credit"
-msgid "Ahmed Najmawi"
-msgstr "Ahmed Najmawi"
+#: src/bz-application.c:1115
+msgid "Constructing Flatpak instance..."
+msgstr ""
 
-#: src/bz-application.c:1192
-msgctxt "About Dialog Translator Credit"
-msgid "AtomHare"
-msgstr "AtomHare"
+#: src/bz-application.c:1132
+msgid "Reusing last Flatpak instance..."
+msgstr ""
 
-#: src/bz-application.c:1193
-msgctxt "About Dialog Translator Credit"
-msgid "Jill Fiore"
-msgstr "Jill Fiore"
+#: src/bz-application.c:1157
+msgid "Flathub is not registered on this system"
+msgstr ""
 
-#: src/bz-application.c:1194
-msgctxt "About Dialog Translator Credit"
-msgid "Lucosec"
-msgstr "Lucosec"
+#: src/bz-application.c:1160
+msgid ""
+"Would you like to add Flathub as a remote? If you decline, the Flathub page "
+"will not be available. You can change this later."
+msgstr ""
 
-#: src/bz-application.c:1195
-msgctxt "About Dialog Translator Credit"
-msgid "Shihfu Juan"
-msgstr "Shihfu Juan"
+#: src/bz-application.c:1165 src/bz-update-dialog.blp:6
+msgid "Later"
+msgstr "Kasnije"
 
-#: src/bz-application.c:1196
-msgctxt "About Dialog Translator Credit"
-msgid "Vlastimil Dědek"
-msgstr "Vlastimil Dědek"
-
-#: src/bz-application.c:1197
-msgctxt "About Dialog Translator Credit"
-msgid "asen23"
-msgstr "asen23"
+#: src/bz-application.c:1166
+msgid "Add Flathub"
+msgstr "Dodaj Flathub"
 
 #: src/bz-application.c:1198
-msgctxt "About Dialog Translator Credit"
-msgid "renner"
-msgstr "renner"
+msgid "Identifying installed entries..."
+msgstr ""
 
-#: src/bz-application.c:1199
-msgctxt "About Dialog Translator Credit"
-msgid "robotta"
-msgstr "robotta"
+#: src/bz-application.c:1221
+msgid "Receiving Entries"
+msgstr ""
 
-#: src/bz-browse-widget.blp:11 src/bz-full-view.blp:11
-#: src/bz-installed-page.blp:11 src/bz-window.blp:32
+#: src/bz-application.c:1378
+#, c-format
+msgid "%'d of %'d"
+msgstr ""
+
+#: src/bz-application.c:1391
+#, c-format
+msgid "Waiting for background indexing tasks to catch up..."
+msgstr ""
+
+#: src/bz-application.c:1433
+#, c-format
+msgid "Completed initialization in %0.2f seconds"
+msgstr ""
+
+#: src/bz-application.c:1438 src/bz-application.c:1593
+msgid "Checking for updates..."
+msgstr "Provjera ažuriranja..."
+
+#: src/bz-application.c:1477
+msgid "Synchronizing..."
+msgstr ""
+
+#: src/bz-browse-widget.blp:11 src/bz-flathub-page.blp:19
+#: src/bz-full-view.blp:52 src/bz-installed-page.blp:15 src/bz-window.blp:173
 msgid "Empty"
 msgstr "Prazno"
 
 #: src/bz-browse-widget.blp:15
-msgid "No Curated Applications"
+msgid "No Curation"
 msgstr "Nema izloženih aplikacija"
 
 #: src/bz-browse-widget.blp:16
-msgid "Store was not provided a curated content configuration. Contact your operating system's support channels for assistance."
-msgstr "Storeu nije pružena konfiguracija izloženog sadržaja. Za pomoć kontaktirajte kanale podrške vašeg operativnog sistema."
+msgid ""
+"There is no curation information provided on this system. You can still "
+"browse applications on Flathub"
+msgstr ""
+"Na ovom sistemu nema informacija o izloženim aplikacijama. Možete i dalje "
+"pregledati aplikacije na Flathubu"
 
-#: src/bz-browse-widget.blp:22 src/bz-flathub-page.blp:11
+#: src/bz-browse-widget.blp:18
+msgid "Browse Flathub"
+msgstr "Pregledaj Flathub"
+
+#: src/bz-browse-widget.blp:29 src/bz-browse-widget.blp:33
+#: src/bz-flathub-page.blp:30 src/bz-flathub-page.blp:34
+msgid "Offline"
+msgstr "Bez mreže"
+
+#: src/bz-browse-widget.blp:39 src/bz-flathub-page.blp:40
 msgid "Browser"
 msgstr "Pretraživač"
 
-#: src/bz-error.c:45
+#: src/bz-entry-inspector.blp:5
+msgid "Entry Inspector"
+msgstr "Inspektor unosa"
+
+#: src/bz-entry-inspector.blp:76
+msgid "Serialize"
+msgstr "Serijaliziraj"
+
+#: src/bz-entry-inspector.blp:80
+msgid "Convert to JSON"
+msgstr "Pretvori u JSON"
+
+#: src/bz-error.c:68
 msgid "An Error Occurred"
 msgstr "Došlo je do greške"
 
-#: src/bz-error.c:51
+#: src/bz-error.c:89
 msgid "Close"
 msgstr "Zatvori"
 
-#: src/bz-error.c:52
+#: src/bz-error.c:90
 msgid "Copy and Close"
 msgstr "Kopiraj i zatvori"
 
-#: src/bz-flathub-page.blp:41
-msgid "Apps Of The Week"
-msgstr "Aplikacije sedmice"
+#: src/bz-featured-tile.blp:88
+msgid "App of the Day"
+msgstr "Aplikacija dana"
 
-#: src/bz-flathub-page.blp:85
+#: src/bz-flathub-category.c:66
+msgid "Audio & Video"
+msgstr "Audio i video"
+
+#: src/bz-flathub-category.c:66
+msgid "Media"
+msgstr "Mediji"
+
+#: src/bz-flathub-category.c:66
+msgid "More Audio & Video"
+msgstr "Više audio i video"
+
+#: src/bz-flathub-category.c:67
+msgid "Developer Tools"
+msgstr "Alati za programere"
+
+#: src/bz-flathub-category.c:67
+msgid "Develop"
+msgstr "Razvoj"
+
+#: src/bz-flathub-category.c:67
+msgid "More Developer Tools"
+msgstr "Više alata za programere"
+
+#: src/bz-flathub-category.c:68
+msgid "Education"
+msgstr "Obrazovanje"
+
+#: src/bz-flathub-category.c:68
+msgid "Learn"
+msgstr "Učenje"
+
+#: src/bz-flathub-category.c:68
+msgid "More Education"
+msgstr "Više obrazovanja"
+
+#: src/bz-flathub-category.c:69
+msgid "Gaming"
+msgstr "Igranje"
+
+#: src/bz-flathub-category.c:69
+msgid "Play"
+msgstr "Igraj"
+
+#: src/bz-flathub-category.c:69
+msgid "More Gaming"
+msgstr "Više igara"
+
+#: src/bz-flathub-category.c:70
+msgid "Graphics & Photography"
+msgstr "Grafika i fotografija"
+
+#: src/bz-flathub-category.c:70
+msgid "Create"
+msgstr "Stvaraj"
+
+#: src/bz-flathub-category.c:70
+msgid "More Graphics & Photography"
+msgstr "Više grafike i fotografije"
+
+#: src/bz-flathub-category.c:71
+msgid "Networking"
+msgstr "Umrežavanje"
+
+#: src/bz-flathub-category.c:71
+msgid "Internet"
+msgstr "Internet"
+
+#: src/bz-flathub-category.c:71
+msgid "More Networking"
+msgstr "Više umrežavanja"
+
+#: src/bz-flathub-category.c:72
+msgid "Productivity"
+msgstr "Produktivnost"
+
+#: src/bz-flathub-category.c:72
+msgid "Work"
+msgstr "Posao"
+
+#: src/bz-flathub-category.c:72
+msgid "More Productivity"
+msgstr "Više produktivnosti"
+
+#: src/bz-flathub-category.c:73
+msgid "Science"
+msgstr "Nauka"
+
+#: src/bz-flathub-category.c:73
+msgid "More Science"
+msgstr "Više nauke"
+
+#: src/bz-flathub-category.c:74
+msgid "System"
+msgstr "Sistem"
+
+#: src/bz-flathub-category.c:74
+msgid "More System"
+msgstr "Više sistemskih"
+
+#: src/bz-flathub-category.c:75
+msgid "Utilities"
+msgstr "Alatke"
+
+#: src/bz-flathub-category.c:75
+msgid "Tools"
+msgstr "Alati"
+
+#: src/bz-flathub-category.c:75
+msgid "More Utilities"
+msgstr "Više alatki"
+
+#: src/bz-flathub-category.c:76 src/bz-flathub-page.blp:109
+#: src/bz-flathub-page.blp:142
 msgid "Trending"
 msgstr "U trendu"
 
-#: src/bz-flathub-page.blp:117
-msgid "Recently Updated"
-msgstr "Zadnje ažurirano"
+#: src/bz-flathub-category.c:76
+msgid "More Trending"
+msgstr "Više u trendu"
 
-#: src/bz-flathub-page.blp:149
-msgid "Recently Added"
-msgstr "Zadnje dodano"
-
-#: src/bz-flathub-page.blp:181
+#: src/bz-flathub-category.c:77 src/bz-flathub-page.blp:115
+#: src/bz-flathub-page.blp:175
 msgid "Popular"
 msgstr "Popularno"
 
-#: src/bz-full-view.blp:15
+#: src/bz-flathub-category.c:77
+msgid "More Popular"
+msgstr "Više popularnih"
+
+#: src/bz-flathub-category.c:78 src/bz-flathub-page.blp:164
+msgid "Recently Added"
+msgstr "Zadnje dodano"
+
+#: src/bz-flathub-category.c:78 src/bz-flathub-page.blp:121
+msgid "New"
+msgstr "Novo"
+
+#: src/bz-flathub-category.c:78
+msgid "More New"
+msgstr "Više novih"
+
+#: src/bz-flathub-category.c:79 src/bz-flathub-page.blp:153
+msgid "Recently Updated"
+msgstr "Zadnje ažurirano"
+
+#: src/bz-flathub-category.c:79 src/bz-flathub-page.blp:127
+msgid "Updated"
+msgstr "Ažurirano"
+
+#: src/bz-flathub-category.c:79
+msgid "More Updated"
+msgstr "Više ažuriranih"
+
+#: src/bz-flathub-category.c:80
+msgid "Mobile"
+msgstr "Mobilno"
+
+#: src/bz-flathub-category.c:80
+msgid "More Mobile"
+msgstr "Više mobilnih"
+
+#: src/bz-flathub-category-section.c:132 src/bz-search-widget.c:314
+#, c-format
+msgid "%d applications"
+msgstr "%d aplikacija"
+
+#: src/bz-flathub-page.blp:23
+msgid "Flathub Not Added"
+msgstr ""
+
+#: src/bz-flathub-page.blp:24
+msgid "The Flathub remote was not found on any of your Flatpak installations"
+msgstr ""
+
+#: src/bz-flathub-page.blp:48
+msgid "Flathub Unavailable"
+msgstr ""
+
+#: src/bz-flathub-page.blp:49
+msgid ""
+"We could not connect to Flathub. You can still manage and search for "
+"applications."
+msgstr ""
+
+#: src/bz-flathub-page.blp:52
+msgid "Search Apps"
+msgstr "Pretraži aplikacije"
+
+#: src/bz-flathub-page.blp:266
+msgid "On the go"
+msgstr "U pokretu"
+
+#: src/bz-flathub-page.blp:278
+msgid "Apps for your Linux phones and tablets"
+msgstr "Aplikacije za vaše Linux telefone i tablete"
+
+#: src/bz-flathub-page.blp:289 src/bz-flathub-page.blp:324
+msgid "More Mobile apps"
+msgstr "Više mobilnih aplikacija"
+
+#: src/bz-flathub-page.c:204
+msgid "Mobile Apps"
+msgstr "Mobilne aplikacije"
+
+#: src/bz-flatpak-entry.c:571
+msgctxt "Project URL Type"
+msgid "Flathub Page"
+msgstr "Flathub stranica"
+
+#: src/bz-flatpak-entry.c:592
+msgctxt "Project URL Type"
+msgid "Project Website"
+msgstr "Web stranica projekta"
+
+#: src/bz-flatpak-entry.c:596
+msgctxt "Project URL Type"
+msgid "Issue Tracker"
+msgstr ""
+
+#: src/bz-flatpak-entry.c:600
+msgctxt "Project URL Type"
+msgid "FAQ"
+msgstr ""
+
+#: src/bz-flatpak-entry.c:604
+msgctxt "Project URL Type"
+msgid "Help"
+msgstr ""
+
+#: src/bz-flatpak-entry.c:608
+msgctxt "Project URL Type"
+msgid "Donate"
+msgstr ""
+
+#: src/bz-flatpak-entry.c:614
+msgctxt "Project URL Type"
+msgid "Translate"
+msgstr ""
+
+#: src/bz-flatpak-entry.c:618
+msgctxt "Project URL Type"
+msgid "Contact"
+msgstr "Kontakt"
+
+#: src/bz-flatpak-entry.c:622
+msgctxt "Project URL Type"
+msgid "Source Code"
+msgstr ""
+
+#: src/bz-flatpak-entry.c:628
+msgctxt "Project URL Type"
+msgid "Contribute"
+msgstr ""
+
+#: src/bz-full-view.blp:20 src/bz-window.blp:117 src/bz-window.blp:394
+msgid "Toggle transaction sidebar"
+msgstr "Uključi/isključi bočnu traku transakcija"
+
+#: src/bz-full-view.blp:42 src/bz-window.blp:416
+msgid "Main Menu"
+msgstr "Glavni meni"
+
+#: src/bz-full-view.blp:56
 msgid "No Results"
 msgstr "Nema rezultata"
 
-#: src/bz-full-view.blp:16
+#: src/bz-full-view.blp:57
 msgid "Try a different search query"
 msgstr "Pokušajte s drugim upitom za pretragu"
 
-#: src/bz-full-view.blp:22 src/bz-window.blp:42
+#: src/bz-full-view.blp:63 src/bz-window.blp:183
 msgid "Content"
 msgstr "Sadržaj"
 
-#: src/bz-full-view.blp:180
-msgid "Run this application"
-msgstr "Pokreni ovu aplikaciju"
+#: src/bz-full-view.blp:208
+msgid "Verified by the original developers"
+msgstr "Verifikovano od strane originalnih programera"
 
-#: src/bz-full-view.blp:204
-msgid "Download and install this application"
-msgstr "Preuzmite i instalirajte ovu aplikaciju"
-
-#: src/bz-full-view.blp:222 src/bz-window.c:987
-msgid "Install"
-msgstr "Instaliraj"
-
-#: src/bz-full-view.blp:236
-msgid "Uninstall this application"
-msgstr "Deinstalirajte ovu aplikaciju"
-
-#: src/bz-full-view.blp:262
-msgid "Share this application"
-msgstr "Podijelite ovu aplikaciju"
-
-#: src/bz-full-view.blp:274
-msgid "The number of downloads in the last 30 days. Click to view this application's download statistics."
-msgstr "Broj preuzimanja u posljednjih 30 dana. Kliknite za pregled statistike preuzimanja ove aplikacije."
-
-#: src/bz-full-view.blp:316
-msgid "Support this developer"
-msgstr "Podržite ovog programera"
-
-#: src/bz-full-view.blp:329
+#: src/bz-full-view.blp:235
 msgid "Support"
 msgstr "Podrška"
 
-#: src/bz-full-view.blp:387
-msgid "Remote repo name"
-msgstr "Naziv udaljenog repozitorija"
+#: src/bz-full-view.blp:255
+msgid "Repository Star Count"
+msgstr ""
 
-#: src/bz-full-view.blp:400
-msgid "Project URL"
-msgstr "URL projekta"
+#: src/bz-full-view.blp:285
+msgid "Open"
+msgstr "Otvori"
 
-#: src/bz-full-view.blp:412
-msgid "Download size"
-msgstr "Veličina preuzimanja"
+#: src/bz-full-view.blp:298
+msgid "Download & Install Application"
+msgstr "Preuzmi i instaliraj aplikaciju"
 
-#: src/bz-full-view.c:214
+#: src/bz-full-view.blp:313
+msgid "Uninstall Application"
+msgstr "Deinstaliraj aplikaciju"
+
+#: src/bz-full-view.blp:328
+msgid "Install Other Version"
+msgstr ""
+
+#: src/bz-full-view.blp:352
+msgid "Size"
+msgstr ""
+
+#: src/bz-full-view.blp:469
+msgid "Downloads /mo"
+msgstr "Preuzimanja /mj"
+
+#: src/bz-full-view.blp:510
+msgid "Stopped Receiving Core Updates"
+msgstr "Prestao primati osnovna ažuriranja"
+
+#: src/bz-full-view.blp:522
+msgid ""
+"This app uses a runtime that no longer recieves updates or security fixes. "
+"It may become unsafe to use."
+msgstr ""
+
+#: src/bz-full-view.c:284
+msgid "---"
+msgstr "---"
+
+#. Translators: M is the suffix for millions
+#: src/bz-full-view.c:288
 #, c-format
-msgid "Released %x"
-msgstr "Objavljeno %x"
+msgid "%.2fM"
+msgstr "%.2fM"
 
-#: src/bz-full-view.c:225
+#. Translators: K is the suffix for thousands
+#: src/bz-full-view.c:291
+#, c-format
+msgid "%.2fK"
+msgstr "%.2fK"
+
+#: src/bz-full-view.c:300
+#, c-format
+msgid "%d downloads in the last 30 days"
+msgstr "%d preuzimanja u posljednjih 30 dana"
+
+#: src/bz-full-view.c:321
+#, c-format
+msgid "Download size of %s"
+msgstr "Veličina preuzimanja od %s"
+
+#. Translators: Age rating format, e.g. "12+" for ages 12 and up
+#: src/bz-full-view.c:331
+#, c-format
+msgid "%d+"
+msgstr "%d+"
+
+#: src/bz-full-view.c:339
+msgid "All Ages"
+msgstr "Sve dobi"
+
+#: src/bz-full-view.c:341
+msgid "Age Rating"
+msgstr "Dobna ocjena"
+
+#: src/bz-full-view.c:349
+msgid "Suitable for all ages"
+msgstr "Pogodno za sve dobi"
+
+#: src/bz-full-view.c:351
+#, c-format
+msgid "Suitable for ages %d and up"
+msgstr "Pogodno za dob %d i više"
+
+#: src/bz-full-view.c:375
+msgid "Unknown"
+msgstr "Nepoznato"
+
+#: src/bz-full-view.c:378
+msgid "Proprietary Software"
+msgstr "Vlasnički softver"
+
+#: src/bz-full-view.c:382
+#, c-format
+msgid "Free software licensed under %s"
+msgstr "Slobodan softver pod licencom %s"
+
+#: src/bz-full-view.c:390
+msgid "Free"
+msgstr "Slobodan"
+
+#: src/bz-full-view.c:390
+msgid "Proprietary"
+msgstr "Vlasnički"
+
+#: src/bz-full-view.c:410
+msgid "Adaptive"
+msgstr "Adaptivno"
+
+#: src/bz-full-view.c:410
+msgid "Desktop Only"
+msgstr "Samo desktop"
+
+#: src/bz-full-view.c:416
+msgid "Works on desktop, tablets, and phones"
+msgstr "Radi na desktop računarima, tabletima i telefonima"
+
+#: src/bz-full-view.c:417
+msgid "May not work on mobile devices"
+msgstr "Možda ne radi na mobilnim uređajima"
+
+#: src/bz-full-view.c:428
 msgid "No URL"
 msgstr "Nema URL-a"
 
-#: src/bz-full-view.c:233
-msgid "This application has a FLOSS license, meaning the source code can be audited for safety."
-msgstr "Ova aplikacija ima FLOSS licencu, što znači da se izvorni kod može revidirati radi sigurnosti."
+#: src/bz-full-view.c:446
+msgid ""
+"This application has a FLOSS license, meaning the source code can be audited "
+"for safety."
+msgstr ""
+"Ova aplikacija ima FLOSS licencu, što znači da se izvorni kod može "
+"revidirati radi sigurnosti."
 
-#: src/bz-full-view.c:234
-msgid "This application has a proprietary license, meaning the source code is developed privately and cannot be audited by an independent third party."
-msgstr "Ova aplikacija ima vlasničku licencu, što znači da je izvorni kod razvijen privatno i ne može ga revidirati nezavisna treća strana."
+#: src/bz-full-view.c:447
+msgid ""
+"This application has a proprietary license, meaning the source code is "
+"developed privately and cannot be audited by an independent third party."
+msgstr ""
+"Ova aplikacija ima vlasničku licencu, što znači da je izvorni kod razvijen "
+"privatno i ne može ga revidirati nezavisna treća strana."
 
-#: src/bz-installed-page.blp:15
+#: src/bz-full-view.c:454
+msgid "Other Apps by this Developer"
+msgstr "Ostale aplikacije ovog programera"
+
+#: src/bz-full-view.c:456
+#, c-format
+msgid "Other Apps by %s"
+msgstr "Ostale aplikacije od %s"
+
+#: src/bz-full-view.c:828
+msgid "Show Less"
+msgstr "Prikaži manje"
+
+#: src/bz-full-view.c:828
+msgid "Show More"
+msgstr "Prikaži više"
+
+#: src/bz-hardware-support-dialog.c:69
+msgid "Keyboard support"
+msgstr "Podrška tastature"
+
+#: src/bz-hardware-support-dialog.c:71
+msgid "Requires keyboards"
+msgstr "Zahtijeva tastaturu"
+
+#: src/bz-hardware-support-dialog.c:72
+msgid "Recommends keyboards"
+msgstr "Preporučuje tastaturu"
+
+#: src/bz-hardware-support-dialog.c:73
+msgid "Supports keyboards"
+msgstr "Podržava tastaturu"
+
+#: src/bz-hardware-support-dialog.c:74
+msgid "Unknown support for keyboards"
+msgstr "Nepoznata podrška za tastaturu"
+
+#: src/bz-hardware-support-dialog.c:76
+msgid "Mouse support"
+msgstr "Podrška miša"
+
+#: src/bz-hardware-support-dialog.c:78
+msgid "Requires mice or pointing devices"
+msgstr "Zahtijeva miš ili pokazivački uređaj"
+
+#: src/bz-hardware-support-dialog.c:79
+msgid "Recommends mice or pointing devices"
+msgstr "Preporučuje miš ili pokazivački uređaj"
+
+#: src/bz-hardware-support-dialog.c:80
+msgid "Supports mice or pointing devices"
+msgstr "Podržava miš ili pokazivački uređaj"
+
+#: src/bz-hardware-support-dialog.c:81
+msgid "Unknown support for mice or pointing devices"
+msgstr "Nepoznata podrška za miš ili pokazivačke uređaje"
+
+#: src/bz-hardware-support-dialog.c:83
+msgid "Touchscreen support"
+msgstr "Podrška ekrana osjetljivog na dodir"
+
+#: src/bz-hardware-support-dialog.c:85
+msgid "Requires touchscreens"
+msgstr "Zahtijeva ekran osjetljiv na dodir"
+
+#: src/bz-hardware-support-dialog.c:86
+msgid "Recommends touchscreens"
+msgstr "Preporučuje ekran osjetljiv na dodir"
+
+#: src/bz-hardware-support-dialog.c:87
+msgid "Supports touchscreens"
+msgstr "Podržava ekran osjetljiv na dodir"
+
+#: src/bz-hardware-support-dialog.c:88
+msgid "Unknown support for touchscreens"
+msgstr "Nepoznata podrška za ekrane osjetljive na dodir"
+
+#: src/bz-hardware-support-dialog.c:192
+msgid "Mobile support"
+msgstr "Mobilna podrška"
+
+#: src/bz-hardware-support-dialog.c:193
+msgid "Works on mobile devices"
+msgstr "Radi na mobilnim uređajima"
+
+#: src/bz-hardware-support-dialog.c:193
+msgid "May not work well on mobile devices"
+msgstr "Možda neće dobro raditi na mobilnim uređajima"
+
+#: src/bz-hardware-support-dialog.c:198
+msgid "Desktop support"
+msgstr "Desktop podrška"
+
+#: src/bz-hardware-support-dialog.c:199
+msgid "Works well on large screens"
+msgstr "Dobro radi na velikim ekranima"
+
+#: src/bz-hardware-support-dialog.c:233
+#, c-format
+msgid "%s works best on specific hardware"
+msgstr "%s najbolje radi na specifičnom hardveru"
+
+#: src/bz-hardware-support-dialog.c:240
+#, c-format
+msgid "%s works on most devices"
+msgstr "%s radi na većini uređaja"
+
+#: src/bz-hardware-support-dialog.blp:6 src/bz-hardware-support-dialog.blp:47
+msgid "Hardware Support"
+msgstr "Hardverska podrška"
+
+#: src/bz-inspector.blp:5
+msgid "Store Inspector"
+msgstr "Store inspektor"
+
+#: src/bz-inspector.blp:22
+msgid "Enable Global Debug Mode"
+msgstr ""
+
+#: src/bz-inspector.blp:29
+msgid "Active Curated-Configs"
+msgstr ""
+
+#: src/bz-inspector.blp:47
+msgid "All Entry Groups"
+msgstr ""
+
+#: src/bz-inspector.blp:55
+msgid "Filter..."
+msgstr ""
+
+#: src/bz-inspector.blp:96
+msgid "Decache and Inspect"
+msgstr ""
+
+#: src/bz-installed-page.blp:19
 msgid "No Flatpaks Installed"
 msgstr "Nema instaliranih Flatpak uređaja"
 
-#: src/bz-installed-page.blp:21 src/bz-window.blp:201 src/bz-window.blp:336
+#: src/bz-installed-page.blp:25 src/bz-window.blp:319
 msgid "Installed"
 msgstr "Instalirano"
 
-#: src/bz-installed-page.blp:143
-msgid "More actions"
-msgstr "Više akcija"
+#: src/bz-installed-page.c:406
+msgid "Choose an Installation"
+msgstr ""
 
-#: src/bz-installed-page.blp:187 src/bz-installed-page.blp:198
-msgid "Edit Permissions"
-msgstr "Uredi dozvole"
+#: src/bz-installed-page.c:409
+msgid ""
+"You have multiple versions of this app installed. Which one would you like "
+"to proceed with? "
+msgstr ""
 
-#: src/bz-preferences-dialog.blp:9
+#: src/bz-installed-page.c:413 src/bz-window.c:1162 src/bz-window.c:1186
+msgid "Cancel"
+msgstr "Otkaži"
+
+#: src/bz-license-dialog.c:115
+msgid ""
+"This app is not developed in the open, so only its developers know how it "
+"works. It may be insecure in ways that are hard to detect, and it may change "
+"without oversight.\n"
+"\n"
+"You may not be able to contribute to this app."
+msgstr ""
+
+#: src/bz-license-dialog.c:124
+msgid ""
+"This app is developed in the open by an international community.\n"
+"\n"
+"You can participate and help make it even better."
+msgstr ""
+
+#: src/bz-license-dialog.c:135
+#, c-format
+msgid ""
+"This app is developed in the open by an international community, and "
+"released under the <a href=\"%s\">%s</a> license.\n"
+"\n"
+"You can participate and help make it even better."
+msgstr ""
+
+#: src/bz-preferences-dialog.blp:11
 msgid "Preferences"
 msgstr "Postavke"
 
-#: src/bz-preferences-dialog.blp:13
-msgid "How the application looks"
-msgstr "Kako izgleda aplikacija"
+#: src/bz-preferences-dialog.blp:15 src/bz-window.blp:334
+msgid "Search"
+msgstr "Pretraži"
 
-#: src/bz-preferences-dialog.blp:14
-msgid "Appearance"
-msgstr "Izgled"
+#: src/bz-preferences-dialog.blp:18
+msgid "Free Software Only"
+msgstr ""
 
-#: src/bz-preferences-dialog.blp:17
-msgid "Show animated background"
-msgstr "Prikaži animiranu pozadinu"
+#: src/bz-preferences-dialog.blp:19
+msgid "Hide proprietary applications from search results"
+msgstr ""
 
-#: src/bz-search-widget.blp:69
-msgid "Type to filter"
-msgstr "Upišite tekst za filtriranje"
+#: src/bz-preferences-dialog.blp:23
+msgid "Flathub Results Only"
+msgstr ""
 
-#: src/bz-search-widget.blp:98 src/bz-search-widget.blp:115
-msgid "Search Options"
-msgstr "Opcije pretrage"
+#: src/bz-preferences-dialog.blp:24
+msgid "Limit search results to applications only available on Flathub"
+msgstr ""
 
-#: src/bz-search-widget.blp:119
-msgid "Exclude results with proprietary licenses"
-msgstr "Isključi rezultate s vlasničkim licencama"
+#: src/bz-preferences-dialog.blp:28
+msgid "Delay Search Results"
+msgstr ""
 
-#: src/bz-search-widget.blp:124
-msgid "Exclude results not originating from Flathub"
-msgstr "Isključi rezultate koji ne potiču sa Flathub-a"
+#: src/bz-preferences-dialog.blp:29
+msgid "Improve results performance by debouncing search terms"
+msgstr ""
 
-#: src/bz-search-widget.blp:139
-msgid "Advanced"
-msgstr "Napredno"
+#: src/bz-preferences-dialog.blp:34
+msgid "Application Details"
+msgstr ""
 
-#: src/bz-search-widget.blp:143
-msgid "Match using regular expressions"
-msgstr "Uparivanje pomoću običnih izraza"
+#: src/bz-preferences-dialog.blp:37
+msgid "Display Star Count"
+msgstr ""
 
-#: src/bz-search-widget.blp:148
-msgid "Hide filtering and sorting behind a crossfade effect"
-msgstr "Sakrij filtriranje i sortiranje iza efekta prelaza"
+#: src/bz-preferences-dialog.blp:38
+msgid "Show the star count of an application's source code repository"
+msgstr ""
 
-#: src/bz-search-widget.blp:153
-msgid "Debounce input to prevent instant replies"
-msgstr "Otodskočite unos kako bi se spriječili brzi odgovori"
+#: src/bz-preferences-dialog.blp:63
+msgid "End of Life Apps"
+msgstr ""
 
-#: src/bz-share-dialog.blp:13
-msgid "Share"
-msgstr "Podijeli"
+#: src/bz-preferences-dialog.blp:66
+msgid "Hide EOL Apps"
+msgstr ""
 
-#: src/bz-share-dialog.blp:64
-msgid "Copy this link"
-msgstr "Kopiraj ovu vezu"
+#: src/bz-preferences-dialog.blp:67
+msgid "Hide apps which are no longer supported by their developers"
+msgstr ""
 
-#: src/bz-share-dialog.blp:71
-msgid "Open this link externally"
-msgstr "Otvorite ovu vezu eksterno"
+#: src/bz-preferences-dialog.blp:81
+msgid ""
+"PureStore can fetch and display the star count from an application's source "
+"code repository on a remote Git forge. \n"
+" For projects on GitHub, rate limits may cause them not to appear."
+msgstr ""
 
-#: src/bz-stats-dialog.blp:15
-msgid "Downloads Over Time"
-msgstr "Preuzimanja tokom vremena"
+#: src/bz-releases-dialog.blp:5 src/bz-releases-list.blp:26
+msgid "Version History"
+msgstr "Historija verzija"
+
+#: src/bz-releases-list.c:128
+#, c-format
+msgid "Version %s"
+msgstr ""
+
+#: src/bz-releases-list.c:153
+msgid "No details for this release"
+msgstr ""
+
+#: src/bz-rich-app-tile.blp:107
+msgid "Stopped Receiving Updates"
+msgstr "Prestao primati ažuriranja"
+
+#: src/bz-rich-app-tile.blp:123
+msgid "Get"
+msgstr "Preuzmi"
+
+#: src/bz-search-widget.blp:105
+msgid "Search Apps, Games, Software"
+msgstr "Pretraži aplikacije, igre, softver"
+
+#: src/bz-search-widget.blp:149
+msgid "Categories Unavailable"
+msgstr "Kategorije nedostupne"
+
+#: src/bz-search-widget.blp:150
+msgid "Search for apps using the search bar above."
+msgstr "Pretražite aplikacije koristeći traku za pretragu iznad."
+
+#: src/bz-search-widget.blp:233
+msgid "No Applications Found"
+msgstr "Nije pronađena nijedna aplikacija"
+
+#: src/bz-search-widget.c:225
+#, c-format
+msgid "No results found for \"%s\" in Flathub"
+msgstr ""
+
+#: src/bz-share-list.c:64
+msgid "Copied!"
+msgstr ""
+
+#: src/bz-share-list.c:116
+msgid "Copy Link"
+msgstr "Kopiraj vezu"
+
+#: src/bz-share-list.c:127
+msgid "Open Link"
+msgstr ""
+
+#: src/bz-stats-dialog.blp:26
+msgid "Timeline"
+msgstr ""
 
 #: src/bz-stats-dialog.blp:31
-msgid "Minimize Lower Bound"
-msgstr "Minimiziraj donju granicu"
+msgid "Installs:"
+msgstr "Instalacije:"
 
-#: src/bz-stats-dialog.blp:36
-msgid "Maximize Upper Bound"
-msgstr "Maksimiziraj gornju granicu"
+#: src/bz-stats-dialog.blp:37
+msgid "World"
+msgstr ""
 
-#: src/bz-transaction-manager.c:451
+#: src/bz-transaction-manager.c:1140
 #, c-format
 msgid "Finished in %.02f seconds"
 msgstr "Završeno za %.02f sekundi"
 
-#: src/bz-transaction-view.blp:34
-msgid "Installing"
-msgstr "Instaliranje"
+#: src/bz-transaction-view.blp:94
+msgid "App Add-on"
+msgstr ""
 
-#: src/bz-transaction-view.blp:63
-msgid "Updating"
-msgstr "Ažuriranje"
+#: src/bz-transaction-view.blp:119
+msgid "Runtime"
+msgstr ""
 
-#: src/bz-transaction-view.blp:92
-msgid "Removing"
-msgstr "Uklanjanje"
+#: src/bz-transaction-view.blp:145 src/bz-transaction-view.blp:171
+msgid "Install Size"
+msgstr "Veličina instalacije"
 
-#: src/bz-transaction.c:268
+#: src/bz-transaction-view.blp:199 src/bz-window.blp:355
+msgid "Update"
+msgstr "Ažuriraj"
+
+#: src/bz-transaction-view.c:139
+#, c-format
+msgid "Transferred %s so far"
+msgstr ""
+
+#: src/bz-transaction.c:336
 msgid "Pending"
 msgstr "Na čekanju"
-
-#: src/bz-update-dialog.blp:6
-msgid "Later"
-msgstr "Kasnije"
 
 #: src/bz-update-dialog.blp:7
 msgid "Install Now"
@@ -364,213 +1090,399 @@ msgid "Updates Are Available"
 msgstr "Dostupna su ažuriranja"
 
 #: src/bz-update-dialog.blp:11
-msgid "The following applications are eligible for updates. Would you like to install them?"
-msgstr "Sljedeće aplikacije ispunjavaju uslove za ažuriranja. Želite li ih instalirati?"
+msgid ""
+"The following applications are eligible for updates. Would you like to "
+"install them?"
+msgstr ""
+"Sljedeće aplikacije ispunjavaju uslove za ažuriranja. Želite li ih "
+"instalirati?"
 
-#: src/bz-update-dialog.c:135
+#: src/bz-update-dialog.c:134
 #, c-format
-msgid "%d runtimes and/or addons are eligible for updates. Would you like to install them?"
-msgstr "%d okruženja za izvršavanje i/ili dodaci ispunjavaju uslove za ažuriranja. Želite li ih instalirati?"
+msgid ""
+"%d runtimes and/or addons are eligible for updates. Would you like to "
+"install them?"
+msgstr ""
+"%d okruženja za izvršavanje i/ili dodaci ispunjavaju uslove za ažuriranja. "
+"Želite li ih instalirati?"
 
-#: src/bz-update-dialog.c:143
+#: src/bz-update-dialog.c:142
 #, c-format
 msgid "Additionally, %d runtimes and/or addons will be updated."
-msgstr "Pored toga, ažurirat će se i sljedeći broj runtime okruženja i/ili dodataka: %d."
+msgstr ""
+"Pored toga, ažurirat će se i sljedeći broj runtime okruženja i/ili dodataka: "
+"%d."
 
-#: src/bz-window.blp:36
-msgid "Transactions Will Appear Here"
-msgstr "Transakcije će se pojaviti ovdje"
+#: src/bz-window.blp:66
+msgid "Inspect UI Entry"
+msgstr ""
 
-#: src/bz-window.blp:97
-msgid "Halt the execution of transactions"
-msgstr "Zaustaviti izvršenje transakcija"
+#: src/bz-window.blp:73
+msgid "All Debug Actions"
+msgstr ""
 
-#: src/bz-window.blp:105
-msgid "Clear all finished transactions"
-msgstr "Obriši sve završene transakcije"
+#: src/bz-window.blp:98
+msgid "Tasks"
+msgstr ""
 
-#: src/bz-window.blp:136 src/bz-window.blp:140
-msgid "Offline"
-msgstr "Bez mreže"
+#: src/bz-window.blp:153
+msgid "Stop Active Tasks"
+msgstr ""
 
-#: src/bz-window.blp:146
-msgid "Loading"
-msgstr "Učitavanje"
+#: src/bz-window.blp:161
+msgid "Clear History"
+msgstr ""
 
-#: src/bz-window.blp:170
-msgid "Browse"
-msgstr "Pregledaj"
+#: src/bz-window.blp:177
+msgid "No Tasks Yet"
+msgstr ""
 
-#: src/bz-window.blp:180
-msgid "App View"
-msgstr "Prikaz aplikacije"
-
-#: src/bz-window.blp:191 src/bz-window.blp:315
-msgid "Flathub"
-msgstr "Flathub"
-
-#: src/bz-window.blp:220
-msgid "Go Back"
-msgstr "Idi nazad"
-
-#: src/bz-window.blp:228
-msgid "Refresh"
-msgstr "Osvježi"
-
-#: src/bz-window.blp:237
-msgid "Search"
-msgstr "Pretraži"
-
-#: src/bz-window.blp:249
-msgid "Update"
-msgstr "Ažuriraj"
-
-#: src/bz-window.blp:263
-msgid "Checking for updates"
-msgstr "Provjera ažuriranja"
-
-#: src/bz-window.blp:279
-msgid "View curated applications"
-msgstr "Pogledajte izložene aplikacije"
-
-#: src/bz-window.blp:294
+#: src/bz-window.blp:292
 msgid "Curated"
 msgstr "Izloženo"
 
-#: src/bz-window.blp:300
-msgid "View the latest on Flathub"
-msgstr "Pogledajte najnovije na Flathub-u"
+#: src/bz-window.blp:306
+msgid "Flathub"
+msgstr "Flathub"
 
-#: src/bz-window.blp:321
-msgid "View installed applications"
-msgstr "Pogledajte instalirane aplikacije"
+#: src/bz-window.blp:480
+msgid "Install from File..."
+msgstr "Instaliraj iz datoteke..."
 
-#: src/bz-window.blp:350
-msgid "Main Menu"
-msgstr "Glavni meni"
+#: src/bz-window.blp:487
+msgid "_Refresh Content"
+msgstr "_Osvježi sadržaj"
 
-#: src/bz-window.blp:361
-msgid "Toggle transaction sidebar"
-msgstr "Uključi/isključi bočnu traku transakcija"
+#: src/bz-window.blp:494
+msgid "_Preferences"
+msgstr "_Postavke"
 
-#: src/bz-window.blp:400
-msgid "Up to date!"
-msgstr "Ažurno!"
-
-#: src/bz-window.blp:425
+#: src/bz-window.blp:499
 msgid "_Keyboard Shortcuts"
 msgstr "_Prečice na tastaturi"
 
-#: src/bz-window.blp:430
+#: src/bz-window.blp:504
 msgid "_About Store"
 msgstr "_O Store-u"
 
-#: src/bz-window.blp:435
-msgid "_Donate to Store ❤️"
-msgstr "_Donirajte Storeu ❤️"
+#: src/bz-window.blp:511
+msgid "_Quit Store"
+msgstr "_Zatvori Store"
 
-#: src/bz-window.c:856
+#: src/bz-window.blp:520
+msgid "Open Store Inspector"
+msgstr "Otvori Store inspektor"
+
+#: src/bz-window.c:905
 msgid ""
-"The ability to inspect and install local .flatpak bundle files is coming soon! In the meantime, try running\n"
+"The ability to inspect and install local .flatpak bundle files is coming "
+"soon! In the meantime, try running\n"
 "\n"
 "flatpak install --bundle your-bundle.flatpak\n"
 "\n"
 "on the command line."
 msgstr ""
-"Mogućnost pregleda i instaliranja lokalnih .flatpak datoteka paketa uskoro stiže! U međuvremenu, pokušajte pokrenuti\n"
+"Mogućnost pregleda i instaliranja lokalnih .flatpak datoteka paketa uskoro "
+"stiže! U međuvremenu, pokušajte pokrenuti\n"
 "\n"
 "flatpak install --bundle your-bundle.flatpak\n"
 "\n"
 "u komandnom redu."
 
-#: src/bz-window.c:927
+#: src/bz-window.c:1027
 msgid "Can't do that right now!"
 msgstr "To se sada ne može uraditi!"
 
-#: src/bz-window.c:940
-msgid "Confirm Action"
-msgstr "Potvrdi radnju"
-
-#: src/bz-window.c:958
+#: src/bz-window.c:1156
 #, c-format
-msgid ""
-"You are about to remove the following Flatpak:\n"
-"\n"
-"<b>%s</b>\n"
-"<tt>%s</tt>\n"
-"\n"
-"Are you sure?"
+msgid "Install %s?"
+msgstr "Instaliraj %s?"
+
+#: src/bz-window.c:1159
+msgid "May install additional shared components"
 msgstr ""
-"Namjeravate ukloniti sljedeći Flatpak:\n"
-"\n"
-"<b>%s</b>\n"
-"<tt>%s</tt>\n"
-"\n"
-"Jeste li sigurni?"
 
-#: src/bz-window.c:966 src/bz-window.c:986
-msgid "Cancel"
-msgstr "Otkaži"
-
-#: src/bz-window.c:967
-msgid "Remove"
-msgstr "Ukloni"
-
-#: src/bz-window.c:978
+#: src/bz-window.c:1178
 #, c-format
-msgid ""
-"You are about to install the following Flatpak:\n"
-"\n"
-"<b>%s</b>\n"
-"<tt>%s</tt>\n"
-"\n"
-"Are you sure?"
+msgid "Uninstall %s?"
+msgstr "Deinstaliraj %s?"
+
+#: src/bz-window.c:1182
+msgid "It will not be possible to use this app after it is uninstalled."
+msgstr "Neće biti moguće koristiti ovu aplikaciju nakon deinstalacije."
+
+#: src/bz-window.c:1187
+msgid "Clear Data"
+msgstr "Obriši podatke"
+
+#: src/bz-window.c:1188
+msgid "Uninstall & Clear Data"
+msgstr "Deinstaliraj i obriši podatke"
+
+#: src/bz-window.c:1189
+msgid "Uninstall"
+msgstr "Deinstaliraj"
+
+#: src/bz-window.c:1352
+msgid "Resume Current Tasks"
 msgstr ""
-"Instalirat ćete sljedeći Flatpak:\n"
-"\n"
-"<b>%s</b>\n"
-"<tt>%s</tt>\n"
-"\n"
-"Jeste li sigurni?"
 
-#: src/bz-window.c:1012
-msgid "More details"
-msgstr "Više detalja"
+#: src/bz-window.c:1358
+msgid "Pause Current Tasks"
+msgstr ""
 
-#: src/bz-window.c:1138
-msgid "Resume the execution of transactions"
-msgstr "Nastavite izvršavanje transakcija"
+#: src/bz-world-map.c:523
+#, c-format
+msgid "%s: %'u downloads"
+msgstr ""
 
-#: src/bz-window.c:1144
-msgid "Pause the execution of transactions"
-msgstr "Pauzirajte izvršavanje transakcija"
-
-#: src/gtk/help-overlay.blp:11
+#: src/gtk/shortcuts-dialog.blp:6
 msgctxt "shortcut window"
 msgid "General"
 msgstr "Općenito"
 
-#: src/gtk/help-overlay.blp:14
+#: src/gtk/shortcuts-dialog.blp:9
 msgctxt "shortcut window"
 msgid "Open Search Dialog"
 msgstr "Otvori dijalog za pretragu"
 
-#: src/gtk/help-overlay.blp:19
+#: src/gtk/shortcuts-dialog.blp:14
+msgctxt "shortcut window"
+msgid "Open Preferences"
+msgstr "Otvori postavke"
+
+#: src/gtk/shortcuts-dialog.blp:19
 msgctxt "shortcut window"
 msgid "Refresh"
 msgstr "Osvježi"
 
-#: src/gtk/help-overlay.blp:24
+#: src/gtk/shortcuts-dialog.blp:24
 msgctxt "shortcut window"
 msgid "Toggle Transaction Manager"
 msgstr "Uključi/isključi Upravitelja za transakcije"
 
-#: src/gtk/help-overlay.blp:29
+#: src/gtk/shortcuts-dialog.blp:29
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
 msgstr "Prikaži prečice"
 
-#: src/gtk/help-overlay.blp:34
+#: src/gtk/shortcuts-dialog.blp:34
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Odustani"
+
+#~ msgid "Show Animated Background"
+#~ msgstr "Prikaži animiranu pozadinu"
+
+#~ msgid "Whether to show the animated icon background on the home page"
+#~ msgstr "Da li već prikazati animiranu pozadinu ikone na početnoj stranici"
+
+#~ msgid "Keep the summary shorter, between 10 and 35 characters"
+#~ msgstr "Sažetak neka bude kraći, između 10 i 35 znakova"
+
+#~ msgid "No description"
+#~ msgstr "Nema opisa"
+
+#~ msgid "Adam Masciola"
+#~ msgstr "Adam Masciola"
+
+#~ msgid "Main Store window showing Blender"
+#~ msgstr "Glavni prozor Storea koji prikazuje Blender"
+
+#~ msgctxt "About Dialog Developer Credit"
+#~ msgid "Adam Masciola <kolunmi@posteo.net>"
+#~ msgstr "Adam Masciola <kolunmi@posteo.net>"
+
+#~ msgctxt "About Dialog Translator Credit"
+#~ msgid "Ahmed Najmawi"
+#~ msgstr "Ahmed Najmawi"
+
+#~ msgctxt "About Dialog Translator Credit"
+#~ msgid "AtomHare"
+#~ msgstr "AtomHare"
+
+#~ msgctxt "About Dialog Translator Credit"
+#~ msgid "Jill Fiore"
+#~ msgstr "Jill Fiore"
+
+#~ msgctxt "About Dialog Translator Credit"
+#~ msgid "Lucosec"
+#~ msgstr "Lucosec"
+
+#~ msgctxt "About Dialog Translator Credit"
+#~ msgid "Shihfu Juan"
+#~ msgstr "Shihfu Juan"
+
+#~ msgctxt "About Dialog Translator Credit"
+#~ msgid "Vlastimil Dědek"
+#~ msgstr "Vlastimil Dědek"
+
+#~ msgctxt "About Dialog Translator Credit"
+#~ msgid "asen23"
+#~ msgstr "asen23"
+
+#~ msgctxt "About Dialog Translator Credit"
+#~ msgid "renner"
+#~ msgstr "renner"
+
+#~ msgctxt "About Dialog Translator Credit"
+#~ msgid "robotta"
+#~ msgstr "robotta"
+
+#~ msgid ""
+#~ "Store was not provided a curated content configuration. Contact your "
+#~ "operating system's support channels for assistance."
+#~ msgstr ""
+#~ "Storeu nije pružena konfiguracija izloženog sadržaja. Za pomoć "
+#~ "kontaktirajte kanale podrške vašeg operativnog sistema."
+
+#~ msgid "Apps Of The Week"
+#~ msgstr "Aplikacije sedmice"
+
+#~ msgid "Run this application"
+#~ msgstr "Pokreni ovu aplikaciju"
+
+#~ msgid "Share this application"
+#~ msgstr "Podijelite ovu aplikaciju"
+
+#~ msgid ""
+#~ "The number of downloads in the last 30 days. Click to view this "
+#~ "application's download statistics."
+#~ msgstr ""
+#~ "Broj preuzimanja u posljednjih 30 dana. Kliknite za pregled statistike "
+#~ "preuzimanja ove aplikacije."
+
+#~ msgid "Remote repo name"
+#~ msgstr "Naziv udaljenog repozitorija"
+
+#, c-format
+#~ msgid "Released %x"
+#~ msgstr "Objavljeno %x"
+
+#~ msgid "Edit Permissions"
+#~ msgstr "Uredi dozvole"
+
+#~ msgid "How the application looks"
+#~ msgstr "Kako izgleda aplikacija"
+
+#~ msgid "Appearance"
+#~ msgstr "Izgled"
+
+#~ msgid "Show animated background"
+#~ msgstr "Prikaži animiranu pozadinu"
+
+#~ msgid "Type to filter"
+#~ msgstr "Upišite tekst za filtriranje"
+
+#~ msgid "Exclude results with proprietary licenses"
+#~ msgstr "Isključi rezultate s vlasničkim licencama"
+
+#~ msgid "Exclude results not originating from Flathub"
+#~ msgstr "Isključi rezultate koji ne potiču sa Flathub-a"
+
+#~ msgid "Advanced"
+#~ msgstr "Napredno"
+
+#~ msgid "Match using regular expressions"
+#~ msgstr "Uparivanje pomoću običnih izraza"
+
+#~ msgid "Hide filtering and sorting behind a crossfade effect"
+#~ msgstr "Sakrij filtriranje i sortiranje iza efekta prelaza"
+
+#~ msgid "Share"
+#~ msgstr "Podijeli"
+
+#~ msgid "Open this link externally"
+#~ msgstr "Otvorite ovu vezu eksterno"
+
+#~ msgid "Downloads Over Time"
+#~ msgstr "Preuzimanja tokom vremena"
+
+#~ msgid "Minimize Lower Bound"
+#~ msgstr "Minimiziraj donju granicu"
+
+#~ msgid "Maximize Upper Bound"
+#~ msgstr "Maksimiziraj gornju granicu"
+
+#~ msgid "Installing"
+#~ msgstr "Instaliranje"
+
+#~ msgid "Updating"
+#~ msgstr "Ažuriranje"
+
+#~ msgid "Removing"
+#~ msgstr "Uklanjanje"
+
+#~ msgid "Transactions Will Appear Here"
+#~ msgstr "Transakcije će se pojaviti ovdje"
+
+#~ msgid "Halt the execution of transactions"
+#~ msgstr "Zaustaviti izvršenje transakcija"
+
+#~ msgid "Clear all finished transactions"
+#~ msgstr "Obriši sve završene transakcije"
+
+#~ msgid "Loading"
+#~ msgstr "Učitavanje"
+
+#~ msgid "Browse"
+#~ msgstr "Pregledaj"
+
+#~ msgid "App View"
+#~ msgstr "Prikaz aplikacije"
+
+#~ msgid "Go Back"
+#~ msgstr "Idi nazad"
+
+#~ msgid "Refresh"
+#~ msgstr "Osvježi"
+
+#~ msgid "View the latest on Flathub"
+#~ msgstr "Pogledajte najnovije na Flathub-u"
+
+#~ msgid "Up to date!"
+#~ msgstr "Ažurno!"
+
+#~ msgid "_Donate to Store ❤️"
+#~ msgstr "_Donirajte Storeu ❤️"
+
+#~ msgid "Confirm Action"
+#~ msgstr "Potvrdi radnju"
+
+#, c-format
+#~ msgid ""
+#~ "You are about to remove the following Flatpak:\n"
+#~ "\n"
+#~ "<b>%s</b>\n"
+#~ "<tt>%s</tt>\n"
+#~ "\n"
+#~ "Are you sure?"
+#~ msgstr ""
+#~ "Namjeravate ukloniti sljedeći Flatpak:\n"
+#~ "\n"
+#~ "<b>%s</b>\n"
+#~ "<tt>%s</tt>\n"
+#~ "\n"
+#~ "Jeste li sigurni?"
+
+#, c-format
+#~ msgid ""
+#~ "You are about to install the following Flatpak:\n"
+#~ "\n"
+#~ "<b>%s</b>\n"
+#~ "<tt>%s</tt>\n"
+#~ "\n"
+#~ "Are you sure?"
+#~ msgstr ""
+#~ "Instalirat ćete sljedeći Flatpak:\n"
+#~ "\n"
+#~ "<b>%s</b>\n"
+#~ "<tt>%s</tt>\n"
+#~ "\n"
+#~ "Jeste li sigurni?"
+
+#~ msgid "Resume the execution of transactions"
+#~ msgstr "Nastavite izvršavanje transakcija"
+
+#~ msgid "Pause the execution of transactions"
+#~ msgstr "Pauzirajte izvršavanje transakcija"
