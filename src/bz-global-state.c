@@ -142,7 +142,7 @@ http_send_fiber (HttpRequestData *data)
       message,
       splice_into,
       splice_flags,
-      G_PRIORITY_DEFAULT,
+      G_PRIORITY_DEFAULT_IDLE,
       dex_promise_get_cancellable (promise),
       http_send_and_splice_finish,
       dex_ref (promise));
