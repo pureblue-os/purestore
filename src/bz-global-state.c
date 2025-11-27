@@ -142,7 +142,7 @@ http_send_fiber (HttpRequestData *data)
       message,
       splice_into,
       splice_flags,
-      G_PRIORITY_DEFAULT_IDLE,
+      G_PRIORITY_DEFAULT,
       dex_promise_get_cancellable (promise),
       http_send_and_splice_finish,
       dex_ref (promise));
@@ -216,9 +216,10 @@ send (SoupMessage   *message,
   data->splice_into  = splice_into != NULL ? g_object_ref (splice_into) : NULL;
   data->close_output = close_output;
 
+  /* Use the I/O scheduler for HTTP requests so they don't depend on main loop being idle */
   future = dex_scheduler_spawn (
-      dex_scheduler_get_default (),
-      bz_get_dex_stack_size (),
+      dex_thread_pool_scheduler_get_default (),
+      0,
       (DexFiberFunc) http_send_fiber,
       http_request_data_ref (data),
       http_request_data_unref);
