@@ -637,6 +637,8 @@ check_has_flathub_fiber (CheckHasFlathubData *data)
   g_autoptr (GPtrArray) user_remotes   = NULL;
   guint n_user_remotes                 = 0;
 
+  g_debug ("Checking for flathub remote...");
+
   if (instance->system != NULL)
     {
       system_remotes = flatpak_installation_list_remotes (
@@ -648,6 +650,11 @@ check_has_flathub_fiber (CheckHasFlathubData *data)
             "Failed to enumerate remotes for system installation: %s",
             local_error->message);
       n_system_remotes = system_remotes->len;
+      g_debug ("Found %u system remotes", n_system_remotes);
+    }
+  else
+    {
+      g_debug ("No system installation available");
     }
 
   if (instance->user != NULL)
@@ -661,6 +668,11 @@ check_has_flathub_fiber (CheckHasFlathubData *data)
             "Failed to enumerate remotes for user installation: %s",
             local_error->message);
       n_user_remotes = user_remotes->len;
+      g_debug ("Found %u user remotes", n_user_remotes);
+    }
+  else
+    {
+      g_debug ("No user installation available");
     }
 
   for (guint i = 0; i < n_system_remotes + n_user_remotes; i++)
@@ -673,14 +685,23 @@ check_has_flathub_fiber (CheckHasFlathubData *data)
       else
         remote = g_ptr_array_index (user_remotes, i - n_system_remotes);
 
+      name = flatpak_remote_get_name (remote);
+
       if (flatpak_remote_get_disabled (remote) ||
           flatpak_remote_get_noenumerate (remote))
-        continue;
+        {
+          g_debug ("Skipping remote '%s' (disabled or noenumerate)", name);
+          continue;
+        }
 
-      name = flatpak_remote_get_name (remote);
+      g_debug ("Checking remote '%s'", name);
       if (g_strcmp0 (name, "flathub") == 0)
-        return dex_future_new_true ();
+        {
+          g_debug ("Found flathub remote!");
+          return dex_future_new_true ();
+        }
     }
+  g_debug ("No flathub remote found");
   return dex_future_new_false ();
 }
 
