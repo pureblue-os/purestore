@@ -216,10 +216,9 @@ send (SoupMessage   *message,
   data->splice_into  = splice_into != NULL ? g_object_ref (splice_into) : NULL;
   data->close_output = close_output;
 
-  /* Use the I/O scheduler for HTTP requests so they don't depend on main loop being idle */
   future = dex_scheduler_spawn (
-      dex_thread_pool_scheduler_get_default (),
-      0,
+      dex_scheduler_get_default (),
+      bz_get_dex_stack_size (),
       (DexFiberFunc) http_send_fiber,
       http_request_data_ref (data),
       http_request_data_unref);
