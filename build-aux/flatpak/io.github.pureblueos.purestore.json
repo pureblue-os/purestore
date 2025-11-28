@@ -6,9 +6,6 @@
   "command": "purestore",
   "tags": [],
   "desktop-file-name-suffix": "",
-  "sdk-extensions": [
-    "org.freedesktop.Sdk.Extension.llvm20"
-  ],
   "finish-args": [
     "--share=network",
     "--share=ipc",
@@ -33,7 +30,7 @@
     "*.a"
   ],
   "build-options": {
-    "append-path": "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm20/bin"
+    "append-path": "/usr/lib/sdk/rust-stable/bin"
   },
   "modules": [
     {
