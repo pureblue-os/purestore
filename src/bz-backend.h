@@ -43,7 +43,6 @@ struct _BzBackendInterface
   /* DexFuture* -> gboolean */
   DexFuture *(*retrieve_remote_entries) (BzBackend     *self,
                                          DexChannel    *channel,
-                                         GPtrArray     *blocked_names,
                                          GCancellable  *cancellable,
                                          gpointer       user_data,
                                          GDestroyNotify destroy_user_data);
@@ -79,7 +78,6 @@ bz_backend_load_local_package (BzBackend    *self,
 DexFuture *
 bz_backend_retrieve_remote_entries (BzBackend     *self,
                                     DexChannel    *channel,
-                                    GPtrArray     *blocked_names,
                                     GCancellable  *cancellable,
                                     gpointer       user_data,
                                     GDestroyNotify destroy_user_data);

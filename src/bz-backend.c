@@ -45,7 +45,6 @@ bz_backend_real_load_local_package (BzBackend    *self,
 static DexFuture *
 bz_backend_real_retrieve_remote_entries (BzBackend     *self,
                                          DexChannel    *channel,
-                                         GPtrArray     *blocked_names,
                                          GCancellable  *cancellable,
                                          gpointer       user_data,
                                          GDestroyNotify destroy_user_data)
@@ -115,7 +114,6 @@ bz_backend_load_local_package (BzBackend    *self,
 DexFuture *
 bz_backend_retrieve_remote_entries (BzBackend     *self,
                                     DexChannel    *channel,
-                                    GPtrArray     *blocked_names,
                                     GCancellable  *cancellable,
                                     gpointer       user_data,
                                     GDestroyNotify destroy_user_data)
@@ -126,7 +124,6 @@ bz_backend_retrieve_remote_entries (BzBackend     *self,
   return BZ_BACKEND_GET_IFACE (self)->retrieve_remote_entries (
       self,
       channel,
-      blocked_names,
       cancellable,
       user_data,
       destroy_user_data);

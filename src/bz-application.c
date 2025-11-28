@@ -1216,7 +1216,7 @@ refresh_fiber (BzApplication *self)
   sync_future = bz_backend_retrieve_remote_entries (
       BZ_BACKEND (self->flatpak),
       channel,
-      NULL, NULL, self, NULL);
+      NULL, self, NULL);
 
   bz_state_info_set_busy_step_label (self->state, _ ("Receiving Entries"));
   for (;;)

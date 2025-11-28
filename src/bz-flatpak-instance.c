@@ -118,14 +118,12 @@ BZ_DEFINE_DATA (
       GCancellable      *cancellable;
       BzFlatpakInstance *instance;
       DexChannel        *channel;
-      GPtrArray         *blocked_names;
       gpointer           user_data;
       GDestroyNotify     destroy_user_data;
       guint              total;
     },
     BZ_RELEASE_DATA (cancellable, g_object_unref);
     BZ_RELEASE_DATA (channel, dex_unref);
-    BZ_RELEASE_DATA (blocked_names, g_ptr_array_unref);
     BZ_RELEASE_DATA (user_data, self->destroy_user_data))
 static DexFuture *
 retrieve_remote_refs_fiber (GatherRefsData *data);
@@ -141,12 +139,10 @@ BZ_DEFINE_DATA (
       GatherRefsData      *parent;
       FlatpakInstallation *installation;
       FlatpakRemote       *remote;
-      GHashTable          *blocked_names_hash;
     },
     BZ_RELEASE_DATA (parent, gather_refs_data_unref);
     BZ_RELEASE_DATA (installation, g_object_unref);
-    BZ_RELEASE_DATA (remote, g_object_unref);
-    BZ_RELEASE_DATA (blocked_names_hash, g_hash_table_unref));
+    BZ_RELEASE_DATA (remote, g_object_unref));
 static DexFuture *
 retrieve_refs_for_remote_fiber (RetrieveRefsForRemoteData *data);
 
@@ -347,7 +343,6 @@ bz_flatpak_instance_load_local_package (BzBackend    *backend,
 static DexFuture *
 bz_flatpak_instance_retrieve_remote_refs (BzBackend     *backend,
                                           DexChannel    *channel,
-                                          GPtrArray     *blocked_names,
                                           GCancellable  *cancellable,
                                           gpointer       user_data,
                                           GDestroyNotify destroy_user_data)
@@ -359,7 +354,6 @@ bz_flatpak_instance_retrieve_remote_refs (BzBackend     *backend,
   data->cancellable       = cancellable != NULL ? g_object_ref (cancellable) : NULL;
   data->instance          = self;
   data->channel           = dex_ref (channel);
-  data->blocked_names     = g_ptr_array_ref (blocked_names);
   data->user_data         = user_data;
   data->destroy_user_data = destroy_user_data;
   data->total             = 0;
@@ -892,14 +886,12 @@ retrieve_remote_refs_fiber (GatherRefsData *data)
 {
   GCancellable      *cancellable            = data->cancellable;
   BzFlatpakInstance *instance               = data->instance;
-  GPtrArray         *blocked_names          = data->blocked_names;
   DexChannel        *channel                = data->channel;
   g_autoptr (GError) local_error            = NULL;
   g_autoptr (GPtrArray) system_remotes      = NULL;
   guint n_system_remotes                    = 0;
   g_autoptr (GPtrArray) user_remotes        = NULL;
   guint n_user_remotes                      = 0;
-  g_autoptr (GHashTable) blocked_names_hash = NULL;
   g_autoptr (GPtrArray) jobs                = NULL;
   g_autoptr (GPtrArray) job_names           = NULL;
   g_autoptr (DexFuture) future              = NULL;
@@ -944,18 +936,6 @@ retrieve_remote_refs_fiber (GatherRefsData *data)
       return dex_future_new_true ();
     }
 
-  if (blocked_names != NULL)
-    {
-      blocked_names_hash = g_hash_table_new (g_str_hash, g_str_equal);
-      for (guint i = 0; i < blocked_names->len; i++)
-        {
-          const char *name = NULL;
-
-          name = g_ptr_array_index (blocked_names, i);
-          g_hash_table_add (blocked_names_hash, (gpointer) name);
-        }
-    }
-
   jobs      = g_ptr_array_new_with_free_func (dex_unref);
   job_names = g_ptr_array_new_with_free_func (g_free);
 
@@ -998,7 +978,6 @@ retrieve_remote_refs_fiber (GatherRefsData *data)
       job_data->parent             = gather_refs_data_ref (data);
       job_data->installation       = g_object_ref (installation);
       job_data->remote             = g_object_ref (remote);
-      job_data->blocked_names_hash = blocked_names_hash != NULL ? g_hash_table_ref (blocked_names_hash) : NULL;
 
       job_future = dex_scheduler_spawn (
           instance->scheduler,
@@ -1074,7 +1053,6 @@ retrieve_refs_for_remote_fiber (RetrieveRefsForRemoteData *data)
   DexChannel          *channel            = data->parent->channel;
   FlatpakInstallation *installation       = data->installation;
   FlatpakRemote       *remote             = data->remote;
-  GHashTable          *blocked_names_hash = data->blocked_names_hash;
   g_autoptr (GError) local_error          = NULL;
   g_autoptr (DexFuture) error_future      = NULL;
   const char *remote_name                 = NULL;
@@ -1248,8 +1226,7 @@ retrieve_refs_for_remote_fiber (RetrieveRefsForRemoteData *data)
       component = as_component_box_index (components, i);
       id        = as_component_get_id (component);
 
-      if (!g_hash_table_contains (component_hash, id) &&
-          (blocked_names_hash == NULL || !g_hash_table_contains (blocked_names_hash, id)))
+      if (!g_hash_table_contains (component_hash, id))
         g_hash_table_replace (component_hash, g_strdup (id), g_object_ref (component));
     }
 
@@ -1263,22 +1240,6 @@ retrieve_refs_for_remote_fiber (RetrieveRefsForRemoteData *data)
         remote_name,
         local_error->message);
 
-  if (blocked_names_hash != NULL)
-    {
-      for (guint i = 0; i < refs->len;)
-        {
-          FlatpakRemoteRef *rref = NULL;
-          const char       *name = NULL;
-
-          rref = g_ptr_array_index (refs, i);
-          name = flatpak_ref_get_name (FLATPAK_REF (rref));
-
-          if (g_hash_table_contains (blocked_names_hash, name))
-            g_ptr_array_remove_index_fast (refs, i);
-          else
-            i++;
-        }
-    }
   if (refs->len == 0)
     return dex_future_new_true ();
 
