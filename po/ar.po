@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: purestore\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-27 14:40+0000\n"
+"POT-Creation-Date: 2025-11-28 10:37+0000\n"
 "PO-Revision-Date: 2025-10-17 20:15+0300\n"
 "Last-Translator: Ahmed Najmawi <iramosu@protonmail.com>\n"
 "Language-Team: Arabic\n"
@@ -1212,8 +1212,9 @@ msgid "Clear Data"
 msgstr "امحُ البيانات"
 
 #: src/bz-window.c:1188
-msgid "Uninstall & Clear Data"
-msgstr "أزِل وامحُ البيانات"
+#, fuzzy
+msgid "Uninstall (Keep Data)"
+msgstr "إلغاء التثبيت (الاحتفاظ بالبيانات)"
 
 #: src/bz-window.c:1189
 msgid "Uninstall"

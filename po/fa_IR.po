@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: purestore\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-27 14:40+0000\n"
+"POT-Creation-Date: 2025-11-28 10:37+0000\n"
 "PO-Revision-Date: 2025-07-14 16:34+0330\n"
 "Last-Translator: Goudarz Jafari <me@goudarzjafari.com>\n"
 "Language-Team: none\n"
@@ -1237,8 +1237,9 @@ msgid "Clear Data"
 msgstr "پاک کردن داده‌ها"
 
 #: src/bz-window.c:1188
-msgid "Uninstall & Clear Data"
-msgstr "حذف و پاک کردن داده‌ها"
+#, fuzzy
+msgid "Uninstall (Keep Data)"
+msgstr "حذف (نگه‌داشتن داده‌ها)"
 
 #: src/bz-window.c:1189
 msgid "Uninstall"

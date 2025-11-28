@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: purestore\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-27 14:40+0000\n"
+"POT-Creation-Date: 2025-11-28 10:37+0000\n"
 "PO-Revision-Date: 2025-07-15 07:56+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -48,7 +48,9 @@ msgstr "Toon Git Forge sterrentelling"
 msgid ""
 "Whether to attempt to detect and show \"star counts\" for projects in the "
 "full view"
-msgstr "Of geprobeerd moet worden om \"sterrentelling\" voor projecten in de volledige weergave te detecteren en weer te geven"
+msgstr ""
+"Of geprobeerd moet worden om \"sterrentelling\" voor projecten in de "
+"volledige weergave te detecteren en weer te geven"
 
 #: data/io.github.pureblueos.purestore.gschema.xml:16
 msgid "Only Show Free Software"
@@ -64,7 +66,8 @@ msgstr "Toon alleen Flathub inhoud"
 
 #: data/io.github.pureblueos.purestore.gschema.xml:22
 msgid "Filter search results to only show applications available on Flathub"
-msgstr "Filter zoekresultaten om alleen apps te tonen die beschikbaar zijn op Flathub"
+msgstr ""
+"Filter zoekresultaten om alleen apps te tonen die beschikbaar zijn op Flathub"
 
 #: data/io.github.pureblueos.purestore.gschema.xml:26
 msgid "Debounce Search Inputs"
@@ -80,7 +83,8 @@ msgstr "Opgeslagen vensterafmetingen"
 
 #: data/io.github.pureblueos.purestore.gschema.xml:32
 msgid "The window dimensions to be used by the next Store window"
-msgstr "De vensterafmetingen die door het volgende Store-venster worden gebruikt"
+msgstr ""
+"De vensterafmetingen die door het volgende Store-venster worden gebruikt"
 
 #: data/io.github.pureblueos.purestore.metainfo.xml.in:8
 msgid "Discover and install applications"
@@ -193,7 +197,9 @@ msgstr "Flatpak-bestand"
 msgid ""
 "This functionality is currently disabled. It is recommended you download and "
 "install Flatseal to manage app permissions."
-msgstr "Deze functionaliteit is momenteel uitgeschakeld. Het wordt aanbevolen om Flatseal te installeren voor het beheren van app-machtigingen."
+msgstr ""
+"Deze functionaliteit is momenteel uitgeschakeld. Het wordt aanbevolen om "
+"Flatseal te installeren voor het beheren van app-machtigingen."
 
 #. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 #: src/bz-application.c:514
@@ -500,7 +506,9 @@ msgstr "Flathub niet beschikbaar"
 msgid ""
 "We could not connect to Flathub. You can still manage and search for "
 "applications."
-msgstr "Er kon geen verbinding worden gemaakt met Flathub. Je kunt nog steeds apps beheren en zoeken."
+msgstr ""
+"Er kon geen verbinding worden gemaakt met Flathub. Je kunt nog steeds apps "
+"beheren en zoeken."
 
 #: src/bz-flathub-page.blp:52
 msgid "Search Apps"
@@ -636,7 +644,9 @@ msgstr "Ontvangt geen kernupdates meer"
 msgid ""
 "This app uses a runtime that no longer recieves updates or security fixes. "
 "It may become unsafe to use."
-msgstr "Deze app gebruikt een runtime die geen updates of beveiligingspatches meer ontvangt. Het kan onveilig worden om te gebruiken."
+msgstr ""
+"Deze app gebruikt een runtime die geen updates of beveiligingspatches meer "
+"ontvangt. Het kan onveilig worden om te gebruiken."
 
 #: src/bz-full-view.c:284
 msgid "---"
@@ -1002,8 +1012,10 @@ msgid ""
 "code repository on a remote Git forge. \n"
 " For projects on GitHub, rate limits may cause them not to appear."
 msgstr ""
-"PureStore kan het aantal sterren ophalen en weergeven van de broncode repository van een app op een externe Git server. \n"
-" Voor projecten op GitHub kunnen API-limieten ervoor zorgen dat ze niet verschijnen."
+"PureStore kan het aantal sterren ophalen en weergeven van de broncode "
+"repository van een app op een externe Git server. \n"
+" Voor projecten op GitHub kunnen API-limieten ervoor zorgen dat ze niet "
+"verschijnen."
 
 #: src/bz-releases-dialog.blp:5 src/bz-releases-list.blp:26
 msgid "Version History"
@@ -1223,15 +1235,17 @@ msgstr "%s Verwijderen?"
 
 #: src/bz-window.c:1182
 msgid "It will not be possible to use this app after it is uninstalled."
-msgstr "Het zal niet mogelijk zijn om deze app te gebruiken nadat deze is verwijderd."
+msgstr ""
+"Het zal niet mogelijk zijn om deze app te gebruiken nadat deze is verwijderd."
 
 #: src/bz-window.c:1187
 msgid "Clear Data"
 msgstr "Gegevens Wissen"
 
 #: src/bz-window.c:1188
-msgid "Uninstall & Clear Data"
-msgstr "Verwijderen & Gegevens Wissen"
+#, fuzzy
+msgid "Uninstall (Keep Data)"
+msgstr "Verwijderen (Gegevens behouden)"
 
 #: src/bz-window.c:1189
 msgid "Uninstall"

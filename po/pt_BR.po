@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: purestore\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-27 14:40+0000\n"
+"POT-Creation-Date: 2025-11-28 10:37+0000\n"
 "PO-Revision-Date: 2025-10-22 09:00-0300\n"
 "Last-Translator: João Victor <victorsouzaleal@gmail.com>\n"
 "Language-Team: Brazilian Portuguese\n"
@@ -283,8 +283,8 @@ msgid ""
 "There is no curation information provided on this system. You can still "
 "browse applications on Flathub"
 msgstr ""
-"Não há informações de curadoria neste sistema. Você ainda pode "
-"navegar pelos aplicativos no Flathub"
+"Não há informações de curadoria neste sistema. Você ainda pode navegar pelos "
+"aplicativos no Flathub"
 
 #: src/bz-browse-widget.blp:18
 msgid "Browse Flathub"
@@ -500,7 +500,9 @@ msgstr "Flathub não Adicionado"
 
 #: src/bz-flathub-page.blp:24
 msgid "The Flathub remote was not found on any of your Flatpak installations"
-msgstr "O repositório do Flathub não foi encontrado em nenhuma de suas instalações de Flatpak"
+msgstr ""
+"O repositório do Flathub não foi encontrado em nenhuma de suas instalações "
+"de Flatpak"
 
 #: src/bz-flathub-page.blp:48
 msgid "Flathub Unavailable"
@@ -978,7 +980,8 @@ msgstr "Somente Resultados do Flathub"
 
 #: src/bz-preferences-dialog.blp:24
 msgid "Limit search results to applications only available on Flathub"
-msgstr "Limitar resultados da pesquisa aos aplicativos disponíveis apenas no Flathub"
+msgstr ""
+"Limitar resultados da pesquisa aos aplicativos disponíveis apenas no Flathub"
 
 #: src/bz-preferences-dialog.blp:28
 msgid "Delay Search Results"
@@ -998,7 +1001,8 @@ msgstr "Exibir Contagem de Estrelas"
 
 #: src/bz-preferences-dialog.blp:38
 msgid "Show the star count of an application's source code repository"
-msgstr "Exibir a contagem de estrelas do repositório de código fonte do aplicativo"
+msgstr ""
+"Exibir a contagem de estrelas do repositório de código fonte do aplicativo"
 
 #: src/bz-preferences-dialog.blp:63
 msgid "End of Life Apps"
@@ -1250,8 +1254,9 @@ msgid "Clear Data"
 msgstr "Apagar Dados"
 
 #: src/bz-window.c:1188
-msgid "Uninstall & Clear Data"
-msgstr "Desinstalar e Apagar Dados"
+#, fuzzy
+msgid "Uninstall (Keep Data)"
+msgstr "Desinstalar (Manter Dados)"
 
 #: src/bz-window.c:1189
 msgid "Uninstall"

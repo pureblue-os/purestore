@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: purestore\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-27 14:40+0000\n"
+"POT-Creation-Date: 2025-11-28 10:37+0000\n"
 "PO-Revision-Date: 2025-10-18 18:23+0200\n"
 "Last-Translator: renner <renner0@posteo.de>\n"
 "Language-Team: German\n"
@@ -941,7 +941,8 @@ msgid ""
 "\n"
 "You can participate and help make it even better."
 msgstr ""
-"Diese App wird öffentlich von einer internationalen Gemeinschaft entwickelt.\n"
+"Diese App wird öffentlich von einer internationalen Gemeinschaft "
+"entwickelt.\n"
 "\n"
 "Sie können teilnehmen und helfen, sie noch besser zu machen."
 
@@ -980,7 +981,8 @@ msgstr "Nur Flathub-Ergebnisse"
 
 #: src/bz-preferences-dialog.blp:24
 msgid "Limit search results to applications only available on Flathub"
-msgstr "Suchergebnisse auf Anwendungen beschränken, die auf Flathub verfügbar sind"
+msgstr ""
+"Suchergebnisse auf Anwendungen beschränken, die auf Flathub verfügbar sind"
 
 #: src/bz-preferences-dialog.blp:28
 msgid "Delay Search Results"
@@ -1012,7 +1014,8 @@ msgstr "Auslaufende Apps ausblenden"
 
 #: src/bz-preferences-dialog.blp:67
 msgid "Hide apps which are no longer supported by their developers"
-msgstr "Apps ausblenden, die nicht mehr von ihren Entwicklern unterstützt werden"
+msgstr ""
+"Apps ausblenden, die nicht mehr von ihren Entwicklern unterstützt werden"
 
 #: src/bz-preferences-dialog.blp:81
 msgid ""
@@ -1022,7 +1025,8 @@ msgid ""
 msgstr ""
 "PureStore kann die Sterneanzahl aus dem Quellcode-Repository einer Anwendung "
 "auf einem Remote-Git-Forge abrufen und anzeigen. \n"
-" Bei Projekten auf GitHub können Ratenbegrenzungen dazu führen, dass sie nicht angezeigt werden."
+" Bei Projekten auf GitHub können Ratenbegrenzungen dazu führen, dass sie "
+"nicht angezeigt werden."
 
 #: src/bz-releases-dialog.blp:5 src/bz-releases-list.blp:26
 msgid "Version History"
@@ -1255,8 +1259,9 @@ msgid "Clear Data"
 msgstr "Daten löschen"
 
 #: src/bz-window.c:1188
-msgid "Uninstall & Clear Data"
-msgstr "Deinstallieren & Daten löschen"
+#, fuzzy
+msgid "Uninstall (Keep Data)"
+msgstr "Deinstallieren (Daten behalten)"
 
 #: src/bz-window.c:1189
 msgid "Uninstall"

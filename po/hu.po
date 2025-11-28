@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: purestore\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-27 14:40+0000\n"
+"POT-Creation-Date: 2025-11-28 10:37+0000\n"
 "PO-Revision-Date: 2025-11-02 20:12+0100\n"
 "Last-Translator: Benedek Dévényi <rdbende@proton.me>\n"
 "Language-Team: Hungarian\n"
@@ -49,7 +49,9 @@ msgstr "Git Forge csillagszám mutatása"
 msgid ""
 "Whether to attempt to detect and show \"star counts\" for projects in the "
 "full view"
-msgstr "Kísérlet a projektek \"csillagszámának\" felismerésére és megjelenítésére a teljes nézetben"
+msgstr ""
+"Kísérlet a projektek \"csillagszámának\" felismerésére és megjelenítésére a "
+"teljes nézetben"
 
 #: data/io.github.pureblueos.purestore.gschema.xml:16
 msgid "Only Show Free Software"
@@ -65,7 +67,9 @@ msgstr "Csak Flathub tartalom mutatása"
 
 #: data/io.github.pureblueos.purestore.gschema.xml:22
 msgid "Filter search results to only show applications available on Flathub"
-msgstr "Keresési eredmények szűrése, hogy csak a Flathubon elérhető alkalmazásokat mutassa"
+msgstr ""
+"Keresési eredmények szűrése, hogy csak a Flathubon elérhető alkalmazásokat "
+"mutassa"
 
 #: data/io.github.pureblueos.purestore.gschema.xml:26
 msgid "Debounce Search Inputs"
@@ -73,7 +77,9 @@ msgstr "Keresési bevitel késleltetése"
 
 #: data/io.github.pureblueos.purestore.gschema.xml:27
 msgid "Add a delay before searching to prevent instant replies while typing"
-msgstr "Késleltetés hozzáadása a keresés előtt az azonnali válaszok elkerülésére gépelés közben"
+msgstr ""
+"Késleltetés hozzáadása a keresés előtt az azonnali válaszok elkerülésére "
+"gépelés közben"
 
 #: data/io.github.pureblueos.purestore.gschema.xml:31
 msgid "Saved Window Dimensions"
@@ -276,7 +282,9 @@ msgstr "Nincs válogatott tartalom"
 msgid ""
 "There is no curation information provided on this system. You can still "
 "browse applications on Flathub"
-msgstr "Ezen a rendszeren nem áll rendelkezésre válogatott tartalom. Még mindig böngészheted az alkalmazásokat a Flathubon"
+msgstr ""
+"Ezen a rendszeren nem áll rendelkezésre válogatott tartalom. Még mindig "
+"böngészheted az alkalmazásokat a Flathubon"
 
 #: src/bz-browse-widget.blp:18
 msgid "Browse Flathub"
@@ -502,7 +510,9 @@ msgstr "Flathub nem elérhető"
 msgid ""
 "We could not connect to Flathub. You can still manage and search for "
 "applications."
-msgstr "Nem sikerült csatlakozni a Flathubhoz. Még mindig kezelhetod és keresheted az alkalmazásokat."
+msgstr ""
+"Nem sikerült csatlakozni a Flathubhoz. Még mindig kezelhetod és keresheted "
+"az alkalmazásokat."
 
 #: src/bz-flathub-page.blp:52
 msgid "Search Apps"
@@ -638,7 +648,9 @@ msgstr "Nem kap több alapfrissítést"
 msgid ""
 "This app uses a runtime that no longer recieves updates or security fixes. "
 "It may become unsafe to use."
-msgstr "Ez az alkalmazás olyan futtatókörnyezetet használ, amely már nem kap frissítéseket vagy biztonsági javításokat. Használata veszélyessé válhat."
+msgstr ""
+"Ez az alkalmazás olyan futtatókörnyezetet használ, amely már nem kap "
+"frissítéseket vagy biztonsági javításokat. Használata veszélyessé válhat."
 
 #: src/bz-full-view.c:284
 msgid "---"
@@ -1240,8 +1252,9 @@ msgid "Clear Data"
 msgstr "Adatok törlése"
 
 #: src/bz-window.c:1188
-msgid "Uninstall & Clear Data"
-msgstr "Eltávolítás és adatok törlése"
+#, fuzzy
+msgid "Uninstall (Keep Data)"
+msgstr "Eltávolítás (Adatok megtartása)"
 
 #: src/bz-window.c:1189
 msgid "Uninstall"

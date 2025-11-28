@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: purestore\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-27 14:40+0000\n"
+"POT-Creation-Date: 2025-11-28 10:37+0000\n"
 "PO-Revision-Date: 2025-07-15 11:36+0100\n"
 "Last-Translator: Eduardo Correia (Azenyr)\n"
 "Language-Team: Portuguese (Portugal)\n"
@@ -75,7 +75,9 @@ msgstr "Suavizar a entrar de texto na pesquisa"
 
 #: data/io.github.pureblueos.purestore.gschema.xml:27
 msgid "Add a delay before searching to prevent instant replies while typing"
-msgstr "Adicionar um atraso antes de pesquisar para evitar respostas instantâneas ao escrever"
+msgstr ""
+"Adicionar um atraso antes de pesquisar para evitar respostas instantâneas ao "
+"escrever"
 
 #: data/io.github.pureblueos.purestore.gschema.xml:31
 msgid "Saved Window Dimensions"
@@ -95,8 +97,8 @@ msgid ""
 "applications and addons from Flatpak remotes, particularly Flathub."
 msgstr ""
 "Uma nova loja de aplicações para o GNOME com foco em descobrir e instalar "
-"aplicações e extensões a partir de repositórios Flatpak, "
-"principalmente do Flathub."
+"aplicações e extensões a partir de repositórios Flatpak, principalmente do "
+"Flathub."
 
 #: data/io.github.pureblueos.purestore.metainfo.xml.in:14
 msgid ""
@@ -105,8 +107,8 @@ msgid ""
 "allow for a more localized experience."
 msgstr ""
 "Destaca o apoio aos programadores que tornam o ambiente de trabalho Linux "
-"possível. O Store apresenta um separador \"Recomendadas\" que pode "
-"ser configurado pelos distribuidores para permitir uma experiência mais "
+"possível. O Store apresenta um separador \"Recomendadas\" que pode ser "
+"configurado pelos distribuidores para permitir uma experiência mais "
 "localizada."
 
 #: data/io.github.pureblueos.purestore.metainfo.xml.in:42
@@ -511,8 +513,8 @@ msgid ""
 "We could not connect to Flathub. You can still manage and search for "
 "applications."
 msgstr ""
-"Não foi possível estabelecer ligação ao Flathub. Ainda pode gerir e pesquisar "
-"aplicações."
+"Não foi possível estabelecer ligação ao Flathub. Ainda pode gerir e "
+"pesquisar aplicações."
 
 #: src/bz-flathub-page.blp:52
 msgid "Search Apps"
@@ -1019,8 +1021,8 @@ msgid ""
 "code repository on a remote Git forge. \n"
 " For projects on GitHub, rate limits may cause them not to appear."
 msgstr ""
-"O PureStore pode obter e mostrar a contagem de estrelas do repositório "
-"Git de código fonte de uma aplicação. \n"
+"O PureStore pode obter e mostrar a contagem de estrelas do repositório Git "
+"de código fonte de uma aplicação. \n"
 "Para projetos do GitHub, poderão ser aplicados limites de pedidos que "
 "poderão fazer com que as estrelas não apareçam."
 
@@ -1254,8 +1256,9 @@ msgid "Clear Data"
 msgstr "Apagar dados"
 
 #: src/bz-window.c:1188
-msgid "Uninstall & Clear Data"
-msgstr "Desinstalar e apagar dados"
+#, fuzzy
+msgid "Uninstall (Keep Data)"
+msgstr "Desinstalar (Manter dados)"
 
 #: src/bz-window.c:1189
 msgid "Uninstall"

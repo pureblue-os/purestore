@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.github.pureblueos.purestore master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-27 14:40+0000\n"
+"POT-Creation-Date: 2025-11-28 10:37+0000\n"
 "PO-Revision-Date: 2025-10-08 21:45+0300\n"
 "Last-Translator: Sabri Ünal <yakushabb@gmail.com>\n"
 "Language-Team: Turkish <takim@gnome.org.tr>\n"
@@ -280,7 +280,9 @@ msgstr "Derlenmiş İçerik Yok"
 msgid ""
 "There is no curation information provided on this system. You can still "
 "browse applications on Flathub"
-msgstr "Bu sistemde derlenmiş içerik bilgisi bulunmuyor. Yine de Flathub’daki uygulamalara göz atabilirsiniz."
+msgstr ""
+"Bu sistemde derlenmiş içerik bilgisi bulunmuyor. Yine de Flathub’daki "
+"uygulamalara göz atabilirsiniz."
 
 #: src/bz-browse-widget.blp:18
 msgid "Browse Flathub"
@@ -506,7 +508,8 @@ msgstr "Flathub Kullanılamıyor"
 msgid ""
 "We could not connect to Flathub. You can still manage and search for "
 "applications."
-msgstr "Flathubʼa bağlanamadı. Yine de uygulamaları yönetebilir ve arayabilirsiniz."
+msgstr ""
+"Flathubʼa bağlanamadı. Yine de uygulamaları yönetebilir ve arayabilirsiniz."
 
 #: src/bz-flathub-page.blp:52
 msgid "Search Apps"
@@ -642,7 +645,9 @@ msgstr "Temel güncellemeler artık alınmıyor"
 msgid ""
 "This app uses a runtime that no longer recieves updates or security fixes. "
 "It may become unsafe to use."
-msgstr "Bu uygulama artık güncelleme veya güvenlik düzeltmesi almayan bir çalışma zamanı kullanıyor. Kullanımı güvensiz olabilir."
+msgstr ""
+"Bu uygulama artık güncelleme veya güvenlik düzeltmesi almayan bir çalışma "
+"zamanı kullanıyor. Kullanımı güvensiz olabilir."
 
 #: src/bz-full-view.c:284
 msgid "---"
@@ -698,8 +703,9 @@ msgid "Unknown"
 msgstr "Bilinmiyor"
 
 #: src/bz-full-view.c:378
-msgid "Kapalı Lisanslı Uygulama"
-msgstr "Sahipli Yazılım"
+#, fuzzy
+msgid "Proprietary Software"
+msgstr "Sahipli"
 
 #: src/bz-full-view.c:382
 #, c-format
@@ -928,7 +934,8 @@ msgid ""
 "\n"
 "You can participate and help make it even better."
 msgstr ""
-"Bu uygulama uluslararası bir topluluk tarafından açık olarak geliştiriliyor.\n"
+"Bu uygulama uluslararası bir topluluk tarafından açık olarak "
+"geliştiriliyor.\n"
 "\n"
 "Katılabilir ve daha iyi hale getirmesine yardımcı olabilirsiniz."
 
@@ -1238,8 +1245,9 @@ msgid "Clear Data"
 msgstr "Verileri Temizle"
 
 #: src/bz-window.c:1188
-msgid "Uninstall & Clear Data"
-msgstr "Kaldır ve Verileri Temizle"
+#, fuzzy
+msgid "Uninstall (Keep Data)"
+msgstr "Kaldır (Verileri Koru)"
 
 #: src/bz-window.c:1189
 msgid "Uninstall"
@@ -1292,6 +1300,9 @@ msgstr "Kısayolları Göster"
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Çık"
+
+#~ msgid "Kapalı Lisanslı Uygulama"
+#~ msgstr "Sahipli Yazılım"
 
 #~ msgid "Global Progress Bar Theme"
 #~ msgstr "Küresel İlerleme Çubuğu Teması"

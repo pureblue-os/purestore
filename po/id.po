@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: purestore\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-27 14:40+0000\n"
+"POT-Creation-Date: 2025-11-28 10:37+0000\n"
 "PO-Revision-Date: 2025-07-12 06:09+0700\n"
 "Last-Translator: KiKaraage <kikaraage@tuta.io>\n"
 "Language-Team: Indonesian\n"
@@ -79,7 +79,8 @@ msgstr ""
 
 #: data/io.github.pureblueos.purestore.gschema.xml:27
 msgid "Add a delay before searching to prevent instant replies while typing"
-msgstr "Tambahkan jeda sebelum mencari untuk mencegah balasan instan saat mengetik"
+msgstr ""
+"Tambahkan jeda sebelum mencari untuk mencegah balasan instan saat mengetik"
 
 #: data/io.github.pureblueos.purestore.gschema.xml:31
 msgid "Saved Window Dimensions"
@@ -1245,8 +1246,9 @@ msgid "Clear Data"
 msgstr "Hapus Data"
 
 #: src/bz-window.c:1188
-msgid "Uninstall & Clear Data"
-msgstr "Hapus dan Bersihkan Data"
+#, fuzzy
+msgid "Uninstall (Keep Data)"
+msgstr "Copot (Simpan Data)"
 
 #: src/bz-window.c:1189
 msgid "Uninstall"

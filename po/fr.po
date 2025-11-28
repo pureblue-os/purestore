@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: purestore\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-27 14:40+0000\n"
+"POT-Creation-Date: 2025-11-28 10:37+0000\n"
 "PO-Revision-Date: 2025-10-21 13:10+0200\n"
 "Last-Translator: Léane GRASSER <leane.grasser@proton.me>\n"
 "Language-Team: French\n"
@@ -508,7 +508,8 @@ msgstr "Flathub non ajouté"
 
 #: src/bz-flathub-page.blp:24
 msgid "The Flathub remote was not found on any of your Flatpak installations"
-msgstr "Le dépôt Flathub n'a été trouvé dans aucune de vos installations Flatpak"
+msgstr ""
+"Le dépôt Flathub n'a été trouvé dans aucune de vos installations Flatpak"
 
 #: src/bz-flathub-page.blp:48
 msgid "Flathub Unavailable"
@@ -657,8 +658,8 @@ msgid ""
 "This app uses a runtime that no longer recieves updates or security fixes. "
 "It may become unsafe to use."
 msgstr ""
-"Cette application utilise un environnement d'exécution qui ne reçoit plus "
-"de mises à jour ni de correctifs de sécurité. Son utilisation peut devenir "
+"Cette application utilise un environnement d'exécution qui ne reçoit plus de "
+"mises à jour ni de correctifs de sécurité. Son utilisation peut devenir "
 "risquée."
 
 #: src/bz-full-view.c:284
@@ -935,8 +936,8 @@ msgid ""
 "You may not be able to contribute to this app."
 msgstr ""
 "Cette application n'est pas développée de manière ouverte, seuls ses "
-"développeurs savent comment elle fonctionne. Elle peut être non sécurisée "
-"de manière difficile à détecter, et peut changer sans contrôle.\n"
+"développeurs savent comment elle fonctionne. Elle peut être non sécurisée de "
+"manière difficile à détecter, et peut changer sans contrôle.\n"
 "\n"
 "Vous ne pourrez peut-être pas contribuer à cette application."
 
@@ -986,7 +987,9 @@ msgstr "Résultats Flathub uniquement"
 
 #: src/bz-preferences-dialog.blp:24
 msgid "Limit search results to applications only available on Flathub"
-msgstr "Limiter les résultats de recherche aux applications disponibles uniquement sur Flathub"
+msgstr ""
+"Limiter les résultats de recherche aux applications disponibles uniquement "
+"sur Flathub"
 
 #: src/bz-preferences-dialog.blp:28
 msgid "Delay Search Results"
@@ -994,7 +997,9 @@ msgstr "Retarder les résultats de recherche"
 
 #: src/bz-preferences-dialog.blp:29
 msgid "Improve results performance by debouncing search terms"
-msgstr "Améliorer les performances des résultats en retardant le traitement des termes de recherche"
+msgstr ""
+"Améliorer les performances des résultats en retardant le traitement des "
+"termes de recherche"
 
 #: src/bz-preferences-dialog.blp:34
 msgid "Application Details"
@@ -1018,7 +1023,9 @@ msgstr "Masquer les applications en fin de vie"
 
 #: src/bz-preferences-dialog.blp:67
 msgid "Hide apps which are no longer supported by their developers"
-msgstr "Masquer les applications qui ne sont plus prises en charge par leurs développeurs"
+msgstr ""
+"Masquer les applications qui ne sont plus prises en charge par leurs "
+"développeurs"
 
 #: src/bz-preferences-dialog.blp:81
 msgid ""
@@ -1028,7 +1035,8 @@ msgid ""
 msgstr ""
 "PureStore peut récupérer et afficher le nombre d'étoiles depuis le dépôt de "
 "code source d'une application sur une forge Git distante. \n"
-" Pour les projets sur GitHub, les limites de débit peuvent empêcher leur affichage."
+" Pour les projets sur GitHub, les limites de débit peuvent empêcher leur "
+"affichage."
 
 #: src/bz-releases-dialog.blp:5 src/bz-releases-list.blp:26
 msgid "Version History"
@@ -1061,7 +1069,8 @@ msgstr "Catégories non disponibles"
 
 #: src/bz-search-widget.blp:150
 msgid "Search for apps using the search bar above."
-msgstr "Recherchez des applications en utilisant la barre de recherche ci-dessus."
+msgstr ""
+"Recherchez des applications en utilisant la barre de recherche ci-dessus."
 
 #: src/bz-search-widget.blp:233
 msgid "No Applications Found"
@@ -1253,15 +1262,18 @@ msgstr "Désinstaller %s ?"
 
 #: src/bz-window.c:1182
 msgid "It will not be possible to use this app after it is uninstalled."
-msgstr "Il ne sera plus possible d'utiliser cette application après sa désinstallation."
+msgstr ""
+"Il ne sera plus possible d'utiliser cette application après sa "
+"désinstallation."
 
 #: src/bz-window.c:1187
 msgid "Clear Data"
 msgstr "Effacer les données"
 
 #: src/bz-window.c:1188
-msgid "Uninstall & Clear Data"
-msgstr "Désinstaller et effacer les données"
+#, fuzzy
+msgid "Uninstall (Keep Data)"
+msgstr "Désinstaller (Conserver les données)"
 
 #: src/bz-window.c:1189
 msgid "Uninstall"

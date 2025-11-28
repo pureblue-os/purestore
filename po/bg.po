@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: purestore\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-27 14:40+0000\n"
+"POT-Creation-Date: 2025-11-28 10:37+0000\n"
 "PO-Revision-Date: 2025-10-19 11:04+0200\n"
 "Last-Translator: twlvnn kraftwerk <kraft_werk@tutanota.com>\n"
 "Language-Team: Bulgarian\n"
@@ -286,8 +286,8 @@ msgid ""
 "There is no curation information provided on this system. You can still "
 "browse applications on Flathub"
 msgstr ""
-"На тази система няма предоставена информация за подбрано съдържание. Все "
-"още можете да разглеждате програми във Flathub"
+"На тази система няма предоставена информация за подбрано съдържание. Все още "
+"можете да разглеждате програми във Flathub"
 
 #: src/bz-browse-widget.blp:18
 msgid "Browse Flathub"
@@ -954,8 +954,8 @@ msgid ""
 "\n"
 "You can participate and help make it even better."
 msgstr ""
-"Тази програма се разработва открито от международна общност и е издадена "
-"под лиценз <a href=\"%s\">%s</a>.\n"
+"Тази програма се разработва открито от международна общност и е издадена под "
+"лиценз <a href=\"%s\">%s</a>.\n"
 "\n"
 "Можете да участвате и да помогнете да стане още по-добра."
 
@@ -1014,7 +1014,8 @@ msgstr "Скриване на EOL програми"
 
 #: src/bz-preferences-dialog.blp:67
 msgid "Hide apps which are no longer supported by their developers"
-msgstr "Скриване на програми, които вече не се поддържат от техните разработчици"
+msgstr ""
+"Скриване на програми, които вече не се поддържат от техните разработчици"
 
 #: src/bz-preferences-dialog.blp:81
 msgid ""
@@ -1024,7 +1025,8 @@ msgid ""
 msgstr ""
 "PureStore може да извлича и показва броя звезди от хранилището с изходен код "
 "на програмата в отдалечен Git forge. \n"
-" За проекти в GitHub, ограниченията на скоростта може да причинят да не се показват."
+" За проекти в GitHub, ограниченията на скоростта може да причинят да не се "
+"показват."
 
 #: src/bz-releases-dialog.blp:5 src/bz-releases-list.blp:26
 msgid "Version History"
@@ -1253,8 +1255,9 @@ msgid "Clear Data"
 msgstr "Изтриване на данни"
 
 #: src/bz-window.c:1188
-msgid "Uninstall & Clear Data"
-msgstr "Деинсталиране и изтриване на данни"
+#, fuzzy
+msgid "Uninstall (Keep Data)"
+msgstr "Деинсталиране (Запазване на данни)"
 
 #: src/bz-window.c:1189
 msgid "Uninstall"

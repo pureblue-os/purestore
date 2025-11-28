@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: purestore\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-27 14:40+0000\n"
+"POT-Creation-Date: 2025-11-28 10:37+0000\n"
 "PO-Revision-Date: 2025-11-07 19:13+0100\n"
 "Last-Translator: Marcel Mrówka <micro.mail88@gmail.com>\n"
 "Language-Team: Polish\n"
@@ -513,7 +513,9 @@ msgstr "Flathub niedostępny"
 msgid ""
 "We could not connect to Flathub. You can still manage and search for "
 "applications."
-msgstr "Nie można połączyć się z Flathubem. Możesz nadal zarządzać aplikacjami i je wyszukiwać."
+msgstr ""
+"Nie można połączyć się z Flathubem. Możesz nadal zarządzać aplikacjami i je "
+"wyszukiwać."
 
 #: src/bz-flathub-page.blp:52
 msgid "Search Apps"
@@ -649,7 +651,9 @@ msgstr "Brak aktualizacji podstawowych"
 msgid ""
 "This app uses a runtime that no longer recieves updates or security fixes. "
 "It may become unsafe to use."
-msgstr "Ta aplikacja używa biblioteki, która nie otrzymuje już aktualizacji ani poprawek bezpieczeństwa. Jej użycie może być niebezpieczne."
+msgstr ""
+"Ta aplikacja używa biblioteki, która nie otrzymuje już aktualizacji ani "
+"poprawek bezpieczeństwa. Jej użycie może być niebezpieczne."
 
 #: src/bz-full-view.c:284
 msgid "---"
@@ -1016,8 +1020,10 @@ msgid ""
 "code repository on a remote Git forge. \n"
 " For projects on GitHub, rate limits may cause them not to appear."
 msgstr ""
-"PureStore może pobierać i wyświetlać liczbę gwiazdek z repozytorium kodu źródłowego aplikacji na zdalnym serwerze Git. \n"
-" W przypadku projektów na GitHubie limity użycia mogą powodować, że nie będą wyświetlane."
+"PureStore może pobierać i wyświetlać liczbę gwiazdek z repozytorium kodu "
+"źródłowego aplikacji na zdalnym serwerze Git. \n"
+" W przypadku projektów na GitHubie limity użycia mogą powodować, że nie będą "
+"wyświetlane."
 
 #: src/bz-releases-dialog.blp:5 src/bz-releases-list.blp:26
 msgid "Version History"
@@ -1247,8 +1253,9 @@ msgid "Clear Data"
 msgstr "Usuń dane"
 
 #: src/bz-window.c:1188
-msgid "Uninstall & Clear Data"
-msgstr "Odinstaluj i usuń dane"
+#, fuzzy
+msgid "Uninstall (Keep Data)"
+msgstr "Odinstaluj (Zachowaj dane)"
 
 #: src/bz-window.c:1189
 msgid "Uninstall"

@@ -1185,8 +1185,8 @@ configure_remove_dialog (AdwAlertDialog *alert,
   adw_alert_dialog_add_responses (alert,
                                   "cancel", _ ("Cancel"),
                                   "remove-data-only", _ ("Clear Data"),
-                                  "remove-and-data", _ ("Uninstall & Clear Data"),
-                                  "remove", _ ("Uninstall"),
+                                  "remove", _ ("Uninstall (Keep Data)"),
+                                  "remove-and-data", _ ("Uninstall"),
                                   NULL);
 
   adw_alert_dialog_set_response_appearance (alert, "remove", ADW_RESPONSE_DESTRUCTIVE);

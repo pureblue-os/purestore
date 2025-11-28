@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: purestore\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-27 14:40+0000\n"
+"POT-Creation-Date: 2025-11-28 10:37+0000\n"
 "PO-Revision-Date: 2025-10-30 12:15+0100\n"
 "Last-Translator: robotta <>\n"
 "Language-Team: Spanish\n"
@@ -1002,7 +1002,9 @@ msgstr "Mostrar cantidad de estrellas"
 
 #: src/bz-preferences-dialog.blp:38
 msgid "Show the star count of an application's source code repository"
-msgstr "Mostrar la cantidad de estrellas del repositorio de código fuente de la aplicación"
+msgstr ""
+"Mostrar la cantidad de estrellas del repositorio de código fuente de la "
+"aplicación"
 
 #: src/bz-preferences-dialog.blp:63
 msgid "End of Life Apps"
@@ -1024,7 +1026,8 @@ msgid ""
 msgstr ""
 "PureStore puede obtener y mostrar la cantidad de estrellas del repositorio "
 "de código fuente de una aplicación en una forja Git remota. \n"
-" Para proyectos en GitHub, los límites de peticiones pueden causar que no aparezcan."
+" Para proyectos en GitHub, los límites de peticiones pueden causar que no "
+"aparezcan."
 
 #: src/bz-releases-dialog.blp:5 src/bz-releases-list.blp:26
 msgid "Version History"
@@ -1257,8 +1260,9 @@ msgid "Clear Data"
 msgstr "Borrar datos"
 
 #: src/bz-window.c:1188
-msgid "Uninstall & Clear Data"
-msgstr "Desinstalar y borrar datos"
+#, fuzzy
+msgid "Uninstall (Keep Data)"
+msgstr "Desinstalar (Conservar datos)"
 
 #: src/bz-window.c:1189
 msgid "Uninstall"

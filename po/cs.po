@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: purestore\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-27 14:40+0000\n"
+"POT-Creation-Date: 2025-11-28 10:37+0000\n"
 "PO-Revision-Date: 2025-10-22 07:48+0200\n"
 "Last-Translator: Vlastimil Dědek <dedek.vlastimil2@proton.me>\n"
 "Language-Team: Czech\n"
@@ -75,7 +75,9 @@ msgstr "Debouncing Vstupů Vyhledávání"
 
 #: data/io.github.pureblueos.purestore.gschema.xml:27
 msgid "Add a delay before searching to prevent instant replies while typing"
-msgstr "Přidat prodlevu před vyhledáváním pro zabránění okamžitým odpovědím během psaní"
+msgstr ""
+"Přidat prodlevu před vyhledáváním pro zabránění okamžitým odpovědím během "
+"psaní"
 
 #: data/io.github.pureblueos.purestore.gschema.xml:31
 msgid "Saved Window Dimensions"
@@ -278,8 +280,8 @@ msgid ""
 "There is no curation information provided on this system. You can still "
 "browse applications on Flathub"
 msgstr ""
-"Na tomto systému nejsou informace o vybraném obsahu. Stále můžete "
-"prohlížet aplikace na Flathubu"
+"Na tomto systému nejsou informace o vybraném obsahu. Stále můžete prohlížet "
+"aplikace na Flathubu"
 
 #: src/bz-browse-widget.blp:18
 msgid "Browse Flathub"
@@ -1222,8 +1224,9 @@ msgid "Clear Data"
 msgstr "Smazat data"
 
 #: src/bz-window.c:1188
-msgid "Uninstall & Clear Data"
-msgstr "Odinstalovat a smazat data"
+#, fuzzy
+msgid "Uninstall (Keep Data)"
+msgstr "Odinstalovat (Ponechat data)"
 
 #: src/bz-window.c:1189
 msgid "Uninstall"

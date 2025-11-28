@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: purestore\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-27 14:40+0000\n"
+"POT-Creation-Date: 2025-11-28 10:37+0000\n"
 "PO-Revision-Date: 2025-11-08 21:17+0700\n"
 "Last-Translator: Jill Fiore <contact@lumaeris.com>\n"
 "Language-Team: Russian\n"
@@ -1020,8 +1020,8 @@ msgid ""
 "code repository on a remote Git forge. \n"
 " For projects on GitHub, rate limits may cause them not to appear."
 msgstr ""
-"PureStore может получить и отобразить количество звёзд из репозитория приложения "
-"на удалённом Git-сервере. \n"
+"PureStore может получить и отобразить количество звёзд из репозитория "
+"приложения на удалённом Git-сервере. \n"
 " Для проектов на GitHub временные ограничения в получении запроса могут "
 "противостоять их отображению."
 
@@ -1253,8 +1253,9 @@ msgid "Clear Data"
 msgstr "Удалить данные"
 
 #: src/bz-window.c:1188
-msgid "Uninstall & Clear Data"
-msgstr "Удалить и очистить данные"
+#, fuzzy
+msgid "Uninstall (Keep Data)"
+msgstr "Удалить (Сохранить данные)"
 
 #: src/bz-window.c:1189
 msgid "Uninstall"

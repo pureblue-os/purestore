@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: purestore\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-27 14:40+0000\n"
+"POT-Creation-Date: 2025-11-28 10:37+0000\n"
 "PO-Revision-Date: 2025-09-02 09:06+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -67,7 +67,8 @@ msgstr "Prikaži samo Flathub sadržaj"
 
 #: data/io.github.pureblueos.purestore.gschema.xml:22
 msgid "Filter search results to only show applications available on Flathub"
-msgstr "Filtriraj rezultate pretrage da prikaže samo aplikacije dostupne na Flathubu"
+msgstr ""
+"Filtriraj rezultate pretrage da prikaže samo aplikacije dostupne na Flathubu"
 
 #: data/io.github.pureblueos.purestore.gschema.xml:26
 msgid "Debounce Search Inputs"
@@ -75,7 +76,8 @@ msgstr "Odgodi unos pretrage"
 
 #: data/io.github.pureblueos.purestore.gschema.xml:27
 msgid "Add a delay before searching to prevent instant replies while typing"
-msgstr "Dodaj odgodu prije pretrage da spriječiš instant odgovore tokom pisanja"
+msgstr ""
+"Dodaj odgodu prije pretrage da spriječiš instant odgovore tokom pisanja"
 
 #: data/io.github.pureblueos.purestore.gschema.xml:31
 msgid "Saved Window Dimensions"
@@ -1216,8 +1218,9 @@ msgid "Clear Data"
 msgstr "Obriši podatke"
 
 #: src/bz-window.c:1188
-msgid "Uninstall & Clear Data"
-msgstr "Deinstaliraj i obriši podatke"
+#, fuzzy
+msgid "Uninstall (Keep Data)"
+msgstr "Deinstaliraj (Zadrži podatke)"
 
 #: src/bz-window.c:1189
 msgid "Uninstall"
