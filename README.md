@@ -14,6 +14,9 @@ Store is fast and highly multi-threaded, providing a smooth browsing experience.
 - GNOME Shell search integration
 - Curated content support for distributors
 
+## Extra Features
+- While uninstalling you have option to also delete or leave app data.
+
 ## Build and Run
 
 ```sh
@@ -27,3 +30,6 @@ purestore
 
 This repo is a minimal fork of [kolunmi/bazaar](https://github.com/kolunmi/bazaar), go support the original project
 
+---
+
+Don't expect updates to this fork. This project will be replaced by [pureblue-os/apps](https://github.com/pureblue-os/apps).
